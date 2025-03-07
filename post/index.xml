@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Mia Jiao</title>
-        <link>http://localhost:1313/post/</link>
+        <link>https://majiao2.github.io/post/</link>
         <description>Recent content in Posts on Mia Jiao</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Sat, 08 Mar 2025 03:25:57 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 08 Mar 2025 03:25:57 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Ceshi</title>
-        <link>http://localhost:1313/2025/ceshi/</link>
+        <link>https://majiao2.github.io/2025/ceshi/</link>
         <pubDate>Sat, 08 Mar 2025 03:25:57 +0800</pubDate>
         
-        <guid>http://localhost:1313/2025/ceshi/</guid>
+        <guid>https://majiao2.github.io/2025/ceshi/</guid>
         <description>&lt;h2 id=&#34;测试推送功能&#34;&gt;测试推送功能
 &lt;/h2&gt;</description>
         </item>
         <item>
         <title>建站记录</title>
-        <link>http://localhost:1313/2025/extortion/</link>
+        <link>https://majiao2.github.io/2025/extortion/</link>
         <pubDate>Wed, 05 Mar 2025 01:01:42 +0100</pubDate>
         
-        <guid>http://localhost:1313/2025/extortion/</guid>
-        <description>&lt;img src="http://localhost:1313/2025/extortion/cabin.png" alt="Featured image of post 建站记录" /&gt;&lt;h2 id=&#34;hogo建站记录&#34;&gt;Hogo建站记录
+        <guid>https://majiao2.github.io/2025/extortion/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/extortion/cabin.png" alt="Featured image of post 建站记录" /&gt;&lt;h2 id=&#34;hogo建站记录&#34;&gt;Hogo建站记录
 &lt;/h2&gt;&lt;p&gt;从2024年底萌生了建立个人网站的想法，这个想法变久久萦绕在心头，时时想起，去建站吧！&lt;/p&gt;
 &lt;p&gt;小红书，微博，豆瓣等等动态网站充满了人们的生活，传统的静态博客网站似乎被人们遗忘在了历史的长河中。那是互联网初始时，人们记录的一种方式。&lt;/p&gt;
 &lt;p&gt;可是，当第一次知道可以通过独属于你的一个域名，进入一个完完全全有你搭建的空间，就像一间自己的房间。没错，就是自己的房间。在这里，你是创作者，完完全全拥有这个网站的属地权，拥有绝对的创作自由，在这里会拥有一种奇特的自留地感。不用担心被封号，被禁言，不用担心有一天网站闭站，所有的记录灰飞烟灭。纸张上的文字会被抹去，硬盘里的数据会丢失，当通过域名进入我的网站时，我知道里面的内容会是安全的，不会无故消失。&lt;/p&gt;
