@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Mia Jiao</title>
-        <link>https://majiao2.github.io/categories/</link>
+        <link>https://blog.jwanlf.asia/categories/</link>
         <description>Recent content in Categories on Mia Jiao</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Tue, 11 Mar 2025 11:34:12 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 11 Mar 2025 11:34:12 +0800</lastBuildDate><atom:link href="https://blog.jwanlf.asia/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>技术力</title>
-        <link>https://majiao2.github.io/categories/geek/</link>
+        <link>https://blog.jwanlf.asia/categories/geek/</link>
         <pubDate>Tue, 11 Mar 2025 11:34:12 +0800</pubDate>
         
-        <guid>https://majiao2.github.io/categories/geek/</guid>
-        <description>&lt;img src="https://majiao2.github.io/categories/geek/cover.jpg" alt="Featured image of post 技术力" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+        <guid>https://blog.jwanlf.asia/categories/geek/</guid>
+        <description>&lt;img src="https://blog.jwanlf.asia/categories/geek/cover.jpg" alt="Featured image of post 技术力" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
 &lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
 // background: &amp;ldquo;#2a9d8f&amp;rdquo;
 // color: &amp;ldquo;#fff&amp;rdquo;
@@ -21,11 +21,11 @@
         </item>
         <item>
         <title>人间事</title>
-        <link>https://majiao2.github.io/categories/record/</link>
+        <link>https://blog.jwanlf.asia/categories/record/</link>
         <pubDate>Wed, 05 Mar 2025 01:01:42 +0100</pubDate>
         
-        <guid>https://majiao2.github.io/categories/record/</guid>
-        <description>&lt;img src="https://majiao2.github.io/categories/record/cover.jpg" alt="Featured image of post 人间事" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+        <guid>https://blog.jwanlf.asia/categories/record/</guid>
+        <description>&lt;img src="https://blog.jwanlf.asia/categories/record/cover.jpg" alt="Featured image of post 人间事" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
 &lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
 // background: &amp;ldquo;#163537&amp;rdquo;
 // color: &amp;ldquo;#fff&amp;rdquo;
@@ -33,11 +33,11 @@
         </item>
         <item>
         <title>急就章</title>
-        <link>https://majiao2.github.io/categories/thinking/</link>
+        <link>https://blog.jwanlf.asia/categories/thinking/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://majiao2.github.io/categories/thinking/</guid>
-        <description>&lt;img src="https://majiao2.github.io/categories/thinking/cover.jpg" alt="Featured image of post 急就章" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+        <guid>https://blog.jwanlf.asia/categories/thinking/</guid>
+        <description>&lt;img src="https://blog.jwanlf.asia/categories/thinking/cover.jpg" alt="Featured image of post 急就章" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
 &lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
 // background: &amp;ldquo;#2a9d8f&amp;rdquo;
 // color: &amp;ldquo;#fff&amp;rdquo;
@@ -45,11 +45,11 @@
         </item>
         <item>
         <title>流水账</title>
-        <link>https://majiao2.github.io/categories/monthly/</link>
+        <link>https://blog.jwanlf.asia/categories/monthly/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://majiao2.github.io/categories/monthly/</guid>
-        <description>&lt;img src="https://majiao2.github.io/categories/monthly/cover.jpg" alt="Featured image of post 流水账" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+        <guid>https://blog.jwanlf.asia/categories/monthly/</guid>
+        <description>&lt;img src="https://blog.jwanlf.asia/categories/monthly/cover.jpg" alt="Featured image of post 流水账" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
 &lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
 // background: &amp;ldquo;#2a9d8f&amp;rdquo;
 // color: &amp;ldquo;#fff&amp;rdquo;

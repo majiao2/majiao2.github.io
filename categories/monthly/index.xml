@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>流水账 on Mia Jiao</title>
-        <link>https://majiao2.github.io/categories/monthly/</link>
+        <link>https://blog.jwanlf.asia/categories/monthly/</link>
         <description>Recent content in 流水账 on Mia Jiao</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <copyright>Mia Jiao</copyright><atom:link href="https://majiao2.github.io/categories/monthly/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>Mia Jiao</copyright><atom:link href="https://blog.jwanlf.asia/categories/monthly/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
