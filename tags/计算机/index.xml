@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>计算机 on Mia Jiao</title>
-        <link>http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+        <link>https://majiao2.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
         <description>Recent content in 计算机 on Mia Jiao</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Sat, 08 Mar 2025 20:01:36 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 08 Mar 2025 20:01:36 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>商务电信网络 1</title>
-        <link>http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</link>
+        <link>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</link>
         <pubDate>Sat, 08 Mar 2025 20:01:36 +0800</pubDate>
         
-        <guid>http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</guid>
-        <description>&lt;img src="http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16.png&#34;
+        <guid>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16.png&#34;
 	width=&#34;2124&#34;
 	height=&#34;1242&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_59eb7e0e8e995c84.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_6bf10d796191177d.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_59eb7e0e8e995c84.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_6bf10d796191177d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;思维导图&#34;
@@ -392,10 +392,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;hybrid&#34;&gt;Hybrid
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1.png&#34;
 	width=&#34;1429&#34;
 	height=&#34;874&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_dda2affa33ea141f.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_d4551ba7c32a2ee6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_dda2affa33ea141f.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_d4551ba7c32a2ee6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Hybrid TCP/IP-OSI&#34;
@@ -405,10 +405,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;163&#34;
 		data-flex-basis=&#34;392px&#34;
 	
-&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image.png&#34;
 	width=&#34;1237&#34;
 	height=&#34;520&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_f57b8c4cd6d29c2c.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_881c5ada04d92d83.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_f57b8c4cd6d29c2c.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_881c5ada04d92d83.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34; &#34;
@@ -487,10 +487,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;&lt;strong&gt;Maintenance&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;doesn’t scale!&lt;/font&gt;  &lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511.png&#34;
 	width=&#34;991&#34;
 	height=&#34;295&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_9e9e38d7d8a1bd56.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_71c08a29b7ccfc2e.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_9e9e38d7d8a1bd56.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_71c08a29b7ccfc2e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Distributed, Hierarchical Database&#34;
@@ -905,10 +905,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;additional lines in message header declare MIME content type
-&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606.png&#34;
 	width=&#34;1105&#34;
 	height=&#34;439&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_ecd22ca97abc301f.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_7b4b67c3dad7d943.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_ecd22ca97abc301f.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_7b4b67c3dad7d943.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -927,10 +927,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;The SMTP client sends Alice&amp;rsquo;s message over the TCP connection.&lt;/li&gt;
 &lt;li&gt;Bob&amp;rsquo;s mail server places the message in Bob&amp;rsquo;s mailbox.&lt;/li&gt;
 &lt;li&gt;Bob invokes his User Agent to read the message.
-&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424.png&#34;
 	width=&#34;1285&#34;
 	height=&#34;271&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_49a0e04ee8ee8a64.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_e293900e54493aea.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_49a0e04ee8ee8a64.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_e293900e54493aea.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1002,10 +1002,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;A web page consists of a base HTML file which includes several referenced objects.&lt;/li&gt;
 &lt;li&gt;Each object is addressable by a URL.&lt;/li&gt;
 &lt;li&gt;Example URL:&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3.png&#34;
 	width=&#34;1069&#34;
 	height=&#34;151&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_cd7643046c8b6dc6.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_7691861ced7ae307.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_cd7643046c8b6dc6.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_7691861ced7ae307.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1040,10 +1040,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;two types of HTTP messages: &lt;font color=&#34;#c00000&#34;&gt;request&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;response&lt;/font&gt;&lt;/li&gt;
 &lt;li&gt;HTTP request message: ASCII (human-readable format)
-&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4.png&#34;
 	width=&#34;1411&#34;
 	height=&#34;649&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_7218f78f49f6d590.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_74c0b5ea36c4be96.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_7218f78f49f6d590.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_74c0b5ea36c4be96.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1053,10 +1053,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;general format
-&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5.png&#34;
 	width=&#34;1273&#34;
 	height=&#34;718&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_ab87ba6f619cc905.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_3d1d5d57d73bd766.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_ab87ba6f619cc905.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_3d1d5d57d73bd766.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1108,10 +1108,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;http-response-message&#34;&gt;HTTP response message
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6.png&#34;
 	width=&#34;1240&#34;
 	height=&#34;619&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_badea03fadbfefa1.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_1cd07553d65e4c9d.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_badea03fadbfefa1.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_1cd07553d65e4c9d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1197,10 +1197,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
     &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7.png&#34;
 	width=&#34;1432&#34;
 	height=&#34;739&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_5990dd00f0966835.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_58609edcc363d982.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_5990dd00f0966835.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_58609edcc363d982.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1208,10 +1208,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;193&#34;
 		data-flex-basis=&#34;465px&#34;
 	
-&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8.png&#34;
 	width=&#34;1357&#34;
 	height=&#34;700&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_401aaf7fc3aad5d.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_8931eff801178500.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_401aaf7fc3aad5d.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_8931eff801178500.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1238,10 +1238,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15.png&#34;
 	width=&#34;718&#34;
 	height=&#34;634&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_47433d8c4a9cb4de.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_8342d2968b219f48.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_47433d8c4a9cb4de.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_8342d2968b219f48.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1370,10 +1370,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;h4 id=&#34;transmission-control-protocol-tcp&#34;&gt;Transmission Control Protocol (TCP)
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Segment Format&lt;/span&gt;
-&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14.png&#34;
 	width=&#34;1522&#34;
 	height=&#34;820&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6e30ad899561400.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6465e375e89452c.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6e30ad899561400.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6465e375e89452c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1412,10 +1412,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;strong&gt;3-Way Handshake&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10.png&#34;
 	width=&#34;1252&#34;
 	height=&#34;679&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_ae700d1b2f95a879.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_e2ad123fadfd2fcf.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_ae700d1b2f95a879.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_e2ad123fadfd2fcf.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1423,10 +1423,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;184&#34;
 		data-flex-basis=&#34;442px&#34;
 	
-&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11.png&#34;
 	width=&#34;1303&#34;
 	height=&#34;763&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_a8353b26bd874a11.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_c72db82f9f5fce23.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_a8353b26bd874a11.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_c72db82f9f5fce23.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1435,10 +1435,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-basis=&#34;409px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12.png&#34;
 	width=&#34;1327&#34;
 	height=&#34;772&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_d7e5146e418cbf9d.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_a1d2c3ae3c6e2b2a.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_d7e5146e418cbf9d.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_a1d2c3ae3c6e2b2a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1446,10 +1446,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;171&#34;
 		data-flex-basis=&#34;412px&#34;
 	
-&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13.png&#34;
 	width=&#34;1246&#34;
 	height=&#34;748&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_1c2e5c5ca33eb220.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_c3c7dbc88a7db833.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_1c2e5c5ca33eb220.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_c3c7dbc88a7db833.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1500,10 +1500,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;Useful Where the Loss of an Occasional Application Message is Not a Serious Problem&lt;/li&gt;
 &lt;li&gt;As in Regular Network Status Messages&lt;/li&gt;
 &lt;li&gt;Or Where There is No Time for Retransmission, As in Voice Transmission
-&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9.png&#34;
 	width=&#34;1219&#34;
 	height=&#34;589&#34;
-	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_fc47854395020f98.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_4ff37c6b164869a6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_fc47854395020f98.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_4ff37c6b164869a6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
