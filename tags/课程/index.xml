@@ -1,0 +1,2653 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>课程 on Mia Jiao</title>
+        <link>http://localhost:1313/tags/%E8%AF%BE%E7%A8%8B/</link>
+        <description>Recent content in 课程 on Mia Jiao</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Mia Jiao</copyright>
+        <lastBuildDate>Tue, 11 Mar 2025 11:34:12 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%AF%BE%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>市场营销学</title>
+        <link>http://localhost:1313/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/</link>
+        <pubDate>Tue, 11 Mar 2025 11:34:12 +0800</pubDate>
+        
+        <guid>http://localhost:1313/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/</guid>
+        <description>&lt;img src="http://localhost:1313/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 市场营销学" /&gt;</description>
+        </item>
+        <item>
+        <title>实体关系建模</title>
+        <link>http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</link>
+        <pubDate>Mon, 10 Mar 2025 15:56:56 +0800</pubDate>
+        
+        <guid>http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</guid>
+        <description>&lt;img src="http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/title.jpg" alt="Featured image of post 实体关系建模" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Understand how to represent business processes using the entity-relationship model&lt;/li&gt;
+&lt;li&gt;Implement a database design using MySQL workbench&lt;/li&gt;
+&lt;li&gt;Learn to query a database using SQL&lt;/li&gt;
+&lt;li&gt;Understand new trends and technologies for database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-database&#34;&gt;Why database?
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Data
+&lt;ul&gt;
+&lt;li&gt;stored representations of meaningful objects and events
+&lt;ul&gt;
+&lt;li&gt;Structured: numbers, text, dates&lt;/li&gt;
+&lt;li&gt;Unstructured: images, video, documents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Database
+&lt;ul&gt;
+&lt;li&gt;Efficient and Consistent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;disadvantages-of-file-processing-approach&#34;&gt;Disadvantages of file processing approach
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Program-Data dependence&lt;/li&gt;
+&lt;li&gt;Duplication of data&lt;/li&gt;
+&lt;li&gt;Limited data sharing&lt;/li&gt;
+&lt;li&gt;Lengthy development times&lt;/li&gt;
+&lt;li&gt;Excessive program maintenance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;database-approach&#34;&gt;Database approach
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Database:&lt;/span&gt; a &lt;u&gt;shared&lt;/u&gt; and &lt;u&gt;integrated&lt;/u&gt; collection of inter-related self describing data&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Relational database:&lt;/span&gt; stores data in a structure consisting of one or more tables of rows and columns, which may be interconnected&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;DBMS (Database Management Systems):&lt;/span&gt; a software system that enables the use of a database approach. The primary purpose of a DBMS is to provide a systematic method of creating, updating, storing, and retrieving the data stored in a database.
+&lt;ul&gt;
+&lt;li&gt;A software package that enables users to define, create, maintain, and control access to the database.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Database System:&lt;/span&gt; a computerized record-keeping system, containing database and DBMS as well as some other components (e.g., hardware)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;advantages-of-database-approach&#34;&gt;Advantages of database approach
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Reduce but not eliminate redundancy
+&lt;ul&gt;
+&lt;li&gt;all data items are integrated with a minimum amount of duplication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sharing of data
+&lt;ul&gt;
+&lt;li&gt;the database is owned and accessed by the entire organization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Data consistency
+&lt;ul&gt;
+&lt;li&gt;management system reduces the risk of inconsistencies occurring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved data accessibility due to data integration and query languages like SQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;specific-steps&#34;&gt;Specific steps
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Requirements Analysis&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Collect and analyze the business requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Conceptual Design&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Design a conceptual model, e.g., ER model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Logical Design&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Translate the ER model into the relational model&lt;/li&gt;
+&lt;li&gt;Normalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Database Building (Physical Design)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Build the database and write application programs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Operation, Maintenance, &amp;amp; Tuning&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Use, maintain, and “tune” the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;a-good-business-rule&#34;&gt;A good business rule
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Declarative – what, not how&lt;/li&gt;
+&lt;li&gt;Precise – clear, agreed-upon meaning&lt;/li&gt;
+&lt;li&gt;Atomic – one statement&lt;/li&gt;
+&lt;li&gt;Consistent – internally and externally&lt;/li&gt;
+&lt;li&gt;Expressible – structured, natural language&lt;/li&gt;
+&lt;li&gt;Distinct – non-redundant&lt;/li&gt;
+&lt;li&gt;Business-oriented – understood by business people&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-definitions&#34;&gt;Data definitions
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Explanation of a term or fact
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Term&lt;/em&gt;—word or phrase with specific meaning&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Fact&lt;/em&gt;—association between two or more terms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Examples of facts:
+&lt;ul&gt;
+&lt;li&gt;A &lt;em&gt;course&lt;/em&gt; is a module of instruction in a particular subject area.&lt;/li&gt;
+&lt;li&gt;A &lt;em&gt;customer&lt;/em&gt; may request a model of car from a rental branch on a particular date.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Guidelines for good data definition
+&lt;ul&gt;
+&lt;li&gt;A concise description of essential data meaning&lt;/li&gt;
+&lt;li&gt;Gathered in conjunction with systems requirements&lt;/li&gt;
+&lt;li&gt;Accompanied by diagrams (e.g., E-R diagram)&lt;/li&gt;
+&lt;li&gt;Achieved by consensus, and iteratively refined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;a-good-data-object-name-is&#34;&gt;A good data object name is
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Related to business, not technical, characteristics&lt;/li&gt;
+&lt;li&gt;Meaningful and self-documenting&lt;/li&gt;
+&lt;li&gt;Unique&lt;/li&gt;
+&lt;li&gt;Readable&lt;/li&gt;
+&lt;li&gt;Composed of words from an approved list&lt;/li&gt;
+&lt;li&gt;Written in standard syntax&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;er-modeling-part-1&#34;&gt;ER Modeling Part 1
+&lt;/h2&gt;&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; Conceptual Design → Conceptual Model → Concept Business related DBSM-independent &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;definition-of-e-r-model&#34;&gt;Definition of E-R Model
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A detailed, logical representation of the data for an organization or for a business area.&lt;/li&gt;
+&lt;li&gt;The E-R model is expressed in terms of &lt;font color=#F36208&gt;entities&lt;/font&gt; in the business environment, the &lt;font color=#F36208&gt;relationships (or associations)&lt;/font&gt; among those entities, and &lt;font color=#F36208&gt;the attributes (or properties)&lt;/font&gt; of both the entities and their relationships.&lt;/li&gt;
+&lt;li&gt;An E-R model is normally expressed as an &lt;font color=#F36208&gt;entity-relationship diagram&lt;/font&gt; (e-r diagram, or erD), which is a graphical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Why E-R model?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A crucial tool for understanding and communicating complex data structures to both technical and non-technical stakeholders&lt;/li&gt;
+&lt;li&gt;It helps to build a well-organized and efficient database!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;entities&#34;&gt;Entities
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Requirements: Employees are assigned to projects. For employees we record their employee ID, first name, and last name. For each project we record a project ID and project description. One project must have at least one employee, one employee can be assigned to at most one project.&lt;/li&gt;
+&lt;li&gt;Entities represent real-world objects; things which can be named:
+&lt;ul&gt;
+&lt;li&gt;Entity type: collection of entities, e.g. employee, customer, sale (often corresponds to a table)
+&lt;ul&gt;
+&lt;li&gt;Entity” is usually used for “Entity type”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Entity instance: person, place, object, event, concept&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;SHOULD BE:&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An object that will have many instances in the database&lt;/li&gt;
+&lt;li&gt;An object that will be composed of multiple attributes&lt;/li&gt;
+&lt;li&gt;An object that we are trying to model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-warning&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#b30000&#34;&gt;&lt;path d=&#34;M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;SHOULD NOT BE:&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A user of the database system&lt;/li&gt;
+&lt;li&gt;An output of the database system (e.g., a report)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;relationship&#34;&gt;Relationship
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Description: Relationship type is a set of associations among entity types
+&lt;ul&gt;
+&lt;li&gt;Each relationship is described by a name&lt;/li&gt;
+&lt;li&gt;Example: Customer Product
+&lt;ul&gt;
+&lt;li&gt;Customers Buys Product&lt;/li&gt;
+&lt;li&gt;Product is_Purchased_by Customer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;relationship&amp;rdquo; is usually used for &amp;ldquo;relationship type&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Symbol:
+&lt;ul&gt;
+&lt;li&gt;Straight line labeled with the name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cardinality&#34;&gt;Cardinality
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Cardinality Constraints 基数约束
+&lt;ul&gt;
+&lt;li&gt;the number of instances of one entity that can or must be associated with each instance of another entity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Minimum cardinality
+&lt;ul&gt;
+&lt;li&gt;If zero, then optional&lt;/li&gt;
+&lt;li&gt;If one or more, then mandatory 强制的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Maximum cardinality
+&lt;ul&gt;
+&lt;li&gt;The maximum number: one or many&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Why Cardinality?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data integrity and constraint enforcement&lt;/li&gt;
+&lt;li&gt;Database and query efficiency&lt;/li&gt;
+&lt;li&gt;Scalability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;maximum-cardinality&#34;&gt;Maximum cardinality
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;One-to-One (1:1)
+&lt;ul&gt;
+&lt;li&gt;Each entity instance in the relationship will have &lt;u&gt;a maximum of one&lt;/u&gt; related entity instance&lt;/li&gt;
+&lt;li&gt;e.g., each student has a student account&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;One-to-Many (1:M)
+&lt;ul&gt;
+&lt;li&gt;An entity instance on one side of the relationship can have &lt;u&gt;many (more than one)&lt;/u&gt; related entity instances, but an entity instance on the other side will have a maximum of one (at most one) related entity instance&lt;/li&gt;
+&lt;li&gt;e.g., each department has many instructors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Many-to-Many (M:M)
+&lt;ul&gt;
+&lt;li&gt;Entity instances on both sides of the relationship can have &lt;u&gt;many&lt;/u&gt; related entity instances on the other side&lt;/li&gt;
+&lt;li&gt;e.g., many students take many courses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;attribute&#34;&gt;Attribute
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Description
+&lt;ul&gt;
+&lt;li&gt;Property or characteristic of an entity type (often corresponds to a field in a table)&lt;/li&gt;
+&lt;li&gt;they will be used for actual communication about the real - world phenomena represented by entities and relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Symbol:
+&lt;ul&gt;
+&lt;li&gt;Text inside the associated entity rectangle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;classifications-of-attributes&#34;&gt;Classifications of attributes
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Required versus Optional Attributes&lt;/li&gt;
+&lt;li&gt;Simple versus Composite Attributes
+&lt;ul&gt;
+&lt;li&gt;An attribute broken into component parts&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28.png&#34;
+	width=&#34;511&#34;
+	height=&#34;391&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_cb2a3b862fd7e949.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_63fdd1cb65baa6d2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;313px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;Composite key attribute&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1.png&#34;
+	width=&#34;928&#34;
+	height=&#34;535&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_21e3737200d65726.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_433c0ecfdac0da6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;416px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Single-Valued &lt;code&gt;{ }&lt;/code&gt; ersus Multivalued Attribute &lt;code&gt;[ ]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2.png&#34;
+	width=&#34;928&#34;
+	height=&#34;535&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_21e3737200d65726.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_433c0ecfdac0da6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;416px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stored versus Derived Attributes 存储属性与派生属性&lt;/li&gt;
+&lt;li&gt;Identifier Attributes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;keys&#34;&gt;Keys
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Identifier 标识符
+&lt;ul&gt;
+&lt;li&gt;An attribute (or combination of attributes) that &lt;u&gt;uniquely&lt;/u&gt; identifies individual instances of an entity type
+&lt;ul&gt;
+&lt;li&gt;Will not change in value&lt;/li&gt;
+&lt;li&gt;Will not be null&lt;/li&gt;
+&lt;li&gt;No intelligent identifiers (e.g., containing locations or people that might change)&lt;/li&gt;
+&lt;li&gt;Substitute new, simple keys for long, composite keys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Candidate key 候选键
+&lt;ul&gt;
+&lt;li&gt;All available unique, required identifiers to an entity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Primary key 主键
+&lt;ul&gt;
+&lt;li&gt;The best one among the candidate key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;er-modeling-part-2&#34;&gt;ER Modeling Part 2
+&lt;/h2&gt;&lt;h3 id=&#34;modeling-relationship&#34;&gt;Modeling relationship
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Relationship Types vs. Relationship Instances
+&lt;ul&gt;
+&lt;li&gt;The relationship type is modeled as lines between entity types&lt;/li&gt;
+&lt;li&gt;The relationship instance is between specific entity instances&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Two entities can have more than one type of relationship between them (multiple relationships)&lt;/li&gt;
+&lt;li&gt;Degree of relationships: the number of entity types that participate in it&lt;/li&gt;
+&lt;li&gt;Relationships can have attributes&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Associative Entity – combination of relationship and entity&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;degree-of-relationships&#34;&gt;Degree of relationships
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Degree of a relationship is the number of entity types that participate in it
+&lt;ul&gt;
+&lt;li&gt;Unary relationship
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14.png&#34;
+	width=&#34;937&#34;
+	height=&#34;286&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_e4c97b3f3dbbaecd.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_639311519eae80cc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;327&#34;
+		data-flex-basis=&#34;786px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Binary relationship
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15.png&#34;
+	width=&#34;916&#34;
+	height=&#34;325&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_135c2e59dc3942bb.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_d0b0e457b0978cf4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;281&#34;
+		data-flex-basis=&#34;676px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ternary relationship
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16.png&#34;
+	width=&#34;826&#34;
+	height=&#34;442&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_e85a438053d2e8ee.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_3eae1a006c8aa2ed.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;448px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29.png&#34;
+	width=&#34;1192&#34;
+	height=&#34;535&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_8058900fda2dd74b.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_1b8504a53d054a05.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;222&#34;
+		data-flex-basis=&#34;534px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;attributes-on-relationships&#34;&gt;Attributes on relationships
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Attributes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can be associated with entities&lt;/li&gt;
+&lt;li&gt;Can also be assigned to relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A binary relationship with an attribute&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18.png&#34;
+	width=&#34;925&#34;
+	height=&#34;259&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_7c2e556cae63cc1d.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_edf403e27189d1ad.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;357&#34;
+		data-flex-basis=&#34;857px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;Here, the date completed attribute pertains specifically to the employee’s completion of a course&lt;/li&gt;
+&lt;li&gt;It is an attribute of the relationship&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An associative entity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19.png&#34;
+	width=&#34;979&#34;
+	height=&#34;256&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_6c6e3ee0c881ad38.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_2b83a2e2899966f5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;382&#34;
+		data-flex-basis=&#34;917px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;Associative entity is like a relationship with an attribute, but it is also considered to be an entity in its own right&lt;/li&gt;
+&lt;li&gt;Note that the many-to-many cardinality between entities has been replaced by two one-to-many relationships with the associative entity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Associative entities&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When should we use an Associative Entity?
+&lt;ul&gt;
+&lt;li&gt;All relationships for the associative entity should be many.&lt;/li&gt;
+&lt;li&gt;The associative entity could have meanings independent of the other entities.&lt;/li&gt;
+&lt;li&gt;The associative entity preferably has a unique identifier, and should also have other attributes.&lt;/li&gt;
+&lt;li&gt;The associative entity may participate in other relationships other than the entities of the associated relationship.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;supertypes-and-subtypes&#34;&gt;Supertypes and subtypes
+&lt;/h3&gt;
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Why Super and Subtypes?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Avoids redundant data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Supports specialization and generalization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improves query efficiency&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A query for all employees can be performed on the employee table, without needing to check each subtype separately&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Allows for flexible business rules&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E.g., Assistant &amp;amp; Skill &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Define a subtype (specialization) when:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The subtype has additional attributes of interest (e.g., billing rate is recorded for consultants only) and/or&lt;/li&gt;
+&lt;li&gt;The subtype participants in additional relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enhanced ER model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extends original ER model with new modeling constructs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Subtype&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A subgrouping of the entities in an entity type that has attributes distinct from those in other subgrouping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Supertype&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A generic entity type that has a relationship with one or more subtypes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Attribute inheritance&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Subtype entities inherit values of all attributes of the supertype&lt;/li&gt;
+&lt;li&gt;An instance of a subtype is also an instance of the supertype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20.png&#34;
+	width=&#34;742&#34;
+	height=&#34;583&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_cb6e0c6960954e34.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_fbd5e223ee7510d2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;127&#34;
+		data-flex-basis=&#34;305px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;attribute-inheritance&#34;&gt;Attribute inheritance
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;An instance of a subtype is also an instance of the supertype
+&lt;ul&gt;
+&lt;li&gt;e.g., if ‘Michael’ is in subtype Manager, the data object is also in supertype Employee&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Subtype entities
+&lt;ul&gt;
+&lt;li&gt;inherit values of all attributes of the supertype&lt;/li&gt;
+&lt;li&gt;possesses subtype-specific attributes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;relationships-and-subtypes&#34;&gt;Relationships and subtypes
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Relationships at the supertype level indicate that ALL subtypes will participate in the relationship&lt;/li&gt;
+&lt;li&gt;The instances of a subtype may participate in a relationship &lt;strong&gt;UNIQUE&lt;/strong&gt; to that subtype. In this situation, the relationship is shown at the subtype level&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;specialization-process&#34;&gt;Specialization process
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Specialization: the process of maximizing the differences between members of an entity by identifying their &lt;font color=&#34;#c00000&#34;&gt;distinguishing characteristics&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Specialization is a top-down approach to:
+&lt;ul&gt;
+&lt;li&gt;Defining a set of supertypes&lt;/li&gt;
+&lt;li&gt;Defining a subtype when
+&lt;ul&gt;
+&lt;li&gt;It has additional attributes of interest&lt;/li&gt;
+&lt;li&gt;It participates in additional relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;generalization-process&#34;&gt;Generalization process
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Generalization is the reverse of the specialization process 泛化是特化过程的反向操作&lt;/li&gt;
+&lt;li&gt;Generalization: the process of minimizing the differences between entities by identifying their &lt;strong&gt;common&lt;/strong&gt; characteristics (common attributes and relationships)&lt;/li&gt;
+&lt;li&gt;Generalization is a bottom-up approach to
+&lt;ol&gt;
+&lt;li&gt;identifying several entities&lt;/li&gt;
+&lt;li&gt;identifying a generalized supertype from these entities&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;strong-vs-weak-entities&#34;&gt;Strong vs. Weak entities
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Strong entities
+&lt;ul&gt;
+&lt;li&gt;exist independently of other types of entities&lt;/li&gt;
+&lt;li&gt;has its own unique identifier&lt;/li&gt;
+&lt;li&gt;represented with single-line rectangle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Weak entities
+&lt;ul&gt;
+&lt;li&gt;dependent on a strong entity&amp;hellip;cannot exist on its own&lt;/li&gt;
+&lt;li&gt;does not have a unique identifier&lt;/li&gt;
+&lt;li&gt;represented with double-line rectangle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Identifying relationship
+&lt;ul&gt;
+&lt;li&gt;links strong entities to weak entities&lt;/li&gt;
+&lt;li&gt;represented with double line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3.png&#34;
+	width=&#34;853&#34;
+	height=&#34;520&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_30f66db19632cf7a.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_33dda92840a6cb3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;393px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;assignment&#34;&gt;Assignment
+&lt;/h2&gt;&lt;h3 id=&#34;exercise-1&#34;&gt;Exercise 1
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;3C is a consulting company in Newark. It needs a database to keep track of the assignment of employees to projects. For each employee, 3C wants to record an employee ID (unique for every employee), name, address, and birthday. For each project, 3C wants to record a project ID (unique for each project), project name, and start date. Employees are included in the database even when they have not been assigned to any project. A project must have at least one employee assigned. An employee’s billing rate (the price they charge client for their services) may vary by projects, and 3C wishes to record the applicable billing rate for each employee when assigned to different projects (Hint:  Add relationship attributes).&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;对于每位&lt;span style=&#34;background:#A0CCF6&#34;&gt;employee&lt;/span&gt;，3C希望记录 &lt;span style=&#34;background:#CDF469&#34;&gt;employee ID&lt;/span&gt; (unique for every employee), &lt;span style=&#34;background:#CDF469&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;background:#CDF469&#34;&gt;address&lt;/span&gt;, and &lt;span style=&#34;background:#CDF469&#34;&gt;birthday&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;对于每个&lt;span style=&#34;background:#A0CCF6&#34;&gt;Project&lt;/span&gt;，3C希望记录&lt;span style=&#34;background:#CDF469&#34;&gt;project ID&lt;/span&gt; (unique for each project), &lt;span style=&#34;background:#CDF469&#34;&gt;project name&lt;/span&gt;, and &lt;span style=&#34;background:#CDF469&#34;&gt;start date&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;即使员工尚未被分配到任何项目，也会将其纳入数据库&lt;/li&gt;
+&lt;li&gt;一个项目必须至少分配一名员工&lt;/li&gt;
+&lt;li&gt;员工的计费费率 &lt;span style=&#34;background:#A0CCF6&#34;&gt;employee&amp;rsquo;s billing rate&lt;/span&gt;（他们为其服务向客户收取的价格）可能因项目而异&lt;/li&gt;
+&lt;li&gt;3C 希望记录每个员工在被分配到不同项目时的适用计费费率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27.png&#34;
+	width=&#34;1732&#34;
+	height=&#34;328&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_993d6bf2ac788cd5.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_a6d1eb0bccf4abd4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;528&#34;
+		data-flex-basis=&#34;1267px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exercise-2&#34;&gt;Exercise 2
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;A restaurant is looking to enhance its inventory tracking and optimize sales. One crucial aspect of this system is the relationship between orders and products. Each order has OrderID and Date. Each Product has Product ID and Product Name. The information about a product can be recorded before it is included in any order. The same product can be part of multiple orders. Additionally, some products are composed of multiple other products (e.g.,  Big Mac Value Meal).&lt;/p&gt;&lt;/blockquote&gt;
+&lt;center&gt;&lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;Product&lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;Big Mac (ProductID: 1003)&lt;/center&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;ProductID&lt;/th&gt;
+          &lt;th&gt;Ingredient&lt;/th&gt;
+          &lt;th&gt;Quantity&lt;/th&gt;
+          &lt;th&gt;Unit&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4806&lt;/td&gt;
+          &lt;td&gt;Sesame Seed Bun&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;each&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5890&lt;/td&gt;
+          &lt;td&gt;10:1 Patty&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;each&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6515&lt;/td&gt;
+          &lt;td&gt;Cheese&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;slice&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;9875&lt;/td&gt;
+          &lt;td&gt;Dehydrated Onions&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;oz&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4050&lt;/td&gt;
+          &lt;td&gt;Lettuce&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;oz&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7432&lt;/td&gt;
+          &lt;td&gt;Special Sauce&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;Tbsp&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5315&lt;/td&gt;
+          &lt;td&gt;Salt&lt;/td&gt;
+          &lt;td&gt;0.5&lt;/td&gt;
+          &lt;td&gt;Tsp&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;center&gt;Small Fries (ProductID: 143)&lt;/center&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;ProductID&lt;/th&gt;
+          &lt;th&gt;Ingredient&lt;/th&gt;
+          &lt;th&gt;Quantity&lt;/th&gt;
+          &lt;th&gt;Unit&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5315&lt;/td&gt;
+          &lt;td&gt;Salt&lt;/td&gt;
+          &lt;td&gt;0.25&lt;/td&gt;
+          &lt;td&gt;Tsp&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7499&lt;/td&gt;
+          &lt;td&gt;Potato&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;oz&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;center&gt;Small Diet Coke (ProductID: 2499)&lt;/center&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;ProductID&lt;/th&gt;
+          &lt;th&gt;Ingredient&lt;/th&gt;
+          &lt;th&gt;Quantity&lt;/th&gt;
+          &lt;th&gt;Unit&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1978&lt;/td&gt;
+          &lt;td&gt;Diet Coke Syrup&lt;/td&gt;
+          &lt;td&gt;0.5&lt;/td&gt;
+          &lt;td&gt;Tsp&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1277&lt;/td&gt;
+          &lt;td&gt;Water&lt;/td&gt;
+          &lt;td&gt;12&lt;/td&gt;
+          &lt;td&gt;oz&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;center&gt;Happy Meal (ProductID: 9444)&lt;/center&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;ProductID&lt;/th&gt;
+          &lt;th&gt;Ingredient&lt;/th&gt;
+          &lt;th&gt;Quantity&lt;/th&gt;
+          &lt;th&gt;Unit&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;522&lt;/td&gt;
+          &lt;td&gt;Cheeseburger&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;each&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;143&lt;/td&gt;
+          &lt;td&gt;Small Fries&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;small&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2499&lt;/td&gt;
+          &lt;td&gt;Small Diet Coke&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;each&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;center&gt;Big Mac Value Meal (ProductID: 2911)&lt;/center&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;ProductID&lt;/th&gt;
+          &lt;th&gt;Ingredient&lt;/th&gt;
+          &lt;th&gt;Quantity&lt;/th&gt;
+          &lt;th&gt;Unit&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1003&lt;/td&gt;
+          &lt;td&gt;Big Mac&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;each&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;143&lt;/td&gt;
+          &lt;td&gt;Small Fries&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;each&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2499&lt;/td&gt;
+          &lt;td&gt;Small Diet Coke&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;each&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;每个 &lt;span style=&#34;background:#A0CCF6&#34;&gt;Order&lt;/span&gt; 都有 &lt;span style=&#34;background:#CDF469&#34;&gt;OrderID&lt;/span&gt; &amp;amp; &lt;span style=&#34;background:#CDF469&#34;&gt;Date&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;每个 &lt;span style=&#34;background:#A0CCF6&#34;&gt;Product&lt;/span&gt; 都有 &lt;span style=&#34;background:#CDF469&#34;&gt;Product ID&lt;/span&gt; &amp;amp; &lt;span style=&#34;background:#CDF469&#34;&gt;Product Name&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;产品信息可在其被纳入任何订单之前记录&lt;/li&gt;
+&lt;li&gt;部分产品由多个其他产品组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26.png&#34;
+	width=&#34;1411&#34;
+	height=&#34;301&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_6bbeb14598beca0f.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_b408a3f6fbfbdd05.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;468&#34;
+		data-flex-basis=&#34;1125px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exercise-3&#34;&gt;Exercise 3
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;The 3C company would like to record the information about its employees (either fulltime or part-time) in an enterprise information system. For all employees, they record SSN (unique for each employee), name, address, date-of-birth and degree. They record the salary and date hired for fulltime employees only. Further, the bonus of all managers (who are fulltime employees) has to be recorded. Bonus is not recorded for other fulltime employees (e.g., engineers); for managers only. 3C also records hourly wage for part-time employees. 3C would like to record additional information for interns and custodians (both part-time employees). For interns, the number of hours per week and the manager they work for need to be recorded. An intern is assigned to at least one manager. If an intern works for more than one manager, 3C needs to record how many hours (a week) the intern works for each manager. Not all managers have interns. A few managers have more than one intern. For custodians the shift time need to be recorded.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;所有员工&lt;/strong&gt;：记录社会安全号码（SSN，每位员工唯一）、姓名、地址、出生日期和学位&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;全职员工&lt;/strong&gt;：除上述信息外，还记录工资和雇佣日期。其中，经理（属于全职员工）需额外记录奖金，其他全职员工（如工程师）不记录奖金&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;兼职员工&lt;/strong&gt;：记录小时工资。对于实习生和管理员这两类兼职员工，还需记录额外信息
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;实习生&lt;/strong&gt;：记录每周工作小时数，以及为之工作的经理。实习生至少被分配给一位经理，若为多位经理工作，需记录为每位经理工作的每周时长。并非所有经理都有实习生，部分经理有多名实习生&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;管理员&lt;/strong&gt;：记录轮班时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24.png&#34;
+	width=&#34;1303&#34;
+	height=&#34;901&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_afb1aa0dabf4bd6a.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_59cf63122275951b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;347px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exercise-4&#34;&gt;Exercise 4
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;An international school of technology has hired you to create a database management system to assist in scheduling classes. After several interviews with the president, you have come up with the following list of entities, attributes, and initial business rules:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Room is identified by BID and Room No and also has a Capacity. A room can be either a lab or a classroom. If it is a classroom, it has an additional attribute called Board Type.&lt;/li&gt;
+&lt;li&gt;Media is identified by MID and has attributes of Media Type and Type Description. Note: Here we are tracking type of media (such as a VCR, projector, etc.), not the individual piece of equipment. Tracking of equipment is outside of the scope of this project.&lt;/li&gt;
+&lt;li&gt;Computer is identified by CID and has attributes Computer Type, Type Description, Disk Capacity, and Processor Speed. Please note: As with Media Type, we are tracking only the type of computer, not an individual computer. You can think of this as a class of computers (e.g., Core™ i7 2.6GHz)&lt;/li&gt;
+&lt;li&gt;Instructor has identifier EID and has attributes Name, Rank, and Office Phone.&lt;/li&gt;
+&lt;li&gt;Course has identifier CourseID (e.g., MIS804) and has attributes Course Description and Credits. Courses can have one, none, or many prerequisites. Courses also have one or more sections.&lt;/li&gt;
+&lt;li&gt;Section has attributes SecID (e.g., 010), Semester, Year, and Enrollment Limit.&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After some further discussions, you have come up with some additional business rules to help you create the initial design:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An instructor teaches one, none, or many sections of a course in a given semester.&lt;/li&gt;
+&lt;li&gt;A room can be scheduled for many sections or no section in a given semester of a given year. However, one section can only be scheduled in one room.&lt;/li&gt;
+&lt;li&gt;A room can have one type of media, several types of media, or no media.&lt;/li&gt;
+&lt;li&gt;Instructors are trained to use one, none, or many types of media.&lt;/li&gt;
+&lt;li&gt;A lab has one or more computer types. However, a classroom does not have any computers.&lt;/li&gt;
+&lt;li&gt;A room cannot be both a classroom and a lab. There also are no other room types to be incorporated into the system.&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Room: BID &amp;amp; Room No, Capacity
+&lt;ul&gt;
+&lt;li&gt;lab&lt;/li&gt;
+&lt;li&gt;classroom: Board Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Media: MID, Media Type, Type Description&lt;/li&gt;
+&lt;li&gt;Computer: CID, Computer Type, Type Description, Disk Capacity, Processor Speed&lt;/li&gt;
+&lt;li&gt;Instructor: EID, Name, Rank, and Office Phone&lt;/li&gt;
+&lt;li&gt;Course: CourseID, Course Description, Credits
+&lt;ul&gt;
+&lt;li&gt;Section: SecID, Semester, Year, and Enrollment Limit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25.png&#34;
+	width=&#34;907&#34;
+	height=&#34;926&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_d038dfeef0b8a726.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_abfa595962014897.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;97&#34;
+		data-flex-basis=&#34;235px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;translating-er-model-into-relational-model&#34;&gt;Translating ER Model into Relational Model
+&lt;/h2&gt;&lt;h3 id=&#34;logical-design&#34;&gt;Logical Design
+&lt;/h3&gt;&lt;p&gt;
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;How to connect multiple entities?&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;How to ensure data integrity?&lt;/p&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;Logical Design&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Translate the ER model into &lt;font color=&#34;#c00000&#34;&gt;the relational model&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Normalization&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is logical design?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Logical database design is about creating &lt;span style=&#34;background:#F0A7D8&#34;&gt;stable database structures&lt;/span&gt;— correctly expressing the requirements in a technical language.
+&lt;ul&gt;
+&lt;li&gt;Conceptual data modeling is about understanding the organization—&lt;span style=&#34;background:#F0A7D8&#34;&gt;getting the requirements right&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;They show how data is connected and how changes to one area of the system can &lt;span style=&#34;background:#F0A7D8&#34;&gt;impact other areas&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;helps &lt;span style=&#34;background:#F0A7D8&#34;&gt;ensure data integrity&lt;/span&gt;, as it provides a way to ensure &lt;span style=&#34;background:#F0A7D8&#34;&gt;data is consistent and accurate&lt;/span&gt; across the system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We focus on the &lt;span style=&#34;background:#F0A7D8&#34;&gt;relational data mode&lt;/span&gt;l
+&lt;ul&gt;
+&lt;li&gt;based on mathematical theory and therefore has a solid theoretical foundation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;relation&#34;&gt;Relation
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Definition:&lt;/span&gt; A relation is a named, &lt;span style=&#34;background:#F0A7D8&#34;&gt;two-dimensional&lt;/span&gt; table of data
+&lt;ul&gt;
+&lt;li&gt;Table consists of rows (records), and columns (attribute or field)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Relations (tables) correspond with &lt;span style=&#34;background:#CDF469&#34;&gt;entity types&lt;/span&gt;&lt;font color=&#34;#5f497a&#34;&gt;实体类型&lt;/font&gt; and with &lt;span style=&#34;background:#CDF469&#34;&gt;relationships types&lt;/span&gt;&lt;font color=&#34;#5f497a&#34;&gt;关系类型&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Rows&lt;/span&gt; correspond with entity instances and with relationship &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;instances&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Columns&lt;/span&gt; correspond with &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;attributes&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Note:&lt;/span&gt; The word relation (in relational database) is NOT the same as the word relationship (in E-R model)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;relational-model&#34;&gt;Relational Model
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 1:&lt;/span&gt; Strong entity and attributes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 2:&lt;/span&gt; Binary relationships&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 2.1:&lt;/span&gt; One-to-many relationships &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;FK on the M-side&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;Primary key&lt;/u&gt; on the one side becomes &lt;u&gt;a foreign key&lt;/u&gt; on the many side&lt;/li&gt;
+&lt;li&gt;No null value in the foreign key &amp;mdash; this is because of the mandatory minimum cardinality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Step 2.2: One-to-one relationships &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;FK on the optional side&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Step 2.3: Many-to-Many relationships &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;Add a new relation (with PFKs)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Step 3: Weak entity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A separate relation with a foreign key taken from the strong entity&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;A new relation with FK from the strong entity as part of its PK (PFK)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Step 4: Unary/recursive relationships 一元/递归关系&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32.png&#34;
+	width=&#34;898&#34;
+	height=&#34;538&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_3180e5e5bc50709d.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_4a75a2fb5004bc43.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33.png&#34;
+	width=&#34;946&#34;
+	height=&#34;571&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_643227c93bf3814b.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_f82464f6f0a69f60.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;165&#34;
+		data-flex-basis=&#34;397px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;One-to-many -&amp;gt; one relation with FK&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;Many-to-many -&amp;gt; add a new relation (with PFKs)&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 5:&lt;/span&gt; Multi-valued attributes 多值属性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31.png&#34;
+	width=&#34;931&#34;
+	height=&#34;502&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_9743470c9323e958.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_ebfbeb28ccfa933c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;445px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;Multivalued attribute becomes a separate relation with foreign key&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;A new relation with PFK&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 6:&lt;/span&gt; Supertypes and subtypes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30.png&#34;
+	width=&#34;1165&#34;
+	height=&#34;550&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_f2e05a231f3f8b2d.png 480w, http://localhost:1313/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_c43ba44bf2b4c288.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;211&#34;
+		data-flex-basis=&#34;508px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;One relation for supertype and for each subtype&lt;/li&gt;
+&lt;li&gt;Supertype attributes go into supertype relation&lt;/li&gt;
+&lt;li&gt;Subtype attributes go into each subtype; &lt;span style=&#34;background:#F0A7D8&#34;&gt;primary key of supertype relation also becomes primary key of subtype relation&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;1:1 relationship established between supertype and each subtype, &lt;span style=&#34;background:#F0A7D8&#34;&gt;with supertype as primary table&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;PFK in each subtype&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;integrity-constraints&#34;&gt;Integrity Constraints
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Entity Integrity&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;No primary key attribute may be null. All primary key fields MUST have data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Referential Integrity&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Any foreign key value MUST match a primary key value (or the foreign key can be null)&lt;/li&gt;
+&lt;li&gt;e.g. Delete Rules
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Restrict&lt;/span&gt; – don’t allow delete of “customer” side if related rows exist in “order” side&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Cascade&lt;/span&gt; – automatically delete “order” side rows that correspond with the “customer” side row to be deleted&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Set-to-Null&lt;/span&gt; – set the foreign key in the dependent side to null if deleting from the “customer” side → not allowed for weak entities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;many-to-manymn-highlights&#34;&gt;Many-to-many(M:N) Highlights
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Always adding another relation (table/associative entity) to &lt;span style=&#34;background:#F0A7D8&#34;&gt;convert a M:N relationship to two 1:M relationships&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL workbench will automatically generate a new table if you choose M:N relationship between two tables!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Be careful about the changes in Cardinalities
+&lt;ul&gt;
+&lt;li&gt;M:N -&amp;gt; 1:M&lt;/li&gt;
+&lt;li&gt;The minimum cardinalities need to be adjusted accordingly – &lt;span style=&#34;background:#F0A7D8&#34;&gt;Swap&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;identifying-vs-non-identifying-relationship&#34;&gt;Identifying vs Non-identifying relationship
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Identifying relationship&lt;/span&gt; - where the child entity&amp;rsquo;s identity/existence relies solely on the parent entity. No parent entity means no child entity&lt;/li&gt;
+&lt;li&gt;For an identifying relationship, you put the primary key column from the parent into the primary key column of the child (along with other columns needed to provide uniqueness)&lt;/li&gt;
+&lt;li&gt;For &lt;span style=&#34;background:#F0A7D8&#34;&gt;a non-identifying relationship&lt;/span&gt;, you put the primary key column of the parent into the table of the child, but not in the primary key&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>商务电信网络 1</title>
+        <link>http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</link>
+        <pubDate>Sat, 08 Mar 2025 20:01:36 +0800</pubDate>
+        
+        <guid>http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</guid>
+        <description>&lt;img src="http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16.png&#34;
+	width=&#34;2124&#34;
+	height=&#34;1242&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_59eb7e0e8e995c84.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_6bf10d796191177d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;思维导图&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;171&#34;
+		data-flex-basis=&#34;410px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;networking-fundamentals&#34;&gt;Networking Fundamentals
+&lt;/h2&gt;&lt;h3 id=&#34;network--internet&#34;&gt;Network &amp;amp; Internet
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A network of network 🔢
+&lt;ul&gt;
+&lt;li&gt;roughly hierarchical&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;at center: &amp;ldquo;tier-1&amp;rdquo; ISPs&lt;/span&gt; 🌟
+&lt;ul&gt;
+&lt;li&gt;Verizon, CenturyLink, AT&amp;amp;T 📡&lt;/li&gt;
+&lt;li&gt;national/international coverage 🌎&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Interconnected by routers&lt;/span&gt;通过路由器互相连接 🔄
+&lt;ul&gt;
+&lt;li&gt;Tier-1 providers interconnect (peer) privately 对等互联 🔒&lt;/li&gt;
+&lt;li&gt;Tier-1 providers also interconnect at public &lt;span style=&#34;background:#CDF469&#34;&gt;network access points&lt;/span&gt; (NAPs) 公共网络接入点 📍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Tier-2&amp;rdquo; ISPs: smaller (often regional) 🌍
+&lt;ul&gt;
+&lt;li&gt;Comcast 🖥️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect to one or more tier-1 ISPs, possibly other tier-2 ISPs 🔌
+&lt;ul&gt;
+&lt;li&gt;Tier-2 ISP pays tier-1 ISP for connectivity to rest of Internet 💸&lt;/li&gt;
+&lt;li&gt;Tier-2 ISP is customer of tier-1 provider. 🧑‍💻&lt;/li&gt;
+&lt;li&gt;Tier-2 ISPs also peer privately with each other, interconnect at NAP 🔐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;&amp;ldquo;Tier-3&amp;rdquo; ISPs and local ISPs&lt;/span&gt; 📶
+&lt;ul&gt;
+&lt;li&gt;last hop (&amp;ldquo;access&amp;rdquo;) network (closest to end systems) 📍&lt;/li&gt;
+&lt;li&gt;Local and tier-3 ISPs are customers of higher tier ISPs connecting them to rest of Internet 🛠️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;local ISP → Tier 3 ISP → Tier-2 ISP → Tier 1 ISP → Tier 1 ISP → Tier-2 ISP → local ISP 🔄&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;network-performance-metrics&#34;&gt;Network Performance Metrics
+&lt;/h3&gt;&lt;h4 id=&#34;bandwidth-capacity--throughput-吞吐量-actual&#34;&gt;Bandwidth (capacity) / Throughput 吞吐量 (actual)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;data transmitted per time unit ⏱️&lt;/li&gt;
+&lt;li&gt;Notation: bps = bits per second ⚡&lt;/li&gt;
+&lt;li&gt;Network speed test 🖥️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;latency-delay-时延&#34;&gt;Latency (delay) 时延
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;time to send message from point A to point B 🛣️&lt;/li&gt;
+&lt;li&gt;one-way versus &lt;span style=&#34;background:#CDF469&#34;&gt;round-trip time&lt;/span&gt; (RTT) 🔄&lt;/li&gt;
+&lt;li&gt;$$Latency = Propagation + Transmit + Queue$$&lt;/li&gt;
+&lt;li&gt;$$Propagation = \frac{Distance}{propagation\ speed\ in\ medium (\sim 2\times10^{8}\ m/sec)}$$&lt;/li&gt;
+&lt;li&gt;$$Transmit = \frac{Size}{Bandwidth}$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;availability&#34;&gt;Availability
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Percent of time the network is available to users for transmission and reception ⏲️&lt;/li&gt;
+&lt;li&gt;Want 24x7x365 availability 🕓&lt;/li&gt;
+&lt;li&gt;Telephone network: Five 9s (99.999%) 📞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;error-rate&#34;&gt;Error Rate
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Percent of lost or damaged messages or bits 🛑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;network-structural-models&#34;&gt;Network Structural Models
+&lt;/h3&gt;&lt;h4 id=&#34;clientserver&#34;&gt;Client/Server
+&lt;/h4&gt;&lt;p&gt;客户机/服务器模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;server:&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;always-on host 始终处于运行状态的主机&lt;/li&gt;
+&lt;li&gt;permanent IP address 固定的 IP 地址&lt;/li&gt;
+&lt;li&gt;server farms for scaling 用于扩展规模的服务器集群&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;clients:&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;communicate with server 与服务器进行通信&lt;/li&gt;
+&lt;li&gt;may be intermittently connected 可能是间歇性连接&lt;/li&gt;
+&lt;li&gt;may have dynamic IP addresses&lt;/li&gt;
+&lt;li&gt;do not communicate directly with each other&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;peer-to-peer&#34;&gt;Peer-to-Peer
+&lt;/h4&gt;&lt;p&gt;对等网络模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no alwaye-on server 不存在始终在线的服务器&lt;/li&gt;
+&lt;li&gt;arbitrary end systems directly communicate&lt;/li&gt;
+&lt;li&gt;peers are intermittently connected and change IP addresses&lt;/li&gt;
+&lt;li&gt;Example :
+&lt;ul&gt;
+&lt;li&gt;Gnutella&lt;/li&gt;
+&lt;li&gt;Blockchain!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Highly scalable but difficult to manage 可扩展性极强，但难以管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hybrid-of-client-server-and-p2p&#34;&gt;Hybrid of Client-Server and P2P
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Instant messaging / Skype
+&lt;ul&gt;
+&lt;li&gt;Client-client connection is direct (not through server)&lt;/li&gt;
+&lt;li&gt;Presence detection/location centralized:
+&lt;ul&gt;
+&lt;li&gt;User registers its IP address with central server when it comes online.&lt;/li&gt;
+&lt;li&gt;User contacts central server to find IP addresses of buddies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-clients-and-cloud-computing&#34;&gt;The clients and Cloud Computing
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The thin client has a limited processing power, memory or storage ⚙️&lt;/li&gt;
+&lt;li&gt;Applications run on the web, in a &amp;ldquo;cloud&amp;rdquo; ☁️
+&lt;ul&gt;
+&lt;li&gt;Amazon offers basic services: storage, basic computing elements 🔑&lt;/li&gt;
+&lt;li&gt;Google offers more advanced services: word processors, spreadsheets 📝&lt;/li&gt;
+&lt;li&gt;IBM offers Blue Cloud ☁️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;protocols&#34;&gt;Protocols
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Conventions and rules governing this interaction are specified by the Layer N Protocol
+&lt;ul&gt;
+&lt;li&gt;A protocol is an agreement about how communications are to proceed 📜&lt;/li&gt;
+&lt;li&gt;Without a protocol communication can be difficult or even impossible 🚫&lt;/li&gt;
+&lt;li&gt;Telephone conversation, Postal addresses 📞✉️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;division-of-protocols&#34;&gt;Division of Protocols
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Connection-Oriented&lt;/span&gt; 面向连接的 🔗
+&lt;ul&gt;
+&lt;li&gt;a &lt;font color=&#34;#ff0000&#34;&gt;logical&lt;/font&gt; connection be established between two devices before transferring data 🔄&lt;/li&gt;
+&lt;li&gt;a circuit is not a prerequisite for a connection ⚡&lt;/li&gt;
+&lt;li&gt;Circuit-switched =&amp;gt; connection-oriented, but not all connection-oriented =&amp;gt; circuit switching 🛠️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Connectionless&lt;/span&gt; 🚫
+&lt;ul&gt;
+&lt;li&gt;do not establish a connection between devices 🔓&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;packet-switching-分组交换&#34;&gt;Packet Switching 分组交换
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;Break message into smaller packets (or frames) 📬&lt;/li&gt;
+&lt;li&gt;Route packets individually; Packet switches along the way make decisions about the packet 🔄&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;netwrok-architecture---a-layered-model&#34;&gt;Netwrok Architecture - A Layered Model
+&lt;/h2&gt;&lt;h3 id=&#34;needs-for-a-layered-model&#34;&gt;Needs for A Layered Model
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Task broken into subtasks 🛠️
+&lt;ul&gt;
+&lt;li&gt;Implemented separately in layers in stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each layer provides a service to the layer above ⬆️&lt;/li&gt;
+&lt;li&gt;Each layer hides details of how the service is provided from the layer above 🕵️‍♂️&lt;/li&gt;
+&lt;li&gt;Functions needed in both systems 🔄&lt;/li&gt;
+&lt;li&gt;The Nth layer on one machine &amp;ldquo;talks to&amp;rdquo; or interacts with the Nth layer on another machine 📡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;protocols-and-network-architecture&#34;&gt;Protocols and Network Architecture
+&lt;/h3&gt;&lt;h4 id=&#34;encapsulation-&#34;&gt;Encapsulation 📨
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Addition of Control Information to Data
+&lt;ul&gt;
+&lt;li&gt;Address Information 📍&lt;/li&gt;
+&lt;li&gt;Error-detecting Code 🔍&lt;/li&gt;
+&lt;li&gt;Protocol Control 🛡️&lt;br&gt;
+$$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer PDU} + \text{Trailer} $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;network-architecture&#34;&gt;Network Architecture
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The set of protocols and layers together make up the Network Architecture 🌐
+&lt;ul&gt;
+&lt;li&gt;A Network Architecture Specification must provide enough information to allow implementation in hardware/software 💻&lt;/li&gt;
+&lt;li&gt;Implementation specific details are not part of the architecture and should be irrelevant for inter-operation 🔒&lt;/li&gt;
+&lt;li&gt;With one protocol per layer we have a &lt;strong&gt;Protocol Stack&lt;/strong&gt; 🏗️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;standardized-network-architectures&#34;&gt;Standardized Network Architectures
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Required for devices to communicate 🗣️&lt;/li&gt;
+&lt;li&gt;Vendors have more marketable products 💼&lt;/li&gt;
+&lt;li&gt;Customers can insist on standards based equipment 📊&lt;/li&gt;
+&lt;li&gt;Two standards:
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;OSI Reference model&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Never lived up to early promises ❌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP/IP protocol suite&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Most widely used 🌍&lt;/li&gt;
+&lt;li&gt;De facto ✅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;standards&#34;&gt;Standards
+&lt;/h3&gt;&lt;h4 id=&#34;osi&#34;&gt;OSI
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#CDF469&#34;&gt;Open Systems Interconnection&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Developed by the International Organization for Standardization (ISO) 🌍&lt;/li&gt;
+&lt;li&gt;Seven Layers 7️⃣&lt;/li&gt;
+&lt;li&gt;A Theoretical System Delivered Too Late! 🕰️&lt;/li&gt;
+&lt;li&gt;TCP/IP Is the De Facto Standard 🏆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers&#34;&gt;OSI Layers
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Application &amp;mdash;&amp;mdash;&amp;mdash; Acronyms 📖&lt;/li&gt;
+&lt;li&gt;Presentation &amp;mdash;&amp;mdash; Pointless ❓&lt;/li&gt;
+&lt;li&gt;Session &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Students 👩‍🏫&lt;/li&gt;
+&lt;li&gt;Transport &amp;mdash;&amp;mdash;&amp;mdash; Teach 🚚&lt;/li&gt;
+&lt;li&gt;Network &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Not 🚫&lt;/li&gt;
+&lt;li&gt;Data Link &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Do 💡&lt;/li&gt;
+&lt;li&gt;Physical &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Please 🙏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers-1&#34;&gt;OSI Layers (1)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Physical&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Physical Interface Between Devices ⚙️
+&lt;ul&gt;
+&lt;li&gt;Mechanical – hardware, topology 🏗️&lt;/li&gt;
+&lt;li&gt;Electrical - signaling ⚡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Data Link&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Activating, Maintaining and Deactivating a Reliable Link – between local devices 🔗&lt;/li&gt;
+&lt;li&gt;Media access control 🛂&lt;/li&gt;
+&lt;li&gt;Error Detection and Control 🛑
+&lt;ul&gt;
+&lt;li&gt;Higher Layers May Assume Error Free Transmission ✨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers-2&#34;&gt;OSI Layers (2)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Network&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Delivery of Information 📦
+&lt;ul&gt;
+&lt;li&gt;logical addressing 🏷️&lt;/li&gt;
+&lt;li&gt;routing 🛣️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fragmentation and assembly 🔨&lt;/li&gt;
+&lt;li&gt;Error handling ❌&lt;/li&gt;
+&lt;li&gt;Not Needed on Direct Links 🚫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Transport&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Reliability control between End Systems (hosts, computers) 💻
+&lt;ul&gt;
+&lt;li&gt;In Sequence 🔢&lt;/li&gt;
+&lt;li&gt;In good flow 🌊&lt;/li&gt;
+&lt;li&gt;Error Free 🆓&lt;/li&gt;
+&lt;li&gt;No Losses 🛑&lt;/li&gt;
+&lt;li&gt;No Duplicates 🔁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers-3&#34;&gt;OSI Layers (3)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Session&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Control of Dialogues Between Processes 💬
+&lt;ul&gt;
+&lt;li&gt;Establish, manage, and terminate dialogues 🛠️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Presentation&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Formats and Coding 📊&lt;/li&gt;
+&lt;li&gt;Data Compression 📉&lt;/li&gt;
+&lt;li&gt;Encryption 🔒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Application&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Implement user required functionalities 🧑‍💻
+&lt;ul&gt;
+&lt;li&gt;Send letters, move files 📧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-osi-environment&#34;&gt;The OSI Environment
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Communications Path 🛤️
+&lt;ul&gt;
+&lt;li&gt;point-to-point link ↔️&lt;/li&gt;
+&lt;li&gt;network 🌐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tcp--ip&#34;&gt;TCP / IP
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;TCP/IP is an Internet Model&lt;/span&gt; 🌍
+&lt;ul&gt;
+&lt;li&gt;TCP = Transmission Control Protocol 🔄&lt;/li&gt;
+&lt;li&gt;IP = Internet Protocol 🌐&lt;/li&gt;
+&lt;li&gt;This model has only 4-layers 4️⃣&lt;/li&gt;
+&lt;li&gt;It is simpler and more practical than the 7-layered OSI-Model 🧠&lt;/li&gt;
+&lt;li&gt;Created by the US Dept of Defense (DoD) 🏛️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tcpip-model&#34;&gt;TCP/IP Model
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Application Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Combines all the application-related issues into 1 layer 🔗
+&lt;ul&gt;
+&lt;li&gt;Includes the Sessions/Presentation layers 💬&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Transport Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Deals with the QoS and other issues like
+&lt;ul&gt;
+&lt;li&gt;Reliability, flow control and error correction ⚖️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Internet Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Delivery 📦&lt;/li&gt;
+&lt;li&gt;Routing 🛣️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Network Interface Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensures the physical links 🔌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hybrid&#34;&gt;Hybrid
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1.png&#34;
+	width=&#34;1429&#34;
+	height=&#34;874&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_dda2affa33ea141f.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_d4551ba7c32a2ee6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Hybrid TCP/IP-OSI&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;163&#34;
+		data-flex-basis=&#34;392px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image.png&#34;
+	width=&#34;1237&#34;
+	height=&#34;520&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_f57b8c4cd6d29c2c.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_881c5ada04d92d83.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;237&#34;
+		data-flex-basis=&#34;570px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Most layers need &lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Message segmentation and aggregation 消息分段和聚合 🧩&lt;/li&gt;
+&lt;li&gt;Some form of Addressing to identify senders and receivers of messages 识别 🏷️&lt;/li&gt;
+&lt;li&gt;Multiplexing/Demultiplexing of multiple message streams to optimize channels 服用/解复用，优化信道 🔄&lt;/li&gt;
+&lt;li&gt;Flow control (fast sender vs. slow receiver) 流量控制 🌊&lt;/li&gt;
+&lt;li&gt;Error controls (detection and correction) 错误控制 🛠️&lt;/li&gt;
+&lt;li&gt;A set of rules for data exchange 数据交换 📜&lt;/li&gt;
+&lt;li&gt;Routing of messages when there may be several physical paths 路由选择 🛣️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rdma-remote-direct-memory-access&#34;&gt;RDMA (Remote Direct Memory Access)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;TCP/IP suffers from two major problems:
+&lt;ul&gt;
+&lt;li&gt;consumes significant CPU cycles and memory resources ⚙️&lt;/li&gt;
+&lt;li&gt;has large end-to-end latency 🕰️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDMA copies data directly between virtual memory buffers on two different machines 🔀
+&lt;ul&gt;
+&lt;li&gt;lower latency, higher throughput, and smaller CPU footprint ⚡&lt;/li&gt;
+&lt;li&gt;used in data centers 🏢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;application-layer-protocols---dns&#34;&gt;Application Layer Protocols - DNS
+&lt;/h2&gt;&lt;h3 id=&#34;application-architectures&#34;&gt;Application Architectures
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Communicating, distributed processes 进行通讯的分布式进程&lt;/li&gt;
+&lt;li&gt;Running in network hosts in &amp;ldquo;user space&amp;rdquo; 运行在网络主机的 “用户空间” 中&lt;/li&gt;
+&lt;li&gt;Exchange messages&lt;/li&gt;
+&lt;li&gt;email, file transfer, the Web&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application-layer protocols&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Define messages exchanged by apps and actions taken 定义应用程序之间交换的消息以及所采取的操作&lt;/li&gt;
+&lt;li&gt;User services provided by lower layer protocols 由下层协议提供的用户服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;dns&#34;&gt;DNS
+&lt;/h3&gt;&lt;p&gt;Domain Name System&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Problem - how to map host names to IP addresses?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DNS&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;a hierarchical, domain-based naming scheme and a distributed database system for implementing this naming scheme&lt;/li&gt;
+&lt;li&gt;application-layer protocol 应用层协议&lt;/li&gt;
+&lt;li&gt;host主机, routers路由器, name servers域名服务器 to communicate to resolve names (address/name translation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why not centralize DNS?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single point of failure&lt;/strong&gt; 单点故障&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Traffic volume&lt;/strong&gt; 通信流量过大&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distant centralized database&lt;/strong&gt; 集中式数据库距离过远&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Maintenance&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;doesn’t scale!&lt;/font&gt;  &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511.png&#34;
+	width=&#34;991&#34;
+	height=&#34;295&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_9e9e38d7d8a1bd56.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_71c08a29b7ccfc2e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Distributed, Hierarchical Database&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;335&#34;
+		data-flex-basis=&#34;806px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Root name server
+&lt;ul&gt;
+&lt;li&gt;Top-level Domain (TLD) server
+&lt;ul&gt;
+&lt;li&gt;Authoritative name server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;root-name-servers&#34;&gt;Root name servers
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;contacted by local name server that can not resolve name&lt;/li&gt;
+&lt;li&gt;root name server
+&lt;ul&gt;
+&lt;li&gt;contacts authoritative name server if name mapping not known&lt;/li&gt;
+&lt;li&gt;gets mapping&lt;/li&gt;
+&lt;li&gt;returns mapping to local name server&lt;/li&gt;
+&lt;li&gt;13 root name servers worldwide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tld-and-authoritative-servers&#34;&gt;TLD and Authoritative Servers
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Top-level domain (TLD) servers&lt;/strong&gt;: responsible for com, org, net, edu, etc, and all top-level country domains uk, fr, ca, jp.
+&lt;ul&gt;
+&lt;li&gt;Network solutions maintains servers for com TLD.&lt;/li&gt;
+&lt;li&gt;Educause for edu TLD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authoritative DNS servers&lt;/strong&gt;: organization’s DNS servers, providing authoritative hostname主机名 to IP mappings for organization’s servers (e.g., Web and mail).
+&lt;ul&gt;
+&lt;li&gt;Can be maintained by organization or service provider.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;local-name-server&#34;&gt;Local Name Server
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Does not strictly belong to hierarchy&lt;/li&gt;
+&lt;li&gt;Each ISP (residential ISP Internet Service Provider, company, university) has one.
+&lt;ul&gt;
+&lt;li&gt;Also called &amp;ldquo;default name server&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;When a host makes a DNS query, query is sent to its local DNS server
+&lt;ul&gt;
+&lt;li&gt;Acts as a proxy, forwards query into hierarchy 将查询请求转发到（DNS 的）层级结构体系中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nslookup
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;applicaiton-layer-protocols---email&#34;&gt;Applicaiton Layer Protocols - Email
+&lt;/h2&gt;
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;What happens when you hit SEND on your Email?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Three major components
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;User Agents&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;mail reader&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;composing, editing, reading mail messages&lt;/li&gt;
+&lt;li&gt;outlook&lt;/li&gt;
+&lt;li&gt;outgoing, incoming messages stored on server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Mail Servers&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;mailbox contains incoming messages for user&lt;/li&gt;
+&lt;li&gt;message queue of outgoing (to be sent) mail messages&lt;/li&gt;
+&lt;li&gt;SMTP protocol between mail servers to send email messages
+&lt;ul&gt;
+&lt;li&gt;client: sending mail server&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;server&amp;rdquo;: receiving mail server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Simple Mail Transfer Protocol: SMTP&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;email-smtp&#34;&gt;Email: SMTP
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;[RFC 821]&lt;/strong&gt; &lt;span style=&#34;background:#CDF469&#34;&gt;Request for Comments&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;uses TCP to reliably transfer email message from client to server, &lt;strong&gt;port 25 (587)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;direct transfer: &lt;font color=&#34;#c00000&#34;&gt;sending server&lt;/font&gt; to &lt;font color=&#34;#c00000&#34;&gt;receiving server&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;three phases of transfer
+&lt;ul&gt;
+&lt;li&gt;handshaking (greeting)&lt;/li&gt;
+&lt;li&gt;transfer of messages&lt;/li&gt;
+&lt;li&gt;closure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;command/response interaction
+&lt;ul&gt;
+&lt;li&gt;commands: ASCII text&lt;/li&gt;
+&lt;li&gt;response: status code and phrase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HELO, EHLO&lt;/td&gt;
+      &lt;td&gt;Identifies the client to the server&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;MAIL&lt;/td&gt;
+      &lt;td&gt;Initiates a mail transaction. Includes sender’s email address&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RCPT&lt;/td&gt;
+      &lt;td&gt;Specifies an individual recipient’s email address. May be used multiple times to specify multiple recipients.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DATA&lt;/td&gt;
+      &lt;td&gt;Initiates transfer of mail contents&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RSET&lt;/td&gt;
+      &lt;td&gt;Resets/aborts the current mail transaction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;VRFY, EXPN&lt;/td&gt;
+      &lt;td&gt;Verifies the authenticity of an email address&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HELP&lt;/td&gt;
+      &lt;td&gt;Asks the server to send helpful information to the client&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;NOOP&lt;/td&gt;
+      &lt;td&gt;No operation. Do nothing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;QUIT&lt;/td&gt;
+      &lt;td&gt;Instructs the server to terminate the connection&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Reply Code&lt;/th&gt;
+            &lt;th&gt;Description&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;220&lt;/td&gt;
+            &lt;td&gt;Sent by the server upon acceptance of the initial client connection.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;250&lt;/td&gt;
+            &lt;td&gt;Sent after successful completion of a command&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;354&lt;/td&gt;
+            &lt;td&gt;Send after acceptance of the DATA command to instruct the client to send the email content&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;221&lt;/td&gt;
+            &lt;td&gt;Sent by the server before it terminates the connection&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;interactions-in-smtp---1&#34;&gt;Interactions in SMTP - 1
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet owa.win.udel.edu 25
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;br&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Actor&lt;/th&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Comment&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Receiving SMTP Process&lt;/td&gt;
+      &lt;td&gt;220 reply&lt;/td&gt;
+      &lt;td&gt;When a TCP connection is opened, the receiver signals that it is ready.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sending SMTP Process&lt;/td&gt;
+      &lt;td&gt;HELO cnn.com&lt;/td&gt;
+      &lt;td&gt;Sender asks to begin Sending a message. Gives own identity.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Receiver&lt;/td&gt;
+      &lt;td&gt;250 reply&lt;/td&gt;
+      &lt;td&gt;Receiver signals that it is ready to begin Receiving a message.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;想象你给朋友打电话，电话接通了（对应 TCP 连接建立） ，朋友说 “我在听啦，你讲吧”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应接收 SMTP 进程发送 220 回复&lt;/span&gt;），这就是接收方表示自己准备好接收信息啦。&lt;br&gt;
+记忆点：“电话接通，对方说准备好”&lt;/li&gt;
+&lt;li&gt;还是打电话场景，你先跟朋友自报家门 “我是 [你的名字]”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应发送 SMTP 进程发送 HELO &lt;a class=&#34;link&#34; href=&#34;https://cnn.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cnn.com&lt;/a&gt; ，告知自己身份&lt;/span&gt;），然后说 “我有事儿要跟你讲哦”（对应发送方请求开始发送消息）。&lt;br&gt;
+记忆点：“自报家门，说要讲话”&lt;/li&gt;
+&lt;li&gt;你朋友听到你要讲话后，说 “好呀，你说吧”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应接收方发送 250 回复&lt;/span&gt;），意思就是准备好接收你说的事儿啦（对应接收方准备好接收消息）。&lt;br&gt;
+记忆点：“对方回应，准备倾听”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;interactions-in-smtp---2&#34;&gt;Interactions in SMTP - 2
+&lt;/h4&gt;  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Actor&lt;/th&gt;
+        &lt;th&gt;Command&lt;/th&gt;
+        &lt;th&gt;Comment&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Sender&lt;/td&gt;
+        &lt;td&gt;MAIL FROM: aha@cnn.com&lt;/td&gt;
+        &lt;td&gt;Sender identifies the sender (mail author, not SMTP process).&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Receiver&lt;/td&gt;
+        &lt;td&gt;250 OK&lt;/td&gt;
+        &lt;td&gt;Accepts author. However, May reject mail from others.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Sender&lt;/td&gt;
+        &lt;td&gt;RCPT TO: jcao@udel.edu&lt;/td&gt;
+        &lt;td&gt;Identifies first mail recipient.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Receiver&lt;/td&gt;
+        &lt;td&gt;250 OK&lt;/td&gt;
+        &lt;td&gt;Accepts first recipient&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;第一步&lt;/strong&gt;: &amp;ldquo;Sender&amp;rdquo;（发送方）发出 &amp;ldquo;MAIL FROM: &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt;&amp;rdquo; 的指令，就是告诉接收方这封邮件是谁写的（发件人邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt; ）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第二步&lt;/strong&gt;: &amp;ldquo;Receiver&amp;rdquo;（接收方）回复 &amp;ldquo;250 OK&amp;rdquo;，意思是接收方认可了这个发件人，但可能不接受其他发件人的邮件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第三步&lt;/strong&gt;：发送方又发出 &amp;ldquo;RCPT TO: &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;&amp;rdquo; 的指令，表明这封邮件第一个收件人的邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第四步&lt;/strong&gt;：接收方再次回复 &amp;ldquo;250 OK&amp;rdquo;，表示接受这个收件人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;interactionis-in-smtp---3&#34;&gt;Interactionis in SMTP - 3
+&lt;/h4&gt; &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Actor&lt;/th&gt;
+                &lt;th&gt;Command&lt;/th&gt;
+                &lt;th&gt;Comment&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sender&lt;/td&gt;
+                &lt;td&gt;DATA&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Receiver&lt;/td&gt;
+                &lt;td&gt;354 Enter mail, end with &#34;.&#34; on a line by itself&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sender&lt;/td&gt;
+                &lt;td&gt;Blah blah blah ...&lt;br&gt;.&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Receiver&lt;/td&gt;
+                &lt;td&gt;250 Message accepted for delivery&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;准备发送内容&lt;/strong&gt;：发送方（Sender）发出 &amp;ldquo;DATA&amp;rdquo; 指令，告诉接收方要开始发送邮件内容了&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;接收方指示&lt;/strong&gt;：接收方（Receiver）回复 &amp;ldquo;354 Enter mail, end with &amp;ldquo;.&amp;rdquo; on a line by itself&amp;rdquo;，意思是让发送方开始输入邮件内容，并且要以单独一行的点（.）作为内容结束的标志&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;发送实际内容&lt;/strong&gt;：发送方开始发送具体的邮件内容，这里用 &amp;ldquo;Blah blah blah &amp;hellip;&amp;rdquo; 代表内容，然后用单独的一个点（.）表明内容发送完毕&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;接收确认&lt;/strong&gt;：接收方返回 &amp;ldquo;250 Message accepted for delivery&amp;rdquo;，表示已经成功接收邮件内容，会进行后续的投递操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;interactions-in-smtp---4&#34;&gt;Interactions in SMTP - 4
+&lt;/h4&gt;&lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Actor&lt;/th&gt;
+                &lt;th&gt;Command&lt;/th&gt;
+                &lt;th&gt;Comment&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sender&lt;/td&gt;
+                &lt;td&gt;QUIT&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Receiver&lt;/td&gt;
+                &lt;td&gt;221 md1.nss.udel.edu closing connection&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+- 发送方（Sender）发出 &#34;QUIT&#34; 指令，表示要结束与接收方的连接
+- 接收方（Receiver）回复 &#34;221 md1.nss.udel.edu closing connection&#34;，说明接收方准备关闭连接，&#34;md1.nss.udel.edu&#34; 是接收方服务器标识
+&lt;h3 id=&#34;smtp-security-issues&#34;&gt;SMTP Security Issues
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;No authentication：无身份验证&lt;/li&gt;
+&lt;li&gt;Spamming：垃圾邮件发送&lt;/li&gt;
+&lt;li&gt;Unauthorized use of relaying, DoS：未经授权使用邮件中继、拒绝服务攻击&lt;/li&gt;
+&lt;li&gt;All communication done in plaintext：所有通信均以明文形式进行&lt;/li&gt;
+&lt;li&gt;Eavesdropping：窃听&lt;/li&gt;
+&lt;li&gt;Man in the middle attacks：中间人攻击&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;smtp-auth&#34;&gt;SMTP-AUTH
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;An &lt;strong&gt;extension&lt;/strong&gt; that adds access control to SMTP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Allows the server to provide features only to known users and limit others.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The default port for SMTP AUTH is &lt;em&gt;587&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Various authentication methods can be used, such as PLAIN, LOGIN, CRAM - MD5, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Encryption is highly recommended. 强烈建议使用加密功能&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PLAIN&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The username and password are transmitted as one string encoded in Base64.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LOGIN&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The username and password are encoded in Base64 and transmitted one by one, first the username and then the password.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CRAM - MD5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The server requests the client to solve a computational challenge using the password.&lt;/li&gt;
+&lt;li&gt;The client&amp;rsquo;s response is a string containing a username and a 16 - byte digest in hexadecimal notation.&lt;/li&gt;
+&lt;li&gt;This string is BASE64 - encoded.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mail-message-format&#34;&gt;Mail message format
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SMTP [RFC 821]: protocol for exchanging email message&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RFC 822: standard for text message&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;header lines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To:&lt;/li&gt;
+&lt;li&gt;From:&lt;/li&gt;
+&lt;li&gt;Subject:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;different from SMTP commands&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;body&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &amp;ldquo;message&amp;rdquo;, ASCII characters only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MIME: multimedia mail extension, RFC 2045, 2056&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;additional lines in message header declare MIME content type
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606.png&#34;
+	width=&#34;1105&#34;
+	height=&#34;439&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_ecd22ca97abc301f.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_7b4b67c3dad7d943.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;251&#34;
+		data-flex-basis=&#34;604px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;scenario-alice-sends-message-to-bob&#34;&gt;Scenario: Alice sends message to Bob
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Alice uses her User Agent (UA) to compose a message and sets the &amp;ldquo;to&amp;rdquo; field as &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:bob@someschool.edu&#34; &gt;bob@someschool.edu&lt;/a&gt;&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Alice&amp;rsquo;s UA sends the message to her mail server, and the message is placed in the message queue.&lt;/li&gt;
+&lt;li&gt;The client - side of SMTP opens a TCP connection with Bob&amp;rsquo;s mail server. - User Agent - Mail Server&lt;/li&gt;
+&lt;li&gt;The SMTP client sends Alice&amp;rsquo;s message over the TCP connection.&lt;/li&gt;
+&lt;li&gt;Bob&amp;rsquo;s mail server places the message in Bob&amp;rsquo;s mailbox.&lt;/li&gt;
+&lt;li&gt;Bob invokes his User Agent to read the message.
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424.png&#34;
+	width=&#34;1285&#34;
+	height=&#34;271&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_49a0e04ee8ee8a64.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_e293900e54493aea.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;474&#34;
+		data-flex-basis=&#34;1138px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;SMTP&lt;/span&gt; (Simple Mail Transfer Protocol)
+&lt;ul&gt;
+&lt;li&gt;deliver and store emails to the recipient&amp;rsquo;s server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Email Access Protocols&lt;/span&gt;: retrieval from server
+&lt;ul&gt;
+&lt;li&gt;POP (&lt;span style=&#34;background:#CDF469&#34;&gt;Post Office Protocol&lt;/span&gt;, based on RFC 1939 standard)
+&lt;ul&gt;
+&lt;li&gt;authorization process between the user agent and the server to achieve the function of downloading emails.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IMAP (&lt;span style=&#34;background:#CDF469&#34;&gt;Internet Mail Access Protocol&lt;/span&gt;, based on RFC 1730 standard)
+&lt;ul&gt;
+&lt;li&gt;more features (more complex).&lt;/li&gt;
+&lt;li&gt;manipulation of stored msgs on server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP
+&lt;ul&gt;
+&lt;li&gt;Hotmail, Yahoo!Mail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;pop3&#34;&gt;POP3
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;download and delete&amp;rdquo; mode
+&lt;ul&gt;
+&lt;li&gt;You cannot re-read e mail if you changes client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;download-and keep&amp;rdquo; mode
+&lt;ul&gt;
+&lt;li&gt;copies of messages on different clients&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;POP3 is stateless across sessions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;imap&#34;&gt;IMAP
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Keep all messages in one place: the server.&lt;/li&gt;
+&lt;li&gt;Allow users to organize messages in folders.&lt;/li&gt;
+&lt;li&gt;IMAP maintains the user state across sessions:
+&lt;ul&gt;
+&lt;li&gt;names of folders and the mappings between message IDs and folders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;application-layer-protocols---http&#34;&gt;Application Layer Protocols - HTTP
+&lt;/h2&gt;&lt;h3 id=&#34;web-and-http&#34;&gt;Web and HTTP
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, some jargon:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A web page consists of objects.&lt;/li&gt;
+&lt;li&gt;An object can be an HTML file, a JPEG image, a Java applet, an audio file, etc.&lt;/li&gt;
+&lt;li&gt;A web page consists of a base HTML file which includes several referenced objects.&lt;/li&gt;
+&lt;li&gt;Each object is addressable by a URL.&lt;/li&gt;
+&lt;li&gt;Example URL:&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3.png&#34;
+	width=&#34;1069&#34;
+	height=&#34;151&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_cd7643046c8b6dc6.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_7691861ced7ae307.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;707&#34;
+		data-flex-basis=&#34;1699px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP: hypertext transfer protocol&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Web’s application layer protocol&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;client/server model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;client: browser that requests, receives, &amp;ldquo;displays&amp;rdquo; Web objects&lt;/li&gt;
+&lt;li&gt;server: Web server sends objects in response to requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP 1.0: RFC 1945&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP 1.1: RFC 2068&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;http-request-message&#34;&gt;HTTP request message
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;two types of HTTP messages: &lt;font color=&#34;#c00000&#34;&gt;request&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;response&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;HTTP request message: ASCII (human-readable format)
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4.png&#34;
+	width=&#34;1411&#34;
+	height=&#34;649&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_7218f78f49f6d590.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_74c0b5ea36c4be96.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;217&#34;
+		data-flex-basis=&#34;521px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;general format
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5.png&#34;
+	width=&#34;1273&#34;
+	height=&#34;718&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_ab87ba6f619cc905.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_3d1d5d57d73bd766.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;425px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;method-types&#34;&gt;Method types
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;HTTP/1.1
+&lt;ul&gt;
+&lt;li&gt;GET&lt;/li&gt;
+&lt;li&gt;POST&lt;/li&gt;
+&lt;li&gt;HEAD&lt;/li&gt;
+&lt;li&gt;PUT
+&lt;ul&gt;
+&lt;li&gt;uploads file in entity body to path specified in URL field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DELETE
+&lt;ul&gt;
+&lt;li&gt;asks server to leave requested object out of response&lt;/li&gt;
+&lt;li&gt;deletes file specified in the URL field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP/1.0
+&lt;ul&gt;
+&lt;li&gt;GET, POST, HEAD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;uploading-from-input&#34;&gt;Uploading from input
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Post method:
+&lt;ul&gt;
+&lt;li&gt;Web page often includes form input&lt;/li&gt;
+&lt;li&gt;Input is uploaded to server in entity body&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;URL method:
+&lt;ul&gt;
+&lt;li&gt;Uses GET method&lt;/li&gt;
+&lt;li&gt;Input is uploaded in URL field of request line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;http-response-message&#34;&gt;HTTP response message
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6.png&#34;
+	width=&#34;1240&#34;
+	height=&#34;619&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_badea03fadbfefa1.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_1cd07553d65e4c9d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;480px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In first line in server-&amp;gt;client response message.&lt;/li&gt;
+&lt;li&gt;A few sample codes:
+&lt;ul&gt;
+&lt;li&gt;200 OK
+&lt;ul&gt;
+&lt;li&gt;request succeeded, requested object later in this message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;301 Moved Permanently
+&lt;ul&gt;
+&lt;li&gt;requested object moved, new location specified later in this message (Location:)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;400 Bad Request
+&lt;ul&gt;
+&lt;li&gt;request message not understood by server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;404 Not Found
+&lt;ul&gt;
+&lt;li&gt;requested document not found on this server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;505 HTTP Version Not Supported&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;http2&#34;&gt;HTTP/2
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;HTTP/2 specification was published as RFC 7540 in May 2015.&lt;/li&gt;
+&lt;li&gt;HTTP/2 allows the server to &amp;ldquo;push&amp;rdquo; content, that is, to respond with data for more queries than the client requested.&lt;/li&gt;
+&lt;li&gt;Multiplexing of requests, header compression, and prioritization of request. First draft was published in 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;http3&#34;&gt;HTTP/3
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;First draft was published in 2020&lt;/li&gt;
+&lt;li&gt;Uses QUIC (&lt;span style=&#34;background:#CDF469&#34;&gt;Quick UDP Internet Connections&lt;/span&gt;) as the transport layer protocol&lt;/li&gt;
+&lt;li&gt;Encrypted connections
+&lt;ul&gt;
+&lt;li&gt;Like always employing HTTPS in current HTTP 2.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP/1 to HTTP/2 to HTTP/3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;try-out-http-client-side&#34;&gt;Try out HTTP (client side)
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Telnet to your favorite Web server:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet udel.edu 80
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Type in a GET HTTP request:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GET /~jcao/ HTTP/1.1 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host: udel.edu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Look at response message sent by HTTP server!&lt;br&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; Downloading a Complex Webpage with Two Graphics Files &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7.png&#34;
+	width=&#34;1432&#34;
+	height=&#34;739&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_5990dd00f0966835.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_58609edcc363d982.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;193&#34;
+		data-flex-basis=&#34;465px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8.png&#34;
+	width=&#34;1357&#34;
+	height=&#34;700&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_401aaf7fc3aad5d.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_8931eff801178500.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;193&#34;
+		data-flex-basis=&#34;465px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;transport-layer-protocols---tcp-and-udp&#34;&gt;Transport Layer Protocols - TCP and UDP
+&lt;/h2&gt;&lt;h3 id=&#34;sockets-and-port-number&#34;&gt;Sockets and Port Number
+&lt;/h3&gt;&lt;p&gt;socket 套接字&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Application process sends/receives messages to/from its socket&lt;/li&gt;
+&lt;li&gt;socket analogous to door
+&lt;ul&gt;
+&lt;li&gt;sending process shoves message out door&lt;/li&gt;
+&lt;li&gt;sending process relies on transport infrastructure on other side of door which brings message to socket at receiving process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;API:
+&lt;ul&gt;
+&lt;li&gt;(1) choice of transport protocol;&lt;/li&gt;
+&lt;li&gt;(2) ability to fix a few parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15.png&#34;
+	width=&#34;718&#34;
+	height=&#34;634&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_47433d8c4a9cb4de.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_8342d2968b219f48.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;113&#34;
+		data-flex-basis=&#34;271px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Addressing processes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;identifier of a process includes both&lt;span style=&#34;background:#F0A7D8&#34;&gt; IP addresses&lt;/span&gt; and &lt;span style=&#34;background:#F0A7D8&#34;&gt;port numbers&lt;/span&gt; associated with the process on hosts.&lt;/li&gt;
+&lt;li&gt;Example port numbers:
+&lt;ul&gt;
+&lt;li&gt;HTTP server: 80&lt;/li&gt;
+&lt;li&gt;Mail server: 25&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;to send HTTP message to gaia.cs.umass.edu web server:
+&lt;ul&gt;
+&lt;li&gt;IP address: 128.119.245.12&lt;/li&gt;
+&lt;li&gt;Port number: 80&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use of Port Numbers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Well-known port numbers are 0 to 1023. These are used by popular applications.&lt;/li&gt;
+&lt;li&gt;Servers/daemons usually use well-known ports.
+&lt;ul&gt;
+&lt;li&gt;Any client can identify the server/service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Registered port numbers (1024 to 49152)
+&lt;ul&gt;
+&lt;li&gt;used for less central applications.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.iana.org/assignments/port-numbers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.iana.org/assignments/port-numbers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ephemeral port numbers: 49153 to 65535
+&lt;ul&gt;
+&lt;li&gt;Clients usually use dynamic ports.&lt;/li&gt;
+&lt;li&gt;Assigned by the client kernel at run time.&lt;/li&gt;
+&lt;li&gt;Traditionally (including Windows systems) take the range of 1024 through 4999&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; Socket = IP Address:Port Number &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;transport-layer-protocols&#34;&gt;Transport Layer Protocols
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide logical communication between application processes running on different hosts&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;transport protocols run &lt;font color=&#34;#c00000&#34;&gt;in end systems&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sender side: breaks app messages into segments, passes to network layer&lt;/li&gt;
+&lt;li&gt;receiver side: reassembles segments into messages, passes to app layer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more than one transport protocol available to apps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Internet: TCP and UDP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transmission Control Protocol (TCP)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connection-oriented; reliable, in-order delivery&lt;/li&gt;
+&lt;li&gt;Reliable data transfer&lt;/li&gt;
+&lt;li&gt;Flow control&lt;/li&gt;
+&lt;li&gt;Congestion control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;User Datagram Protocol (UDP)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connectionless – unreliable, unordered delivery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP: Overview&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;point-to-point&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;one sender, one receiver&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;reliable, in-order byte stream&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no &amp;ldquo;message boundaries&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;send &amp;amp; receive buffers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;connection-orinted&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;handshaking (exchange of control msgs) before data exchange&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;flow controlled&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sender will not overwhelm receiver
+&lt;ul&gt;
+&lt;li&gt;set window size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;transmission-control-protocol-tcp&#34;&gt;Transmission Control Protocol (TCP)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Segment Format&lt;/span&gt;
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14.png&#34;
+	width=&#34;1522&#34;
+	height=&#34;820&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6e30ad899561400.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6465e375e89452c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;445px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;32 bit sequence numbers&lt;/li&gt;
+&lt;li&gt;TCP breaks byte stream from application into segments (limited by Max. Segment Size)
+&lt;ul&gt;
+&lt;li&gt;Each segment has a sequence number&lt;/li&gt;
+&lt;li&gt;Initial number selected at connection time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Subsequent numbers indicate first &lt;font color=&#34;#c00000&#34;&gt;data&lt;/font&gt; byte number in segment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Acknowledgetments (ACK)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ACK# indicates next data byte expected&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Next sequence # from the other side&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Used for Error Control&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each correct TCP segment is acknowledged, except for pure acknowledgements and resets&lt;/li&gt;
+&lt;li&gt;Sender listens to be sure that each TCP segment is acknowledged&lt;/li&gt;
+&lt;li&gt;If a segment is not acknowledged in a reasonable period of time, the sender resends it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Connection Management&lt;/span&gt;
+&lt;strong&gt;3-Way Handshake&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10.png&#34;
+	width=&#34;1252&#34;
+	height=&#34;679&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_ae700d1b2f95a879.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_e2ad123fadfd2fcf.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11.png&#34;
+	width=&#34;1303&#34;
+	height=&#34;763&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_a8353b26bd874a11.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_c72db82f9f5fce23.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12.png&#34;
+	width=&#34;1327&#34;
+	height=&#34;772&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_d7e5146e418cbf9d.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_a1d2c3ae3c6e2b2a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;171&#34;
+		data-flex-basis=&#34;412px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13.png&#34;
+	width=&#34;1246&#34;
+	height=&#34;748&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_1c2e5c5ca33eb220.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_c3c7dbc88a7db833.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;399px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Flow Control&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Flow Control
+&lt;ul&gt;
+&lt;li&gt;One TCP process transmits too fast&lt;/li&gt;
+&lt;li&gt;Other TCP process is overwhelmed&lt;/li&gt;
+&lt;li&gt;Receiver must control transmission rate&lt;/li&gt;
+&lt;li&gt;This is flow control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TCP segment has a Window Size
+&lt;ul&gt;
+&lt;li&gt;Tell how many more bytes the sender can send beyond the segment being acknowledged&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Example
+&lt;ul&gt;
+&lt;li&gt;TCP segment contained bytes 45-89&lt;/li&gt;
+&lt;li&gt;Acknowledgement number for TCP segment acknowledging the segment is 90&lt;/li&gt;
+&lt;li&gt;If Window Size field value is 50, then
+&lt;ul&gt;
+&lt;li&gt;Sender may send through byte 140&lt;/li&gt;
+&lt;li&gt;Must then stop unless the window has been extended in another acknowledgement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each Acknowledgement extends the window of bytes that may be sent
+&lt;ul&gt;
+&lt;li&gt;Called a sliding window protocol&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;user-datagram-protocol-udp&#34;&gt;User Datagram Protocol (UDP)
+&lt;/h4&gt;&lt;h4 id=&#34;tcp-vs-udp&#34;&gt;TCP vs. UDP
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;UDP&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connectionless and Unreliable&lt;/li&gt;
+&lt;li&gt;Places a Lighter Load on the Network than TCP&lt;/li&gt;
+&lt;li&gt;Useful Where the Loss of an Occasional Application Message is Not a Serious Problem&lt;/li&gt;
+&lt;li&gt;As in Regular Network Status Messages&lt;/li&gt;
+&lt;li&gt;Or Where There is No Time for Retransmission, As in Voice Transmission
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9.png&#34;
+	width=&#34;1219&#34;
+	height=&#34;589&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_fc47854395020f98.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_4ff37c6b164869a6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;496px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

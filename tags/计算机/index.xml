@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>计算机 on Mia Jiao</title>
+        <link>http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+        <description>Recent content in 计算机 on Mia Jiao</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Mia Jiao</copyright>
+        <lastBuildDate>Sat, 08 Mar 2025 20:01:36 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>商务电信网络 1</title>
+        <link>http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</link>
+        <pubDate>Sat, 08 Mar 2025 20:01:36 +0800</pubDate>
+        
+        <guid>http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</guid>
+        <description>&lt;img src="http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16.png&#34;
+	width=&#34;2124&#34;
+	height=&#34;1242&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_59eb7e0e8e995c84.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_6bf10d796191177d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;思维导图&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;171&#34;
+		data-flex-basis=&#34;410px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;networking-fundamentals&#34;&gt;Networking Fundamentals
+&lt;/h2&gt;&lt;h3 id=&#34;network--internet&#34;&gt;Network &amp;amp; Internet
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A network of network 🔢
+&lt;ul&gt;
+&lt;li&gt;roughly hierarchical&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;at center: &amp;ldquo;tier-1&amp;rdquo; ISPs&lt;/span&gt; 🌟
+&lt;ul&gt;
+&lt;li&gt;Verizon, CenturyLink, AT&amp;amp;T 📡&lt;/li&gt;
+&lt;li&gt;national/international coverage 🌎&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Interconnected by routers&lt;/span&gt;通过路由器互相连接 🔄
+&lt;ul&gt;
+&lt;li&gt;Tier-1 providers interconnect (peer) privately 对等互联 🔒&lt;/li&gt;
+&lt;li&gt;Tier-1 providers also interconnect at public &lt;span style=&#34;background:#CDF469&#34;&gt;network access points&lt;/span&gt; (NAPs) 公共网络接入点 📍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Tier-2&amp;rdquo; ISPs: smaller (often regional) 🌍
+&lt;ul&gt;
+&lt;li&gt;Comcast 🖥️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect to one or more tier-1 ISPs, possibly other tier-2 ISPs 🔌
+&lt;ul&gt;
+&lt;li&gt;Tier-2 ISP pays tier-1 ISP for connectivity to rest of Internet 💸&lt;/li&gt;
+&lt;li&gt;Tier-2 ISP is customer of tier-1 provider. 🧑‍💻&lt;/li&gt;
+&lt;li&gt;Tier-2 ISPs also peer privately with each other, interconnect at NAP 🔐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;&amp;ldquo;Tier-3&amp;rdquo; ISPs and local ISPs&lt;/span&gt; 📶
+&lt;ul&gt;
+&lt;li&gt;last hop (&amp;ldquo;access&amp;rdquo;) network (closest to end systems) 📍&lt;/li&gt;
+&lt;li&gt;Local and tier-3 ISPs are customers of higher tier ISPs connecting them to rest of Internet 🛠️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;local ISP → Tier 3 ISP → Tier-2 ISP → Tier 1 ISP → Tier 1 ISP → Tier-2 ISP → local ISP 🔄&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;network-performance-metrics&#34;&gt;Network Performance Metrics
+&lt;/h3&gt;&lt;h4 id=&#34;bandwidth-capacity--throughput-吞吐量-actual&#34;&gt;Bandwidth (capacity) / Throughput 吞吐量 (actual)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;data transmitted per time unit ⏱️&lt;/li&gt;
+&lt;li&gt;Notation: bps = bits per second ⚡&lt;/li&gt;
+&lt;li&gt;Network speed test 🖥️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;latency-delay-时延&#34;&gt;Latency (delay) 时延
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;time to send message from point A to point B 🛣️&lt;/li&gt;
+&lt;li&gt;one-way versus &lt;span style=&#34;background:#CDF469&#34;&gt;round-trip time&lt;/span&gt; (RTT) 🔄&lt;/li&gt;
+&lt;li&gt;$$Latency = Propagation + Transmit + Queue$$&lt;/li&gt;
+&lt;li&gt;$$Propagation = \frac{Distance}{propagation\ speed\ in\ medium (\sim 2\times10^{8}\ m/sec)}$$&lt;/li&gt;
+&lt;li&gt;$$Transmit = \frac{Size}{Bandwidth}$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;availability&#34;&gt;Availability
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Percent of time the network is available to users for transmission and reception ⏲️&lt;/li&gt;
+&lt;li&gt;Want 24x7x365 availability 🕓&lt;/li&gt;
+&lt;li&gt;Telephone network: Five 9s (99.999%) 📞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;error-rate&#34;&gt;Error Rate
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Percent of lost or damaged messages or bits 🛑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;network-structural-models&#34;&gt;Network Structural Models
+&lt;/h3&gt;&lt;h4 id=&#34;clientserver&#34;&gt;Client/Server
+&lt;/h4&gt;&lt;p&gt;客户机/服务器模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;server:&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;always-on host 始终处于运行状态的主机&lt;/li&gt;
+&lt;li&gt;permanent IP address 固定的 IP 地址&lt;/li&gt;
+&lt;li&gt;server farms for scaling 用于扩展规模的服务器集群&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;clients:&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;communicate with server 与服务器进行通信&lt;/li&gt;
+&lt;li&gt;may be intermittently connected 可能是间歇性连接&lt;/li&gt;
+&lt;li&gt;may have dynamic IP addresses&lt;/li&gt;
+&lt;li&gt;do not communicate directly with each other&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;peer-to-peer&#34;&gt;Peer-to-Peer
+&lt;/h4&gt;&lt;p&gt;对等网络模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no alwaye-on server 不存在始终在线的服务器&lt;/li&gt;
+&lt;li&gt;arbitrary end systems directly communicate&lt;/li&gt;
+&lt;li&gt;peers are intermittently connected and change IP addresses&lt;/li&gt;
+&lt;li&gt;Example :
+&lt;ul&gt;
+&lt;li&gt;Gnutella&lt;/li&gt;
+&lt;li&gt;Blockchain!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Highly scalable but difficult to manage 可扩展性极强，但难以管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hybrid-of-client-server-and-p2p&#34;&gt;Hybrid of Client-Server and P2P
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Instant messaging / Skype
+&lt;ul&gt;
+&lt;li&gt;Client-client connection is direct (not through server)&lt;/li&gt;
+&lt;li&gt;Presence detection/location centralized:
+&lt;ul&gt;
+&lt;li&gt;User registers its IP address with central server when it comes online.&lt;/li&gt;
+&lt;li&gt;User contacts central server to find IP addresses of buddies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-clients-and-cloud-computing&#34;&gt;The clients and Cloud Computing
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The thin client has a limited processing power, memory or storage ⚙️&lt;/li&gt;
+&lt;li&gt;Applications run on the web, in a &amp;ldquo;cloud&amp;rdquo; ☁️
+&lt;ul&gt;
+&lt;li&gt;Amazon offers basic services: storage, basic computing elements 🔑&lt;/li&gt;
+&lt;li&gt;Google offers more advanced services: word processors, spreadsheets 📝&lt;/li&gt;
+&lt;li&gt;IBM offers Blue Cloud ☁️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;protocols&#34;&gt;Protocols
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Conventions and rules governing this interaction are specified by the Layer N Protocol
+&lt;ul&gt;
+&lt;li&gt;A protocol is an agreement about how communications are to proceed 📜&lt;/li&gt;
+&lt;li&gt;Without a protocol communication can be difficult or even impossible 🚫&lt;/li&gt;
+&lt;li&gt;Telephone conversation, Postal addresses 📞✉️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;division-of-protocols&#34;&gt;Division of Protocols
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Connection-Oriented&lt;/span&gt; 面向连接的 🔗
+&lt;ul&gt;
+&lt;li&gt;a &lt;font color=&#34;#ff0000&#34;&gt;logical&lt;/font&gt; connection be established between two devices before transferring data 🔄&lt;/li&gt;
+&lt;li&gt;a circuit is not a prerequisite for a connection ⚡&lt;/li&gt;
+&lt;li&gt;Circuit-switched =&amp;gt; connection-oriented, but not all connection-oriented =&amp;gt; circuit switching 🛠️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Connectionless&lt;/span&gt; 🚫
+&lt;ul&gt;
+&lt;li&gt;do not establish a connection between devices 🔓&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;packet-switching-分组交换&#34;&gt;Packet Switching 分组交换
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;Break message into smaller packets (or frames) 📬&lt;/li&gt;
+&lt;li&gt;Route packets individually; Packet switches along the way make decisions about the packet 🔄&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;netwrok-architecture---a-layered-model&#34;&gt;Netwrok Architecture - A Layered Model
+&lt;/h2&gt;&lt;h3 id=&#34;needs-for-a-layered-model&#34;&gt;Needs for A Layered Model
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Task broken into subtasks 🛠️
+&lt;ul&gt;
+&lt;li&gt;Implemented separately in layers in stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each layer provides a service to the layer above ⬆️&lt;/li&gt;
+&lt;li&gt;Each layer hides details of how the service is provided from the layer above 🕵️‍♂️&lt;/li&gt;
+&lt;li&gt;Functions needed in both systems 🔄&lt;/li&gt;
+&lt;li&gt;The Nth layer on one machine &amp;ldquo;talks to&amp;rdquo; or interacts with the Nth layer on another machine 📡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;protocols-and-network-architecture&#34;&gt;Protocols and Network Architecture
+&lt;/h3&gt;&lt;h4 id=&#34;encapsulation-&#34;&gt;Encapsulation 📨
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Addition of Control Information to Data
+&lt;ul&gt;
+&lt;li&gt;Address Information 📍&lt;/li&gt;
+&lt;li&gt;Error-detecting Code 🔍&lt;/li&gt;
+&lt;li&gt;Protocol Control 🛡️&lt;br&gt;
+$$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer PDU} + \text{Trailer} $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;network-architecture&#34;&gt;Network Architecture
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The set of protocols and layers together make up the Network Architecture 🌐
+&lt;ul&gt;
+&lt;li&gt;A Network Architecture Specification must provide enough information to allow implementation in hardware/software 💻&lt;/li&gt;
+&lt;li&gt;Implementation specific details are not part of the architecture and should be irrelevant for inter-operation 🔒&lt;/li&gt;
+&lt;li&gt;With one protocol per layer we have a &lt;strong&gt;Protocol Stack&lt;/strong&gt; 🏗️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;standardized-network-architectures&#34;&gt;Standardized Network Architectures
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Required for devices to communicate 🗣️&lt;/li&gt;
+&lt;li&gt;Vendors have more marketable products 💼&lt;/li&gt;
+&lt;li&gt;Customers can insist on standards based equipment 📊&lt;/li&gt;
+&lt;li&gt;Two standards:
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;OSI Reference model&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Never lived up to early promises ❌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP/IP protocol suite&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Most widely used 🌍&lt;/li&gt;
+&lt;li&gt;De facto ✅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;standards&#34;&gt;Standards
+&lt;/h3&gt;&lt;h4 id=&#34;osi&#34;&gt;OSI
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#CDF469&#34;&gt;Open Systems Interconnection&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Developed by the International Organization for Standardization (ISO) 🌍&lt;/li&gt;
+&lt;li&gt;Seven Layers 7️⃣&lt;/li&gt;
+&lt;li&gt;A Theoretical System Delivered Too Late! 🕰️&lt;/li&gt;
+&lt;li&gt;TCP/IP Is the De Facto Standard 🏆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers&#34;&gt;OSI Layers
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Application &amp;mdash;&amp;mdash;&amp;mdash; Acronyms 📖&lt;/li&gt;
+&lt;li&gt;Presentation &amp;mdash;&amp;mdash; Pointless ❓&lt;/li&gt;
+&lt;li&gt;Session &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Students 👩‍🏫&lt;/li&gt;
+&lt;li&gt;Transport &amp;mdash;&amp;mdash;&amp;mdash; Teach 🚚&lt;/li&gt;
+&lt;li&gt;Network &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Not 🚫&lt;/li&gt;
+&lt;li&gt;Data Link &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Do 💡&lt;/li&gt;
+&lt;li&gt;Physical &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Please 🙏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers-1&#34;&gt;OSI Layers (1)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Physical&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Physical Interface Between Devices ⚙️
+&lt;ul&gt;
+&lt;li&gt;Mechanical – hardware, topology 🏗️&lt;/li&gt;
+&lt;li&gt;Electrical - signaling ⚡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Data Link&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Activating, Maintaining and Deactivating a Reliable Link – between local devices 🔗&lt;/li&gt;
+&lt;li&gt;Media access control 🛂&lt;/li&gt;
+&lt;li&gt;Error Detection and Control 🛑
+&lt;ul&gt;
+&lt;li&gt;Higher Layers May Assume Error Free Transmission ✨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers-2&#34;&gt;OSI Layers (2)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Network&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Delivery of Information 📦
+&lt;ul&gt;
+&lt;li&gt;logical addressing 🏷️&lt;/li&gt;
+&lt;li&gt;routing 🛣️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fragmentation and assembly 🔨&lt;/li&gt;
+&lt;li&gt;Error handling ❌&lt;/li&gt;
+&lt;li&gt;Not Needed on Direct Links 🚫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Transport&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Reliability control between End Systems (hosts, computers) 💻
+&lt;ul&gt;
+&lt;li&gt;In Sequence 🔢&lt;/li&gt;
+&lt;li&gt;In good flow 🌊&lt;/li&gt;
+&lt;li&gt;Error Free 🆓&lt;/li&gt;
+&lt;li&gt;No Losses 🛑&lt;/li&gt;
+&lt;li&gt;No Duplicates 🔁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;osi-layers-3&#34;&gt;OSI Layers (3)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Session&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Control of Dialogues Between Processes 💬
+&lt;ul&gt;
+&lt;li&gt;Establish, manage, and terminate dialogues 🛠️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Presentation&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Formats and Coding 📊&lt;/li&gt;
+&lt;li&gt;Data Compression 📉&lt;/li&gt;
+&lt;li&gt;Encryption 🔒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Application&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Implement user required functionalities 🧑‍💻
+&lt;ul&gt;
+&lt;li&gt;Send letters, move files 📧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-osi-environment&#34;&gt;The OSI Environment
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Communications Path 🛤️
+&lt;ul&gt;
+&lt;li&gt;point-to-point link ↔️&lt;/li&gt;
+&lt;li&gt;network 🌐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tcp--ip&#34;&gt;TCP / IP
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;TCP/IP is an Internet Model&lt;/span&gt; 🌍
+&lt;ul&gt;
+&lt;li&gt;TCP = Transmission Control Protocol 🔄&lt;/li&gt;
+&lt;li&gt;IP = Internet Protocol 🌐&lt;/li&gt;
+&lt;li&gt;This model has only 4-layers 4️⃣&lt;/li&gt;
+&lt;li&gt;It is simpler and more practical than the 7-layered OSI-Model 🧠&lt;/li&gt;
+&lt;li&gt;Created by the US Dept of Defense (DoD) 🏛️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tcpip-model&#34;&gt;TCP/IP Model
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Application Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Combines all the application-related issues into 1 layer 🔗
+&lt;ul&gt;
+&lt;li&gt;Includes the Sessions/Presentation layers 💬&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Transport Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Deals with the QoS and other issues like
+&lt;ul&gt;
+&lt;li&gt;Reliability, flow control and error correction ⚖️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Internet Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Delivery 📦&lt;/li&gt;
+&lt;li&gt;Routing 🛣️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Network Interface Layer&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensures the physical links 🔌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hybrid&#34;&gt;Hybrid
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1.png&#34;
+	width=&#34;1429&#34;
+	height=&#34;874&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_dda2affa33ea141f.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_d4551ba7c32a2ee6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Hybrid TCP/IP-OSI&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;163&#34;
+		data-flex-basis=&#34;392px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image.png&#34;
+	width=&#34;1237&#34;
+	height=&#34;520&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_f57b8c4cd6d29c2c.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_881c5ada04d92d83.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;237&#34;
+		data-flex-basis=&#34;570px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Most layers need &lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Message segmentation and aggregation 消息分段和聚合 🧩&lt;/li&gt;
+&lt;li&gt;Some form of Addressing to identify senders and receivers of messages 识别 🏷️&lt;/li&gt;
+&lt;li&gt;Multiplexing/Demultiplexing of multiple message streams to optimize channels 服用/解复用，优化信道 🔄&lt;/li&gt;
+&lt;li&gt;Flow control (fast sender vs. slow receiver) 流量控制 🌊&lt;/li&gt;
+&lt;li&gt;Error controls (detection and correction) 错误控制 🛠️&lt;/li&gt;
+&lt;li&gt;A set of rules for data exchange 数据交换 📜&lt;/li&gt;
+&lt;li&gt;Routing of messages when there may be several physical paths 路由选择 🛣️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rdma-remote-direct-memory-access&#34;&gt;RDMA (Remote Direct Memory Access)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;TCP/IP suffers from two major problems:
+&lt;ul&gt;
+&lt;li&gt;consumes significant CPU cycles and memory resources ⚙️&lt;/li&gt;
+&lt;li&gt;has large end-to-end latency 🕰️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDMA copies data directly between virtual memory buffers on two different machines 🔀
+&lt;ul&gt;
+&lt;li&gt;lower latency, higher throughput, and smaller CPU footprint ⚡&lt;/li&gt;
+&lt;li&gt;used in data centers 🏢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;application-layer-protocols---dns&#34;&gt;Application Layer Protocols - DNS
+&lt;/h2&gt;&lt;h3 id=&#34;application-architectures&#34;&gt;Application Architectures
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Communicating, distributed processes 进行通讯的分布式进程&lt;/li&gt;
+&lt;li&gt;Running in network hosts in &amp;ldquo;user space&amp;rdquo; 运行在网络主机的 “用户空间” 中&lt;/li&gt;
+&lt;li&gt;Exchange messages&lt;/li&gt;
+&lt;li&gt;email, file transfer, the Web&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application-layer protocols&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Define messages exchanged by apps and actions taken 定义应用程序之间交换的消息以及所采取的操作&lt;/li&gt;
+&lt;li&gt;User services provided by lower layer protocols 由下层协议提供的用户服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;dns&#34;&gt;DNS
+&lt;/h3&gt;&lt;p&gt;Domain Name System&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Problem - how to map host names to IP addresses?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DNS&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;a hierarchical, domain-based naming scheme and a distributed database system for implementing this naming scheme&lt;/li&gt;
+&lt;li&gt;application-layer protocol 应用层协议&lt;/li&gt;
+&lt;li&gt;host主机, routers路由器, name servers域名服务器 to communicate to resolve names (address/name translation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why not centralize DNS?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single point of failure&lt;/strong&gt; 单点故障&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Traffic volume&lt;/strong&gt; 通信流量过大&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distant centralized database&lt;/strong&gt; 集中式数据库距离过远&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Maintenance&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;doesn’t scale!&lt;/font&gt;  &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511.png&#34;
+	width=&#34;991&#34;
+	height=&#34;295&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_9e9e38d7d8a1bd56.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_71c08a29b7ccfc2e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Distributed, Hierarchical Database&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;335&#34;
+		data-flex-basis=&#34;806px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Root name server
+&lt;ul&gt;
+&lt;li&gt;Top-level Domain (TLD) server
+&lt;ul&gt;
+&lt;li&gt;Authoritative name server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;root-name-servers&#34;&gt;Root name servers
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;contacted by local name server that can not resolve name&lt;/li&gt;
+&lt;li&gt;root name server
+&lt;ul&gt;
+&lt;li&gt;contacts authoritative name server if name mapping not known&lt;/li&gt;
+&lt;li&gt;gets mapping&lt;/li&gt;
+&lt;li&gt;returns mapping to local name server&lt;/li&gt;
+&lt;li&gt;13 root name servers worldwide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tld-and-authoritative-servers&#34;&gt;TLD and Authoritative Servers
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Top-level domain (TLD) servers&lt;/strong&gt;: responsible for com, org, net, edu, etc, and all top-level country domains uk, fr, ca, jp.
+&lt;ul&gt;
+&lt;li&gt;Network solutions maintains servers for com TLD.&lt;/li&gt;
+&lt;li&gt;Educause for edu TLD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authoritative DNS servers&lt;/strong&gt;: organization’s DNS servers, providing authoritative hostname主机名 to IP mappings for organization’s servers (e.g., Web and mail).
+&lt;ul&gt;
+&lt;li&gt;Can be maintained by organization or service provider.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;local-name-server&#34;&gt;Local Name Server
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Does not strictly belong to hierarchy&lt;/li&gt;
+&lt;li&gt;Each ISP (residential ISP Internet Service Provider, company, university) has one.
+&lt;ul&gt;
+&lt;li&gt;Also called &amp;ldquo;default name server&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;When a host makes a DNS query, query is sent to its local DNS server
+&lt;ul&gt;
+&lt;li&gt;Acts as a proxy, forwards query into hierarchy 将查询请求转发到（DNS 的）层级结构体系中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nslookup
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;applicaiton-layer-protocols---email&#34;&gt;Applicaiton Layer Protocols - Email
+&lt;/h2&gt;
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;What happens when you hit SEND on your Email?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Three major components
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;User Agents&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;mail reader&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;composing, editing, reading mail messages&lt;/li&gt;
+&lt;li&gt;outlook&lt;/li&gt;
+&lt;li&gt;outgoing, incoming messages stored on server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Mail Servers&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;mailbox contains incoming messages for user&lt;/li&gt;
+&lt;li&gt;message queue of outgoing (to be sent) mail messages&lt;/li&gt;
+&lt;li&gt;SMTP protocol between mail servers to send email messages
+&lt;ul&gt;
+&lt;li&gt;client: sending mail server&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;server&amp;rdquo;: receiving mail server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Simple Mail Transfer Protocol: SMTP&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;email-smtp&#34;&gt;Email: SMTP
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;[RFC 821]&lt;/strong&gt; &lt;span style=&#34;background:#CDF469&#34;&gt;Request for Comments&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;uses TCP to reliably transfer email message from client to server, &lt;strong&gt;port 25 (587)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;direct transfer: &lt;font color=&#34;#c00000&#34;&gt;sending server&lt;/font&gt; to &lt;font color=&#34;#c00000&#34;&gt;receiving server&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;three phases of transfer
+&lt;ul&gt;
+&lt;li&gt;handshaking (greeting)&lt;/li&gt;
+&lt;li&gt;transfer of messages&lt;/li&gt;
+&lt;li&gt;closure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;command/response interaction
+&lt;ul&gt;
+&lt;li&gt;commands: ASCII text&lt;/li&gt;
+&lt;li&gt;response: status code and phrase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HELO, EHLO&lt;/td&gt;
+      &lt;td&gt;Identifies the client to the server&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;MAIL&lt;/td&gt;
+      &lt;td&gt;Initiates a mail transaction. Includes sender’s email address&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RCPT&lt;/td&gt;
+      &lt;td&gt;Specifies an individual recipient’s email address. May be used multiple times to specify multiple recipients.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DATA&lt;/td&gt;
+      &lt;td&gt;Initiates transfer of mail contents&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RSET&lt;/td&gt;
+      &lt;td&gt;Resets/aborts the current mail transaction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;VRFY, EXPN&lt;/td&gt;
+      &lt;td&gt;Verifies the authenticity of an email address&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HELP&lt;/td&gt;
+      &lt;td&gt;Asks the server to send helpful information to the client&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;NOOP&lt;/td&gt;
+      &lt;td&gt;No operation. Do nothing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;QUIT&lt;/td&gt;
+      &lt;td&gt;Instructs the server to terminate the connection&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Reply Code&lt;/th&gt;
+            &lt;th&gt;Description&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;220&lt;/td&gt;
+            &lt;td&gt;Sent by the server upon acceptance of the initial client connection.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;250&lt;/td&gt;
+            &lt;td&gt;Sent after successful completion of a command&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;354&lt;/td&gt;
+            &lt;td&gt;Send after acceptance of the DATA command to instruct the client to send the email content&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;221&lt;/td&gt;
+            &lt;td&gt;Sent by the server before it terminates the connection&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;interactions-in-smtp---1&#34;&gt;Interactions in SMTP - 1
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet owa.win.udel.edu 25
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;br&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Actor&lt;/th&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Comment&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Receiving SMTP Process&lt;/td&gt;
+      &lt;td&gt;220 reply&lt;/td&gt;
+      &lt;td&gt;When a TCP connection is opened, the receiver signals that it is ready.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sending SMTP Process&lt;/td&gt;
+      &lt;td&gt;HELO cnn.com&lt;/td&gt;
+      &lt;td&gt;Sender asks to begin Sending a message. Gives own identity.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Receiver&lt;/td&gt;
+      &lt;td&gt;250 reply&lt;/td&gt;
+      &lt;td&gt;Receiver signals that it is ready to begin Receiving a message.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;想象你给朋友打电话，电话接通了（对应 TCP 连接建立） ，朋友说 “我在听啦，你讲吧”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应接收 SMTP 进程发送 220 回复&lt;/span&gt;），这就是接收方表示自己准备好接收信息啦。&lt;br&gt;
+记忆点：“电话接通，对方说准备好”&lt;/li&gt;
+&lt;li&gt;还是打电话场景，你先跟朋友自报家门 “我是 [你的名字]”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应发送 SMTP 进程发送 HELO &lt;a class=&#34;link&#34; href=&#34;https://cnn.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cnn.com&lt;/a&gt; ，告知自己身份&lt;/span&gt;），然后说 “我有事儿要跟你讲哦”（对应发送方请求开始发送消息）。&lt;br&gt;
+记忆点：“自报家门，说要讲话”&lt;/li&gt;
+&lt;li&gt;你朋友听到你要讲话后，说 “好呀，你说吧”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应接收方发送 250 回复&lt;/span&gt;），意思就是准备好接收你说的事儿啦（对应接收方准备好接收消息）。&lt;br&gt;
+记忆点：“对方回应，准备倾听”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;interactions-in-smtp---2&#34;&gt;Interactions in SMTP - 2
+&lt;/h4&gt;  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Actor&lt;/th&gt;
+        &lt;th&gt;Command&lt;/th&gt;
+        &lt;th&gt;Comment&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Sender&lt;/td&gt;
+        &lt;td&gt;MAIL FROM: aha@cnn.com&lt;/td&gt;
+        &lt;td&gt;Sender identifies the sender (mail author, not SMTP process).&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Receiver&lt;/td&gt;
+        &lt;td&gt;250 OK&lt;/td&gt;
+        &lt;td&gt;Accepts author. However, May reject mail from others.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Sender&lt;/td&gt;
+        &lt;td&gt;RCPT TO: jcao@udel.edu&lt;/td&gt;
+        &lt;td&gt;Identifies first mail recipient.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Receiver&lt;/td&gt;
+        &lt;td&gt;250 OK&lt;/td&gt;
+        &lt;td&gt;Accepts first recipient&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;第一步&lt;/strong&gt;: &amp;ldquo;Sender&amp;rdquo;（发送方）发出 &amp;ldquo;MAIL FROM: &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt;&amp;rdquo; 的指令，就是告诉接收方这封邮件是谁写的（发件人邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt; ）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第二步&lt;/strong&gt;: &amp;ldquo;Receiver&amp;rdquo;（接收方）回复 &amp;ldquo;250 OK&amp;rdquo;，意思是接收方认可了这个发件人，但可能不接受其他发件人的邮件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第三步&lt;/strong&gt;：发送方又发出 &amp;ldquo;RCPT TO: &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;&amp;rdquo; 的指令，表明这封邮件第一个收件人的邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第四步&lt;/strong&gt;：接收方再次回复 &amp;ldquo;250 OK&amp;rdquo;，表示接受这个收件人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;interactionis-in-smtp---3&#34;&gt;Interactionis in SMTP - 3
+&lt;/h4&gt; &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Actor&lt;/th&gt;
+                &lt;th&gt;Command&lt;/th&gt;
+                &lt;th&gt;Comment&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sender&lt;/td&gt;
+                &lt;td&gt;DATA&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Receiver&lt;/td&gt;
+                &lt;td&gt;354 Enter mail, end with &#34;.&#34; on a line by itself&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sender&lt;/td&gt;
+                &lt;td&gt;Blah blah blah ...&lt;br&gt;.&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Receiver&lt;/td&gt;
+                &lt;td&gt;250 Message accepted for delivery&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;准备发送内容&lt;/strong&gt;：发送方（Sender）发出 &amp;ldquo;DATA&amp;rdquo; 指令，告诉接收方要开始发送邮件内容了&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;接收方指示&lt;/strong&gt;：接收方（Receiver）回复 &amp;ldquo;354 Enter mail, end with &amp;ldquo;.&amp;rdquo; on a line by itself&amp;rdquo;，意思是让发送方开始输入邮件内容，并且要以单独一行的点（.）作为内容结束的标志&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;发送实际内容&lt;/strong&gt;：发送方开始发送具体的邮件内容，这里用 &amp;ldquo;Blah blah blah &amp;hellip;&amp;rdquo; 代表内容，然后用单独的一个点（.）表明内容发送完毕&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;接收确认&lt;/strong&gt;：接收方返回 &amp;ldquo;250 Message accepted for delivery&amp;rdquo;，表示已经成功接收邮件内容，会进行后续的投递操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;interactions-in-smtp---4&#34;&gt;Interactions in SMTP - 4
+&lt;/h4&gt;&lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Actor&lt;/th&gt;
+                &lt;th&gt;Command&lt;/th&gt;
+                &lt;th&gt;Comment&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sender&lt;/td&gt;
+                &lt;td&gt;QUIT&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Receiver&lt;/td&gt;
+                &lt;td&gt;221 md1.nss.udel.edu closing connection&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+- 发送方（Sender）发出 &#34;QUIT&#34; 指令，表示要结束与接收方的连接
+- 接收方（Receiver）回复 &#34;221 md1.nss.udel.edu closing connection&#34;，说明接收方准备关闭连接，&#34;md1.nss.udel.edu&#34; 是接收方服务器标识
+&lt;h3 id=&#34;smtp-security-issues&#34;&gt;SMTP Security Issues
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;No authentication：无身份验证&lt;/li&gt;
+&lt;li&gt;Spamming：垃圾邮件发送&lt;/li&gt;
+&lt;li&gt;Unauthorized use of relaying, DoS：未经授权使用邮件中继、拒绝服务攻击&lt;/li&gt;
+&lt;li&gt;All communication done in plaintext：所有通信均以明文形式进行&lt;/li&gt;
+&lt;li&gt;Eavesdropping：窃听&lt;/li&gt;
+&lt;li&gt;Man in the middle attacks：中间人攻击&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;smtp-auth&#34;&gt;SMTP-AUTH
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;An &lt;strong&gt;extension&lt;/strong&gt; that adds access control to SMTP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Allows the server to provide features only to known users and limit others.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The default port for SMTP AUTH is &lt;em&gt;587&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Various authentication methods can be used, such as PLAIN, LOGIN, CRAM - MD5, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Encryption is highly recommended. 强烈建议使用加密功能&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PLAIN&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The username and password are transmitted as one string encoded in Base64.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LOGIN&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The username and password are encoded in Base64 and transmitted one by one, first the username and then the password.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CRAM - MD5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The server requests the client to solve a computational challenge using the password.&lt;/li&gt;
+&lt;li&gt;The client&amp;rsquo;s response is a string containing a username and a 16 - byte digest in hexadecimal notation.&lt;/li&gt;
+&lt;li&gt;This string is BASE64 - encoded.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mail-message-format&#34;&gt;Mail message format
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SMTP [RFC 821]: protocol for exchanging email message&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RFC 822: standard for text message&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;header lines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To:&lt;/li&gt;
+&lt;li&gt;From:&lt;/li&gt;
+&lt;li&gt;Subject:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;different from SMTP commands&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;body&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &amp;ldquo;message&amp;rdquo;, ASCII characters only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MIME: multimedia mail extension, RFC 2045, 2056&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;additional lines in message header declare MIME content type
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606.png&#34;
+	width=&#34;1105&#34;
+	height=&#34;439&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_ecd22ca97abc301f.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_7b4b67c3dad7d943.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;251&#34;
+		data-flex-basis=&#34;604px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;scenario-alice-sends-message-to-bob&#34;&gt;Scenario: Alice sends message to Bob
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Alice uses her User Agent (UA) to compose a message and sets the &amp;ldquo;to&amp;rdquo; field as &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:bob@someschool.edu&#34; &gt;bob@someschool.edu&lt;/a&gt;&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Alice&amp;rsquo;s UA sends the message to her mail server, and the message is placed in the message queue.&lt;/li&gt;
+&lt;li&gt;The client - side of SMTP opens a TCP connection with Bob&amp;rsquo;s mail server. - User Agent - Mail Server&lt;/li&gt;
+&lt;li&gt;The SMTP client sends Alice&amp;rsquo;s message over the TCP connection.&lt;/li&gt;
+&lt;li&gt;Bob&amp;rsquo;s mail server places the message in Bob&amp;rsquo;s mailbox.&lt;/li&gt;
+&lt;li&gt;Bob invokes his User Agent to read the message.
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424.png&#34;
+	width=&#34;1285&#34;
+	height=&#34;271&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_49a0e04ee8ee8a64.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_e293900e54493aea.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;474&#34;
+		data-flex-basis=&#34;1138px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;SMTP&lt;/span&gt; (Simple Mail Transfer Protocol)
+&lt;ul&gt;
+&lt;li&gt;deliver and store emails to the recipient&amp;rsquo;s server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Email Access Protocols&lt;/span&gt;: retrieval from server
+&lt;ul&gt;
+&lt;li&gt;POP (&lt;span style=&#34;background:#CDF469&#34;&gt;Post Office Protocol&lt;/span&gt;, based on RFC 1939 standard)
+&lt;ul&gt;
+&lt;li&gt;authorization process between the user agent and the server to achieve the function of downloading emails.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IMAP (&lt;span style=&#34;background:#CDF469&#34;&gt;Internet Mail Access Protocol&lt;/span&gt;, based on RFC 1730 standard)
+&lt;ul&gt;
+&lt;li&gt;more features (more complex).&lt;/li&gt;
+&lt;li&gt;manipulation of stored msgs on server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP
+&lt;ul&gt;
+&lt;li&gt;Hotmail, Yahoo!Mail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;pop3&#34;&gt;POP3
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;download and delete&amp;rdquo; mode
+&lt;ul&gt;
+&lt;li&gt;You cannot re-read e mail if you changes client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;download-and keep&amp;rdquo; mode
+&lt;ul&gt;
+&lt;li&gt;copies of messages on different clients&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;POP3 is stateless across sessions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;imap&#34;&gt;IMAP
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Keep all messages in one place: the server.&lt;/li&gt;
+&lt;li&gt;Allow users to organize messages in folders.&lt;/li&gt;
+&lt;li&gt;IMAP maintains the user state across sessions:
+&lt;ul&gt;
+&lt;li&gt;names of folders and the mappings between message IDs and folders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;application-layer-protocols---http&#34;&gt;Application Layer Protocols - HTTP
+&lt;/h2&gt;&lt;h3 id=&#34;web-and-http&#34;&gt;Web and HTTP
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, some jargon:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A web page consists of objects.&lt;/li&gt;
+&lt;li&gt;An object can be an HTML file, a JPEG image, a Java applet, an audio file, etc.&lt;/li&gt;
+&lt;li&gt;A web page consists of a base HTML file which includes several referenced objects.&lt;/li&gt;
+&lt;li&gt;Each object is addressable by a URL.&lt;/li&gt;
+&lt;li&gt;Example URL:&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3.png&#34;
+	width=&#34;1069&#34;
+	height=&#34;151&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_cd7643046c8b6dc6.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_7691861ced7ae307.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;707&#34;
+		data-flex-basis=&#34;1699px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP: hypertext transfer protocol&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Web’s application layer protocol&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;client/server model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;client: browser that requests, receives, &amp;ldquo;displays&amp;rdquo; Web objects&lt;/li&gt;
+&lt;li&gt;server: Web server sends objects in response to requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP 1.0: RFC 1945&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP 1.1: RFC 2068&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;http-request-message&#34;&gt;HTTP request message
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;two types of HTTP messages: &lt;font color=&#34;#c00000&#34;&gt;request&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;response&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;HTTP request message: ASCII (human-readable format)
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4.png&#34;
+	width=&#34;1411&#34;
+	height=&#34;649&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_7218f78f49f6d590.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_74c0b5ea36c4be96.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;217&#34;
+		data-flex-basis=&#34;521px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;general format
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5.png&#34;
+	width=&#34;1273&#34;
+	height=&#34;718&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_ab87ba6f619cc905.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_3d1d5d57d73bd766.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;425px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;method-types&#34;&gt;Method types
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;HTTP/1.1
+&lt;ul&gt;
+&lt;li&gt;GET&lt;/li&gt;
+&lt;li&gt;POST&lt;/li&gt;
+&lt;li&gt;HEAD&lt;/li&gt;
+&lt;li&gt;PUT
+&lt;ul&gt;
+&lt;li&gt;uploads file in entity body to path specified in URL field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DELETE
+&lt;ul&gt;
+&lt;li&gt;asks server to leave requested object out of response&lt;/li&gt;
+&lt;li&gt;deletes file specified in the URL field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP/1.0
+&lt;ul&gt;
+&lt;li&gt;GET, POST, HEAD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;uploading-from-input&#34;&gt;Uploading from input
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Post method:
+&lt;ul&gt;
+&lt;li&gt;Web page often includes form input&lt;/li&gt;
+&lt;li&gt;Input is uploaded to server in entity body&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;URL method:
+&lt;ul&gt;
+&lt;li&gt;Uses GET method&lt;/li&gt;
+&lt;li&gt;Input is uploaded in URL field of request line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;http-response-message&#34;&gt;HTTP response message
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6.png&#34;
+	width=&#34;1240&#34;
+	height=&#34;619&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_badea03fadbfefa1.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_1cd07553d65e4c9d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;480px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In first line in server-&amp;gt;client response message.&lt;/li&gt;
+&lt;li&gt;A few sample codes:
+&lt;ul&gt;
+&lt;li&gt;200 OK
+&lt;ul&gt;
+&lt;li&gt;request succeeded, requested object later in this message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;301 Moved Permanently
+&lt;ul&gt;
+&lt;li&gt;requested object moved, new location specified later in this message (Location:)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;400 Bad Request
+&lt;ul&gt;
+&lt;li&gt;request message not understood by server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;404 Not Found
+&lt;ul&gt;
+&lt;li&gt;requested document not found on this server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;505 HTTP Version Not Supported&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;http2&#34;&gt;HTTP/2
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;HTTP/2 specification was published as RFC 7540 in May 2015.&lt;/li&gt;
+&lt;li&gt;HTTP/2 allows the server to &amp;ldquo;push&amp;rdquo; content, that is, to respond with data for more queries than the client requested.&lt;/li&gt;
+&lt;li&gt;Multiplexing of requests, header compression, and prioritization of request. First draft was published in 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;http3&#34;&gt;HTTP/3
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;First draft was published in 2020&lt;/li&gt;
+&lt;li&gt;Uses QUIC (&lt;span style=&#34;background:#CDF469&#34;&gt;Quick UDP Internet Connections&lt;/span&gt;) as the transport layer protocol&lt;/li&gt;
+&lt;li&gt;Encrypted connections
+&lt;ul&gt;
+&lt;li&gt;Like always employing HTTPS in current HTTP 2.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP/1 to HTTP/2 to HTTP/3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;try-out-http-client-side&#34;&gt;Try out HTTP (client side)
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Telnet to your favorite Web server:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet udel.edu 80
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Type in a GET HTTP request:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GET /~jcao/ HTTP/1.1 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host: udel.edu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Look at response message sent by HTTP server!&lt;br&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; Downloading a Complex Webpage with Two Graphics Files &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7.png&#34;
+	width=&#34;1432&#34;
+	height=&#34;739&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_5990dd00f0966835.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_58609edcc363d982.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;193&#34;
+		data-flex-basis=&#34;465px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8.png&#34;
+	width=&#34;1357&#34;
+	height=&#34;700&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_401aaf7fc3aad5d.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_8931eff801178500.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;193&#34;
+		data-flex-basis=&#34;465px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;transport-layer-protocols---tcp-and-udp&#34;&gt;Transport Layer Protocols - TCP and UDP
+&lt;/h2&gt;&lt;h3 id=&#34;sockets-and-port-number&#34;&gt;Sockets and Port Number
+&lt;/h3&gt;&lt;p&gt;socket 套接字&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Application process sends/receives messages to/from its socket&lt;/li&gt;
+&lt;li&gt;socket analogous to door
+&lt;ul&gt;
+&lt;li&gt;sending process shoves message out door&lt;/li&gt;
+&lt;li&gt;sending process relies on transport infrastructure on other side of door which brings message to socket at receiving process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;API:
+&lt;ul&gt;
+&lt;li&gt;(1) choice of transport protocol;&lt;/li&gt;
+&lt;li&gt;(2) ability to fix a few parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15.png&#34;
+	width=&#34;718&#34;
+	height=&#34;634&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_47433d8c4a9cb4de.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_8342d2968b219f48.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;113&#34;
+		data-flex-basis=&#34;271px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Addressing processes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;identifier of a process includes both&lt;span style=&#34;background:#F0A7D8&#34;&gt; IP addresses&lt;/span&gt; and &lt;span style=&#34;background:#F0A7D8&#34;&gt;port numbers&lt;/span&gt; associated with the process on hosts.&lt;/li&gt;
+&lt;li&gt;Example port numbers:
+&lt;ul&gt;
+&lt;li&gt;HTTP server: 80&lt;/li&gt;
+&lt;li&gt;Mail server: 25&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;to send HTTP message to gaia.cs.umass.edu web server:
+&lt;ul&gt;
+&lt;li&gt;IP address: 128.119.245.12&lt;/li&gt;
+&lt;li&gt;Port number: 80&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use of Port Numbers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Well-known port numbers are 0 to 1023. These are used by popular applications.&lt;/li&gt;
+&lt;li&gt;Servers/daemons usually use well-known ports.
+&lt;ul&gt;
+&lt;li&gt;Any client can identify the server/service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Registered port numbers (1024 to 49152)
+&lt;ul&gt;
+&lt;li&gt;used for less central applications.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.iana.org/assignments/port-numbers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.iana.org/assignments/port-numbers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ephemeral port numbers: 49153 to 65535
+&lt;ul&gt;
+&lt;li&gt;Clients usually use dynamic ports.&lt;/li&gt;
+&lt;li&gt;Assigned by the client kernel at run time.&lt;/li&gt;
+&lt;li&gt;Traditionally (including Windows systems) take the range of 1024 through 4999&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; Socket = IP Address:Port Number &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;transport-layer-protocols&#34;&gt;Transport Layer Protocols
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide logical communication between application processes running on different hosts&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;transport protocols run &lt;font color=&#34;#c00000&#34;&gt;in end systems&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sender side: breaks app messages into segments, passes to network layer&lt;/li&gt;
+&lt;li&gt;receiver side: reassembles segments into messages, passes to app layer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more than one transport protocol available to apps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Internet: TCP and UDP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transmission Control Protocol (TCP)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connection-oriented; reliable, in-order delivery&lt;/li&gt;
+&lt;li&gt;Reliable data transfer&lt;/li&gt;
+&lt;li&gt;Flow control&lt;/li&gt;
+&lt;li&gt;Congestion control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;User Datagram Protocol (UDP)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connectionless – unreliable, unordered delivery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP: Overview&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;point-to-point&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;one sender, one receiver&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;reliable, in-order byte stream&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no &amp;ldquo;message boundaries&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;send &amp;amp; receive buffers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;connection-orinted&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;handshaking (exchange of control msgs) before data exchange&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;flow controlled&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sender will not overwhelm receiver
+&lt;ul&gt;
+&lt;li&gt;set window size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;transmission-control-protocol-tcp&#34;&gt;Transmission Control Protocol (TCP)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Segment Format&lt;/span&gt;
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14.png&#34;
+	width=&#34;1522&#34;
+	height=&#34;820&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6e30ad899561400.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6465e375e89452c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;445px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;32 bit sequence numbers&lt;/li&gt;
+&lt;li&gt;TCP breaks byte stream from application into segments (limited by Max. Segment Size)
+&lt;ul&gt;
+&lt;li&gt;Each segment has a sequence number&lt;/li&gt;
+&lt;li&gt;Initial number selected at connection time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Subsequent numbers indicate first &lt;font color=&#34;#c00000&#34;&gt;data&lt;/font&gt; byte number in segment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Acknowledgetments (ACK)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ACK# indicates next data byte expected&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Next sequence # from the other side&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Used for Error Control&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each correct TCP segment is acknowledged, except for pure acknowledgements and resets&lt;/li&gt;
+&lt;li&gt;Sender listens to be sure that each TCP segment is acknowledged&lt;/li&gt;
+&lt;li&gt;If a segment is not acknowledged in a reasonable period of time, the sender resends it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Connection Management&lt;/span&gt;
+&lt;strong&gt;3-Way Handshake&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10.png&#34;
+	width=&#34;1252&#34;
+	height=&#34;679&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_ae700d1b2f95a879.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_e2ad123fadfd2fcf.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11.png&#34;
+	width=&#34;1303&#34;
+	height=&#34;763&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_a8353b26bd874a11.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_c72db82f9f5fce23.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12.png&#34;
+	width=&#34;1327&#34;
+	height=&#34;772&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_d7e5146e418cbf9d.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_a1d2c3ae3c6e2b2a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;171&#34;
+		data-flex-basis=&#34;412px&#34;
+	
+&gt;&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13.png&#34;
+	width=&#34;1246&#34;
+	height=&#34;748&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_1c2e5c5ca33eb220.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_c3c7dbc88a7db833.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;399px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Flow Control&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Flow Control
+&lt;ul&gt;
+&lt;li&gt;One TCP process transmits too fast&lt;/li&gt;
+&lt;li&gt;Other TCP process is overwhelmed&lt;/li&gt;
+&lt;li&gt;Receiver must control transmission rate&lt;/li&gt;
+&lt;li&gt;This is flow control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TCP segment has a Window Size
+&lt;ul&gt;
+&lt;li&gt;Tell how many more bytes the sender can send beyond the segment being acknowledged&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Example
+&lt;ul&gt;
+&lt;li&gt;TCP segment contained bytes 45-89&lt;/li&gt;
+&lt;li&gt;Acknowledgement number for TCP segment acknowledging the segment is 90&lt;/li&gt;
+&lt;li&gt;If Window Size field value is 50, then
+&lt;ul&gt;
+&lt;li&gt;Sender may send through byte 140&lt;/li&gt;
+&lt;li&gt;Must then stop unless the window has been extended in another acknowledgement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each Acknowledgement extends the window of bytes that may be sent
+&lt;ul&gt;
+&lt;li&gt;Called a sliding window protocol&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;user-datagram-protocol-udp&#34;&gt;User Datagram Protocol (UDP)
+&lt;/h4&gt;&lt;h4 id=&#34;tcp-vs-udp&#34;&gt;TCP vs. UDP
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;UDP&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connectionless and Unreliable&lt;/li&gt;
+&lt;li&gt;Places a Lighter Load on the Network than TCP&lt;/li&gt;
+&lt;li&gt;Useful Where the Loss of an Occasional Application Message is Not a Serious Problem&lt;/li&gt;
+&lt;li&gt;As in Regular Network Status Messages&lt;/li&gt;
+&lt;li&gt;Or Where There is No Time for Retransmission, As in Voice Transmission
+&lt;img src=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9.png&#34;
+	width=&#34;1219&#34;
+	height=&#34;589&#34;
+	srcset=&#34;http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_fc47854395020f98.png 480w, http://localhost:1313/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_4ff37c6b164869a6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;496px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

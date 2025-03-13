@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Mia Jiao</title>
+        <link>http://localhost:1313/categories/</link>
+        <description>Recent content in Categories on Mia Jiao</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Mia Jiao</copyright>
+        <lastBuildDate>Tue, 11 Mar 2025 11:34:12 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>技术力</title>
+        <link>http://localhost:1313/categories/geek/</link>
+        <pubDate>Tue, 11 Mar 2025 11:34:12 +0800</pubDate>
+        
+        <guid>http://localhost:1313/categories/geek/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/geek/cover.jpg" alt="Featured image of post 技术力" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+&lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
+// background: &amp;ldquo;#2a9d8f&amp;rdquo;
+// color: &amp;ldquo;#fff&amp;rdquo;
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>人间事</title>
+        <link>http://localhost:1313/categories/record/</link>
+        <pubDate>Wed, 05 Mar 2025 01:01:42 +0100</pubDate>
+        
+        <guid>http://localhost:1313/categories/record/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/record/cover.jpg" alt="Featured image of post 人间事" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+&lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
+// background: &amp;ldquo;#163537&amp;rdquo;
+// color: &amp;ldquo;#fff&amp;rdquo;
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>急就章</title>
+        <link>http://localhost:1313/categories/thinking/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/thinking/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/thinking/cover.jpg" alt="Featured image of post 急就章" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+&lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
+// background: &amp;ldquo;#2a9d8f&amp;rdquo;
+// color: &amp;ldquo;#fff&amp;rdquo;
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>流水账</title>
+        <link>http://localhost:1313/categories/monthly/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/monthly/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/monthly/cover.jpg" alt="Featured image of post 流水账" /&gt;&lt;h1 id=&#34;badge-style&#34;&gt;Badge style
+&lt;/h1&gt;&lt;h2 id=&#34;-color-fff&#34;&gt;// style:
+// background: &amp;ldquo;#2a9d8f&amp;rdquo;
+// color: &amp;ldquo;#fff&amp;rdquo;
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
