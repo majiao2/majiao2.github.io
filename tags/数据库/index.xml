@@ -648,7 +648,7 @@
 		data-flex-basis=&#34;393px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;assignment&#34;&gt;Assignment
+&lt;h2 id=&#34;assignment-1&#34;&gt;Assignment 1
 &lt;/h2&gt;&lt;h3 id=&#34;exercise-1&#34;&gt;Exercise 1
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;3C is a consulting company in Newark. It needs a database to keep track of the assignment of employees to projects. For each employee, 3C wants to record an employee ID (unique for every employee), name, address, and birthday. For each project, 3C wants to record a project ID (unique for each project), project name, and start date. Employees are included in the database even when they have not been assigned to any project. A project must have at least one employee assigned. An employee’s billing rate (the price they charge client for their services) may vary by projects, and 3C wishes to record the applicable billing rate for each employee when assigned to different projects (Hint:  Add relationship attributes).&lt;/p&gt;&lt;/blockquote&gt;
@@ -1130,6 +1130,324 @@
 &lt;li&gt;For an identifying relationship, you put the primary key column from the parent into the primary key column of the child (along with other columns needed to provide uniqueness)&lt;/li&gt;
 &lt;li&gt;For &lt;span style=&#34;background:#F0A7D8&#34;&gt;a non-identifying relationship&lt;/span&gt;, you put the primary key column of the parent into the table of the child, but not in the primary key&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;normalization&#34;&gt;Normalization
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Logical Design
+&lt;ul&gt;
+&lt;li&gt;Translate the ER model into the relational model&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Normalization&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;normalization-in-database-design&#34;&gt;Normalization in database design
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Normalization
+&lt;ul&gt;
+&lt;li&gt;Process for evaluating and correcting table structures to &lt;font color=&#34;#c00000&#34;&gt;minimize data redundancies&lt;/font&gt; and &lt;font color=&#34;#c00000&#34;&gt;ensure data integrity&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Works through a series of stages called normal forms
+&lt;ul&gt;
+&lt;li&gt;Normal form&lt;/li&gt;
+&lt;li&gt;Second normal form&lt;/li&gt;
+&lt;li&gt;Third normal form
+&lt;ul&gt;
+&lt;li&gt;2 NF is better than 1 NF; 3 NF is better than 2 NF&lt;/li&gt;
+&lt;li&gt;For most business database design purpose, 3 NF is the highest we need to go in the normalization process&lt;/li&gt;
+&lt;li&gt;Highest level of normalization is not always most desirable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;different-normal-forms&#34;&gt;Different normal forms
+&lt;/h3&gt;&lt;h4 id=&#34;conversion-to-first-normal-form&#34;&gt;Conversion to first normal form
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;First Normal Form (1NF)&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;Each row has a PK value&lt;/li&gt;
+&lt;li&gt;Every column should have single values&lt;/li&gt;
+&lt;li&gt;No repeating groups (columns)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Anomalies 异常
+&lt;ul&gt;
+&lt;li&gt;Anomalies are issues caused by redundant data
+&lt;ul&gt;
+&lt;li&gt;Insertion annomalies&lt;/li&gt;
+&lt;li&gt;Modification anomalies&lt;/li&gt;
+&lt;li&gt;Deletion anomalies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;functional-dependency-fd&#34;&gt;Functional dependency (FD)
+&lt;/h4&gt;&lt;p&gt;函数依赖&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The value of one attribute (the determinant: e.g., A ) determines the value of another attribute (e.g., B) (&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;denoted A -&amp;gt; B&lt;/span&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We should identify functional dependencies that hold for &lt;u&gt;all possible values&lt;/u&gt; relation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NF Problem – Partial dependencies&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 NF tables are still subject to data redundancies -&amp;gt; anomalies
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Partial dependencies:&lt;/strong&gt; Only part of the PK can determine some non-primary key attributes&lt;/li&gt;
+&lt;li&gt;some non-primary key attributes are functionally dependent on only part of the PK&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;transformation-between-normal-forms&#34;&gt;Transformation between normal forms
+&lt;/h3&gt;&lt;h4 id=&#34;convert-1nf-to-2nf&#34;&gt;Convert 1NF to 2NF
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Second Normal Form (2NF): every non-PK attribute is fully functionally dependent on the PK&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A relation with a single attribute PK is automatically in 2 NF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step1:&lt;/span&gt; Identify all dependencies&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FDs (from business rules):
+&lt;ul&gt;
+&lt;li&gt;courseNo, sectionNo → title, units, deptCode, instructorID, fName, lName&lt;/li&gt;
+&lt;li&gt;courseNo → title, units, deptCode&lt;/li&gt;
+&lt;li&gt;instructorID → fName, lName&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FD diagram
+&lt;ul&gt;
+&lt;li&gt;Depicts all dependencies found within a given table structure&lt;/li&gt;
+&lt;li&gt;Helpful in getting bird’s-eye view of all relationships among a table’s attributes
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-36.png&#34;
+	width=&#34;1159&#34;
+	height=&#34;220&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-36_hu_bd741b98787beb30.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-36_hu_3e891fd22faeef11.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;526&#34;
+		data-flex-basis=&#34;1264px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step2:&lt;/span&gt; Remove &lt;u&gt;partial dependency&lt;/u&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write the &lt;u&gt;determinant of the partial dependency&lt;/u&gt; the key of a new relation&lt;/li&gt;
+&lt;li&gt;Place the dependent attributes on a separate line as in the partial dependency in the new relation along with their determinant&lt;/li&gt;
+&lt;li&gt;Keep the rest of the original relation
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-35.png&#34;
+	width=&#34;429&#34;
+	height=&#34;183&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-35_hu_ff1012f0c0246a5c.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-35_hu_3425fbcd56eb2a30.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;234&#34;
+		data-flex-basis=&#34;562px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;convert-2nf-to-3nf&#34;&gt;Convert 2NF to 3NF
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;A table is in third normal form (3NF) if:
+&lt;ul&gt;
+&lt;li&gt;It is in 2NF and&lt;/li&gt;
+&lt;li&gt;no non-PK attribute is &lt;u&gt;transitively dependent&lt;/u&gt; on the PK&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 1:&lt;/span&gt; Identify &lt;span style=&#34;background:#F0A7D8&#34;&gt;transitive dependencies&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;&lt;/u&gt;For every transitive dependency, write its determinant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 2:&lt;/span&gt; Remove transitive dependencies as a PK for a new table
+&lt;ul&gt;
+&lt;li&gt;Place the dependent attributes in the transitive dependency in the new table identified in step1&lt;/li&gt;
+&lt;li&gt;Keep the rest of the other tables
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-34.png&#34;
+	width=&#34;863&#34;
+	height=&#34;333&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-34_hu_1ac2c1273c017f1b.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-34_hu_41ecc9b23df695a3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;259&#34;
+		data-flex-basis=&#34;621px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;normalization-and-database-design&#34;&gt;Normalization and database design
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Normalization should be part of the design process&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure that proposed entities meet required normal form before table structures are created&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many real-world databases have been improperly designed or burdened with anomalies if improperly modified during course of time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You may be asked to redesign and modify existing databases&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;E-R diagram&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provides the big picture, or macro view, of an organization’s data requirements and operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Created through an iterative process&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Identifying relevant entities, their attributes and their relationship&lt;/li&gt;
+&lt;li&gt;Use results to identify additional entities and attributes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Normalization procedures&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on the characteristics of specific entities&lt;/li&gt;
+&lt;li&gt;A micro view of the entities within the ER diagram&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Difficult to separate normalization process from ER modeling process&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Two techniques should be used concurrently&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Normalization is a table design technique aimed at minimizing data redundancies&lt;/li&gt;
+&lt;li&gt;First three normal forms (1NF, 2NF, and 3NF) are most commonly encountered&lt;/li&gt;
+&lt;li&gt;Normalization is an important part—but only a part—of the design process&lt;/li&gt;
+&lt;li&gt;Continue the iterative ER process until all entities and their attributes are defined and all equivalent tables are in 3NF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;assignment-2&#34;&gt;Assignment 2
+&lt;/h2&gt;&lt;h3 id=&#34;exercise-1-1&#34;&gt;Exercise 1
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-37.png&#34;
+	width=&#34;1063&#34;
+	height=&#34;445&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-37_hu_315de71ba0aca83d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-37_hu_81986aade896b1b0.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;238&#34;
+		data-flex-basis=&#34;573px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;logical-data-model&#34;&gt;Logical Data Model
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-38.png&#34;
+	width=&#34;607&#34;
+	height=&#34;265&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-38_hu_731f8765e2b15899.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-38_hu_bee5081d505b429f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;229&#34;
+		data-flex-basis=&#34;549px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exercise-2-1&#34;&gt;Exercise 2
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-39.png&#34;
+	width=&#34;1360&#34;
+	height=&#34;703&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-39_hu_74c9369d74d4bb30.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-39_hu_f76f305dec5c0c17.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;193&#34;
+		data-flex-basis=&#34;464px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;logical-data-model-1&#34;&gt;Logical Data Model
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-40.png&#34;
+	width=&#34;1597&#34;
+	height=&#34;659&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-40_hu_2a061b4f8ab7b2e.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-40_hu_70e4466b28c958e9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;242&#34;
+		data-flex-basis=&#34;581px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exercise-3-1&#34;&gt;Exercise 3
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41.png&#34;
+	width=&#34;1597&#34;
+	height=&#34;659&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41_hu_2a061b4f8ab7b2e.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41_hu_70e4466b28c958e9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;242&#34;
+		data-flex-basis=&#34;581px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;logical-data-model-2&#34;&gt;Logical Data Model
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-42.png&#34;
+	width=&#34;989&#34;
+	height=&#34;621&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-42_hu_b2a08b80f0f2a59d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-42_hu_a6fd85858069c0b8.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;382px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exercise-4-1&#34;&gt;Exercise 4
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-43.png&#34;
+	width=&#34;1453&#34;
+	height=&#34;352&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-43_hu_640619cc497b6e19.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-43_hu_7e641cd10624f014.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;412&#34;
+		data-flex-basis=&#34;990px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;logical-data-model-3&#34;&gt;Logical Data Model
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-44.png&#34;
+	width=&#34;1361&#34;
+	height=&#34;257&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-44_hu_ab248adab24c1497.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-44_hu_22f1e10c5c226097.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;529&#34;
+		data-flex-basis=&#34;1270px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         
