@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>数据库 on Mia Jiao</title>
-        <link>https://blog.jwanlf.asia/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+        <link>https://majiao2.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
         <description>Recent content in 数据库 on Mia Jiao</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Mon, 10 Mar 2025 15:56:56 +0800</lastBuildDate><atom:link href="https://blog.jwanlf.asia/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Mar 2025 15:56:56 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>实体关系建模</title>
-        <link>https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</link>
+        <link>https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</link>
         <pubDate>Mon, 10 Mar 2025 15:56:56 +0800</pubDate>
         
-        <guid>https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</guid>
-        <description>&lt;img src="https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/title.jpg" alt="Featured image of post 实体关系建模" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/title.jpg" alt="Featured image of post 实体关系建模" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Understand how to represent business processes using the entity-relationship model&lt;/li&gt;
 &lt;li&gt;Implement a database design using MySQL workbench&lt;/li&gt;
@@ -286,10 +286,10 @@
 &lt;li&gt;Simple versus Composite Attributes
 &lt;ul&gt;
 &lt;li&gt;An attribute broken into component parts&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28.png&#34;
 	width=&#34;511&#34;
 	height=&#34;391&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_cb2a3b862fd7e949.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_63fdd1cb65baa6d2.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_cb2a3b862fd7e949.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_63fdd1cb65baa6d2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -299,10 +299,10 @@
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;Composite key attribute&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1.png&#34;
 	width=&#34;928&#34;
 	height=&#34;535&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_21e3737200d65726.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_433c0ecfdac0da6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_21e3737200d65726.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_433c0ecfdac0da6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -315,10 +315,10 @@
 &lt;/li&gt;
 &lt;li&gt;Single-Valued &lt;code&gt;{ }&lt;/code&gt; ersus Multivalued Attribute &lt;code&gt;[ ]&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2.png&#34;
 	width=&#34;928&#34;
 	height=&#34;535&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_21e3737200d65726.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_433c0ecfdac0da6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_21e3737200d65726.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_433c0ecfdac0da6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -377,10 +377,10 @@
 &lt;ul&gt;
 &lt;li&gt;Unary relationship
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14.png&#34;
 	width=&#34;937&#34;
 	height=&#34;286&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_e4c97b3f3dbbaecd.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_639311519eae80cc.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_e4c97b3f3dbbaecd.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_639311519eae80cc.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -393,10 +393,10 @@
 &lt;/li&gt;
 &lt;li&gt;Binary relationship
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15.png&#34;
 	width=&#34;916&#34;
 	height=&#34;325&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_135c2e59dc3942bb.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_d0b0e457b0978cf4.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_135c2e59dc3942bb.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_d0b0e457b0978cf4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -409,10 +409,10 @@
 &lt;/li&gt;
 &lt;li&gt;Ternary relationship
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16.png&#34;
 	width=&#34;826&#34;
 	height=&#34;442&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_e85a438053d2e8ee.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_3eae1a006c8aa2ed.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_e85a438053d2e8ee.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_3eae1a006c8aa2ed.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -426,10 +426,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29.png&#34;
 	width=&#34;1192&#34;
 	height=&#34;535&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_8058900fda2dd74b.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_1b8504a53d054a05.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_8058900fda2dd74b.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_1b8504a53d054a05.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -450,10 +450,10 @@
 &lt;li&gt;
 &lt;p&gt;A binary relationship with an attribute&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18.png&#34;
 	width=&#34;925&#34;
 	height=&#34;259&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_7c2e556cae63cc1d.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_edf403e27189d1ad.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_7c2e556cae63cc1d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_edf403e27189d1ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -469,10 +469,10 @@
 &lt;li&gt;
 &lt;p&gt;An associative entity&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19.png&#34;
 	width=&#34;979&#34;
 	height=&#34;256&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_6c6e3ee0c881ad38.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_2b83a2e2899966f5.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_6c6e3ee0c881ad38.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_2b83a2e2899966f5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -556,10 +556,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20.png&#34;
 	width=&#34;742&#34;
 	height=&#34;583&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_cb6e0c6960954e34.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_fbd5e223ee7510d2.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_cb6e0c6960954e34.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_fbd5e223ee7510d2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -636,10 +636,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3.png&#34;
 	width=&#34;853&#34;
 	height=&#34;520&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_30f66db19632cf7a.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_33dda92840a6cb3.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_30f66db19632cf7a.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_33dda92840a6cb3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -660,10 +660,10 @@
 &lt;li&gt;员工的计费费率 &lt;span style=&#34;background:#A0CCF6&#34;&gt;employee&amp;rsquo;s billing rate&lt;/span&gt;（他们为其服务向客户收取的价格）可能因项目而异&lt;/li&gt;
 &lt;li&gt;3C 希望记录每个员工在被分配到不同项目时的适用计费费率&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27.png&#34;
 	width=&#34;1732&#34;
 	height=&#34;328&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_993d6bf2ac788cd5.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_a6d1eb0bccf4abd4.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_993d6bf2ac788cd5.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_a6d1eb0bccf4abd4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -849,10 +849,10 @@
 &lt;li&gt;产品信息可在其被纳入任何订单之前记录&lt;/li&gt;
 &lt;li&gt;部分产品由多个其他产品组成&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26.png&#34;
 	width=&#34;1411&#34;
 	height=&#34;301&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_6bbeb14598beca0f.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_b408a3f6fbfbdd05.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_6bbeb14598beca0f.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_b408a3f6fbfbdd05.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -874,10 +874,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24.png&#34;
 	width=&#34;1303&#34;
 	height=&#34;901&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_afb1aa0dabf4bd6a.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_59cf63122275951b.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_afb1aa0dabf4bd6a.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_59cf63122275951b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -923,10 +923,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25.png&#34;
 	width=&#34;907&#34;
 	height=&#34;926&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_d038dfeef0b8a726.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_abfa595962014897.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_d038dfeef0b8a726.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_abfa595962014897.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1016,10 +1016,10 @@
 &lt;p&gt;Step 4: Unary/recursive relationships 一元/递归关系&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32.png&#34;
 	width=&#34;898&#34;
 	height=&#34;538&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_3180e5e5bc50709d.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_4a75a2fb5004bc43.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_3180e5e5bc50709d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_4a75a2fb5004bc43.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1027,10 +1027,10 @@
 		data-flex-grow=&#34;166&#34;
 		data-flex-basis=&#34;400px&#34;
 	
-&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33.png&#34;
 	width=&#34;946&#34;
 	height=&#34;571&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_643227c93bf3814b.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_f82464f6f0a69f60.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_643227c93bf3814b.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_f82464f6f0a69f60.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1051,10 +1051,10 @@
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 5:&lt;/span&gt; Multi-valued attributes 多值属性&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31.png&#34;
 	width=&#34;931&#34;
 	height=&#34;502&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_9743470c9323e958.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_ebfbeb28ccfa933c.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_9743470c9323e958.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_ebfbeb28ccfa933c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1070,10 +1070,10 @@
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 6:&lt;/span&gt; Supertypes and subtypes&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30.png&#34;
 	width=&#34;1165&#34;
 	height=&#34;550&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_f2e05a231f3f8b2d.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_c43ba44bf2b4c288.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_f2e05a231f3f8b2d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_c43ba44bf2b4c288.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>技术力 on Mia Jiao</title>
-        <link>https://blog.jwanlf.asia/categories/geek/</link>
+        <link>https://majiao2.github.io/categories/geek/</link>
         <description>Recent content in 技术力 on Mia Jiao</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Tue, 11 Mar 2025 11:34:12 +0800</lastBuildDate><atom:link href="https://blog.jwanlf.asia/categories/geek/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 11 Mar 2025 11:34:12 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/categories/geek/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>市场营销学</title>
-        <link>https://blog.jwanlf.asia/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/</link>
+        <link>https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/</link>
         <pubDate>Tue, 11 Mar 2025 11:34:12 +0800</pubDate>
         
-        <guid>https://blog.jwanlf.asia/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/</guid>
-        <description>&lt;img src="https://blog.jwanlf.asia/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 市场营销学" /&gt;</description>
+        <guid>https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 市场营销学" /&gt;</description>
         </item>
         <item>
         <title>实体关系建模</title>
-        <link>https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</link>
+        <link>https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</link>
         <pubDate>Mon, 10 Mar 2025 15:56:56 +0800</pubDate>
         
-        <guid>https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</guid>
-        <description>&lt;img src="https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/title.jpg" alt="Featured image of post 实体关系建模" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/title.jpg" alt="Featured image of post 实体关系建模" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Understand how to represent business processes using the entity-relationship model&lt;/li&gt;
 &lt;li&gt;Implement a database design using MySQL workbench&lt;/li&gt;
@@ -294,10 +294,10 @@
 &lt;li&gt;Simple versus Composite Attributes
 &lt;ul&gt;
 &lt;li&gt;An attribute broken into component parts&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28.png&#34;
 	width=&#34;511&#34;
 	height=&#34;391&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_cb2a3b862fd7e949.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_63fdd1cb65baa6d2.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_cb2a3b862fd7e949.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-28_hu_63fdd1cb65baa6d2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -307,10 +307,10 @@
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;Composite key attribute&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1.png&#34;
 	width=&#34;928&#34;
 	height=&#34;535&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_21e3737200d65726.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_433c0ecfdac0da6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_21e3737200d65726.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-1_hu_433c0ecfdac0da6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -323,10 +323,10 @@
 &lt;/li&gt;
 &lt;li&gt;Single-Valued &lt;code&gt;{ }&lt;/code&gt; ersus Multivalued Attribute &lt;code&gt;[ ]&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2.png&#34;
 	width=&#34;928&#34;
 	height=&#34;535&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_21e3737200d65726.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_433c0ecfdac0da6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_21e3737200d65726.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-2_hu_433c0ecfdac0da6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -385,10 +385,10 @@
 &lt;ul&gt;
 &lt;li&gt;Unary relationship
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14.png&#34;
 	width=&#34;937&#34;
 	height=&#34;286&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_e4c97b3f3dbbaecd.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_639311519eae80cc.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_e4c97b3f3dbbaecd.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-14_hu_639311519eae80cc.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -401,10 +401,10 @@
 &lt;/li&gt;
 &lt;li&gt;Binary relationship
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15.png&#34;
 	width=&#34;916&#34;
 	height=&#34;325&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_135c2e59dc3942bb.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_d0b0e457b0978cf4.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_135c2e59dc3942bb.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-15_hu_d0b0e457b0978cf4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -417,10 +417,10 @@
 &lt;/li&gt;
 &lt;li&gt;Ternary relationship
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16.png&#34;
 	width=&#34;826&#34;
 	height=&#34;442&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_e85a438053d2e8ee.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_3eae1a006c8aa2ed.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_e85a438053d2e8ee.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-16_hu_3eae1a006c8aa2ed.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -434,10 +434,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29.png&#34;
 	width=&#34;1192&#34;
 	height=&#34;535&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_8058900fda2dd74b.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_1b8504a53d054a05.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_8058900fda2dd74b.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-29_hu_1b8504a53d054a05.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -458,10 +458,10 @@
 &lt;li&gt;
 &lt;p&gt;A binary relationship with an attribute&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18.png&#34;
 	width=&#34;925&#34;
 	height=&#34;259&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_7c2e556cae63cc1d.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_edf403e27189d1ad.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_7c2e556cae63cc1d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-18_hu_edf403e27189d1ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -477,10 +477,10 @@
 &lt;li&gt;
 &lt;p&gt;An associative entity&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19.png&#34;
 	width=&#34;979&#34;
 	height=&#34;256&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_6c6e3ee0c881ad38.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_2b83a2e2899966f5.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_6c6e3ee0c881ad38.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-19_hu_2b83a2e2899966f5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -564,10 +564,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20.png&#34;
 	width=&#34;742&#34;
 	height=&#34;583&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_cb6e0c6960954e34.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_fbd5e223ee7510d2.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_cb6e0c6960954e34.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-20_hu_fbd5e223ee7510d2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -644,10 +644,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3.png&#34;
 	width=&#34;853&#34;
 	height=&#34;520&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_30f66db19632cf7a.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_33dda92840a6cb3.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_30f66db19632cf7a.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-3_hu_33dda92840a6cb3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -668,10 +668,10 @@
 &lt;li&gt;员工的计费费率 &lt;span style=&#34;background:#A0CCF6&#34;&gt;employee&amp;rsquo;s billing rate&lt;/span&gt;（他们为其服务向客户收取的价格）可能因项目而异&lt;/li&gt;
 &lt;li&gt;3C 希望记录每个员工在被分配到不同项目时的适用计费费率&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27.png&#34;
 	width=&#34;1732&#34;
 	height=&#34;328&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_993d6bf2ac788cd5.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_a6d1eb0bccf4abd4.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_993d6bf2ac788cd5.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-27_hu_a6d1eb0bccf4abd4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -857,10 +857,10 @@
 &lt;li&gt;产品信息可在其被纳入任何订单之前记录&lt;/li&gt;
 &lt;li&gt;部分产品由多个其他产品组成&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26.png&#34;
 	width=&#34;1411&#34;
 	height=&#34;301&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_6bbeb14598beca0f.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_b408a3f6fbfbdd05.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_6bbeb14598beca0f.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-26_hu_b408a3f6fbfbdd05.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -882,10 +882,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24.png&#34;
 	width=&#34;1303&#34;
 	height=&#34;901&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_afb1aa0dabf4bd6a.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_59cf63122275951b.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_afb1aa0dabf4bd6a.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-24_hu_59cf63122275951b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -931,10 +931,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25.png&#34;
 	width=&#34;907&#34;
 	height=&#34;926&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_d038dfeef0b8a726.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_abfa595962014897.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_d038dfeef0b8a726.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-25_hu_abfa595962014897.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1024,10 +1024,10 @@
 &lt;p&gt;Step 4: Unary/recursive relationships 一元/递归关系&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32.png&#34;
 	width=&#34;898&#34;
 	height=&#34;538&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_3180e5e5bc50709d.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_4a75a2fb5004bc43.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_3180e5e5bc50709d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-32_hu_4a75a2fb5004bc43.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1035,10 +1035,10 @@
 		data-flex-grow=&#34;166&#34;
 		data-flex-basis=&#34;400px&#34;
 	
-&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33.png&#34;
 	width=&#34;946&#34;
 	height=&#34;571&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_643227c93bf3814b.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_f82464f6f0a69f60.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_643227c93bf3814b.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-33_hu_f82464f6f0a69f60.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1059,10 +1059,10 @@
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 5:&lt;/span&gt; Multi-valued attributes 多值属性&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31.png&#34;
 	width=&#34;931&#34;
 	height=&#34;502&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_9743470c9323e958.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_ebfbeb28ccfa933c.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_9743470c9323e958.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-31_hu_ebfbeb28ccfa933c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1078,10 +1078,10 @@
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Step 6:&lt;/span&gt; Supertypes and subtypes&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30.png&#34;
 	width=&#34;1165&#34;
 	height=&#34;550&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_f2e05a231f3f8b2d.png 480w, https://blog.jwanlf.asia/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_c43ba44bf2b4c288.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_f2e05a231f3f8b2d.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-30_hu_c43ba44bf2b4c288.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1142,14 +1142,14 @@
         </item>
         <item>
         <title>商务电信网络 1</title>
-        <link>https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</link>
+        <link>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</link>
         <pubDate>Sat, 08 Mar 2025 20:01:36 +0800</pubDate>
         
-        <guid>https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</guid>
-        <description>&lt;img src="https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16.png&#34;
+        <guid>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16.png&#34;
 	width=&#34;2124&#34;
 	height=&#34;1242&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_59eb7e0e8e995c84.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_6bf10d796191177d.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_59eb7e0e8e995c84.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_6bf10d796191177d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;思维导图&#34;
@@ -1525,10 +1525,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;hybrid&#34;&gt;Hybrid
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1.png&#34;
 	width=&#34;1429&#34;
 	height=&#34;874&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_dda2affa33ea141f.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_d4551ba7c32a2ee6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_dda2affa33ea141f.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309032913-1_hu_d4551ba7c32a2ee6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Hybrid TCP/IP-OSI&#34;
@@ -1538,10 +1538,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;163&#34;
 		data-flex-basis=&#34;392px&#34;
 	
-&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image.png&#34;
 	width=&#34;1237&#34;
 	height=&#34;520&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_f57b8c4cd6d29c2c.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_881c5ada04d92d83.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_f57b8c4cd6d29c2c.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image_hu_881c5ada04d92d83.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34; &#34;
@@ -1620,10 +1620,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;&lt;strong&gt;Maintenance&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;doesn’t scale!&lt;/font&gt;  &lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511.png&#34;
 	width=&#34;991&#34;
 	height=&#34;295&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_9e9e38d7d8a1bd56.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_71c08a29b7ccfc2e.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_9e9e38d7d8a1bd56.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309051511_hu_71c08a29b7ccfc2e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Distributed, Hierarchical Database&#34;
@@ -2038,10 +2038,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;additional lines in message header declare MIME content type
-&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606.png&#34;
 	width=&#34;1105&#34;
 	height=&#34;439&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_ecd22ca97abc301f.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_7b4b67c3dad7d943.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_ecd22ca97abc301f.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309175606_hu_7b4b67c3dad7d943.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2060,10 +2060,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;The SMTP client sends Alice&amp;rsquo;s message over the TCP connection.&lt;/li&gt;
 &lt;li&gt;Bob&amp;rsquo;s mail server places the message in Bob&amp;rsquo;s mailbox.&lt;/li&gt;
 &lt;li&gt;Bob invokes his User Agent to read the message.
-&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424.png&#34;
 	width=&#34;1285&#34;
 	height=&#34;271&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_49a0e04ee8ee8a64.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_e293900e54493aea.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_49a0e04ee8ee8a64.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/Pasted%20image%2020250309180424_hu_e293900e54493aea.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2135,10 +2135,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;A web page consists of a base HTML file which includes several referenced objects.&lt;/li&gt;
 &lt;li&gt;Each object is addressable by a URL.&lt;/li&gt;
 &lt;li&gt;Example URL:&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3.png&#34;
+&lt;li&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3.png&#34;
 	width=&#34;1069&#34;
 	height=&#34;151&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_cd7643046c8b6dc6.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_7691861ced7ae307.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_cd7643046c8b6dc6.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-3_hu_7691861ced7ae307.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2173,10 +2173,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;two types of HTTP messages: &lt;font color=&#34;#c00000&#34;&gt;request&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;response&lt;/font&gt;&lt;/li&gt;
 &lt;li&gt;HTTP request message: ASCII (human-readable format)
-&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4.png&#34;
 	width=&#34;1411&#34;
 	height=&#34;649&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_7218f78f49f6d590.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_74c0b5ea36c4be96.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_7218f78f49f6d590.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-4_hu_74c0b5ea36c4be96.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2186,10 +2186,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;general format
-&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5.png&#34;
 	width=&#34;1273&#34;
 	height=&#34;718&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_ab87ba6f619cc905.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_3d1d5d57d73bd766.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_ab87ba6f619cc905.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-5_hu_3d1d5d57d73bd766.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2241,10 +2241,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;http-response-message&#34;&gt;HTTP response message
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6.png&#34;
 	width=&#34;1240&#34;
 	height=&#34;619&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_badea03fadbfefa1.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_1cd07553d65e4c9d.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_badea03fadbfefa1.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-6_hu_1cd07553d65e4c9d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2330,10 +2330,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
     &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7.png&#34;
 	width=&#34;1432&#34;
 	height=&#34;739&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_5990dd00f0966835.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_58609edcc363d982.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_5990dd00f0966835.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-7_hu_58609edcc363d982.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2341,10 +2341,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;193&#34;
 		data-flex-basis=&#34;465px&#34;
 	
-&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8.png&#34;
 	width=&#34;1357&#34;
 	height=&#34;700&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_401aaf7fc3aad5d.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_8931eff801178500.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_401aaf7fc3aad5d.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-8_hu_8931eff801178500.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2371,10 +2371,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15.png&#34;
 	width=&#34;718&#34;
 	height=&#34;634&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_47433d8c4a9cb4de.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_8342d2968b219f48.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_47433d8c4a9cb4de.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-15_hu_8342d2968b219f48.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2503,10 +2503,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;h4 id=&#34;transmission-control-protocol-tcp&#34;&gt;Transmission Control Protocol (TCP)
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP Segment Format&lt;/span&gt;
-&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14.png&#34;
 	width=&#34;1522&#34;
 	height=&#34;820&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6e30ad899561400.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6465e375e89452c.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6e30ad899561400.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-14_hu_f6465e375e89452c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2545,10 +2545,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;strong&gt;3-Way Handshake&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10.png&#34;
 	width=&#34;1252&#34;
 	height=&#34;679&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_ae700d1b2f95a879.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_e2ad123fadfd2fcf.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_ae700d1b2f95a879.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-10_hu_e2ad123fadfd2fcf.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2556,10 +2556,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;184&#34;
 		data-flex-basis=&#34;442px&#34;
 	
-&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11.png&#34;
 	width=&#34;1303&#34;
 	height=&#34;763&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_a8353b26bd874a11.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_c72db82f9f5fce23.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_a8353b26bd874a11.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-11_hu_c72db82f9f5fce23.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2568,10 +2568,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-basis=&#34;409px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12.png&#34;
 	width=&#34;1327&#34;
 	height=&#34;772&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_d7e5146e418cbf9d.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_a1d2c3ae3c6e2b2a.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_d7e5146e418cbf9d.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-12_hu_a1d2c3ae3c6e2b2a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2579,10 +2579,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-grow=&#34;171&#34;
 		data-flex-basis=&#34;412px&#34;
 	
-&gt;&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13.png&#34;
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13.png&#34;
 	width=&#34;1246&#34;
 	height=&#34;748&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_1c2e5c5ca33eb220.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_c3c7dbc88a7db833.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_1c2e5c5ca33eb220.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-13_hu_c3c7dbc88a7db833.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -2633,10 +2633,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;Useful Where the Loss of an Occasional Application Message is Not a Serious Problem&lt;/li&gt;
 &lt;li&gt;As in Regular Network Status Messages&lt;/li&gt;
 &lt;li&gt;Or Where There is No Time for Retransmission, As in Voice Transmission
-&lt;img src=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9.png&#34;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9.png&#34;
 	width=&#34;1219&#34;
 	height=&#34;589&#34;
-	srcset=&#34;https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_fc47854395020f98.png 480w, https://blog.jwanlf.asia/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_4ff37c6b164869a6.png 1024w&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_fc47854395020f98.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-9_hu_4ff37c6b164869a6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
