@@ -7,7 +7,599 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Mon, 10 Mar 2025 15:56:56 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 16 Mar 2025 20:24:49 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>数据库设计</title>
+        <link>https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</link>
+        <pubDate>Sun, 16 Mar 2025 20:24:49 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/title.jpg" alt="Featured image of post 数据库设计" /&gt;&lt;h2 id=&#34;physical-database-design&#34;&gt;Physical Database Design
+&lt;/h2&gt;&lt;h3 id=&#34;intro-to-physical-database-design&#34;&gt;Intro to physical database design
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Database Building (Physical Design)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build the database and write application programs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Purpose&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;translate the logical description of data into the &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;technical specifications&lt;/span&gt; for storing and retrieving data using a specific DBMS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Goal&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create a design for storing data that will provide adequate performance and ensure database integrity, security, and recoverability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mysql-database-structure&#34;&gt;MySQL database structure
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;A MySQL database consists of multiple user accounts
+&lt;ul&gt;
+&lt;li&gt;A user account can contain different databases&lt;/li&gt;
+&lt;li&gt;Also called database schemas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;physical-design-process&#34;&gt;Physical design process
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image.png&#34;
+	width=&#34;1489&#34;
+	height=&#34;766&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image_hu_c900b312a241f89b.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image_hu_63d4aba2442bdc50.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;466px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;field-data-type-and-index&#34;&gt;Field, data type, and index
+&lt;/h3&gt;&lt;h4 id=&#34;dsigning-fields&#34;&gt;Dsigning fields
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;What is field?&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;smallest unit of application data recognized by system software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Field design considerations&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choosing data type&lt;/li&gt;
+&lt;li&gt;Coding, compression, encryption&lt;/li&gt;
+&lt;li&gt;Controlling data integrity
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;Naming rules for tables and fields&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1 to 64 characters long&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can contain letters, numbers, or underscores&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can’t contain certain symbols and keywords&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every table in your database must have a unique name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every field in a table must have a unique name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Case sensitivity (in MySQL):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keywords: No&lt;/li&gt;
+&lt;li&gt;Table and Columns/Fields name: No (exception: Linux)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Purpose&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Specify internal encoding&lt;/li&gt;
+&lt;li&gt;Optimize internal storage use&lt;/li&gt;
+&lt;li&gt;Provide error checking mechanisms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Datatypes in different database may be slightly different&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;main-data-types-in-mysql&#34;&gt;Main data types in MySQL
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Text data types&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CHAR&lt;/li&gt;
+&lt;li&gt;VARCHAR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Number data types&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integers: INT and variations&lt;/li&gt;
+&lt;li&gt;Floating point numbers: DECIMAL, FLOAT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Dates &amp;amp; times&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DATE, TIME, and variations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Character:&lt;/span&gt; Use an appropriate character data type for all fields that are not numbers or dates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Names, addresses, etc.&lt;/li&gt;
+&lt;li&gt;Postal codes, telephone numbers, social security numbers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Numeric&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Surrogate keys 代理键 (primary key ID values)&lt;/li&gt;
+&lt;li&gt;All numeric data you might use in a calculation (prices, quantities, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;CHAR data type&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For fixed-width character fields (1 – 255 characters)
+&lt;ul&gt;
+&lt;li&gt;Fields in which you know the exact number of characters&lt;/li&gt;
+&lt;li&gt;Pads out the remaining characters with blank spaces&lt;/li&gt;
+&lt;li&gt;Removes the trailing blank spaces when data is retrieved&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;VARCHAR data type&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For variable-width character fields (1-255 characters)
+&lt;ul&gt;
+&lt;li&gt;Number of characters varies for individual data values&lt;/li&gt;
+&lt;li&gt;Values are not padded with blank spaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;CHAR or VARCHAR?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use CHAR when the sizes of the column data entries are &lt;font color=&#34;#ff0000&#34;&gt;consistent&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Use VARCHAR when the sizes of the column data entries &lt;font color=&#34;#ff0000&#34;&gt;vary considerably&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Use VARCHAR(MAX) when the sizes of the column data entries vary considerably, and the string length might exceed 8,000 bytes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34;&gt;Q&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            
+But if VARCHAR is so efficient in handling the space management dynamically based on the content being stored, why databases has the support for CHAR datatype, all CHAR(n) fields can be VARCHAR(n) fields, right ?
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #253958;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #253958;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+
+
+&lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;A&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            
+CHAR fields require less string manipulation because of fixed field widths, index lookups against CHAR field are on average 20% faster than that of VARCHAR fields.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #253958;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #253958;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+&lt;/p&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Integers&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-1.png&#34;
+	width=&#34;691&#34;
+	height=&#34;454&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-1_hu_ea2582498283bc16.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-1_hu_4fa1b400460a4c43.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;152&#34;
+		data-flex-basis=&#34;365px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TINYINT
+&lt;ul&gt;
+&lt;li&gt;Signed: -128 to 127&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 255&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SMALLINT
+&lt;ul&gt;
+&lt;li&gt;Signed: -32768 to 32767&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 65535&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;INT
+&lt;ul&gt;
+&lt;li&gt;Signed: -2147483648 to 2147483647&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 4294967295&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BIGINT
+&lt;ul&gt;
+&lt;li&gt;Signed: -9223372036854775808 to 9223372036854775807&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 18446744073709551615&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#31859b&#34;&gt;Choose the &amp;ldquo;smallest&amp;rdquo; integer type (SMALLINT, INT, BIGINT) that is big enough to hold the largest possible value&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Floating point numbers&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-2.png&#34;
+	width=&#34;1339&#34;
+	height=&#34;289&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-2_hu_9628261c9a46dff3.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-2_hu_833e2919158363a9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;463&#34;
+		data-flex-basis=&#34;1111px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For values that have a decimal portion&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;DOUBLE or FLOAT:&lt;/span&gt; very large or very small values that have an indeterminate number of decimal places
+&lt;ul&gt;
+&lt;li&gt;DOUBLE: takes more space (8 bytes)
+&lt;ul&gt;
+&lt;li&gt;precision up to 53 places, default (16, 4) &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;16:总精度(总位数) 4:小数位数&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FLOAT: takes less space (4 bytes)
+&lt;ul&gt;
+&lt;li&gt;precision up to 23 places, default (10, 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DECIMAL: for values that have a predetermined number of decimal places
+&lt;ul&gt;
+&lt;li&gt;It uses 16 bytes for storing and representing data&lt;/li&gt;
+&lt;li&gt;It has more precision than float and double&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;MySQL data and time data types&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DATE
+&lt;ul&gt;
+&lt;li&gt;Dates ranging from 1000-01-01 to 9999-12-31&lt;/li&gt;
+&lt;li&gt;Display in the format YYYY-MM-DD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TIME
+&lt;ul&gt;
+&lt;li&gt;Times ranging from is -838:59:59 to 838:59:59
+&lt;ul&gt;
+&lt;li&gt;Can also be used to represent elapsed time intervals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Display in the format HH:MI:SS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DATETIME
+&lt;ul&gt;
+&lt;li&gt;Used to store both a date and time component ranging from 1000-01-01 00:00:00 to 9999-12-31 23:59:59&lt;/li&gt;
+&lt;li&gt;Displays in the format YYYY-MM-DD HH:MI:SS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;YEAR
+&lt;ul&gt;
+&lt;li&gt;Can store either a 2-digit or 4-digit year&lt;/li&gt;
+&lt;li&gt;4-digit range: 1901 to 2155&lt;/li&gt;
+&lt;li&gt;2-digit range: 70 to 69 (1970 - 2069
+&lt;ul&gt;
+&lt;li&gt;Year values within the vary 00-69 are converted to 2000-2069&lt;/li&gt;
+&lt;li&gt;Year values in the range 70-99 are converted to 1970-1999&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;index&#34;&gt;Index
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;What is an index in DB?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;A data structure that improves the &lt;font color=&#34;#c00000&#34;&gt;speed&lt;/font&gt; of data retrieval operations&lt;/li&gt;
+&lt;li&gt;Used to &lt;font color=&#34;#c00000&#34;&gt;quickly locate data&lt;/font&gt; without having to search every row in a database table every time a table is accessed&lt;/li&gt;
+&lt;li&gt;Can be created &lt;font color=&#34;#c00000&#34;&gt;using one or more columns&lt;/font&gt; of a database table&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;How does index work?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When you create an index on a column, the database makes a sorted list of values from that column &lt;font color=&#34;#c00000&#34;&gt;along with pointers&lt;/font&gt; to the actual data&lt;/li&gt;
+&lt;li&gt;When you search for a value using that column (e.g., &lt;code&gt;WHERE name = &#39;John&#39;&lt;/code&gt;), the database first looks in the &lt;strong&gt;index&lt;/strong&gt; instead of scanning every row&lt;/li&gt;
+&lt;li&gt;The index quickly finds the &lt;strong&gt;location&lt;/strong&gt; of the required row and retrieves it efficiently&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Best practices for indexing&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Use indexes for&lt;/strong&gt; 📝:
+&lt;ul&gt;
+&lt;li&gt;Large tables 📊&lt;/li&gt;
+&lt;li&gt;Primary keys 🔑&lt;/li&gt;
+&lt;li&gt;Frequent search fields (WHERE clause) 🔍&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ORDER BY&lt;/strong&gt; and &lt;strong&gt;GROUP BY&lt;/strong&gt; queries 📈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Avoid indexes for&lt;/strong&gt; ❌:
+&lt;ul&gt;
+&lt;li&gt;Small tables (&amp;lt;30 rows) 📉&lt;/li&gt;
+&lt;li&gt;Fields with long values (consider compression) 🗜️&lt;/li&gt;
+&lt;li&gt;Fields with many NULL values (DBMS limitations) 🚫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Trade - off&lt;/strong&gt;: Faster Reads, Slower Writes ⚖️
+&lt;ul&gt;
+&lt;li&gt;In short, indexes make lookups fast but should be used wisely to avoid performance trade - offs 🚀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tutorial&#34;&gt;Tutorial
+&lt;/h3&gt;&lt;h4 id=&#34;创建schema&#34;&gt;创建Schema
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Schema Name &lt;code&gt;student-l074_Sales&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;forward-engineering&#34;&gt;Forward Engineering
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;重命名EER文件为&lt;code&gt;student-l074_Sales&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;utf8_general_ci&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;File → Export → Froward Engineer SQL CREATE Script&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;选择文件保存路径&lt;/li&gt;
+&lt;li&gt;勾选1/6/8/9/10/12&lt;/li&gt;
+&lt;li&gt;导出&lt;code&gt;student_l074_Sales.sql&lt;/code&gt;文件&lt;/li&gt;
+&lt;li&gt;进入 MISY330 → Administration → Data Import/Restore → 填写导入文件地址&lt;/li&gt;
+&lt;li&gt;进入页面 Import Progress → Start Import&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;adding-data-to-tables&#34;&gt;Adding Data to Tables
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;右键 → Table Data Import Wizard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SELECT * FROM `student-l074_Sales`.Item;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>实体关系建模</title>
         <link>https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/</link>
         <pubDate>Mon, 10 Mar 2025 15:56:56 +0800</pubDate>
@@ -1397,16 +1989,16 @@
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;exercise-3-1&#34;&gt;Exercise 3
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41.png&#34;
-	width=&#34;1597&#34;
-	height=&#34;659&#34;
-	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41_hu_2a061b4f8ab7b2e.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41_hu_70e4466b28c958e9.png 1024w&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-45.png&#34;
+	width=&#34;1402&#34;
+	height=&#34;748&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-45_hu_b6b8ddfb3703fc3e.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-45_hu_2c8fd7a7e96c7a11.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;242&#34;
-		data-flex-basis=&#34;581px&#34;
+		data-flex-grow=&#34;187&#34;
+		data-flex-basis=&#34;449px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;logical-data-model-2&#34;&gt;Logical Data Model

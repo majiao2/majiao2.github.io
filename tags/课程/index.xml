@@ -7,7 +7,599 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Thu, 13 Mar 2025 21:33:19 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E8%AF%BE%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 16 Mar 2025 20:24:49 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E8%AF%BE%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>数据库设计</title>
+        <link>https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</link>
+        <pubDate>Sun, 16 Mar 2025 20:24:49 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/title.jpg" alt="Featured image of post 数据库设计" /&gt;&lt;h2 id=&#34;physical-database-design&#34;&gt;Physical Database Design
+&lt;/h2&gt;&lt;h3 id=&#34;intro-to-physical-database-design&#34;&gt;Intro to physical database design
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Database Building (Physical Design)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build the database and write application programs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Purpose&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;translate the logical description of data into the &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;technical specifications&lt;/span&gt; for storing and retrieving data using a specific DBMS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Goal&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create a design for storing data that will provide adequate performance and ensure database integrity, security, and recoverability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mysql-database-structure&#34;&gt;MySQL database structure
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;A MySQL database consists of multiple user accounts
+&lt;ul&gt;
+&lt;li&gt;A user account can contain different databases&lt;/li&gt;
+&lt;li&gt;Also called database schemas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;physical-design-process&#34;&gt;Physical design process
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image.png&#34;
+	width=&#34;1489&#34;
+	height=&#34;766&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image_hu_c900b312a241f89b.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image_hu_63d4aba2442bdc50.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;466px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;field-data-type-and-index&#34;&gt;Field, data type, and index
+&lt;/h3&gt;&lt;h4 id=&#34;dsigning-fields&#34;&gt;Dsigning fields
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;What is field?&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;smallest unit of application data recognized by system software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Field design considerations&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choosing data type&lt;/li&gt;
+&lt;li&gt;Coding, compression, encryption&lt;/li&gt;
+&lt;li&gt;Controlling data integrity
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;Naming rules for tables and fields&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1 to 64 characters long&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can contain letters, numbers, or underscores&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can’t contain certain symbols and keywords&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every table in your database must have a unique name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every field in a table must have a unique name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Case sensitivity (in MySQL):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keywords: No&lt;/li&gt;
+&lt;li&gt;Table and Columns/Fields name: No (exception: Linux)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Purpose&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Specify internal encoding&lt;/li&gt;
+&lt;li&gt;Optimize internal storage use&lt;/li&gt;
+&lt;li&gt;Provide error checking mechanisms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Datatypes in different database may be slightly different&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;main-data-types-in-mysql&#34;&gt;Main data types in MySQL
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Text data types&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CHAR&lt;/li&gt;
+&lt;li&gt;VARCHAR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Number data types&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integers: INT and variations&lt;/li&gt;
+&lt;li&gt;Floating point numbers: DECIMAL, FLOAT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Dates &amp;amp; times&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DATE, TIME, and variations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Character:&lt;/span&gt; Use an appropriate character data type for all fields that are not numbers or dates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Names, addresses, etc.&lt;/li&gt;
+&lt;li&gt;Postal codes, telephone numbers, social security numbers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Numeric&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Surrogate keys 代理键 (primary key ID values)&lt;/li&gt;
+&lt;li&gt;All numeric data you might use in a calculation (prices, quantities, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;CHAR data type&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For fixed-width character fields (1 – 255 characters)
+&lt;ul&gt;
+&lt;li&gt;Fields in which you know the exact number of characters&lt;/li&gt;
+&lt;li&gt;Pads out the remaining characters with blank spaces&lt;/li&gt;
+&lt;li&gt;Removes the trailing blank spaces when data is retrieved&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;VARCHAR data type&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For variable-width character fields (1-255 characters)
+&lt;ul&gt;
+&lt;li&gt;Number of characters varies for individual data values&lt;/li&gt;
+&lt;li&gt;Values are not padded with blank spaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;CHAR or VARCHAR?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use CHAR when the sizes of the column data entries are &lt;font color=&#34;#ff0000&#34;&gt;consistent&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Use VARCHAR when the sizes of the column data entries &lt;font color=&#34;#ff0000&#34;&gt;vary considerably&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Use VARCHAR(MAX) when the sizes of the column data entries vary considerably, and the string length might exceed 8,000 bytes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34;&gt;Q&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            
+But if VARCHAR is so efficient in handling the space management dynamically based on the content being stored, why databases has the support for CHAR datatype, all CHAR(n) fields can be VARCHAR(n) fields, right ?
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #253958;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #253958;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+
+
+&lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;A&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            
+CHAR fields require less string manipulation because of fixed field widths, index lookups against CHAR field are on average 20% faster than that of VARCHAR fields.
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #253958;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #253958;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+&lt;/p&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Integers&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-1.png&#34;
+	width=&#34;691&#34;
+	height=&#34;454&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-1_hu_ea2582498283bc16.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-1_hu_4fa1b400460a4c43.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;152&#34;
+		data-flex-basis=&#34;365px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TINYINT
+&lt;ul&gt;
+&lt;li&gt;Signed: -128 to 127&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 255&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SMALLINT
+&lt;ul&gt;
+&lt;li&gt;Signed: -32768 to 32767&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 65535&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;INT
+&lt;ul&gt;
+&lt;li&gt;Signed: -2147483648 to 2147483647&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 4294967295&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BIGINT
+&lt;ul&gt;
+&lt;li&gt;Signed: -9223372036854775808 to 9223372036854775807&lt;/li&gt;
+&lt;li&gt;Unsigned: 0 to 18446744073709551615&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#31859b&#34;&gt;Choose the &amp;ldquo;smallest&amp;rdquo; integer type (SMALLINT, INT, BIGINT) that is big enough to hold the largest possible value&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Floating point numbers&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-2.png&#34;
+	width=&#34;1339&#34;
+	height=&#34;289&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-2_hu_9628261c9a46dff3.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/image-2_hu_833e2919158363a9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;463&#34;
+		data-flex-basis=&#34;1111px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For values that have a decimal portion&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;DOUBLE or FLOAT:&lt;/span&gt; very large or very small values that have an indeterminate number of decimal places
+&lt;ul&gt;
+&lt;li&gt;DOUBLE: takes more space (8 bytes)
+&lt;ul&gt;
+&lt;li&gt;precision up to 53 places, default (16, 4) &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;16:总精度(总位数) 4:小数位数&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FLOAT: takes less space (4 bytes)
+&lt;ul&gt;
+&lt;li&gt;precision up to 23 places, default (10, 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DECIMAL: for values that have a predetermined number of decimal places
+&lt;ul&gt;
+&lt;li&gt;It uses 16 bytes for storing and representing data&lt;/li&gt;
+&lt;li&gt;It has more precision than float and double&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;MySQL data and time data types&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DATE
+&lt;ul&gt;
+&lt;li&gt;Dates ranging from 1000-01-01 to 9999-12-31&lt;/li&gt;
+&lt;li&gt;Display in the format YYYY-MM-DD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TIME
+&lt;ul&gt;
+&lt;li&gt;Times ranging from is -838:59:59 to 838:59:59
+&lt;ul&gt;
+&lt;li&gt;Can also be used to represent elapsed time intervals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Display in the format HH:MI:SS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DATETIME
+&lt;ul&gt;
+&lt;li&gt;Used to store both a date and time component ranging from 1000-01-01 00:00:00 to 9999-12-31 23:59:59&lt;/li&gt;
+&lt;li&gt;Displays in the format YYYY-MM-DD HH:MI:SS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;YEAR
+&lt;ul&gt;
+&lt;li&gt;Can store either a 2-digit or 4-digit year&lt;/li&gt;
+&lt;li&gt;4-digit range: 1901 to 2155&lt;/li&gt;
+&lt;li&gt;2-digit range: 70 to 69 (1970 - 2069
+&lt;ul&gt;
+&lt;li&gt;Year values within the vary 00-69 are converted to 2000-2069&lt;/li&gt;
+&lt;li&gt;Year values in the range 70-99 are converted to 1970-1999&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;index&#34;&gt;Index
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;What is an index in DB?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;A data structure that improves the &lt;font color=&#34;#c00000&#34;&gt;speed&lt;/font&gt; of data retrieval operations&lt;/li&gt;
+&lt;li&gt;Used to &lt;font color=&#34;#c00000&#34;&gt;quickly locate data&lt;/font&gt; without having to search every row in a database table every time a table is accessed&lt;/li&gt;
+&lt;li&gt;Can be created &lt;font color=&#34;#c00000&#34;&gt;using one or more columns&lt;/font&gt; of a database table&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;How does index work?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When you create an index on a column, the database makes a sorted list of values from that column &lt;font color=&#34;#c00000&#34;&gt;along with pointers&lt;/font&gt; to the actual data&lt;/li&gt;
+&lt;li&gt;When you search for a value using that column (e.g., &lt;code&gt;WHERE name = &#39;John&#39;&lt;/code&gt;), the database first looks in the &lt;strong&gt;index&lt;/strong&gt; instead of scanning every row&lt;/li&gt;
+&lt;li&gt;The index quickly finds the &lt;strong&gt;location&lt;/strong&gt; of the required row and retrieves it efficiently&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Best practices for indexing&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Use indexes for&lt;/strong&gt; 📝:
+&lt;ul&gt;
+&lt;li&gt;Large tables 📊&lt;/li&gt;
+&lt;li&gt;Primary keys 🔑&lt;/li&gt;
+&lt;li&gt;Frequent search fields (WHERE clause) 🔍&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ORDER BY&lt;/strong&gt; and &lt;strong&gt;GROUP BY&lt;/strong&gt; queries 📈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Avoid indexes for&lt;/strong&gt; ❌:
+&lt;ul&gt;
+&lt;li&gt;Small tables (&amp;lt;30 rows) 📉&lt;/li&gt;
+&lt;li&gt;Fields with long values (consider compression) 🗜️&lt;/li&gt;
+&lt;li&gt;Fields with many NULL values (DBMS limitations) 🚫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Trade - off&lt;/strong&gt;: Faster Reads, Slower Writes ⚖️
+&lt;ul&gt;
+&lt;li&gt;In short, indexes make lookups fast but should be used wisely to avoid performance trade - offs 🚀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tutorial&#34;&gt;Tutorial
+&lt;/h3&gt;&lt;h4 id=&#34;创建schema&#34;&gt;创建Schema
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Schema Name &lt;code&gt;student-l074_Sales&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;forward-engineering&#34;&gt;Forward Engineering
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;重命名EER文件为&lt;code&gt;student-l074_Sales&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;utf8_general_ci&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;File → Export → Froward Engineer SQL CREATE Script&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;选择文件保存路径&lt;/li&gt;
+&lt;li&gt;勾选1/6/8/9/10/12&lt;/li&gt;
+&lt;li&gt;导出&lt;code&gt;student_l074_Sales.sql&lt;/code&gt;文件&lt;/li&gt;
+&lt;li&gt;进入 MISY330 → Administration → Data Import/Restore → 填写导入文件地址&lt;/li&gt;
+&lt;li&gt;进入页面 Import Progress → Start Import&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;adding-data-to-tables&#34;&gt;Adding Data to Tables
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;右键 → Table Data Import Wizard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SELECT * FROM `student-l074_Sales`.Item;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>商务电信网络 2</title>
         <link>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/</link>
         <pubDate>Thu, 13 Mar 2025 21:33:19 +0800</pubDate>
@@ -21,9 +613,532 @@
         <pubDate>Tue, 11 Mar 2025 11:34:12 +0800</pubDate>
         
         <guid>https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/</guid>
-        <description>&lt;img src="https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 市场营销学" /&gt;&lt;h2 id=&#34;1&#34;&gt;1
-&lt;/h2&gt;&lt;h2 id=&#34;2&#34;&gt;2
-&lt;/h2&gt;</description>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 市场营销学" /&gt;&lt;h2 id=&#34;principles-of-marketing&#34;&gt;Principles of Marketing
+&lt;/h2&gt;&lt;p&gt;(kotler Ch.1)&lt;/p&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Learning Objectives&lt;/p&gt;&lt;/div&gt;
+
+&lt;myblockquote class=&#34;quote-center&#34;&gt;
+        &lt;p&gt;Define the term &lt;font color=&#34;#c00000&#34;&gt;marketing&lt;/font&gt;&lt;br&gt;Explain the five competing &lt;font color=&#34;#c00000&#34;&gt;market orientations&lt;/font&gt;&lt;br&gt;Outline the &lt;font color=&#34;#c00000&#34;&gt;steps&lt;/font&gt; in the marketing proces&lt;/p&gt;&lt;/myblockquote&gt; 
+
+&lt;h3 id=&#34;what-is-marketing&#34;&gt;What is Marketing?
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Marketing is all around you…
+&lt;ul&gt;
+&lt;li&gt;Even the fruit seller has to&lt;/li&gt;
+&lt;li&gt;understand her market&lt;/li&gt;
+&lt;li&gt;distribute her fruits at the right place&lt;/li&gt;
+&lt;li&gt;sell them at the right price&lt;/li&gt;
+&lt;li&gt;and be alert of who else are selling fruits or possible substitutes
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;She has to make sure that she offers &lt;font color=&#34;#c00000&#34;&gt;superior customer value&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;What is marketing?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Marketing&lt;/span&gt; is a &lt;font color=&#34;#c00000&#34;&gt;process&lt;/font&gt; by which companies create &lt;font color=&#34;#c00000&#34;&gt;value&lt;/font&gt; for customers and build &lt;font color=&#34;#c00000&#34;&gt;strong customer relationships&lt;/font&gt; to capture value from customers in return.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Marketing&lt;/span&gt; is the process of planning and executing the conception, pricing, promotion, and distribution of ideas, goods, and services to create exchanges that satisfy individual and organizational goals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-marketinig-process&#34;&gt;The Marketinig Process
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image.png&#34;
+	width=&#34;1267&#34;
+	height=&#34;745&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image_hu_189e7881eb0eceec.png 480w, https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image_hu_22cc9304f717f67a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;408px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;understanding-the-marketplace-and-customer-needs&#34;&gt;Understanding the Marketplace and Customer Needs
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;Customer Needs, Wants, and Demands&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Needs&lt;/font&gt; are states of deprivation
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#5f497a&#34;&gt;Physical&lt;/font&gt; - food, clothing, warmth, safety&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#5f497a&#34;&gt;Social&lt;/font&gt; - belonging and affection&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#5f497a&#34;&gt;Individual&lt;/font&gt; - Knowledge and self-expression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Wants&lt;/font&gt; are the form that needs take as they are shaped by culture and individual personality&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Demands&lt;/font&gt; are wants backed by buying power
+&lt;ul&gt;
+&lt;li&gt;You need to be able to communicate with your friends &amp;amp; family. You need a mobile phone&lt;/li&gt;
+&lt;li&gt;You may want to change a phone whenever a new model is released&lt;/li&gt;
+&lt;li&gt;Your &amp;ldquo;want” backed by your power to buy a new phone become market demand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Can marketers create demand?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Good companies &lt;span style=&#34;background:#F0A7D8&#34;&gt;satisfy&lt;/span&gt; market demands, great companies &lt;span style=&#34;background:#F0A7D8&#34;&gt;create&lt;/span&gt; market demands!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;market-offering&#34;&gt;Market offering
+&lt;/h4&gt;&lt;p&gt;&lt;u&gt;Market offerings&lt;/u&gt; are some combination of &lt;span style=&#34;background:#CDF469&#34;&gt;products&lt;/span&gt;, &lt;span style=&#34;background:#CDF469&#34;&gt;services&lt;/span&gt;, &lt;span style=&#34;background:#CDF469&#34;&gt;information&lt;/span&gt;, or &lt;span style=&#34;background:#CDF469&#34;&gt;experience&lt;/span&gt;
+offered to a market to satisfy a need or want.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Goods&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Physical goods constitute the bulk of production and marketing efforts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Services&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;A growing portion of business activities are focused on the production of services&lt;/li&gt;
+&lt;li&gt;The U.S. economy today consists of a 70–30 services to goods mix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Persons&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Celebrity marketing is a major business&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Intangible rights of ownership of either real property (real estate) or financial property (stock and bonds)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Experiences&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;By orchestrating several services and goods, a firm can create market experiences &lt;font color=#81B300&gt;orchestrate v. 精心安排 &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Organizations&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Actively work to build a strong, favorable, and unique image in the minds of the target publics.&lt;/li&gt;
+&lt;li&gt;E.g., non-profit organizations, universities, and public service organization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Information&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Can be produced and marketed as a product&lt;/li&gt;
+&lt;li&gt;Schools, universities, consulting firms, and others produce information and then market it&lt;/li&gt;
+&lt;li&gt;In the ear of big data, information based on data analysis is valuable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ideas&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Every market offering includes a basic idea&lt;/li&gt;
+&lt;li&gt;Products and services are platform for delivering some idea or benefit&lt;/li&gt;
+&lt;li&gt;Social marketing: Promoting societal beneficial ideas such as &amp;ldquo;Say No to Drugs”, “Exercise Daily&amp;rdquo;, and “Eat Healthy Food”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Events&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Marketers promote time-based events such as trade shows, artistic performances, and the Olympics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Places&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Cities, states, regions, and whole nations compete actively to attract tourists, factories, and new residents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;marketing-myopia&#34;&gt;Marketing myopia
+&lt;/h4&gt;&lt;p&gt;营销短视症&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The mistake of paying more attention to the &lt;font color=&#34;#c00000&#34;&gt;specific products a company offers&lt;/font&gt; than to the &lt;font color=&#34;#c00000&#34;&gt;benefits&lt;/font&gt; and experiences derived from these products.
+&lt;ul&gt;
+&lt;li&gt;Product attributes and existing customer wants&lt;/li&gt;
+&lt;li&gt;Product benefits and experiences and customer needs&lt;/li&gt;
+&lt;li&gt;Offer superior customer value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;designing-a-customer-driven-marketing-strategy&#34;&gt;Designing a Customer-Driven Marketing Strategy
+&lt;/h3&gt;&lt;h4 id=&#34;marketing-stategy-stp&#34;&gt;Marketing Stategy: STP
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Segmentation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Identify and profile distinct groups of buyers who might prefer or require varying products and services by examining
+&lt;ul&gt;
+&lt;li&gt;a. Demographic information&lt;/li&gt;
+&lt;li&gt;b. Psychographic information&lt;/li&gt;
+&lt;li&gt;c. Behavioral information&lt;/li&gt;
+&lt;li&gt;d. Geographic information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Target market&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;which segments do we focus on?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Positioning&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;The offering is positioned in the minds of the target buyers as delivering some central benefit(s)
+&lt;ul&gt;
+&lt;li&gt;For example, Volvo develops its cars for buyers to whom automobile safety is a major concern.&lt;/li&gt;
+&lt;li&gt;Volvo, therefore, positions its car as the safest a customer can buy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;marketing-management-orientation-toward-the-marketplace&#34;&gt;Marketing management Orientation&amp;lt; toward the Marketplace
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-1.png&#34;
+	width=&#34;715&#34;
+	height=&#34;678&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-1_hu_9b1d77b21fc2599d.png 480w, https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-1_hu_b0dfaa7131eddbd1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;105&#34;
+		data-flex-basis=&#34;253px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The marketplace isn’t what it used to be&lt;/li&gt;
+&lt;li&gt;Marketers must attend and respond to a number of significant developments
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Given the new marketing realities, what philosophy should guide a company’s marketing efforts?&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;production-concept&#34;&gt;Production concept
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The idea that consumer swill favor products that are available or highly affordable&lt;/li&gt;
+&lt;li&gt;Improve production and distribution efficiently&lt;/li&gt;
+&lt;li&gt;Usually used to expand the market
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Constrains&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Center on producers, neglect the demand of consumers&lt;/li&gt;
+&lt;li&gt;Care more about quantitythan quality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;product-concept&#34;&gt;Product concept
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The idea that consumers will favor products that offer the most quality, performance, and innovative features&lt;/li&gt;
+&lt;li&gt;Devote energy to making continuous product improvements
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Constrains&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Do not fully consider consumer needs&lt;/li&gt;
+&lt;li&gt;Could lead to “marketing myopia” 营销短视症&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;selling-concept&#34;&gt;Selling concept
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The idea that consumers will not buy enough of the firm&amp;rsquo;s products unless it undertakes a large scale selling and promotion effort
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Constrains&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Marketing ≠ selling
+&lt;ul&gt;
+&lt;li&gt;Selling is to sell the products that are produced&lt;/li&gt;
+&lt;li&gt;Marketing is to produce the products that could be sold&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;marketing-concept&#34;&gt;Marketing concept
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The idea that achieving organizational goals depends on knowing the needs and wants of the target markets and delivering the desired satisfaction
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Constrains&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Customer focus&lt;/font&gt; and &lt;font color=&#34;#c00000&#34;&gt;value&lt;/font&gt; are the paths to sales and profits&lt;/li&gt;
+&lt;li&gt;Customer-centered &lt;font color=&#34;#c00000&#34;&gt;&amp;ldquo;sense and respond&amp;rdquo;&lt;/font&gt; philosophy 以客户为中心的“感知与响应”理念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;The Selling and marketing concepts contrasted&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Selling focuses on the needs of the seller&lt;/li&gt;
+&lt;li&gt;Marketing focuses on the needs of the buyer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-2.png&#34;
+	width=&#34;1675&#34;
+	height=&#34;520&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-2_hu_6e17352623f1ab4b.png 480w, https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-2_hu_9679e3aa65c2a73e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;322&#34;
+		data-flex-basis=&#34;773px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;Evolution of marketing management in China&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;During the 40-year reform and opening-up, &lt;font color=&#34;#c00000&#34;&gt;marketing orientation&lt;/font&gt; in China has gone through the following development process
+&lt;ul&gt;
+&lt;li&gt;that goes beyond traditional applications of the marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Production orientation&lt;/span&gt; (1978-1984)
+&lt;ul&gt;
+&lt;li&gt;Short of supply&lt;/li&gt;
+&lt;li&gt;Township enterprises are developing rapidly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Production orientation&lt;/span&gt; (1984-1992)
+&lt;ul&gt;
+&lt;li&gt;A number of high-quality manufacturing enterprises were born&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Selling &amp;amp; channel orientation&lt;/span&gt; (1992 - 1999)
+&lt;ul&gt;
+&lt;li&gt;Accelerated urbanization process&lt;/li&gt;
+&lt;li&gt;Consumer market has entered a period of rapid circulation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Marketing &amp;amp; digital orientation&lt;/span&gt; (2000-)
+&lt;ul&gt;
+&lt;li&gt;Consumption ideas and lifestyles are changing dramatically&lt;/li&gt;
+&lt;li&gt;Consumers desire interaction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;holistic-marketing-concept&#34;&gt;Holistic marketing concept
+&lt;/h4&gt;&lt;p&gt;整体营销概念&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The need to have amore complete, cohesive approach that goes beyond traditional applications of the marketing concept.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Everything matters in marketing &amp;mdash;&amp;mdash; and that a broad, integrated perspective is often necessary.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;A schematic overview of four broad components characterizing holistic marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-3.png&#34;
+	width=&#34;1360&#34;
+	height=&#34;592&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-3_hu_187cb9685161a420.png 480w, https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-3_hu_f08d09360121ec35.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;229&#34;
+		data-flex-basis=&#34;551px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Relationship marketing
+&lt;ul&gt;
+&lt;li&gt;A key goal of marketing is to develop &lt;font color=&#34;#c00000&#34;&gt;deep&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;enduring&lt;/font&gt; &lt;font color=&#34;#c00000&#34;&gt;relationships&lt;/font&gt; with &lt;font color=&#34;#c00000&#34;&gt;people and organizations&lt;/font&gt; that directly or indirectly affect the success of the firm’s marketing activities&lt;/li&gt;
+&lt;li&gt;Four &lt;font color=&#34;#c00000&#34;&gt;key constituents&lt;/font&gt; of relationship marketing are
+&lt;ul&gt;
+&lt;li&gt;Customers&lt;/li&gt;
+&lt;li&gt;Employees&lt;/li&gt;
+&lt;li&gt;Marketing partners&lt;/li&gt;
+&lt;li&gt;Members of the financial community&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Integrated marketing
+&lt;ul&gt;
+&lt;li&gt;Devise marketing activities and assemble &lt;font color=&#34;#c00000&#34;&gt;fully integrated&lt;/font&gt; marketing programs to create, communicate, and deliver value for customers&lt;/li&gt;
+&lt;li&gt;Choosing communication options that &lt;font color=&#34;#c00000&#34;&gt;reinforce and complement&lt;/font&gt; each other&lt;/li&gt;
+&lt;li&gt;Two &lt;font color=&#34;#c00000&#34;&gt;key themes&lt;/font&gt; of integrated marketing
+&lt;ul&gt;
+&lt;li&gt;Many &lt;font color=&#34;#c00000&#34;&gt;different&lt;/font&gt; marketing activities communicate and deliver value&lt;/li&gt;
+&lt;li&gt;When &lt;font color=&#34;#c00000&#34;&gt;coordinated&lt;/font&gt;, marketing activities maximize their joint efforts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internal marketing
+&lt;ul&gt;
+&lt;li&gt;Marketing is no longer the responsibility of a single department  it is a &lt;font color=&#34;#c00000&#34;&gt;company-wide&lt;/font&gt; undertaking that drives the company’s vision, mission, and strategic planning&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Various marketing functions&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;sales force&lt;/li&gt;
+&lt;li&gt;advertising&lt;/li&gt;
+&lt;li&gt;customer services&lt;/li&gt;
+&lt;li&gt;product management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Case Example&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;The marketing vice president of a major Asian airline wants to increase the airline’s traffic share&lt;/li&gt;
+&lt;li&gt;What efforts should the company make?
+&lt;ul&gt;
+&lt;li&gt;A &lt;font color=&#34;#c00000&#34;&gt;coordination problem&lt;/font&gt; that requires effective internal marketing&lt;/li&gt;
+&lt;li&gt;Build up customer satisfaction through providing &lt;font color=&#34;#c00000&#34;&gt;better food&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;cleaner cabins&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;better-trained cabincrews&lt;/font&gt;, and &lt;font color=&#34;#c00000&#34;&gt;lower fares&lt;/font&gt;, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Performance marketing
+&lt;ul&gt;
+&lt;li&gt;Understanding the &lt;font color=&#34;#c00000&#34;&gt;financial and non-financial&lt;/font&gt; returns to business and society from marketing activities and programs
+&lt;ul&gt;
+&lt;li&gt;a) Financial accountability
+&lt;ul&gt;
+&lt;li&gt;justify the &lt;font color=&#34;#c00000&#34;&gt;spending&lt;/font&gt; in terms of brand building and growing the customer base&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;b) Social responsibility marketing
+&lt;ul&gt;
+&lt;li&gt;consider the &lt;font color=&#34;#c00000&#34;&gt;ethical&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;environmental&lt;/font&gt;, &lt;font color=&#34;#c00000&#34;&gt;legal&lt;/font&gt;, and &lt;font color=&#34;#c00000&#34;&gt;social&lt;/font&gt; context of marketing activities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Revolution of Marketing Concepts&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-4.png&#34;
+	width=&#34;1570&#34;
+	height=&#34;250&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-4_hu_3d683dada6d330a0.png 480w, https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-4_hu_983348fc0096f65c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;628&#34;
+		data-flex-basis=&#34;1507px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;preparing-an-integrated-marketing-plan-and-program&#34;&gt;Preparing an Integrated Marketing Plan and Program
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Marketing Mix
+&lt;ul&gt;
+&lt;li&gt;The &lt;font color=&#34;#c00000&#34;&gt;marketing mix&lt;/font&gt; is the set of tools (4Ps) the firm uses to implement its marketing strategy
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;P&lt;/font&gt;roduct&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;P&lt;/font&gt;rice&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;P&lt;/font&gt;romotion&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;P&lt;/font&gt;lace&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;build-profitable-relationships&#34;&gt;Build profitable relationships
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;The key to building lasting customer relationship is to create superior customer value and satisfaction
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Customer-perceived value&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;The difference between &lt;font color=&#34;#c00000&#34;&gt;total customer value&lt;/font&gt; and &lt;font color=&#34;#c00000&#34;&gt;total customer cost&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Customer satisfaction&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;The extent to which a product&amp;rsquo;s &lt;font color=&#34;#c00000&#34;&gt;perceived performance&lt;/font&gt; matched &lt;font color=&#34;#c00000&#34;&gt;a buyer&amp;rsquo;s expectations&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-warning&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#b30000&#34;&gt;&lt;path d=&#34;M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Customer-perceived value&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Customer benefits&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Product benefits&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;function, reliability, durability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Service benefits&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;setup, repair, exchange &amp;amp; return&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Relational benefits&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;build partnerships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Image benefits&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;establishment of social image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Social benefits&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;establishment of social connections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Emotional benefits&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;entertainment, fun, arousal 兴奋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customer costs&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Monetary costs&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;the payment made for transaction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Time costs&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;time spent on acquiring and learning products or waiting for service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Energy costs&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;energy spent on learning products or contacting service person&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Physical costs&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;physical strength spent on learning and using products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Health costs&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;loss of health due to the use of products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-warning&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#b30000&#34;&gt;&lt;path d=&#34;M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Customer satisfaction&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Important factors in keeping customers&lt;/li&gt;
+&lt;li&gt;Depends on the &lt;font color=&#34;#c00000&#34;&gt;product’s perceived performance &lt;/font&gt;relative to &lt;font color=&#34;#c00000&#34;&gt;a buyer’s expectation&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-5.png&#34;
+	width=&#34;1288&#34;
+	height=&#34;634&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-5_hu_8d97acaa6e0ef200.png 480w, https://majiao2.github.io/2025/%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%AD%A6/image-5_hu_81aac9589de719a1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;203&#34;
+		data-flex-basis=&#34;487px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>实体关系建模</title>
@@ -1415,16 +2530,16 @@
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;exercise-3-1&#34;&gt;Exercise 3
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41.png&#34;
-	width=&#34;1597&#34;
-	height=&#34;659&#34;
-	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41_hu_2a061b4f8ab7b2e.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-41_hu_70e4466b28c958e9.png 1024w&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-45.png&#34;
+	width=&#34;1402&#34;
+	height=&#34;748&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-45_hu_b6b8ddfb3703fc3e.png 480w, https://majiao2.github.io/2025/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%BB%BA%E6%A8%A1/image-45_hu_2c8fd7a7e96c7a11.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;242&#34;
-		data-flex-basis=&#34;581px&#34;
+		data-flex-grow=&#34;187&#34;
+		data-flex-basis=&#34;449px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;logical-data-model-2&#34;&gt;Logical Data Model
@@ -1474,21 +2589,7 @@
         <pubDate>Sat, 08 Mar 2025 20:01:36 +0800</pubDate>
         
         <guid>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/</guid>
-        <description>&lt;img src="https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16.png&#34;
-	width=&#34;2124&#34;
-	height=&#34;1242&#34;
-	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_59eb7e0e8e995c84.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-16_hu_6bf10d796191177d.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;思维导图&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;171&#34;
-		data-flex-basis=&#34;410px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;networking-fundamentals&#34;&gt;Networking Fundamentals
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/network_new.jpg" alt="Featured image of post 商务电信网络 1" /&gt;&lt;h2 id=&#34;networking-fundamentals&#34;&gt;Networking Fundamentals
 &lt;/h2&gt;&lt;h3 id=&#34;network--internet&#34;&gt;Network &amp;amp; Internet
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;A network of network 🔢
@@ -2002,7 +3103,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;h4 id=&#34;local-name-server&#34;&gt;Local Name Server
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Does not strictly belong to hierarchy&lt;/li&gt;
-&lt;li&gt;Each ISP (residential ISP Internet Service Provider, company, university) has one.
+&lt;li&gt;Each ISP (residential &lt;span style=&#34;background:#CDF469&#34;&gt;ISP&lt;/span&gt; Internet Service Provider, company, university) has one.
 &lt;ul&gt;
 &lt;li&gt;Also called &amp;ldquo;default name server&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2249,7 +3350,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;td&gt;Sender&lt;/td&gt;
-                &lt;td&gt;Blah blah blah ...&lt;br&gt;.&lt;/td&gt;
+                &lt;td&gt;Blah blah blah ...&lt;br&gt;&lt;/td&gt;
                 &lt;td&gt;&lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
@@ -2384,7 +3485,8 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Alice uses her User Agent (UA) to compose a message and sets the &amp;ldquo;to&amp;rdquo; field as &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:bob@someschool.edu&#34; &gt;bob@someschool.edu&lt;/a&gt;&amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;Alice&amp;rsquo;s UA sends the message to her mail server, and the message is placed in the message queue.&lt;/li&gt;
-&lt;li&gt;The client - side of SMTP opens a TCP connection with Bob&amp;rsquo;s mail server. - User Agent - Mail Server&lt;/li&gt;
+&lt;li&gt;The client - side of SMTP opens a TCP connection with Bob&amp;rsquo;s mail server. &lt;br&gt;
+&lt;strong&gt;User Agent - Mail Server&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;The SMTP client sends Alice&amp;rsquo;s message over the TCP connection.&lt;/li&gt;
 &lt;li&gt;Bob&amp;rsquo;s mail server places the message in Bob&amp;rsquo;s mailbox.&lt;/li&gt;
 &lt;li&gt;Bob invokes his User Agent to read the message.
@@ -2685,11 +3787,11 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/h2&gt;&lt;h3 id=&#34;sockets-and-port-number&#34;&gt;Sockets and Port Number
 &lt;/h3&gt;&lt;p&gt;socket 套接字&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Application process sends/receives messages to/from its socket&lt;/li&gt;
-&lt;li&gt;socket analogous to door
+&lt;li&gt;Application process sends/receives messages to/from its socket 应用程序通过socket发送或接收信息&lt;/li&gt;
+&lt;li&gt;socket analogous to door socket 类似于一扇门
 &lt;ul&gt;
-&lt;li&gt;sending process shoves message out door&lt;/li&gt;
-&lt;li&gt;sending process relies on transport infrastructure on other side of door which brings message to socket at receiving process&lt;/li&gt;
+&lt;li&gt;sending process shoves message out door 发送进程就像是把消息推出门&lt;/li&gt;
+&lt;li&gt;sending process relies on transport infrastructure on other side of door which brings message to socket at receiving process 发送进程依赖于另一端的传输基础设施，将消息传递到接收进程的套接字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;API:
@@ -2713,7 +3815,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Addressing processes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Addressing processes&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;identifier of a process includes both&lt;span style=&#34;background:#F0A7D8&#34;&gt; IP addresses&lt;/span&gt; and &lt;span style=&#34;background:#F0A7D8&#34;&gt;port numbers&lt;/span&gt; associated with the process on hosts.&lt;/li&gt;
 &lt;li&gt;Example port numbers:
@@ -2731,7 +3833,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Use of Port Numbers&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use of Port Numbers&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Well-known port numbers are 0 to 1023. These are used by popular applications.&lt;/li&gt;
 &lt;li&gt;Servers/daemons usually use well-known ports.
@@ -2757,7 +3859,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;mycard&#34;&gt;
-      &lt;div class=&#34;content&#34;&gt; Socket = IP Address:Port Number &lt;/div&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;Socket = IP Address:Port Number&lt;/center&gt; &lt;/div&gt;
     &lt;/div&gt;
 
 &lt;h3 id=&#34;transport-layer-protocols&#34;&gt;Transport Layer Protocols
@@ -2779,7 +3881,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Transmission Control Protocol (TCP)&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Transmission Control Protocol (TCP)&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Connection-oriented; reliable, in-order delivery&lt;/li&gt;
 &lt;li&gt;Reliable data transfer&lt;/li&gt;
@@ -2788,41 +3890,37 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;User Datagram Protocol (UDP)&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;User Datagram Protocol (UDP)&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Connectionless – unreliable, unordered delivery&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;TCP: Overview&lt;/span&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;point-to-point&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;&lt;font color=&#34;#6425d0&#34;&gt;point-to-point&lt;/font&gt;&lt;/u&gt;
 &lt;ul&gt;
 &lt;li&gt;one sender, one receiver&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;reliable, in-order byte stream&lt;/p&gt;
+&lt;li&gt;&lt;u&gt;&lt;font color=&#34;#6425d0&#34;&gt;reliable, in-order byte stream&lt;/font&gt;&lt;/u&gt;
 &lt;ul&gt;
-&lt;li&gt;no &amp;ldquo;message boundaries&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;no “message boundaries”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;send &amp;amp; receive buffers&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;connection-orinted&lt;/p&gt;
+&lt;li&gt;&lt;u&gt;&lt;font color=&#34;#6425d0&#34;&gt;send &amp;amp; receive buffers&lt;/font&gt;&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;&lt;font color=&#34;#6425d0&#34;&gt;connection-orinted&lt;/font&gt;&lt;/u&gt;
 &lt;ul&gt;
 &lt;li&gt;handshaking (exchange of control msgs) before data exchange&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;flow controlled&lt;/p&gt;
+&lt;li&gt;&lt;u&gt;&lt;font color=&#34;#6425d0&#34;&gt;flow controlled&lt;/font&gt;&lt;/u&gt;
 &lt;ul&gt;
 &lt;li&gt;sender will not overwhelm receiver
 &lt;ul&gt;
 &lt;li&gt;set window size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -2974,6 +4072,782 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 	
 &gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;lab-1---introduction-to-wireshark&#34;&gt;Lab 1 - Introduction to Wireshark
+&lt;/h2&gt;&lt;h3 id=&#34;encapsulation&#34;&gt;Encapsulation
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-17.png&#34;
+	width=&#34;1084&#34;
+	height=&#34;775&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-17_hu_c940b0296ac9acf5.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-17_hu_129217619220c80.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;139&#34;
+		data-flex-basis=&#34;335px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;packet-sniffing&#34;&gt;Packet Sniffing
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;With &lt;font color=&#34;#c00000&#34;&gt;a packet sniffer&lt;/font&gt;, get the ability to capture the data and look inside the packets to see what is actually moving long the tracks.&lt;/li&gt;
+&lt;li&gt;Sometimes referred to as Network Monitoring Tools&lt;/li&gt;
+&lt;li&gt;Can be used legitimately by network and system administrators to verify network traffic and diagnose problems&lt;/li&gt;
+&lt;li&gt;Can be used to determine what systems and protocols are &lt;font color=&#34;#c00000&#34;&gt;unprotected/unencrypted&lt;/font&gt; in a network and take action (good/bad)&lt;/li&gt;
+&lt;li&gt;Can be used to obtain critical information (passwords, cc numbers; anything unencrypted that is transmitted over the network) by malicious hackers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tools&#34;&gt;Tools
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Wireshark&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;display-filter&#34;&gt;Display Filter
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Note the box at the top of Wireshark for &lt;font color=&#34;#c00000&#34;&gt;display filters&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Select only some of the packets captured for display&lt;/li&gt;
+&lt;li&gt;The comparison operators can be expressed either through C-like symbols, or through English-like abbreviations:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eq, == Equal
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ne, != Not equal
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gt, &amp;gt; Greater than 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lt, &amp;lt; Less Than
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ge, &amp;gt;= Greater than or Equal to 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;le, &amp;lt;= Less than or Equal to
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;advanced-filtering&#34;&gt;Advanced Filtering
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Filter for just that stream&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(ip.addr eq 207.46.133.140 and ip.addr eq 172.17.22.56) and
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(tcp.port eq 21 and tcp.port eq 3511)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Filter for traffic between two hosts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ip.addr == 207.46.133.140 and ip.addr == 172.17.22.56
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Filter for IP Traffic and removal of other traffic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ip and !(nbns) and !(msnms) and !(browser) and !(rip)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;capture-filters&#34;&gt;Capture Filters
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The capture filter syntax follows the rules of the pcap library&lt;/li&gt;
+&lt;li&gt;This syntax is different from the display filter syntax&lt;/li&gt;
+&lt;li&gt;Sample filters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;src ip 192.168.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ether src 00:50:BA:48:B5:EF
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;A capture filter for HTTP that captures traffic to and from a particular host&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tcp port 80 and host 10.10.10.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;A capture filter for HTTP that captures traffic not from a particular host&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tcp port 80 and not host 10.10.10.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;A capture filter to and from an ethernet address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ether 00:00:01:01:02:22
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;wireshark---getting-started--httptcp&#34;&gt;Wireshark - Getting Started &amp;amp; HTTP/TCP
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-18.png&#34;
+	width=&#34;919&#34;
+	height=&#34;718&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-18_hu_a7d05e499a51f20d.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-18_hu_d94ad5b9dca5b793.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Wireshark Graphical User Interface&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;127&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Display filter specification:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http and tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;http&#34;&gt;HTTP
+&lt;/h4&gt;&lt;p&gt;Display-filter-specification window:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http and tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.html
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;HTML Documents with Embedded Objects&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http and tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h4 id=&#34;http-message-to-tcp-segments&#34;&gt;HTTP Message to TCP Segments
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http and tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;the-http-conditional-getresponse-interaction&#34;&gt;The HTTP CONDITIONAL GET/response interaction
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file2.html
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http and tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;network-layer-protocols---ip-address&#34;&gt;Network Layer Protocols - IP Address
+&lt;/h2&gt;&lt;h3 id=&#34;network-layer&#34;&gt;Network layer
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;moving data across a series of &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;interconnected networks&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;transport segment from sending to receiving host &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;传输数据段从发送主机到接收主机&lt;/span&gt; 找到合适的路径传送&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;on sending side&lt;/u&gt; encapsulates segments into &lt;strong&gt;packets&lt;/strong&gt; (or &lt;strong&gt;datagrams&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;on receiving side&lt;/u&gt; delivers segments to transport layer&lt;/li&gt;
+&lt;li&gt;network layer protocols in every &lt;strong&gt;host&lt;/strong&gt;, &lt;strong&gt;router&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Router examines header fields in all IP datagrams passing through it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;two-key-network-layer-functions&#34;&gt;Two Key Network-Layer Functions
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;routing:&lt;/span&gt; determine route taken by packets from source to destination
+&lt;ul&gt;
+&lt;li&gt;routing algorithms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;forwarding:&lt;/span&gt; move packets from &lt;font color=&#34;#c00000&#34;&gt;router’s input&lt;/font&gt; to &lt;font color=&#34;#c00000&#34;&gt;appropriate router output&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-24.png&#34;
+	width=&#34;639&#34;
+	height=&#34;653&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-24_hu_1d57fe904f12bbd7.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-24_hu_630caaaa336db148.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;97&#34;
+		data-flex-basis=&#34;234px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;The Internet Protocol&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Packets, addressing and routing&lt;/li&gt;
+&lt;li&gt;Two types: &lt;strong&gt;IPv4 and IPv6&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-20.png&#34;
+	width=&#34;1090&#34;
+	height=&#34;548&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-20_hu_77e21d11b538c10d.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-20_hu_a964827bbfe700c1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;198&#34;
+		data-flex-basis=&#34;477px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;versions-of-ip&#34;&gt;Versions of IP
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;IP - Internet Protocol&lt;/li&gt;
+&lt;li&gt;Defined in RFC 791, dated 1981, written by information Sciences Institute &lt;code&gt;@ USC&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Written for &lt;span style=&#34;background:#CDF469&#34;&gt;DARPA&lt;/span&gt; (Defense Advanced Research Projects Agency)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;IPv0 - 3: Experimental Only&lt;/li&gt;
+&lt;li&gt;IPv4: Defined in 1981 by RFC 760 &amp;amp; 791.  First version to implemented publically.  Still in use today&lt;/li&gt;
+&lt;li&gt;IPv5: Also experimental, called Internet Stream Protocol&lt;/li&gt;
+&lt;li&gt;IPv6: Also called IP Next Generation (IPng), Defined in 1998 by RFC 2460-2467&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ip-addresses-ipv4-vs-ipv6&#34;&gt;IP Addresses: IPv4 vs IPv6
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;IPv4&lt;/th&gt;
+          &lt;th&gt;IPv6&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Deployed 1981&lt;/td&gt;
+          &lt;td&gt;Deployed 1999&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;32-bit address&lt;/td&gt;
+          &lt;td&gt;128-bit address&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;192.149.252.76&lt;/td&gt;
+          &lt;td&gt;2001:DB8:0234:AB00:0123:4567:8901:ABCD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Address space $$2^{32} \approx 4,000,000,000$$&lt;/td&gt;
+          &lt;td&gt;Address space $$2^{128} \approx 340,000,000,000,000,000,000,000,000,000,000,000,000$$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Security, autoconfig, QoS, mobility added later (IPSec etc)&lt;/td&gt;
+          &lt;td&gt;Security, autoconfig, QoS “built-in”&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Projected lifetime: 2012&lt;/td&gt;
+          &lt;td&gt;Projected lifetime: Indefinite&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;ipv4-exhaustion&#34;&gt;IPv4 Exhaustion
+&lt;/h4&gt;&lt;p&gt;IPv4地址耗尽&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IANA doles out IPv4 blocks to the regional providers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ipv4-packer-vs-ipv6-packer&#34;&gt;IPv4 Packer vs. IPv6 Packer
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;Romoved (6)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;ID, flags, flag offset&lt;/li&gt;
+&lt;li&gt;TOS, hlen&lt;/li&gt;
+&lt;li&gt;header, checksum&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;Changed (3)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;total length =&amp;gt; played&lt;/li&gt;
+&lt;li&gt;protocol =&amp;gt; next header&lt;/li&gt;
+&lt;li&gt;TTL =&amp;gt; hop limit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;Added (2)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;traffic class&lt;/li&gt;
+&lt;li&gt;flow label&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;Expanded&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;address 32 to 128 bits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-26.png&#34;
+	width=&#34;469&#34;
+	height=&#34;229&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-26_hu_a7dc0a7b14123867.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-26_hu_1807a8ec5945fe7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;IPv4&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-27.png&#34;
+	width=&#34;469&#34;
+	height=&#34;203&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-27_hu_4d1f063c2873cf71.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-27_hu_f2ec8d5e11abbc38.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;IPv6&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;231&#34;
+		data-flex-basis=&#34;554px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;major-improvements-of-ipv6-header&#34;&gt;Major Improvements of IPv6 Header
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;No option field&lt;/span&gt; 选项字段
+&lt;ul&gt;
+&lt;li&gt;Replaced by extension header &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;扩展头&lt;/span&gt;.  Result in a fixed length, 40-byte IP header&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;No header checksum&lt;/span&gt; 没有头部校验和
+&lt;ul&gt;
+&lt;li&gt;Result in fast processing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;No fragmentation at intermediate nodes&lt;/span&gt; 中间节点不用分段
+&lt;ul&gt;
+&lt;li&gt;Result in fast IP forwarding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ipv4-addressing&#34;&gt;IPv4 Addressing
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;interface: connection between host/router and physical link&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d3f8b6&#34;&gt;routers&lt;/span&gt; typically have &lt;strong&gt;multiple&lt;/strong&gt; interfaces 路由器有多个接口&lt;/li&gt;
+&lt;li&gt;host typically has one interface 主机只有一个接口&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;IP addresses associated with each &lt;font color=&#34;#c00000&#34;&gt;interface&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(74, 82, 199, 0.2)&#34;&gt;IP address:&lt;/span&gt; 32-bit identifier for host, router interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ip-address&#34;&gt;IP Address
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;32 binary numbers (bits)&lt;/li&gt;
+&lt;li&gt;dotted decimal notation (xxx.xxx.xxx.xxx)
+&lt;ul&gt;
+&lt;li&gt;Each decimal number represents eight bits (one octet) of binary data&lt;/li&gt;
+&lt;li&gt;0 ~ 255 $(2^{8}-1)$
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;E.g. 128.196.205.27 to Binary
+10000000 11000100 11001101 00011011&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IP addresses: how to get one?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;DHCP: &lt;span style=&#34;background:#CDF469&#34;&gt;Dynamic Host Configuration Protocol&lt;/span&gt; &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;动态主机配置协议&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;dynamically get address from as server&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;plug-and-play&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hard-coded by system admin in a file &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;系统管理员手动设置&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Wintel: network -&amp;gt; properties -&amp;gt; IP Settings&lt;/li&gt;
+&lt;li&gt;UNIX: /etc/rc.config&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Command line utility: ipconfig
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;division-bw-network-id--host-id&#34;&gt;Division b/w Network ID &amp;amp; Host ID
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Unique address&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Network ID&lt;/font&gt; assigned globally
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#CDF469&#34;&gt;IANA&lt;/span&gt; (Internet Assigned Numbers Authority) 互联网号码分配机构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Host ID&lt;/font&gt; assigned locally&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How many bits for Network and for Host?
+&lt;ul&gt;
+&lt;li&gt;Where is that &amp;ldquo;dividing line&amp;rdquo;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Types of addrssing
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;&amp;ldquo;Classful&amp;rdquo;&lt;/span&gt; 有类编址
+&lt;ul&gt;
+&lt;li&gt;Divide on octet boundaries 八字节&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Subnetted &amp;ldquo;Classful&amp;rdquo;&lt;/span&gt; 子网划分的有类编制
+&lt;ul&gt;
+&lt;li&gt;Use a subnet mask&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#A0CCF6&#34;&gt;Classless&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Indicated by the prefix length&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ip-address-classes&#34;&gt;IP Address Classes
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Originally (before 1993), IP had address classes with fixed numbers of bits in the network part
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=#13C6C3&gt;Class A:&lt;/font&gt; 8 bits (24 bits in host part)&lt;/li&gt;
+&lt;li&gt;&lt;font color=#13C6C3&gt;Class B:&lt;/font&gt; 16 bits (16 bits in host part)&lt;/li&gt;
+&lt;li&gt;&lt;font color=#13C6C3&gt;Class C:&lt;/font&gt; 24 bits (8 bits in host part)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Self-encoded: &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;自我编码特性&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;The router looks at the first few bits of the IP address, and then will be able to decide where to draw the line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Another way to determine the address class is by looking at the &lt;u&gt;first number&lt;/u&gt; in the dotted decimal notation
+
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;How can we recognize to which class an IP address belongs to?&lt;/p&gt;&lt;/div&gt;
+
+&lt;em&gt;Look at the first 4 bits!&lt;/em&gt;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-23.png&#34;
+	width=&#34;1042&#34;
+	height=&#34;406&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-23_hu_5690a66d012fdcdc.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-23_hu_e1531bea1b6b4f67.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;256&#34;
+		data-flex-basis=&#34;615px&#34;
+	
+&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Another way to determine the address class is by looking at &lt;u&gt;the first number&lt;/u&gt; in the dotted decimal notation&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Class&lt;/th&gt;
+          &lt;th&gt;Range of Values&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;A&lt;/td&gt;
+          &lt;td&gt;0 through 127&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;B&lt;/td&gt;
+          &lt;td&gt;128 through 191&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;C&lt;/td&gt;
+          &lt;td&gt;192 through 223&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;D&lt;/td&gt;
+          &lt;td&gt;224 through 239&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;E&lt;/td&gt;
+          &lt;td&gt;240 through 255&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;network-address-translation&#34;&gt;Network Address Translation
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Each organization- single IP address&lt;/li&gt;
+&lt;li&gt;Within organization – each host with IP unique to the organization, from reserved set of IP addresses &lt;span style=&#34;background:rgba(2, 255, 255, 0.55)&#34;&gt;内部设备用组织内独有的IP地址&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Reserved Range&lt;/th&gt;
+          &lt;th&gt;Address Range&lt;/th&gt;
+          &lt;th&gt;Number of Hosts&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;First&lt;/td&gt;
+          &lt;td&gt;10.0.0.0 – 10.255.255.255&lt;/td&gt;
+          &lt;td&gt;16,777,216&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Second&lt;/td&gt;
+          &lt;td&gt;172.16.0.0 – 172.31.255.255/12&lt;/td&gt;
+          &lt;td&gt;1,048,576&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Third&lt;/td&gt;
+          &lt;td&gt;192.168.0.0 – 192.168.255.255/16&lt;/td&gt;
+          &lt;td&gt;65,536&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;network-layer-protocols---ip-subnetting&#34;&gt;Network Layer Protocols - IP Subnetting
+&lt;/h2&gt;&lt;h3 id=&#34;cidr&#34;&gt;CIDR
+&lt;/h3&gt;&lt;p&gt;&lt;span style=&#34;background:rgba(74, 82, 199, 0.2)&#34;&gt;Classless Inter Domain Routing&lt;/span&gt; &lt;strong&gt;无类别域间路由&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;network portion of address of arbitrary length&lt;/li&gt;
+&lt;li&gt;address format: &lt;font color=&#34;#c00000&#34;&gt;a.b.c.d/x&lt;/font&gt;, where x is # bits in network portion of address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-34.png&#34;
+	width=&#34;633&#34;
+	height=&#34;155&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-34_hu_ba835d3e6b1de342.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-34_hu_5411e97e666bb0b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;408&#34;
+		data-flex-basis=&#34;980px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;Efficient Allocation of Addresses&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Subnetting&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;division of networks into smaller units&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Supernetting&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;combination of smaller networks into larger ones
+&lt;ul&gt;
+&lt;li&gt;E.g. allows the aggregation of contiguous blocks of Class-C addresses into larger networks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(74, 82, 199, 0.2)&#34;&gt;CIDR-capable routers explicitly&lt;/span&gt; store the network masks (prefix length) in the &lt;font color=&#34;#c00000&#34;&gt;router&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;subnetting&#34;&gt;Subnetting
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Split the host number portion of an IP address into a subnet number and a (smaller) host number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-35.png&#34;
+	width=&#34;881&#34;
+	height=&#34;389&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-35_hu_158751c28ded6ffd.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-35_hu_8a82dfdce8e47507.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;226&#34;
+		data-flex-basis=&#34;543px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;subnet-mask&#34;&gt;Subnet Mask
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Routers and hosts uses &lt;font color=&#34;#c00000&#34;&gt;an extended network prefix&lt;/font&gt; (subnet mask) to identify &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;the start of the host numbers&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Subnet Mask
+&lt;ul&gt;
+&lt;li&gt;1s in the subnet parts&lt;/li&gt;
+&lt;li&gt;0s in the remaining bits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-36.png&#34;
+	width=&#34;577&#34;
+	height=&#34;550&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-36_hu_864bdd40db1f4a0f.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-36_hu_c8ed2dffa6b4530f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;104&#34;
+		data-flex-basis=&#34;251px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;with-subnetting&#34;&gt;With Subnetting
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Hosts with same &lt;font color=&#34;#c00000&#34;&gt;extended network prefix&lt;/font&gt; belong to the same hostwork&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-37.png&#34;
+	width=&#34;1123&#34;
+	height=&#34;370&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-37_hu_3c8e2cb7c490377a.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-37_hu_2057eb374e913899.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;303&#34;
+		data-flex-basis=&#34;728px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;ip-address-and-network-capacities&#34;&gt;IP Address and Network Capacities
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;IP address: &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;32-bit identifier for host, router interface&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;X bits for &lt;strong&gt;the network part&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Y bits for &lt;strong&gt;the host part&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$of\quad possible\quad networks = 2^X$&lt;/li&gt;
+&lt;li&gt;$of\quad possible\quad hosts\quad in\quad each\quad network = 2^Y -2$
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;all 0s&amp;rdquo; - this network&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;all 1s - broadcasting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We can manipulate our subnet mask in order to create more network addresses&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Example&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We were given a &lt;strong&gt;206.15.143.0/24&lt;/strong&gt; block from our ISP for our network
+&lt;ul&gt;
+&lt;li&gt;This gives us 1 Network (206.15.143.0) with the potential for 254 host addresses (206.15.143.1 to 206.15.143.254)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;But we have a LAN made up of 5 sub-networks with the largest one serving 25 hosts
+&lt;ul&gt;
+&lt;li&gt;So we need to &lt;strong&gt;Subnet&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;We need at least 5 subnets
+&lt;ul&gt;
+&lt;li&gt;$2^3$ will give us 8 subnet addresses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We need at least 25 housts per network
+&lt;ul&gt;
+&lt;li&gt;$2^5-2$ will give us 30 hosts per subnet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This will work!
+&lt;ul&gt;
+&lt;li&gt;steal the first 3 bits from the host’s portion of the address to give to the subnet portion
+&lt;ul&gt;
+&lt;li&gt;extended-network-prefix is /27&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;still have 5 (8-3) left for the host portion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-38.png&#34;
+	width=&#34;1153&#34;
+	height=&#34;667&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-38_hu_e56e1c28dd020c57.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-38_hu_867440470b0506c5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;414px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-39.png&#34;
+	width=&#34;1195&#34;
+	height=&#34;211&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-39_hu_3c54aa818d35a0d0.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-39_hu_4a9729d5b4b7d719.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;200.35.1.0/26&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;566&#34;
+		data-flex-basis=&#34;1359px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         
