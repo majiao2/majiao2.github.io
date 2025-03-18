@@ -2332,6 +2332,16 @@ offered to a market to satisfy a need or want.&lt;/p&gt;
 &lt;li&gt;For an identifying relationship, you put the primary key column from the parent into the primary key column of the child (along with other columns needed to provide uniqueness)&lt;/li&gt;
 &lt;li&gt;For &lt;span style=&#34;background:#F0A7D8&#34;&gt;a non-identifying relationship&lt;/span&gt;, you put the primary key column of the parent into the table of the child, but not in the primary key&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;tutorial&#34;&gt;Tutorial
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;File&lt;/span&gt; → &lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;new model&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;外观设置&#34;&gt;外观设置
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;Model&lt;/span&gt; → &lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;Model Options&lt;/span&gt; → Diagram → 不勾选 Show Column Types → 勾选 Show Captions&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;Model&lt;/span&gt; → &lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;Object Notation&lt;/span&gt; → 勾选 ID1F1X&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;Model&lt;/span&gt; → &lt;span style=&#34;background:rgba(92, 92, 92, 0.2)&#34;&gt;Relationship Notation&lt;/span&gt; → 勾选 Crow&amp;rsquo;s Foot (IE)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;normalization&#34;&gt;Normalization
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Logical Design
