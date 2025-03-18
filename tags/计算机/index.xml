@@ -2280,6 +2280,260 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 		data-flex-basis=&#34;1359px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;h2 id=&#34;interworking-and-routing&#34;&gt;Interworking and Routing
+&lt;/h2&gt;&lt;h3 id=&#34;router-and-routing-decision&#34;&gt;Router and Routing Decision
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Router
+&lt;ul&gt;
+&lt;li&gt;A special device responsible for &lt;span style=&#34;background:#40a9ff&#34;&gt;forwarding traffic among networks&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Attached to &lt;span style=&#34;background:#40a9ff&#34;&gt;different networks (subnets)&lt;/span&gt; using &lt;span style=&#34;background:#40a9ff&#34;&gt;configurable interfaces (ports)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;how does a router know where to send different packers?&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;A packet arrives in a port&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Which port should the router send the packet back out?&lt;/p&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Destination Host May Be on One of the Attached Subnets 目标主机可能位于其中一个连接的子网中
+&lt;ul&gt;
+&lt;li&gt;Router sends Packet to It 路由器将数据包发送到该主机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-40.png&#34;
+	width=&#34;1144&#34;
+	height=&#34;724&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-40_hu_a22b7702d5768d04.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-40_hu_e80b8a230ccfa208.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;379px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;If destination host is not on a subnet, router must select BEST &lt;span style=&#34;background:#CDF469&#34;&gt;next-hop router&lt;/span&gt; (NHR) 如果目标主机不在某个子网中，路由器必须选择最佳的下一跳路由器（NHR）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-41.png&#34;
+	width=&#34;1144&#34;
+	height=&#34;724&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-41_hu_a22b7702d5768d04.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-41_hu_e80b8a230ccfa208.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;379px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;A subnet may have multiple NHRs
+&lt;ul&gt;
+&lt;li&gt;Not enough to specify an interface; must also specify NHR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-42.png&#34;
+	width=&#34;1150&#34;
+	height=&#34;640&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-42_hu_d6ca5e38cf4ac45b.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-1/image-42_hu_35b5c8090c046490.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;431px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Each Row Represents a Route to a &lt;span style=&#34;background:#40a9ff&#34;&gt;Network&lt;/span&gt; or &lt;span style=&#34;background:#40a9ff&#34;&gt;Subnet&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;For Each Arriving Packet, The &lt;font color=&#34;#c00000&#34;&gt;Packet’s Destination IP Address&lt;/font&gt; Is Matched Against &lt;font color=&#34;#c00000&#34;&gt;the Network/Subnet Field&lt;/font&gt; in Each Row&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Row&lt;/th&gt;
+          &lt;th&gt;Network/Subnet&lt;/th&gt;
+          &lt;th&gt;Mask (/Prefix)*&lt;/th&gt;
+          &lt;th&gt;Metric (Cost)&lt;/th&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Next-Hop Router&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;128.171.0.0&lt;/td&gt;
+          &lt;td&gt;255.255.0.0 (/16)&lt;/td&gt;
+          &lt;td&gt;47&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;G&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;172.30.33.0&lt;/td&gt;
+          &lt;td&gt;255.255.255.0 (/24)&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Local&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;192.168.6.0&lt;/td&gt;
+          &lt;td&gt;255.255.255.0 (/24)&lt;/td&gt;
+          &lt;td&gt;12&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;G&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;The Interface is a port on the router
+&lt;ul&gt;
+&lt;li&gt;A subnet is attached to this interface&lt;/li&gt;
+&lt;li&gt;The subnet may have multiple hosts and next-hop routers&lt;/li&gt;
+&lt;li&gt;NHR column specifies a specific NHR on that subnet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If Next-Hop Router Field says Local
+&lt;ul&gt;
+&lt;li&gt;Then the destination host is on the subnet attached to the interface&lt;/li&gt;
+&lt;li&gt;Instead of sending the packet to a next-hop router on the subnet, the router will send the packet to its destination address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Windows → cmd&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;netstat -r
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;routing-algorithm&#34;&gt;Routing Algorithm
+&lt;/h3&gt;&lt;h4 id=&#34;find-matching-rows&#34;&gt;Find Matching Rows
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Find each packet
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;First, for each row in the routing table, find matches&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Take &lt;u&gt;destination IP&lt;/u&gt; address in packet&lt;/li&gt;
+&lt;li&gt;Mask it with the &lt;u&gt;Mask in that row&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;Take the result&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Fore each row in the routing table that matches&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Compare the result with the Network/Subnet value in that row
+&lt;ul&gt;
+&lt;li&gt;If the result matches
+&lt;ul&gt;
+&lt;li&gt;Add the row to the list of matching rows for that packet&lt;/li&gt;
+&lt;li&gt;Otherwise, ignore the row&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;strong&gt;The default row always matches&lt;/strong&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mask 0.0.0.0 applied to anything results in 0.0.0.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This always matches the Network/Subnet value 0.0.0.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The router specified for this row is the default router&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;For each incoming IP packet&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Destination IP address is matched against &lt;u&gt;every row&lt;/u&gt; in the routing table
+&lt;ul&gt;
+&lt;li&gt;If the routing table has 10,000 rows, 10,000 comparisons will be made for each packet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;There can be multiple matching rows for a destination IP address, corresponding to &lt;span style=&#34;background:#40a9ff&#34;&gt;multiple alternative routes&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;After all matches are found, the &lt;u&gt;best match&lt;/u&gt; must be selected&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;#31859b&#34;&gt;If only one row matches&lt;/font&gt;, it will be selected as the best row match&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;#31859b&#34;&gt;If there are multiple matches&lt;/font&gt;, the row with the &lt;span style=&#34;background:#40a9ff&#34;&gt;longest length of match&lt;/span&gt; is selected&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Longer matches often are routes to &lt;u&gt;a particular subnet&lt;/u&gt; within a network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;#31859b&#34;&gt;If there are multiple rows with the same lengths of match&lt;/font&gt;, the &lt;u&gt;metric column&lt;/u&gt; compares alternative routes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the metric is &lt;u&gt;cost&lt;/u&gt;, the smallest metric wins&lt;/li&gt;
+&lt;li&gt;If the metric is &lt;u&gt;speed&lt;/u&gt;, the largest metric wins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Summary&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#31859b&#34;&gt;If only one match&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;list row as best match&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#31859b&#34;&gt;If longest match&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;list row as the best match&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#31859b&#34;&gt;If tied longest length of match, select row with best metric&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;May be the smallest value (say if metric is cost)&lt;/li&gt;
+&lt;li&gt;May be the largest value (say if metric is speed)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;send-the-packet-out&#34;&gt;Send the Packet Out
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Finally, send the packet out a port&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Send it out from the interface in the best matching row to &lt;span style=&#34;background:#F0A7D8&#34;&gt;a host or router&lt;/span&gt; on the &lt;span style=&#34;background:#F0A7D8&#34;&gt;network&lt;/span&gt; or &lt;span style=&#34;background:#F0A7D8&#34;&gt;subnet&lt;/span&gt; out that port&lt;/li&gt;
+&lt;li&gt;On that network or subnet, send packet to the
+&lt;ul&gt;
+&lt;li&gt;Next-hop-router value in the best row&lt;/li&gt;
+&lt;li&gt;Destination host if next-hop router value in best row says &amp;ldquo;local&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
