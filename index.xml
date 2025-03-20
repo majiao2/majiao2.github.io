@@ -7,7 +7,89 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Sun, 16 Mar 2025 20:24:49 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 20 Mar 2025 21:25:06 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>药房数据库管理系统</title>
+        <link>https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Thu, 20 Mar 2025 21:25:06 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/pharmacy.jpg" alt="Featured image of post 药房数据库管理系统" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;Pharmacies in China are an integral part of the healthcare system, tasked with dispensing medications in accordance with strict regulatory standards. While their physical appearance may resemble that of other retail stores, pharmacies operate under specific laws that differentiate them. Many medications, particularly prescription drugs, cannot be sold without a valid prescription from a licensed healthcare provider. Even with a prescription, there are often limits on the quantity of drugs a customer can purchase. These regulations are designed to ensure the safe and responsible distribution of medications.&lt;/p&gt;
+&lt;p&gt;In addition to prescription verification, pharmacists in China are required to perform thorough background checks on customers, including reviewing their medical history. This helps ensure that patients are not involved in drug abuse and prevents harmful drug interactions. As a result, pharmacy management systems play a crucial role in ensuring compliance with these regulations. These systems facilitate the tracking of prescriptions, managing medication limits, and maintaining accurate customer records, all of which contribute to patient safety and efficient pharmacy operations.&lt;/p&gt;
+&lt;p&gt;With this project, our aim is to develop a comprehensive system that could deal with challenges faced in day to day operation of a modern pharmacy.&lt;/p&gt;
+&lt;h2 id=&#34;entities&#34;&gt;Entities
+&lt;/h2&gt;&lt;h3 id=&#34;coutomer&#34;&gt;Coutomer
+&lt;/h3&gt;&lt;p&gt;When a customer arrives in the pharmacy, we identify them based on their PIN (Personal Identification Number). If they are a new customer, they are asked for their name, date of birth, phone number, gender and address.&lt;/p&gt;
+&lt;h3 id=&#34;insurance&#34;&gt;Insurance
+&lt;/h3&gt;&lt;p&gt;In China, as of 2023, the basic medical insurance coverage rate remains stable at over 95% (National Healthcare Security Administration data). The wide - spread coverage is mainly due to the continuous improvement and popularization of the national basic medical insurance system, which includes the urban employee basic medical insurance, the urban and rural residents&amp;rsquo; basic medical insurance. The high coverage is crucial because medical expenses can be relatively large for some serious diseases and treatments. Without insurance, many people may face financial difficulties in affording necessary medical services.&lt;/p&gt;
+&lt;p&gt;If a customer has health insurance, we store the insurance ID (unique for each customer), start date, end date and Co-Insurance. Co-Insurance is a percentage amount that insurance company pays for a medicinal purchase. Given the customer PIN and insurance ID, the system should be able to automatically calculate the amount paid by medical insurance fund and customer.&lt;/p&gt;
+&lt;h3 id=&#34;employees&#34;&gt;Employees
+&lt;/h3&gt;&lt;p&gt;An employee has same details as a customer but they are also given a company ID, that is unique for them. An employee has to have one of the following roles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pharmacist&lt;/li&gt;
+&lt;li&gt;CPhT (Certified Pharmacy Technician)&lt;/li&gt;
+&lt;li&gt;Intern (can work in the pharmacy part time)&lt;/li&gt;
+&lt;li&gt;Cashier&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Apart from pharmacy cashiers, all personnel directly involved in drug dispensing and preparation are required to obtain professional qualification certificates issued by the National Medical Products Administration.&lt;/p&gt;
+&lt;h3 id=&#34;prescription&#34;&gt;Prescription
+&lt;/h3&gt;&lt;p&gt;Most of the drugs in the pharmacy can only be sold with a prescription. A prescription contains customer’s PIN, the prescribing Doctor’s ID (required by law) and when the prescription was prescribed. Each prescription contains a number of prescribed drugs with drug name, quantity and refill limit of each of them.&lt;/p&gt;
+&lt;h3 id=&#34;prescription-drug&#34;&gt;Prescription Drug
+&lt;/h3&gt;&lt;p&gt;Prescription drugs can only be dispensed with a valid doctor&amp;rsquo;s prescription. They&amp;rsquo;re more potent and regulated strictly. Prescription Drug is represented in the system with a unique identifier, PresplD. This helps in precisely tracking each individual prescription - related drug record. The DrugName clearly states the name of the medication, which can be either the generic or brand name. PrespQty indicates the quantity of the drug that has been prescribed for the customer. This is an important detail as it affects how much of the drug is dispensed. RefillLimit defines the number of times the customer can get a refill for this particular drug based on the original prescription.&lt;/p&gt;
+&lt;h3 id=&#34;order&#34;&gt;Order
+&lt;/h3&gt;&lt;p&gt;An order is created from the prescription. This data has to be stored separately because customer may:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Buy less medicine than prescription specifies&lt;/li&gt;
+&lt;li&gt;Come back for refills based on same prescription&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Each order has a unique Order ID that is automatically assigned by the system. Each order can have multiple drugs, each with their ordered quantity and price. We also record batch number of the drug.&lt;/p&gt;
+&lt;h3 id=&#34;ordered-drugs&#34;&gt;Ordered Drugs
+&lt;/h3&gt;&lt;p&gt;Ordered drugs are selected by customers per prescription or OTC needs. The system records drug name, quantity (which may differ from prescription), price, and links them to a unique Order ID. For prescription - based orders, it cross - references prescription details for compliance.&lt;/p&gt;
+&lt;h3 id=&#34;bill&#34;&gt;Bill
+&lt;/h3&gt;&lt;p&gt;Once an order has been completed, a bill is generated by the system. This bill is handed over to the customer and contains order information, insurance information as well as breakdown of amount paid. The breakdown should be automatically calculated by the system based on insurance, customer and medicine data.&lt;/p&gt;
+&lt;h3 id=&#34;medicine-inventory&#34;&gt;Medicine (Inventory)
+&lt;/h3&gt;&lt;p&gt;Drugs are divided into &amp;ldquo;over-the-counter drugs&amp;rdquo; (OTC drugs), &amp;ldquo;prescription drugs&amp;rdquo; and &amp;ldquo;controlled drugs&amp;rdquo;. For all types of drugs, especially prescription drugs and controlled drugs, pharmaceutical institutions and medical facilities are legally obligated to maintain accurate and up-to-date inventory records. This is not only for the purpose of record - keeping but also to effectively manage stock levels. Timely inventory management helps to ensure the continuous availability of necessary drugs while also preventing overstocking or shortages. OTC drugs, on the other hand, are more accessible to the public but still need to be sold and inventoried in accordance with relevant regulations to guarantee their quality and proper supply.&lt;/p&gt;
+&lt;h3 id=&#34;disposal&#34;&gt;Disposal
+&lt;/h3&gt;&lt;p&gt;Drugs are marked for disposal when expired, damaged, or in case of controlled drugs following medical regulations. Once disposed, inventory records are updated. The system then generates a disposal record, which includes the drug name, the batch number of the drug, the name of the company that produced the drug, and the dispensed quantity.&lt;/p&gt;
+&lt;h3 id=&#34;notifications&#34;&gt;Notifications
+&lt;/h3&gt;&lt;p&gt;The system should be able to generate notifications based on the following four events:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Stock for a medicine is low (less than 100 tablets)&lt;/li&gt;
+&lt;li&gt;Some medicine will expire in next 60 days&lt;/li&gt;
+&lt;li&gt;Drugs are marked for disposal&lt;/li&gt;
+&lt;li&gt;Drugs are successfully disposed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The notifications are sent to all the employees who are Pharmacists.&lt;/p&gt;
+&lt;h2 id=&#34;er-modeling&#34;&gt;ER Modeling
+&lt;/h2&gt;&lt;h3 id=&#34;er-diagram&#34;&gt;ER Diagram
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/image.png&#34;
+	width=&#34;801&#34;
+	height=&#34;1162&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/image_hu_d6c8909d1fd2020b.png 480w, https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/image_hu_c69a6342f8020128.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;68&#34;
+		data-flex-basis=&#34;165px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;logical-data-model-diagram&#34;&gt;Logical Data Model Diagram
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/image-2.png&#34;
+	width=&#34;799&#34;
+	height=&#34;1028&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/image-2_hu_49ff0b874a267e05.png 480w, https://majiao2.github.io/2025/%E8%8D%AF%E6%88%BF%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/image-2_hu_f005073bf30b5694.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;77&#34;
+		data-flex-basis=&#34;186px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>数据库设计</title>
         <link>https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</link>
         <pubDate>Sun, 16 Mar 2025 20:24:49 +0800</pubDate>
@@ -3065,7 +3147,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;ul&gt;
 &lt;li&gt;Message segmentation and aggregation 消息分段和聚合 🧩&lt;/li&gt;
 &lt;li&gt;Some form of Addressing to identify senders and receivers of messages 识别 🏷️&lt;/li&gt;
-&lt;li&gt;Multiplexing/Demultiplexing of multiple message streams to optimize channels 服用/解复用，优化信道 🔄&lt;/li&gt;
+&lt;li&gt;Multiplexing/Demultiplexing of multiple message streams to optimize channels 多路复用/解复用，优化信道 🔄&lt;/li&gt;
 &lt;li&gt;Flow control (fast sender vs. slow receiver) 流量控制 🌊&lt;/li&gt;
 &lt;li&gt;Error controls (detection and correction) 错误控制 🛠️&lt;/li&gt;
 &lt;li&gt;A set of rules for data exchange 数据交换 📜&lt;/li&gt;
@@ -3467,8 +3549,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
             &lt;/tr&gt;
         &lt;/tbody&gt;
     &lt;/table&gt;
-- 发送方（Sender）发出 &#34;QUIT&#34; 指令，表示要结束与接收方的连接
-- 接收方（Receiver）回复 &#34;221 md1.nss.udel.edu closing connection&#34;，说明接收方准备关闭连接，&#34;md1.nss.udel.edu&#34; 是接收方服务器标识
+&lt;ul&gt;
+&lt;li&gt;发送方（Sender）发出 &amp;ldquo;QUIT&amp;rdquo; 指令，表示要结束与接收方的连接&lt;/li&gt;
+&lt;li&gt;接收方（Receiver）回复 &amp;ldquo;221 md1.nss.udel.edu closing connection&amp;rdquo;，说明接收方准备关闭连接，&amp;ldquo;md1.nss.udel.edu&amp;rdquo; 是接收方服务器标识&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;smtp-security-issues&#34;&gt;SMTP Security Issues
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;No authentication：无身份验证&lt;/li&gt;

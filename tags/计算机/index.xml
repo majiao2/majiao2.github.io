@@ -418,7 +418,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;ul&gt;
 &lt;li&gt;Message segmentation and aggregation 消息分段和聚合 🧩&lt;/li&gt;
 &lt;li&gt;Some form of Addressing to identify senders and receivers of messages 识别 🏷️&lt;/li&gt;
-&lt;li&gt;Multiplexing/Demultiplexing of multiple message streams to optimize channels 服用/解复用，优化信道 🔄&lt;/li&gt;
+&lt;li&gt;Multiplexing/Demultiplexing of multiple message streams to optimize channels 多路复用/解复用，优化信道 🔄&lt;/li&gt;
 &lt;li&gt;Flow control (fast sender vs. slow receiver) 流量控制 🌊&lt;/li&gt;
 &lt;li&gt;Error controls (detection and correction) 错误控制 🛠️&lt;/li&gt;
 &lt;li&gt;A set of rules for data exchange 数据交换 📜&lt;/li&gt;
@@ -820,8 +820,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
             &lt;/tr&gt;
         &lt;/tbody&gt;
     &lt;/table&gt;
-- 发送方（Sender）发出 &#34;QUIT&#34; 指令，表示要结束与接收方的连接
-- 接收方（Receiver）回复 &#34;221 md1.nss.udel.edu closing connection&#34;，说明接收方准备关闭连接，&#34;md1.nss.udel.edu&#34; 是接收方服务器标识
+&lt;ul&gt;
+&lt;li&gt;发送方（Sender）发出 &amp;ldquo;QUIT&amp;rdquo; 指令，表示要结束与接收方的连接&lt;/li&gt;
+&lt;li&gt;接收方（Receiver）回复 &amp;ldquo;221 md1.nss.udel.edu closing connection&amp;rdquo;，说明接收方准备关闭连接，&amp;ldquo;md1.nss.udel.edu&amp;rdquo; 是接收方服务器标识&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;smtp-security-issues&#34;&gt;SMTP Security Issues
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;No authentication：无身份验证&lt;/li&gt;
