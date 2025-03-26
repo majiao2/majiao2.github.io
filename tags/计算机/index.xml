@@ -7,13 +7,840 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Thu, 13 Mar 2025 21:33:19 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 21 Mar 2025 07:00:27 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git基础入门</title>
+        <link>https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</link>
+        <pubDate>Fri, 21 Mar 2025 07:00:27 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/title.png" alt="Featured image of post Git基础入门" /&gt;&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt;&lt;p&gt;&lt;em&gt;参考链接&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1u94y1n73L?vd_source=7fbfcafaa5f6bc905794f813aab975a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;改变了世界的软件！程序员的基本功，Git 应该如何使用？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1d6XVYqEuy?vd_source=7fbfcafaa5f6bc905794f813aab975a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;人人都能看懂的Git教程！Git如何和 GitHub、GitLab 交互？团队如何用 Git 协作开发？小白也能看懂的Git教程！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;基本概念&#34;&gt;基本概念
+&lt;/h2&gt;&lt;h3 id=&#34;暂存区&#34;&gt;暂存区
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add abc.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;将文件添加到了暂存区&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add . 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;把所有文件添加到暂存区&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;备注内容&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;添加备注&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;节点&#34;&gt;节点
+&lt;/h3&gt;&lt;p&gt;代码保存存档时被存为了多个节点&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看节点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提交人，提交时间，备注被完整记录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git log --stat //查看每次提交修改了哪些文件
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git diff 某次提交的commt id //查看这次提交修改的内容
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git reset --hard &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit id&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; //回退代码到指定节点
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit id&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; //回退代码到指定节点
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;分支&#34;&gt;分支
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image.png&#34;
+	width=&#34;1065&#34;
+	height=&#34;323&#34;
+	srcset=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image_hu_8711f3e198b9076d.png 480w, https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image_hu_c88e927c54bf14be.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;329&#34;
+		data-flex-basis=&#34;791px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch //查看当前分支
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-1.png&#34;
+	width=&#34;1750&#34;
+	height=&#34;700&#34;
+	srcset=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-1_hu_dca5310311c7dac6.png 480w, https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-1_hu_f903e130f75fe84e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;250&#34;
+		data-flex-basis=&#34;600px&#34;
+	
+&gt;
+在master的基础上，复制出一个develop分支，在develop上进行开发。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout -b develop //完成分支创建
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;新增功能&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;完成代码提交&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout master //切换到master分支
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git merge develop //完成合并
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;git版本管理&#34;&gt;Git版本管理
+&lt;/h2&gt;&lt;h3 id=&#34;配置身份标识&#34;&gt;配置身份标识
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;用户名&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.email 邮箱
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;创建新仓库&#34;&gt;创建新仓库
+&lt;/h3&gt;&lt;p&gt;是否要添加&lt;code&gt;.gitignore&lt;/code&gt;文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在Git提交时，会被忽略的文件和文件夹&lt;/li&gt;
+&lt;li&gt;将文件的名字添加到&lt;code&gt;.gitignore&lt;/code&gt;文件中，就会被Git忽略掉
+License&lt;/li&gt;
+&lt;li&gt;开源许可证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;创建成功的仓库
+&lt;img src=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-2.png&#34;
+	width=&#34;1921&#34;
+	height=&#34;151&#34;
+	srcset=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-2_hu_c2e2b0743bf40b62.png 480w, https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-2_hu_5fbed24f4ca0379.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;1272&#34;
+		data-flex-basis=&#34;3053px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;在Code按钮中的HTTPS选项中找到&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;把远程仓库和本地代码库进行绑定&#34;&gt;把“远程仓库”和“本地代码库”进行绑定
+&lt;/h3&gt;&lt;h4 id=&#34;git-clone&#34;&gt;git clone
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;git clone [代码仓库地址]&lt;/code&gt;
+把远程Git仓库克隆到本地&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;git-remote&#34;&gt;git remote
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;git remote add &amp;lt;远程仓库名称&amp;gt;&amp;lt;远程仓库地址&amp;gt;&lt;/code&gt;
+把一个远程仓库绑定到本地仓库&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在新建文件夹中打开命令行 `Open Git Bash here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init //创建本地代码仓库,自动生成.git文件夹
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add origin https://github.com/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add * //添加到暂存区
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;update&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;推动本地代码到github&#34;&gt;推动本地代码到GitHub
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;master是默认的代码分支&lt;/p&gt;
+&lt;h4 id=&#34;登陆并校验权限&#34;&gt;登陆并校验权限
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;用户名+PAT令牌
+Github→Settings→Developer settings→&lt;span style=&#34;background:#F0A7D8&#34;&gt;Personal access tokens&lt;/span&gt;→Fine-grained tokens→&lt;span style=&#34;background:#F0A7D8&#34;&gt;Generate new token&lt;/span&gt;→&lt;span style=&#34;background:#F0A7D8&#34;&gt;Token name&lt;/span&gt;→All repositories→&lt;span style=&#34;background:#F0A7D8&#34;&gt;Permissions&lt;/span&gt;→Contents→Read and write→&lt;span style=&#34;background:#F0A7D8&#34;&gt;Generate token&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Password: 申请到的Personal access token&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSH链接+密钥
+Code按钮→SSH→复制SSH链接
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;git remote add&lt;/code&gt;命令绑定远程仓库时，使用SSH链接&lt;/li&gt;
+&lt;li&gt;输入如下命令，找到&lt;code&gt;Your public key has been saved in&lt;/code&gt;这一行，打开后面的文件地址，全选复制里面的内容
+Github→Setting→&lt;span style=&#34;background:#F0A7D8&#34;&gt;SSH and GPG keys&lt;/span&gt;→New SSH key→Title→Key(粘贴复制的内容)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t rsa -C 15342334519@163.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;常用命令&#34;&gt;常用命令
+&lt;/h3&gt;&lt;h4 id=&#34;git-push&#34;&gt;git push
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;git push &amp;lt;远程仓库名&amp;gt;&amp;lt;本地分支名&amp;gt;:&amp;lt;远程分支名&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;git-pull&#34;&gt;git pull
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git pull origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;全流程&#34;&gt;全流程
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-3.png&#34;
+	width=&#34;550&#34;
+	height=&#34;1033&#34;
+	srcset=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-3_hu_1681a81dbb343c8.png 480w, https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-3_hu_63f6cf5cca926e81.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;53&#34;
+		data-flex-basis=&#34;127px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;博客git管理&#34;&gt;博客Git管理
+&lt;/h2&gt;&lt;h3 id=&#34;初始配置&#34;&gt;初始配置
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add yong https://github.com/majiao2/majiao2.github.io
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u yong main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;把本地代码推送到github仓库(public)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch -M main  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add gan https://github.com/majiao2/jblog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u gan main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;把本地代码推送到github仓库(jblog)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;删除缓存区全部文件&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;文章推送流程&#34;&gt;文章推送流程
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content post/title/index.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;创建新文章&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;update&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;完成博客文章推送&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>商务电信网络 2</title>
         <link>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/</link>
         <pubDate>Thu, 13 Mar 2025 21:33:19 +0800</pubDate>
         
         <guid>https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/</guid>
-        <description>&lt;img src="https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 商务电信网络 2" /&gt;</description>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 商务电信网络 2" /&gt;&lt;h2 id=&#34;data-link-layer--local-area-network&#34;&gt;Data Link Layer &amp;amp; Local Area Network
+&lt;/h2&gt;
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;router → network&lt;br&gt;
+switch → host&lt;/p&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;缩写&lt;/th&gt;
+          &lt;th&gt;全称&lt;/th&gt;
+          &lt;th&gt;含义&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;LAN&lt;/td&gt;
+          &lt;td&gt;Local Area Network&lt;/td&gt;
+          &lt;td&gt;局域网，是在有限地理范围内将多台计算机等设备连接起来，实现资源共享和数据通信的计算机网络&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;NIC&lt;/td&gt;
+          &lt;td&gt;Network Interface Card&lt;/td&gt;
+          &lt;td&gt;网络接口卡，也叫网卡，是计算机与网络进行连接的硬件设备，数据链路层部分功能在其中实现&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ARP&lt;/td&gt;
+          &lt;td&gt;Address Resolution Protocol&lt;/td&gt;
+          &lt;td&gt;地址解析协议，用于根据 IP 地址获取 MAC 地址，使数据在链路层能准确传输到目标设备&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;LLC&lt;/td&gt;
+          &lt;td&gt;Logical Link Control&lt;/td&gt;
+          &lt;td&gt;逻辑链路控制，是数据链路层的子层，负责处理与高层协议的接口等逻辑功能&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;MAC&lt;/td&gt;
+          &lt;td&gt;Media Access Control&lt;/td&gt;
+          &lt;td&gt;媒体访问控制，数据链路层的子层，控制设备对共享介质的访问，MAC 地址用于标识网络设备&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IEEE&lt;/td&gt;
+          &lt;td&gt;Institute of Electrical and Electronics Engineers&lt;/td&gt;
+          &lt;td&gt;电气与电子工程师协会，负责制定多种技术标准，如文档中的 802 系列局域网标准&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;lan-protocol-architecture&#34;&gt;LAN protocol architecture
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;&lt;font color=&#34;#c00000&#34;&gt;Data link layer&lt;/font&gt;&lt;/u&gt; has responsibility of transferring datagram from one node to adjacent node over a &lt;font color=&#34;#c00000&#34;&gt;link&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Datagram transferred by different link protocols over different links:
+&lt;ul&gt;
+&lt;li&gt;ne.g., Ethernet on first link, frame relay on intermediate links, 802.11 on last link&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each  link protocol provides different services&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Data link layer&lt;/font&gt; packet is called &lt;font color=&#34;#c00000&#34;&gt;frame&lt;/font&gt;, encapsulates network layer datagram (e.g. IP packer)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;adaptors-communicating&#34;&gt;Adaptors Communicating
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Data link layer implemented in Network Interface Card (NIC) (aka “adaptor”)
+&lt;ul&gt;
+&lt;li&gt;Ethernet card, PCMCIA card, 802.11 card&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sending side:
+&lt;ul&gt;
+&lt;li&gt;encapsulates datagram in a frame&lt;/li&gt;
+&lt;li&gt;adds error checking bits, flow control, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;receiving side:
+&lt;ul&gt;
+&lt;li&gt;looks for errors, flow control, etc&lt;/li&gt;
+&lt;li&gt;extracts datagram, passes to receiving code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image.png&#34;
+	width=&#34;1147&#34;
+	height=&#34;223&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image_hu_4030ccc451c81dec.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image_hu_70e548e2e023589e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;514&#34;
+		data-flex-basis=&#34;1234px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lan-devices&#34;&gt;LAN devices
+&lt;/h3&gt;&lt;h4 id=&#34;repeater&#34;&gt;Repeater
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Allows signal to travel a longer distance on the media&lt;/li&gt;
+&lt;li&gt;Classified as layer 1 (physical layer) device&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hub&#34;&gt;Hub
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Also known as a multi-port repeater&lt;/li&gt;
+&lt;li&gt;Creates central connection point for wiring media&lt;/li&gt;
+&lt;li&gt;Classified as layer 1 (physical layer) device&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;bridge&#34;&gt;Bridge
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Connects two LAN segments to make one larger continuous LAN&lt;/li&gt;
+&lt;li&gt;Considered layer 2 (data link Layer) device&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;switch&#34;&gt;Switch
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Sometimes called a multi-port bridge&lt;/li&gt;
+&lt;li&gt;Forwards data only to the appropriate port for the intended recipient&lt;/li&gt;
+&lt;li&gt;Considered layer 2 (data link Layer) device&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;mac-address-and-arp&#34;&gt;MAC Address and ARP
+&lt;/h3&gt;&lt;h4 id=&#34;mac-address&#34;&gt;MAC Address
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;on LAN has &lt;font color=&#34;#c00000&#34;&gt;a unique MAC address&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Broadcast address = FF-FF-FF-FF-FF-FF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;MAC address:
+&lt;ul&gt;
+&lt;li&gt;is used to get frame from one interface to another physically-connected interface (same network)&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;48 bit&lt;/font&gt; MAC address (for most LANs) burned in the adapter ROM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Usually expressed for humans in hexadecimal
+&lt;ul&gt;
+&lt;li&gt;Base16: Each symbol represents 4 bits (0101 = 5hex)&lt;/li&gt;
+&lt;li&gt;Convert each four bits to a hex symbol between 0 and F&lt;/li&gt;
+&lt;li&gt;Put dashes between each pair&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;MAC address allocation administered by IEEE&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;manufacturer&lt;/font&gt; buys portion of MAC address space (to assure uniqueness)&lt;/li&gt;
+&lt;li&gt;Analogy:
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;MAC&lt;/font&gt; address: like Social Security Number&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;IP&lt;/font&gt; address: like postal address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MAC flat address → portability
+&lt;ul&gt;
+&lt;li&gt;can move LAN card from one LAN to another&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IP hierarchical address NOT portable
+&lt;ul&gt;
+&lt;li&gt;depends on IP subnet to which node is attached&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;arp&#34;&gt;ARP
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Each IP node (Host, Router) on LAN has &lt;font color=&#34;#c00000&#34;&gt;ARP&lt;/font&gt; table&lt;/li&gt;
+&lt;li&gt;ARP Table: IP/MAC address mappings for some LAN nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;IP address; MAC address; TTL&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;TTL (Time To Live): time after which address mapping will be forgotten (typically 20 min)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;ARP protocol: Same LAN&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A wants to send datagram to B, but B’s MAC address is not in A’s ARP table.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;A &lt;font color=&#34;#c00000&#34;&gt;broadcasts&lt;/font&gt; ARP query frame, containing B&amp;rsquo;s IP address&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Dest MAC address = FF-FF-FF-FF-FF-FF&lt;/li&gt;
+&lt;li&gt;all machines on LAN receive ARP query&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;B receives ARP frame, replies to A with its (B&amp;rsquo;s) MAC address&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;frame sent to A’s MAC address (unicast)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;A caches (saves) IP-to-MAC address pair in its ARP table until information becomes old (times out)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;soft state: information that times out (goes away) unless refreshed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;ARP is “plug-and-play”:&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;nodes create their ARP tables without intervention from net administrator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-1.png&#34;
+	width=&#34;1030&#34;
+	height=&#34;586&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-1_hu_55ad6c052e281ade.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-1_hu_b281dfff7c6bf89.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;LAN Protocols: IEEE 802 Standards&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;421px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ethernet&#34;&gt;Ethernet
+&lt;/h3&gt;&lt;p&gt;IEEE 802.3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;dominant&amp;rdquo; wired LAN technology:
+&lt;ul&gt;
+&lt;li&gt;Cheap - $20 for 100 Mbs!&lt;/li&gt;
+&lt;li&gt;First widely used LAN technology&lt;/li&gt;
+&lt;li&gt;Kept up with speed race: 10 Mbps - 400 Gbps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connection choices: hub or switch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ethernet-frame-structure&#34;&gt;Ethernet Frame Structure
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Address&lt;/span&gt;: &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;6 bytes, frame is received by all adapaters on a LAN and dropped if address does not match&lt;/span&gt; 地址占用 6 个字节。在局域网（LAN）中，所有的网络适配器（网卡）都会接收到以太网帧。只有当帧中的目的地址与网卡自身的地址匹配时，才会对帧进行处理；如果不匹配，网卡就会丢弃该帧&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Types&lt;/span&gt;: &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;indicates the higher layer protocol, mostly IP but others may be supported such as Novell IPX and AppleTalk&lt;/span&gt; 类型字段用于指示该以太网帧承载的上层协议。大部分情况下是 IP 协议，但也支持其他协议，例如 Novell 公司的 IPX 协议以及 Apple 公司的 AppleTalk 协议&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;CRC&lt;/span&gt;: &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;(Cyclic Redundancy check) checked at receiver, if error is detected, the frame is simple dropped&lt;/span&gt; 循环冗余校验。接收端会对收到的以太网帧进行 CRC 校验。如果在校验过程中检测到帧存在错误，接收端就会直接丢弃该帧，不进行后续处理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lan-media-access-methods&#34;&gt;LAN media access methods
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Determines how nodes share channel, i.e., determine when node can transmit
+&lt;ul&gt;
+&lt;li&gt;two or more simultaneous transmissions by nodes: interference
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;collision&lt;/font&gt; if node receives two or more signals at the same time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Two main ways&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;CSMA/CD - used in Ethernet (MAC Layer)&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;Carrier Sense Multiple Access&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;If a &lt;font color=&#34;#c00000&#34;&gt;NIC&lt;/font&gt; wishes to transmit, it must listen for traffic
+&lt;ul&gt;
+&lt;li&gt;If there is no traffic, the NIC may transmit&lt;/li&gt;
+&lt;li&gt;If there is traffic, the NIC must wait to transmit until no traffic is being transmitted; then it may send&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Collision Detection&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;If there is a collision (by two or more stations transmitting at the same time)
+&lt;ul&gt;
+&lt;li&gt;All NICs stop transmitting and wait for a random amount of time&lt;/li&gt;
+&lt;li&gt;The first NIC that finishes its wait may transmit
+&lt;ul&gt;
+&lt;li&gt;but only if there is no traffic!&lt;/li&gt;
+&lt;li&gt;If there is traffic, the NIC must wait until there is no traffic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If there are multiple collisions
+&lt;ul&gt;
+&lt;li&gt;The random wait is increased each time&lt;/li&gt;
+&lt;li&gt;After 16 collisions, the sending NIC discards the frame&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Token passing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;switched-lan&#34;&gt;Switched LAN
+&lt;/h2&gt;&lt;h3 id=&#34;switch-operation&#34;&gt;Switch Operation
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Link layer device&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;stores and forwards Ethernet frames&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;examines frame header and &lt;font color=&#34;#c00000&#34;&gt;selectively&lt;/font&gt; forwards frame based on destination &lt;font color=&#34;#c00000&#34;&gt;MAC address&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;when frame is to be forwarded on &lt;u&gt;segment&lt;/u&gt;, uses CSMA/CD to access segment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;transparent&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;hosts are unaware of presence of switched&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;plug-and-play, &lt;font color=&#34;#c00000&#34;&gt;self-learning&lt;/font&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;switches usually do not need to be configured&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;switch-traffic-isolation&#34;&gt;Switch: traffic isolation
+&lt;/h4&gt;&lt;p&gt;交换机：流量隔离&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;switch installation breaks subnet into LAN &lt;u&gt;segments&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;switch &lt;font color=&#34;#c00000&#34;&gt;filters&lt;/font&gt; packets:
+&lt;ul&gt;
+&lt;li&gt;same-LAN-segment frames not usually forwarded onto other LAN segments&lt;/li&gt;
+&lt;li&gt;segments become separate &lt;font color=&#34;#c00000&#34;&gt;collision domains&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-2.png&#34;
+	width=&#34;1204&#34;
+	height=&#34;640&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-2_hu_168c2921e814b0bc.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-2_hu_9f015c6075d628b2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Switching Table&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;188&#34;
+		data-flex-basis=&#34;451px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;switch-traffic-isolation-1&#34;&gt;Switch: traffic isolation
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;switch installation breaks subnet into LAN &lt;strong&gt;segments&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;switch &lt;font color=&#34;#c00000&#34;&gt;filters&lt;/font&gt; packets:
+&lt;ul&gt;
+&lt;li&gt;same-LAN-segment frames not usually forwarded onto other LAN segments&lt;/li&gt;
+&lt;li&gt;segments become separate &lt;font color=&#34;#c00000&#34;&gt;collision domains&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-3.png&#34;
+	width=&#34;916&#34;
+	height=&#34;397&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-3_hu_c222b4239cc2b1ca.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-3_hu_3134762500aeedc5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;230&#34;
+		data-flex-basis=&#34;553px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;switches-dedicated-access&#34;&gt;Switches: dedicated access
+&lt;/h4&gt;&lt;p&gt;交换机：专用接入&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Switch with many interfaces&lt;/li&gt;
+&lt;li&gt;Hosts have direct connection to switch&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;No collisions&lt;/span&gt; 为每个连接的设备提供了独立的专用通道; &lt;span style=&#34;background:rgba(3, 135, 102, 0.2)&#34;&gt;full duplex&lt;/span&gt; 全双工&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Switching: A-to-A and B-to-B&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;simultaneously, no collisions&lt;/li&gt;
+&lt;li&gt;Better performance, higher speed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-4.png&#34;
+	width=&#34;1093&#34;
+	height=&#34;655&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-4_hu_57db334424c5e792.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-4_hu_2c06dde404403afc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Institutional network&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;problems-with-switched-lan&#34;&gt;Problems with switched LAN
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Broadcast domain&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Group of network devices that will receive LAN broadcast traffic from each other&lt;/li&gt;
+&lt;li&gt;Switches cannot break up broadcast domain
+&lt;ul&gt;
+&lt;li&gt;Routers can!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Security concerns&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;LANs often have confidential, mission-critical data moving across them&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Performance concerns&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Broadcast traffic can degrade network performance if not properly managed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Management concerns&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Moves, adds, and changes of workstations due to reorganization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vlan&#34;&gt;VLAN
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Virtual LAN (VLAN)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Grouping of network devices that is not restricted to a physical switch&lt;/li&gt;
+&lt;li&gt;Frames are tagged according to LAN membership, e.g., VLAN1(default), VLAN2, and VLAN3&lt;/li&gt;
+&lt;li&gt;Ethernet switch establish broadcast domains according to the defined VLAN boundaries (ports are assigned to each VLAN)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Routers are used to inter-connect multiple VLANs&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;On multiple interface or on a single interface&lt;/li&gt;
+&lt;li&gt;Devices cannot communicate between VLANs without a router&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Each VLAN has its own IP subnet address&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;benefit-of-vlans&#34;&gt;Benefit of VLANs
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Administrators can divide LANs logically without changing actual physical configuration
+&lt;ul&gt;
+&lt;li&gt;e.g., assign a switch port to a VLAN using Cisco Network Assistant (CNA)&lt;/li&gt;
+&lt;li&gt;This provides administrator with serveral benefits
+&lt;ul&gt;
+&lt;li&gt;It is easier to add and move stations on the LAN&lt;/li&gt;
+&lt;li&gt;It is easier to reconfigure the LAN&lt;/li&gt;
+&lt;li&gt;There is better traffic control&lt;/li&gt;
+&lt;li&gt;There is increased security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Modern campus network architectures are tending to move away from traditional router-for-a-building design, to VLAN disigns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-5.png&#34;
+	width=&#34;880&#34;
+	height=&#34;664&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-5_hu_ab0d805ce9a4f822.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-5_hu_219c2350a1b27a93.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Old Design Included a lot of Routers&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;318px&#34;
+	
+&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-6.png&#34;
+	width=&#34;1048&#34;
+	height=&#34;655&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-6_hu_2044bb8ff7bf64bd.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-6_hu_45153fe0ac6a676.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;New Design Includes VLAN Router&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>商务电信网络 1</title>
@@ -551,7 +1378,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nslookup
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nslookup
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;applicaiton-layer-protocols---email&#34;&gt;Applicaiton Layer Protocols - Email
@@ -683,7 +1510,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet owa.win.udel.edu 25
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet owa.win.udel.edu 25
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt; &lt;br&gt;
@@ -1171,7 +1998,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet udel.edu 80
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet udel.edu 80
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
@@ -1183,7 +2010,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GET /~jcao/ HTTP/1.1 
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GET /~jcao/ HTTP/1.1 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host: udel.edu
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -1970,7 +2797,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Command line utility: ipconfig
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Command line utility: ipconfig
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;division-bw-network-id--host-id&#34;&gt;Division b/w Network ID &amp;amp; Host ID
@@ -2425,7 +3252,7 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;netstat -r
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;netstat -r
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;routing-algorithm&#34;&gt;Routing Algorithm
