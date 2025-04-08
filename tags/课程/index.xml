@@ -1822,6 +1822,908 @@ Delete all IS majors students who are seniors&lt;/p&gt;&lt;/div&gt;
 &lt;li&gt;Combine update operations&lt;/li&gt;
 &lt;li&gt;Consider the total query processing time for ad hoc queries&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;structured-query-language-part-4&#34;&gt;Structured Query Language Part 4
+&lt;/h2&gt;&lt;h3 id=&#34;view&#34;&gt;View
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SQL View&lt;/strong&gt; is a virtual table that is constructed from other tables or views&lt;/li&gt;
+&lt;li&gt;It has no data of its own, but obtains data from tables or other views
+&lt;ul&gt;
+&lt;li&gt;It only has a definition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Views can be used as regular tables in SELECT statements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;create-view-command&#34;&gt;CREATE VIEW Command
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;VIEW&lt;/span&gt; faculty_name_view &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; FacFirstName, FacLastName
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; faculty;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;To see the view use:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; faculty_name_view
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;uses-for-sql-views&#34;&gt;Uses for SQL Views
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Display results of computations&lt;/li&gt;
+&lt;li&gt;Hide complicated SQL syntax&lt;/li&gt;
+&lt;li&gt;Provide a level of isolation between actual data and the user’s view of data
+&lt;ul&gt;
+&lt;li&gt;three-tier architecture: database -&amp;gt; application -&amp;gt; client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Security: hide columns and rows&lt;/li&gt;
+&lt;li&gt;Assign different processing permissions to different views on same table&lt;/li&gt;
+&lt;li&gt;Assign different triggers to different views on same table
+&lt;ul&gt;
+&lt;li&gt;PostgreSQL and SQL Server allows it, but MySQL does not allow it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;triggers-and-routines&#34;&gt;Triggers and Routines
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Triggers&lt;/strong&gt;- execute in response to a database event (INSERT, UPDATE, or DELETE)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Routines&lt;/strong&gt; - Program modules that execute on demand
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Procedures&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;routines that do not return values directly&lt;/li&gt;
+&lt;li&gt;can be used in subsequent SQL statements&lt;/li&gt;
+&lt;li&gt;take input or output parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Functions&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;routines that return values&lt;/li&gt;
+&lt;li&gt;take input parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;triggers-vs-routines&#34;&gt;Triggers vs. Routines
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-17.png&#34;
+	width=&#34;1189&#34;
+	height=&#34;871&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-17_hu_71e17f0b6306f3b1.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-17_hu_8766b0a4e24394c9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;136&#34;
+		data-flex-basis=&#34;327px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;triggers&#34;&gt;Triggers
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Trigger&lt;/strong&gt;: stored program that is executed by the DBMS whenever a specified event occurs
+&lt;ul&gt;
+&lt;li&gt;Associated with a table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Three basic trigger types: &lt;code&gt;BEFORE&lt;/code&gt;, &lt;code&gt;INSTEAD OF&lt;/code&gt;, and &lt;code&gt;AFTER&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In DML trigger, each type can be declared for &lt;code&gt;INSERT&lt;/code&gt;, &lt;code&gt;UPDATE&lt;/code&gt;, and/or &lt;code&gt;DELETE&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Resulting in a total of 9 trigger types&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Database triggers can be used to perform any of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Audit data modification&lt;/li&gt;
+&lt;li&gt;Log events transparently&lt;/li&gt;
+&lt;li&gt;Implement complex security authorizations&lt;/li&gt;
+&lt;li&gt;Derive column values automatically&lt;/li&gt;
+&lt;li&gt;Maintain replicate tables&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Create Trigger&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TRIGGER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;trigger_name&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEFORE&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AFTER&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;INSTEAD&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;OF&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;INSERT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DELETE&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;UPDATE&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table_name&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;FOR&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;EACH&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ROW&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;triggered &lt;span style=&#34;color:#66d9ef&#34;&gt;SQL&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;statement&lt;/span&gt; here&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Example&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DEFINER&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=`&lt;/span&gt;root&lt;span style=&#34;color:#f92672&#34;&gt;`@`&lt;/span&gt;localhost&lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;TRIGGER&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt;faculty_BEFORE_UPDATE&lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEFORE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;UPDATE&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt;faculty&lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;FOR&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;EACH&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ROW&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;OLD&lt;/span&gt;.FacSalary&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;NEW&lt;/span&gt;.FacSalary &lt;span style=&#34;color:#66d9ef&#34;&gt;THEN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;INSERT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;INTO&lt;/span&gt; update_faculty(FacSSN, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	FacLastName, OldFacSalary, NewFacSalary) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;VALUES&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;old&lt;/span&gt;.FacSSN, &lt;span style=&#34;color:#66d9ef&#34;&gt;old&lt;/span&gt;.FacLastName, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;old&lt;/span&gt;.FacSalary, &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt;.FacSalary); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h4 id=&#34;stored-routines&#34;&gt;Stored Routines
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;stored routin&lt;/strong&gt;e is a program that is stored within the database and is compiled when used
+&lt;ul&gt;
+&lt;li&gt;Stored Procedure&lt;/li&gt;
+&lt;li&gt;Stored Function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stored routines can receive input/output parameters and they can return results&lt;/li&gt;
+&lt;li&gt;Stored routines can be called from:
+&lt;ul&gt;
+&lt;li&gt;Programs written in standard languages, e.g., Java, C#, Python&lt;/li&gt;
+&lt;li&gt;Scripting languages, e.g., JavaScript, VBScript&lt;/li&gt;
+&lt;li&gt;SQL command prompt, e.g., Oracle SQL&lt;code&gt;*&lt;/code&gt;Plus, MySQL Workbench&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Stored Routine Advantages&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Greater security as store routines are always stored on the database server&lt;/li&gt;
+&lt;li&gt;SQL can be optimized by the DBMS compiler&lt;/li&gt;
+&lt;li&gt;Code sharing resulting in:
+&lt;ul&gt;
+&lt;li&gt;Less work&lt;/li&gt;
+&lt;li&gt;Standardized processing&lt;/li&gt;
+&lt;li&gt;Specialization among developers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Stored Procedure&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PARAMETERS
+&lt;ul&gt;
+&lt;li&gt;IN&lt;/li&gt;
+&lt;li&gt;OUT&lt;/li&gt;
+&lt;li&gt;INOUT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;May return one or more data sets&lt;/li&gt;
+&lt;li&gt;Can use dynamic SQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Types of Parameters&lt;/p&gt;&lt;/div&gt;
+
+&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-18.png&#34;
+	width=&#34;1013&#34;
+	height=&#34;511&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-18_hu_bd7bc1ee3d35dcbb.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-18_hu_27f9dd90ea52917b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;198&#34;
+		data-flex-basis=&#34;475px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Examples: Different types of parameters&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;PROCEDURE&lt;/span&gt; get_customer_details(&lt;span style=&#34;color:#66d9ef&#34;&gt;IN&lt;/span&gt; customer_idINT) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; customers &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; id &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; customer_id; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;PROCEDURE&lt;/span&gt; calculate_total_sales(&lt;span style=&#34;color:#66d9ef&#34;&gt;OUT&lt;/span&gt; total_salesDECIMAL(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SUM&lt;/span&gt;(sales_amount) &lt;span style=&#34;color:#66d9ef&#34;&gt;INTO&lt;/span&gt; total_salesFROM sales; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;PROCEDURE&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	update_customer_details(&lt;span style=&#34;color:#66d9ef&#34;&gt;INOUT&lt;/span&gt; customer_emailVARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;255&lt;/span&gt;), 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;IN&lt;/span&gt; customer_idINT) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;UPDATE&lt;/span&gt; customers 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; email &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; customer_emailWHERE id &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; customer_id; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; customer_email&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CONCAT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;new_&amp;#39;&lt;/span&gt;, customer_email); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Define Procedure - Example 1&lt;/strong&gt;
+&lt;span style=&#34;background:#40a9ff&#34;&gt;Compare numbers&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Change DELIMITER to $$ DELIMITER $$ 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;PROCEDURE&lt;/span&gt; how_is_it (&lt;span style=&#34;color:#66d9ef&#34;&gt;IN&lt;/span&gt; x INT) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt; (x &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;THEN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; CONCAT(x, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is higher&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; answer; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;ELSE&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; CONCAT(x, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is lower&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; answer; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$$&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Change back DELIMITER to ; DELIMITER ;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Use Procedure - Example 1&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CALL&lt;/span&gt; how_is_it(&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CALL&lt;/span&gt; how_is_it(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Define Procedure - Example 2&lt;/strong&gt;
+&lt;span style=&#34;background:#40a9ff&#34;&gt;Show students with high GPAs&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Change DELIMITER to $$ DELIMITER $$
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;PROCEDURE&lt;/span&gt; GPA_higher_than_X (&lt;span style=&#34;color:#66d9ef&#34;&gt;IN&lt;/span&gt; x DECIMAL(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; StdFirstName, StdLastName 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; student 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; StdGPA &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; x;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$$&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Change back DELIMITER to; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DELIMITER&lt;/span&gt; ;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Use Procedure - Example 2&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CALL&lt;/span&gt; GPA_higher_than_X(&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;.&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Stored Function&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only input PARAMETERS&lt;/li&gt;
+&lt;li&gt;MUST return one value of a given type&lt;/li&gt;
+&lt;li&gt;Can&amp;rsquo;t return data sets&lt;/li&gt;
+&lt;li&gt;Can&amp;rsquo;t use dynamic SQL&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Define Function - Example 1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Compare numbers&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DELIMITER&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$$&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FUNCTION&lt;/span&gt; is_bigger_5 (x INT) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RETURNS&lt;/span&gt; CHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DETERMINISTIC&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt; (x &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;THEN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;RETURN&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;YES&amp;#39;&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;ELSE&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;RETURN&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NO&amp;#39;&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$$&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DELIMITER&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Use Function - Example 1&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; is_bigger_5(&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Stored Function - Example 2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Show honor students&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DELIMITER&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$$&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; FUNCTIONHonorStudents(GPA Decimal(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)) &lt;span style=&#34;color:#66d9ef&#34;&gt;RETURNS&lt;/span&gt; VARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DETERMINISTIC&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;DECLARE&lt;/span&gt; HonorStudentVARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt; GPA &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;.&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;THEN&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; HonorStudent&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;honor&amp;#39;&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;ELSE&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; HonorStudent&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;regular&amp;#39;&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Return&lt;/span&gt; (HonorStudent); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$$&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DELIMITER&lt;/span&gt; ;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Use Function - Example 2&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; StdSSN, StdFirstName, StdLastName, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	HonorStudents(StdGPA) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; HonorOrNot 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; student;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;summary&#34;&gt;Summary
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;What is view and the advantage of using views&lt;/li&gt;
+&lt;li&gt;How to write Trigger, Procedure, and Function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;nosql-and-mongodb&#34;&gt;NoSQL and MongoDB
+&lt;/h2&gt;&lt;h3 id=&#34;nosql-introduction&#34;&gt;NoSQL Introduction
+&lt;/h3&gt;&lt;h4 id=&#34;what-is-nosql&#34;&gt;What is NoSQL?
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Stands for &amp;ldquo;Not Only SQL&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Non-relational data storage systems&lt;/li&gt;
+&lt;li&gt;Supports unstructured format (no fixed schema)&lt;/li&gt;
+&lt;li&gt;Well-suited for applications that deal with unstructured or semi structured data, such as social media, IoT devices, and e-commerce platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;categories-of-nosql&#34;&gt;Categories of NoSQL
+&lt;/h4&gt;&lt;p&gt;Document Store&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stores data using JSON, BSON documents&lt;/li&gt;
+&lt;li&gt;Example: MongoDB, Couchbase
+Key-Value Data Store&lt;/li&gt;
+&lt;li&gt;Stores data in unique key-value pairs&lt;/li&gt;
+&lt;li&gt;Example: Dynamo, Redis
+Column Database&lt;/li&gt;
+&lt;li&gt;Uses flat structure, but with keys stored in columns rather than rows&lt;/li&gt;
+&lt;li&gt;Example: Cassandra, Hbase
+Graph Database&lt;/li&gt;
+&lt;li&gt;Uses edges and nodes to represent and store data&lt;/li&gt;
+&lt;li&gt;Example: Neo4j, JanusGraph&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rdbms-vs-nosql&#34;&gt;RDBMS vs NoSQL
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-19.png&#34;
+	width=&#34;860&#34;
+	height=&#34;494&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-19_hu_29632631755f3967.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-19_hu_e0934348534d0cba.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;417px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;How to pick?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nature of data
+&lt;ul&gt;
+&lt;li&gt;Row/column (structured)&lt;/li&gt;
+&lt;li&gt;Unstructured, complex data which needs nesting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schema
+&lt;ul&gt;
+&lt;li&gt;Static: RDBMS, Dynamic: NoSQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Flexibility of query
+&lt;ul&gt;
+&lt;li&gt;RDBMS: Joins allow for flexibility&lt;/li&gt;
+&lt;li&gt;NoSQL: Duplication of data, implement joins in middle - ware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Data integrity
+&lt;ul&gt;
+&lt;li&gt;RDBMS provide stronger consistency and integrity guarantees&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Handling “Big” data with better performance
+&lt;ul&gt;
+&lt;li&gt;RDBMS normalization and joins are powerful, but add up in cost&lt;/li&gt;
+&lt;li&gt;NoSQL databases are optimized for read and write operation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mongodb&#34;&gt;MongoDB
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;MongoDB is
+&lt;ul&gt;
+&lt;li&gt;Created by 10gen (term derived from humongous)&lt;/li&gt;
+&lt;li&gt;an open source, document-oriented database designed&lt;/li&gt;
+&lt;li&gt;stores BSON (JSON-like) documents&lt;/li&gt;
+&lt;li&gt;Schema-less&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MongoDB was founded in 2007 by Dwight Merriman, Eliot Horowitz and Kevin Ryan the team behind DoubleClick&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-20.png&#34;
+	width=&#34;1132&#34;
+	height=&#34;440&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-20_hu_42c2a02e31fe3d66.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-20_hu_53caac404bd3ab72.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;MongoDB Structure&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;257&#34;
+		data-flex-basis=&#34;617px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-21.png&#34;
+	width=&#34;985&#34;
+	height=&#34;381&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-21_hu_7638864c7113caea.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-21_hu_ff51d36090fc51f0.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;MongoDB vs RDBMS&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;258&#34;
+		data-flex-basis=&#34;620px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;json&#34;&gt;JSON
+&lt;/h4&gt;&lt;p&gt;JavaScript Object Notation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plain text file&lt;/li&gt;
+&lt;li&gt;Organized as objects within braces { }&lt;/li&gt;
+&lt;li&gt;Uses key-value pairs
+&lt;ul&gt;
+&lt;li&gt;keys are field names; strings in quotes&lt;/li&gt;
+&lt;li&gt;values are the data; strings, numbers, Boolean (quotes around strings required)&lt;/li&gt;
+&lt;li&gt;a comma separates the key-value pairs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JSON&#34; data-lang=&#34;JSON&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;key:&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-3P0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Values can be any lenth&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;MongoDB&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The easiest way to get started with MongoDB is MongoDB Atlas. Atlas is MongoDB&amp;rsquo;s fully managed database-as-a-service.&lt;/li&gt;
+&lt;li&gt;MongoDB has an Aggregation Framework.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Aggregation Tab&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aggregation tap allows us to create pipeline stages, which specifies multiple stages of queries, to return a subset of documents from collection.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;query-in-nosql&#34;&gt;Query in NoSQL
+&lt;/h3&gt;&lt;p&gt;NoSQL is new to us!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Let’s make some comparisons between NoSQL operations and the SQL commands&lt;/li&gt;
+&lt;li&gt;How to do &lt;code&gt;SELECT&lt;/code&gt;, &lt;code&gt;WHERE&lt;/code&gt;, &lt;code&gt;SORT&lt;/code&gt;, &lt;code&gt;GROUP BY&lt;/code&gt; in NoSQL?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;return-the-specified-fields&#34;&gt;Return the Specified Fields
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$project&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$project: {name: 1, beds: 1, bedrooms: 1, price:1}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The operation corresponds to the following SQL statement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; name, bed_type, bedrooms &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;The &lt;code&gt;_id field&lt;/code&gt; is, by default, included in the output documents. You can remove by setting the field to 0.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;specify-equality-condition&#34;&gt;Specify Equality Condition
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$match&lt;/code&gt; stage filters the documents to pass only the documents that match the specified condition(s)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$match&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$match: {bedrooms: 3}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$match&lt;/code&gt; corresponds to the following SQL statement:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; bedrooms &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;specify-conditions-using-operators&#34;&gt;Specify Conditions Using Operators
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Syntax:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$match: { : { : }, ... }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;For example
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$match: { price: { $gt: 200 } }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;corresponds to the following SQL statement:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; airbnb 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; price &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;sore-results&#34;&gt;Sore Results
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Using &lt;code&gt;$sort&lt;/code&gt; stage, we can specify the sort order of the returned documents
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$sort: { price: 1 }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The operation corresponds to the following SQL statement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; airbnb &lt;span style=&#34;color:#66d9ef&#34;&gt;ORDER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;By&lt;/span&gt; price &lt;span style=&#34;color:#66d9ef&#34;&gt;ASC&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;We can set the field to 1 (-1), to specify ascending (descending) order for a field.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;aggregation&#34;&gt;Aggregation
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$group&lt;/code&gt; documents by some specified expression and outputs to the next stage a document for each distinct grouping&lt;/li&gt;
+&lt;li&gt;Syntax
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$group: {_id:&amp;lt;expression&amp;gt;, &amp;lt;field&amp;gt;:{&amp;lt;accumulator1&amp;gt;:&amp;lt;expression1&amp;gt;}, ...}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;group: {_id:&amp;quot;$beds&amp;quot;, avgprice: {$avg: &amp;quot;$price&amp;quot;}}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;corresponds to the following SQL statement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; beds, &lt;span style=&#34;color:#66d9ef&#34;&gt;avg&lt;/span&gt;(price) &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; airbnb 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; airbnb 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Group&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; beds;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-22.png&#34;
+	width=&#34;872&#34;
+	height=&#34;257&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-22_hu_179b9f420fc16e0f.png 480w, https://majiao2.github.io/2025/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-sql/image-22_hu_baa58cac4f8476ce.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;MySQL vs MongoDB Query&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;339&#34;
+		data-flex-basis=&#34;814px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;summary-1&#34;&gt;Summary
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;What is NoSQL and when to use it&lt;/li&gt;
+&lt;li&gt;How to write NoSQL queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;future-trends-in-database&#34;&gt;Future Trends in Database
+&lt;/h2&gt;&lt;h3 id=&#34;large-language-models-and-database&#34;&gt;Large Language Models and Database
+&lt;/h3&gt;
+&lt;div class=&#34;simple-notice simple-notice-warning&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#b30000&#34;&gt;&lt;path d=&#34;M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Have you used AI tools to help with database design &amp;amp; SQL queries?&lt;/li&gt;
+&lt;li&gt;How was your experience? Good or bad?&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;llm&#34;&gt;LLM
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Sophisticated deep learning models that predicts what word comes next for any piece of text&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=7xTGNNLPyMl&amp;amp;ab_channel=AndrejKarpathy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;How LLMs learn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Limitations of LLM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hallucination: LLMs may confidently give wrong info&lt;/li&gt;
+&lt;li&gt;Lack of real-time or proprietary knowledge&lt;/li&gt;
+&lt;li&gt;Limited reasoning or symbolic logic&lt;/li&gt;
+&lt;li&gt;Poor at tasks requiring up-to-date, precise, or secure data access&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Databases enhance LLM-RAG&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Retrieval-Augmented Generation (RAG)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;LLM + database = smart, grounded answers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Examples: Q&amp;amp;A Chatbot, Semantic search&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Main components (LangChain)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Indexing&lt;/strong&gt;: a pipeline for ingesting data from a source and indexing it. This usually happens offline.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Retrieval and generation&lt;/strong&gt;: the actual RAG chain, which takes the user query at run time and retrieves the relevant data from the index, then passes that to the model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Using LLMs to Help Write SQL&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ask a generic LLM apps to generate SQL queries without providing your db schema, you are unlikely to get correct queries&lt;/li&gt;
+&lt;li&gt;It would be better if LLM apps know your database schema or can access your database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-warehouse&#34;&gt;Data Warehouse
+&lt;/h3&gt;&lt;p&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Challenges for modern organizations&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drowning in data but starving for information
+&lt;ul&gt;
+&lt;li&gt;Having the capability to collect and store data doesn’t mean using data wisely
+&lt;span style=&#34;background:#40a9ff&#34;&gt;Fragmentation&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Data are from a variety of sources, including different hardware, software platforms, and applications
+&lt;span style=&#34;background:#40a9ff&#34;&gt;Limited informational processing&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Most systems are developed to support operational processing, with little or no thought given to the information or analytical tools needed for decision making&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-need-for-data-warehousing&#34;&gt;The need for data warehousing
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;No single system of record&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multiple systems are not synchronized&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A centralized repository can&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrates data from various systems/sources&lt;/li&gt;
+&lt;li&gt;Synchronize data between systems&lt;/li&gt;
+&lt;li&gt;Aggregate and clean data for analyses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Data warehouse&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data warehouses consolidate and integrate information from many internal and external sources&lt;/li&gt;
+&lt;li&gt;Arrange it in a meaningful format for making accurate and timely business decisions&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;eil-in-data-warehouse&#34;&gt;EIL in data warehouse
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Extract, transform, load (ETL) process for data warehousing
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Extract&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;connecting to the data source, selecting the required data, and creating a copy of it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Transform&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;cleaning, filtering, and enriching the data to ensure that it is consistent and accurate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Load&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;creating tables, defining relationships, and inserting the data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;advantages-of-data-warehouse&#34;&gt;Advantages of data warehouse
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Improved data quality
+&lt;ul&gt;
+&lt;li&gt;Data warehouses are designed to ensure data consistency and accuracy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Better decision - making
+&lt;ul&gt;
+&lt;li&gt;Provide decision - makers with easy access to large amounts of data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Better performance
+&lt;ul&gt;
+&lt;li&gt;Data warehouses are optimized for analytical queries, which improves query performance and enables faster data analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Scalability
+&lt;ul&gt;
+&lt;li&gt;Can handle large amounts of data, which enables them to scale as data volumes grow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;data-lake&#34;&gt;Data lake
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;A data lake is a centralized repository that stores, processes, and secures large amounts of data in its native format, regardless of size&lt;/li&gt;
+&lt;li&gt;Data lakes can accommodate all types of data, which is then used to power big data analytics, machine learning, and other forms of advanced analyses&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -2783,7 +3685,7 @@ Leased Line Implementation&lt;/p&gt;
 
 &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=0MwMkBET_5I&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Fiber optic&lt;/a&gt; has become the media of choice when looking for high-bandwidth and/or long distance connectivity&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Multimode Fiber&lt;/span&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Multimode Fiber&lt;/span&gt;&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Light only travels in one of several allowed modes&lt;/li&gt;
 &lt;li&gt;Multimode fiber must keep its distance short or limit modal distortion&lt;/li&gt;
@@ -2798,18 +3700,9 @@ Leased Line Implementation&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;It is dominant in LANs
-&lt;span style=&#34;background:#F0A7D8&#34;&gt;Single-Mode Fiber&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Core is so thin that only one mode can propagate&lt;/li&gt;
-&lt;li&gt;No modal dispersion, so can span long distances without distortion
-&lt;ul&gt;
-&lt;li&gt;Speed: +10 Gb/s&lt;/li&gt;
-&lt;li&gt;Distance: 80+ km (50+ mi.)&lt;/li&gt;
-&lt;li&gt;Light Source: Laser&lt;/li&gt;
+&lt;li&gt;It is dominant in LANs&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Expensive, so rarely used in LANs. Popular in WANs&lt;br&gt;
-&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-23.png&#34;
 	width=&#34;1105&#34;
 	height=&#34;286&#34;
 	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-23_hu_93fa3568b873d8d.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-23_hu_fa94b92a739996e7.png 1024w&#34;
@@ -2820,8 +3713,21 @@ Leased Line Implementation&lt;/p&gt;
 		data-flex-grow=&#34;386&#34;
 		data-flex-basis=&#34;927px&#34;
 	
-&gt;
-&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-25.png&#34;
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;center&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Single-Mode Fiber&lt;/span&gt;&lt;/center&gt;
+&lt;ul&gt;
+&lt;li&gt;Core is so thin that only one mode can propagate&lt;/li&gt;
+&lt;li&gt;No modal dispersion, so can span long distances without distortion
+&lt;ul&gt;
+&lt;li&gt;Speed: +10 Gb/s&lt;/li&gt;
+&lt;li&gt;Distance: 80+ km (50+ mi.)&lt;/li&gt;
+&lt;li&gt;Light Source: Laser&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Expensive, so rarely used in LANs. Popular in WANs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-25.png&#34;
 	width=&#34;1096&#34;
 	height=&#34;235&#34;
 	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-25_hu_ff080eed50dd1d97.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-25_hu_2cc2fe917b0f8147.png 1024w&#34;
@@ -2832,10 +3738,9 @@ Leased Line Implementation&lt;/p&gt;
 		data-flex-grow=&#34;466&#34;
 		data-flex-basis=&#34;1119px&#34;
 	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Connectors&lt;/span&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Connectors&lt;/span&gt;&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Connectors are used to connect fiber to panels or active devices
 &lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-26.png&#34;
@@ -2849,8 +3754,11 @@ Leased Line Implementation&lt;/p&gt;
 		data-flex-grow=&#34;175&#34;
 		data-flex-basis=&#34;420px&#34;
 	
-&gt;
-Advantages of Fiber&lt;/li&gt;
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Advantages of Fiber&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;Secure (almost un-tappable)&lt;/li&gt;
 &lt;li&gt;Immune to EMI&lt;/li&gt;
 &lt;li&gt;Low error-rates&lt;/li&gt;
@@ -3032,6 +3940,1734 @@ Advantages of Fiber&lt;/li&gt;
 &lt;li&gt;&lt;font color=&#34;#6425d0&#34;&gt;Fibre - Optics are fed into the main distribution Communications Cabinet, normally located on the ground floor, this cabinet then feeds all the other cabinets in the building using up to 90 meters away using CAT6 copper cable.&lt;/font&gt;
 &lt;ul&gt;
 &lt;li&gt;光纤被引入主配线通信机柜，该机柜通常位于一楼，然后通过最长 90 米的超六类（CAT6）铜缆为建筑物内的其他机柜供电。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wireless-lan---general&#34;&gt;Wireless LAN - General
+&lt;/h2&gt;&lt;p&gt;802.11/Wi-Fi&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shared medium - radio instead of wire&lt;/li&gt;
+&lt;li&gt;IEEE 802.11 Standard&lt;/li&gt;
+&lt;li&gt;Basic Service Set (cell)
+&lt;ul&gt;
+&lt;li&gt;Set of stations (STA) using same MAC protocol (CSMA/CA for 802.11)&lt;/li&gt;
+&lt;li&gt;Competing to access shared medium&lt;/li&gt;
+&lt;li&gt;May be isolated&lt;/li&gt;
+&lt;li&gt;May connect to backbone via &lt;font color=&#34;#c00000&#34;&gt;access point&lt;/font&gt; (bridge)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wlan-basics&#34;&gt;WLAN Basics
+&lt;/h3&gt;&lt;h4 id=&#34;elements&#34;&gt;Elements
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Access Point (AP)
+&lt;ul&gt;
+&lt;li&gt;a wireless LAN transceiver or “base station” that can connect one or many wireless devices simultaneously&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cards – wireless NIC
+&lt;ul&gt;
+&lt;li&gt;They accept the wireless signal and relay information. They can be internal and external. (e.g. PCMCIA Card for Laptop and PCI Card for Desktop PC)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Controller
+&lt;ul&gt;
+&lt;li&gt;A centralized device (or devices) that coordinate configuration and management of large - scale wireless networks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;configuration&#34;&gt;Configuration
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Peer-to-peer Workgroup&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Also known as &lt;font color=&#34;#c00000&#34;&gt;Ad Hoc Network&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no access point&lt;/li&gt;
+&lt;li&gt;Client computers communicate directly with each other&lt;/li&gt;
+&lt;li&gt;All client computers must be within range of each other&lt;/li&gt;
+&lt;li&gt;File &amp;amp; printer sharing using a peer-to-peer operating system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Many wifi printers use this&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;Infrastructure or Client/Server Network&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;iSWUFE&lt;/li&gt;
+&lt;li&gt;Eduroam&lt;/li&gt;
+&lt;li&gt;Udel_Guest&lt;/li&gt;
+&lt;li&gt;UD Devices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Ad Hoc Mode&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-33.png&#34;
+	width=&#34;837&#34;
+	height=&#34;479&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-33_hu_59690324304c4e56.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-33_hu_a169b9f85877a9b4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;419px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Infrastructure Mode&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BSSID = MAC address of the AP&lt;/li&gt;
+&lt;li&gt;ESSID = The network name (SSID)&lt;/li&gt;
+&lt;li&gt;Standalone LAN or integrated into an existing enterprise network&lt;/li&gt;
+&lt;li&gt;Simple, cheap ways to boost your WiFi signal
+&lt;ul&gt;
+&lt;li&gt;Cantenna&lt;/li&gt;
+&lt;li&gt;Parabolic Cookware WiFi Antenna&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-34.png&#34;
+	width=&#34;788&#34;
+	height=&#34;544&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-34_hu_80824c7f065d525.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-34_hu_ecf7fe5a6799859f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;347px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Typical 802.11 Wireless LAN Operation with Access Points&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Wireless Station sends an 802.11 frame to a server via the access point&lt;/li&gt;
+&lt;li&gt;The access point is a bridge that converts the 802.11 frame into an 802.3 Ethernet frame and sends the frame to the server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-35.png&#34;
+	width=&#34;994&#34;
+	height=&#34;298&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-35_hu_42a52a81c10a8a53.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-35_hu_b0e9467b35fc457a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;333&#34;
+		data-flex-basis=&#34;800px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Large-Scale WLAN Operation with Controllers&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Client traffic sent to AP
+&lt;ul&gt;
+&lt;li&gt;AP encapsulates traffic and sends to controller via UDel network&lt;/li&gt;
+&lt;li&gt;Controller decapsulates and strips off 802.11 headers and converts to 802.3&lt;/li&gt;
+&lt;li&gt;Data then flows to original destination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Controllers keep track of all clients on the UDel network.
+&lt;ul&gt;
+&lt;li&gt;Policy Enforcement&lt;/li&gt;
+&lt;li&gt;Data Usage&lt;/li&gt;
+&lt;li&gt;QoS markings&lt;/li&gt;
+&lt;li&gt;Blacklisting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;GRE: General Routing Encapsulated, a tunneling protocol&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-36.png&#34;
+	width=&#34;1141&#34;
+	height=&#34;256&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-36_hu_508c23c7bd1702c2.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-36_hu_96d72bb0ed1c1e60.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;445&#34;
+		data-flex-basis=&#34;1069px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;802.11 Broadcast Operation&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Wireless Stations and Access Points Broadcast their Signals
+&lt;ul&gt;
+&lt;li&gt;Only one access point or wireless station may transmit at any moment or signals will become scrambled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-37.png&#34;
+	width=&#34;910&#34;
+	height=&#34;337&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-37_hu_4c9bc8ba40710da9.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-37_hu_8888637f33448b81.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;270&#34;
+		data-flex-basis=&#34;648px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;media-access-control&#34;&gt;Media Access Control
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;CSMA/CA&lt;/font&gt; (Carrier Sense Multiple Access with Collision Avoidance) + &lt;font color=&#34;#c00000&#34;&gt;ACK&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Wireless LAN adaptors &lt;u&gt;cannot detect collisions&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Carrier Sense&lt;/strong&gt; – Listen to the media to see if it is free&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collision Avoidance&lt;/strong&gt; – Minimize chances of collision by starting a random back off timer, when medium is free and prior to transmission&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-38.png&#34;
+	width=&#34;662&#34;
+	height=&#34;412&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-38_hu_76649a5479331ade.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-38_hu_12cde09ae5945618.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;385px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Collisions still occur (interference, incapability to sense other carrier end)
+&lt;ul&gt;
+&lt;li&gt;Defines a “low level” ACK protocol&lt;/li&gt;
+&lt;li&gt;Receiver immediately sends back an ACK&lt;/li&gt;
+&lt;li&gt;If sender does not receive the ACK, retransmits using CSMA/CA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-39.png&#34;
+	width=&#34;632&#34;
+	height=&#34;397&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-39_hu_e18c9d61f9a4be07.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-39_hu_61448c93079453e9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;382px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;different-types-of-80211&#34;&gt;Different Types of 802.11
+&lt;/h3&gt;&lt;h4 id=&#34;b&#34;&gt;b
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11b (Wi-Fi 1)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Appeared in late 1999&lt;/li&gt;
+&lt;li&gt;Operates at &lt;strong&gt;2.4GHz&lt;/strong&gt; radio spectrum (2412 – 2484 MHz)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;11 Mbps&lt;/strong&gt; (theoretical speed)&lt;/li&gt;
+&lt;li&gt;4 - 6 Mbps (actual speed)&lt;/li&gt;
+&lt;li&gt;100 - 150 feet range&lt;/li&gt;
+&lt;li&gt;Interference from cordless phones and Bluetooth devices which can reduce the transmission speed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;a&#34;&gt;a
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11a (Wi-Fi 2)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced in 2001&lt;/li&gt;
+&lt;li&gt;Operates at &lt;strong&gt;5 GHz&lt;/strong&gt; radio spectrum (5180 – 5825 MHz)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;54 Mbps&lt;/strong&gt; (theoretical speed)&lt;/li&gt;
+&lt;li&gt;15 - 20 Mbps (Actual speed)&lt;/li&gt;
+&lt;li&gt;50 - 75 feet range&lt;/li&gt;
+&lt;li&gt;More expensive&lt;/li&gt;
+&lt;li&gt;Not compatible with 802.11b&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;g&#34;&gt;g
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11g (Wi-Fi 3)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced in 2003&lt;/li&gt;
+&lt;li&gt;Operates at &lt;strong&gt;2.4 GHz&lt;/strong&gt; radio spectrum&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;54 Mbps&lt;/strong&gt; (theoretical speed)&lt;/li&gt;
+&lt;li&gt;Actual speed varies with different modes
+&lt;ul&gt;
+&lt;li&gt;G only&lt;/li&gt;
+&lt;li&gt;Mixed b and g&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Combine the features of both standards (a, b)&lt;/li&gt;
+&lt;li&gt;100 - 150 feet range&lt;/li&gt;
+&lt;li&gt;Compatible with ‘b’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;n&#34;&gt;n
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11n (Wi-Fi 4)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ratified in September 2009
+&lt;ul&gt;
+&lt;li&gt;Draft 2.0 approved 2007&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Operates at &lt;strong&gt;2.4/5 GHz&lt;/strong&gt; radio spectrum&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Up to 600 Mbps&lt;/strong&gt; (theoretical speed)
+&lt;ul&gt;
+&lt;li&gt;Typically around 100 Mbps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;~230 feet range&lt;/li&gt;
+&lt;li&gt;Compatible with ‘a/b/g’
+&lt;ul&gt;
+&lt;li&gt;2.4 GHz: compatible with b/g&lt;/li&gt;
+&lt;li&gt;5 GHz: compatible with a&lt;/li&gt;
+&lt;li&gt;2.4/5 GHz: compatible with a/b/g&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Aruba AP 124/5 and AP105s are 802.11a/b/g/n&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ac&#34;&gt;ac
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11ac (Wi-Fi 5)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ratified January 2014&lt;/li&gt;
+&lt;li&gt;Operates at &lt;strong&gt;5 GHz&lt;/strong&gt; radio spectrum &lt;strong&gt;only&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;At least &lt;strong&gt;1 Gbps&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;~115 feet range&lt;/li&gt;
+&lt;li&gt;Aruba AP220 series APs are 802.11a/b/g/n/ac&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ad&#34;&gt;ad
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11ad (WiGig)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Operates at &lt;strong&gt;2.4/5/60 GHz&lt;/strong&gt; radio spectrum&lt;/li&gt;
+&lt;li&gt;Up to &lt;strong&gt;7 Gbps&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~11&lt;/strong&gt; feet range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ax&#34;&gt;ax
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11ax (Wi-Fi 6)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Announced October 2018&lt;/li&gt;
+&lt;li&gt;Operates at 2.4/5 GHz radio spectrum&lt;/li&gt;
+&lt;li&gt;Up to ~10 Gbps
+&lt;ul&gt;
+&lt;li&gt;MU-MIMO (DL/UL)&lt;/li&gt;
+&lt;li&gt;OFDMA&lt;/li&gt;
+&lt;li&gt;Higher order 1024-QAM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Better battery life&lt;/li&gt;
+&lt;li&gt;Similar range as 802.11ac&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;6e&#34;&gt;6E
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;WiFi 6E - WiFi 6 Extension&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;6GHz radio spectrum
+&lt;ul&gt;
+&lt;li&gt;Less crowded&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;be&#34;&gt;be
+&lt;/h4&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;801.11be (Wi-Fi 7)&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial draft in March 2021, and a final version in 2024;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Faster&lt;/strong&gt;: Close to 4X the wireless datalink performance, delivering up to 46 Gbps&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;More Reliable&lt;/strong&gt;: New Multiple Resource Unit (MRU) lowers multiple user latency by 25%&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Always - on Connected&lt;/strong&gt;: New Multi - Link Operation (MLO) improves single user latency by 80% and throughput gains of up to 300%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-40.png&#34;
+	width=&#34;729&#34;
+	height=&#34;410&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-40_hu_142ea3f7dfd8e84e.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-40_hu_32d0adffe99eca2d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-41.png&#34;
+	width=&#34;892&#34;
+	height=&#34;349&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-41_hu_2d82c7d0076bde14.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-41_hu_34b5ea4ddb734ee3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;255&#34;
+		data-flex-basis=&#34;613px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-42.png&#34;
+	width=&#34;1175&#34;
+	height=&#34;802&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-42_hu_811e8c206bcb1377.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-42_hu_cf4ba5b1ad70ca53.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Recent Wi-Fi Generations&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-45.png&#34;
+	width=&#34;948&#34;
+	height=&#34;731&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-45_hu_6f9e451ddc4adad2.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-45_hu_57e35bf70ea154a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;129&#34;
+		data-flex-basis=&#34;311px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Radio Interference&lt;/p&gt;
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11b / 802.11g / 2.4GHz 802.11n&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Operate at frequencies used by other devices&lt;/li&gt;
+&lt;li&gt;Are prone to interference from:
+&lt;ul&gt;
+&lt;li&gt;Bluetooth® devices, such as cellular phone headsets&lt;/li&gt;
+&lt;li&gt;Cordless phones&lt;/li&gt;
+&lt;li&gt;Microwave ovens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11a / 5GHz 802.11n / 802.11ac / 5GHz 802.11ax&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Operate at frequencies less occupied by other devices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;&lt;font color=&#34;#c00000&#34;&gt;802.11ad&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Very good rate vs. range&lt;/li&gt;
+&lt;li&gt;Extremely prone to attenuation (walls, people)&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Channels Per Access Point&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Adjacent access points should not use the same channel.
+&lt;ul&gt;
+&lt;li&gt;Difficult in 3 - dimensional buildings with &lt;strong&gt;802.11b&lt;/strong&gt; or &lt;strong&gt;802.11g&lt;/strong&gt;, which only has &lt;strong&gt;3&lt;/strong&gt; non - overlapping channels (channel 1, 6, 11).
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://documentation.meraki.com/MR/WiFi_Basics_and_Best_Practices/Channel_Planning_Best_Practices&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://documentation.meraki.com/MR/WiFi_Basics_and_Best_Practices/Channel_Planning_Best_Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Easier with &lt;strong&gt;802.11a&lt;/strong&gt;, &lt;strong&gt;802.11n&lt;/strong&gt;, &lt;strong&gt;11ac&lt;/strong&gt;, &lt;strong&gt;11ax&lt;/strong&gt;, and &lt;strong&gt;11be&lt;/strong&gt; (5GHz radio spectrum) which has &lt;font color=&#34;#c00000&#34;&gt;up to (21) 20MHz channels (9 with 40 MHz channels, 4 80 MHz channels)&lt;/font&gt; non - overlapping channels.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If interference or error count is high, switch the wireless channel&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Channel Bonding&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;use of two separate nonoverlapping channels at same time to transmit data (20 MHz channel to 40 MHz channel)&lt;/li&gt;
+&lt;li&gt;A no-no on 2.4GHz&lt;/li&gt;
+&lt;li&gt;Standard 802.11 channels are effectively &lt;font color=&#34;#c00000&#34;&gt;20MHz wide&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Channel bonding combines two adjacent 20MHz channels into &lt;font color=&#34;#c00000&#34;&gt;a single 40MHz&lt;/font&gt; channel providing &lt;font color=&#34;#c00000&#34;&gt;increased throughput&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-47.png&#34;
+	width=&#34;877&#34;
+	height=&#34;469&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-47_hu_be580ec49b60b14b.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-47_hu_700cac999ad0c314.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;2.4GHz Channel Visualization&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;448px&#34;
+	
+&gt;
+&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-48.png&#34;
+	width=&#34;1036&#34;
+	height=&#34;574&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-48_hu_b5c2cf677dca3a3c.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-48_hu_199f0f166cf9d0c0.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;5GHz Channel Visualization&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;180&#34;
+		data-flex-basis=&#34;433px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;How are channels selected?&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In large-scale wifi networks, admins can’t manually choose channels for the APs&lt;/li&gt;
+&lt;li&gt;Aruba &lt;strong&gt;controllers&lt;/strong&gt; coordinate channel and power settings for all APs on campus&lt;/li&gt;
+&lt;li&gt;Channels will not be changed if clients are connected.  Does not apply to Dynamic Frequency Selection (DFS) channels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mimo-and-mu-mimo&#34;&gt;MIMO and MU-MIMO
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;MIMO (multi-in, multi-out)
+&lt;ul&gt;
+&lt;li&gt;Uses multiple wireless signals and antennas to allow simultaneous transmission of multiple streams of data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MU-MIMO: Multi-user MIMO
+&lt;ul&gt;
+&lt;li&gt;Allows a single 802.11ac device to transmit independent data streams to multiple different stations at the same time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wireless-router-ap-placement&#34;&gt;Wireless Router (AP) Placement
+&lt;/h3&gt;&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;Walls dramatically reduce the range of router&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Place in a room in the middle of your house&lt;/li&gt;
+&lt;li&gt;Avoid wireless connections that go through more than two walls or two floors for video transmission&lt;/li&gt;
+&lt;li&gt;802.11n/ac routers perform better due to use of advanced signal processing and multiple antennas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-49.png&#34;
+	width=&#34;563&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-49_hu_50802399b908df23.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-49_hu_c9ef3483496869ea.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mesh-wifi&#34;&gt;Mesh WiFi
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Whole home WiFi system with multiple access points
+&lt;ul&gt;
+&lt;li&gt;When one unit links to the modem, that unit becomes the main hub&lt;/li&gt;
+&lt;li&gt;The other units (called “nodes”) will capture and rebroadcast the router’s signal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Advantages
+&lt;ul&gt;
+&lt;li&gt;Stable Long Range Connectivity&lt;/li&gt;
+&lt;li&gt;One Name. One Password.&lt;/li&gt;
+&lt;li&gt;Seamless Roaming&lt;/li&gt;
+&lt;li&gt;Adaptive Routing&lt;/li&gt;
+&lt;li&gt;Self-Healing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Range extenders require you to sign on to a new network manually in order to maintain a strong connection once you’re far enough away from your router&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wireless-lan---setup-and-security&#34;&gt;Wireless LAN - Setup and Security
+&lt;/h2&gt;&lt;h3 id=&#34;80211-security&#34;&gt;802.11 Security
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Attackers can lurk outside your premises
+&lt;ul&gt;
+&lt;li&gt;In &amp;ldquo;war driving&amp;rdquo;, drive around sniffing out unprotected wireless LANs&lt;/li&gt;
+&lt;li&gt;In &amp;ldquo;drive by hacking&amp;rdquo;, eavesdrop on conversations or mount active attacks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;There are two main components involved in securing Wireless LANs:&lt;/p&gt;
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Authorization/Authentication&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open System Authentication: Service Set ID (SSID)&lt;/li&gt;
+&lt;li&gt;MAC Address Access List&lt;/li&gt;
+&lt;li&gt;Shared Key Authentication: WEP, WPA&lt;/li&gt;
+&lt;li&gt;802.1x&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Encryption&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wired Equivalent Privacy (WEP)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wireless Protected Access (WPA)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;service-set-id-ssid&#34;&gt;Service Set ID (SSID)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;SSID is used to identify an 802.11 network&lt;/li&gt;
+&lt;li&gt;SSID is broadcasted in Beacon Frames
+&lt;ul&gt;
+&lt;li&gt;Beacon Frames are plain text&lt;/li&gt;
+&lt;li&gt;Use of default SSID, e.g. linksys&lt;/li&gt;
+&lt;li&gt;Turning off SSID broadcasting makes it tough to locate the network but still the hacker can sniff it from association response frames&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Thus SSID is almost no defense against the experienced hacker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mac-address-access-list&#34;&gt;MAC Address Access List
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Wireless NIC MAC address must be included in the list for the AP to allow data to pass&lt;/li&gt;
+&lt;li&gt;Difficult to implement on a large scale or with transient users&lt;/li&gt;
+&lt;li&gt;Lists need to be maintained in each access point, although querying a centralized list may be possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;wired-equivalent-privacy-wep&#34;&gt;Wired Equivalent Privacy (WEP)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Original security solution offered by the IEEE 802.11 standard&lt;/li&gt;
+&lt;li&gt;Shared key between
+&lt;ul&gt;
+&lt;li&gt;Stations&lt;/li&gt;
+&lt;li&gt;An Access Point&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extended Service Set
+&lt;ul&gt;
+&lt;li&gt;All Access Points will have same shared key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;No key management
+&lt;ul&gt;
+&lt;li&gt;Shared key entered manually into
+&lt;ul&gt;
+&lt;li&gt;Stations&lt;/li&gt;
+&lt;li&gt;Access points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Key management a problem in large wireless LANs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;40-bit (64-bit) encryption based on the RC4 algorithm&lt;/li&gt;
+&lt;li&gt;104-bit (128-bit) version may be vendor-specific&lt;/li&gt;
+&lt;li&gt;Keys can be entered in ASCII or Hex, depending on the manufacturer&lt;/li&gt;
+&lt;li&gt;Security Issue with WEP
+&lt;ul&gt;
+&lt;li&gt;Short IV (Initialization Vector): only 24-bit&lt;/li&gt;
+&lt;li&gt;Static key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Offers very little security at all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-50.png&#34;
+	width=&#34;500&#34;
+	height=&#34;131&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-50_hu_eda76975a515dff8.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-50_hu_7d95de876b8779f8.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Shared Key Authentication&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;381&#34;
+		data-flex-basis=&#34;916px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-51.png&#34;
+	width=&#34;457&#34;
+	height=&#34;403&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-51_hu_9b4ebfa4fd800733.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-51_hu_74018633f65b9cf3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;113&#34;
+		data-flex-basis=&#34;272px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;8021x-access-control&#34;&gt;802.1x Access Control
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A general purpose network access control mechanism&lt;/li&gt;
+&lt;li&gt;Authentication is done with a &lt;strong&gt;RADIUS&lt;/strong&gt; server, which ”tells” the access point whether access to controlled ports should be allowed or not
+&lt;ul&gt;
+&lt;li&gt;AP forces the user into an unauthorized state&lt;/li&gt;
+&lt;li&gt;user send an &lt;span style=&#34;background:#affad1&#34;&gt;EAP (Extensible Authentication Protocol)&lt;/span&gt; start message&lt;/li&gt;
+&lt;li&gt;AP return an EAP message requesting the user’s identity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identity&lt;/strong&gt; (e.g., username and password) sent by user is then forwarded to the authentication server by AP&lt;/li&gt;
+&lt;li&gt;Authentication server authenticate user and return an accept or reject message back to the AP&lt;/li&gt;
+&lt;li&gt;If accept message is return, the AP changes the client’s state to authorized and normal traffic flows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-52.png&#34;
+	width=&#34;1287&#34;
+	height=&#34;731&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-52_hu_29dd8d681415c232.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-52_hu_4c5b7ad6b7f8e7a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;wpa-overview&#34;&gt;WPA Overview
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Wi-Fi Protected Access (WPA)
+&lt;ul&gt;
+&lt;li&gt;Security standard developed after WEP’s vulnerabilities had been exposed and successfully attacked&lt;/li&gt;
+&lt;li&gt;Development was a collaborative effort between the Wi-Fi Alliance and the Institute of Electrical and Electronics Engineers (IEEE)&lt;/li&gt;
+&lt;li&gt;Purpose was to be an immediate solution while the long-term solution (802.11i/WPA2) was being finished&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;wpa-overview-contd&#34;&gt;WPA Overview (Cont&amp;rsquo;d)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;WPA strengthened WEP by:
+&lt;ul&gt;
+&lt;li&gt;Including authentication using 802.1X framework (commercial/enterprise systems) or a passphrase (home systems)
+&lt;ul&gt;
+&lt;li&gt;Password length between 8 and 63 printable ASCII characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Creating a key hierarchy out of the master key&lt;/li&gt;
+&lt;li&gt;Doubling the size of the initialization vector (IV) used during encryption&lt;/li&gt;
+&lt;li&gt;Including a more robust data integrity algorithm (Michael)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-53.png&#34;
+	width=&#34;529&#34;
+	height=&#34;625&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-53_hu_3dc004675f394e11.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-53_hu_3c668deff89085e6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;203px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A session consists of:
+&lt;ul&gt;
+&lt;li&gt;Authentication of the client to the access point (802.1X/passphrase)&lt;/li&gt;
+&lt;li&gt;4 - way handshake to exchange key values and generate the key hierarchy&lt;/li&gt;
+&lt;li&gt;Data session to send encrypted information using the Temporal Key Integrity Protocol (TKIP)
+&lt;ul&gt;
+&lt;li&gt;RC4 for encryption&lt;/li&gt;
+&lt;li&gt;Michael for integrity checking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wpa2-overview&#34;&gt;WPA2 Overview
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Wi-Fi Protected Access 2
+&lt;ul&gt;
+&lt;li&gt;Security standard developed by the Wi-Fi Alliance and is an implementation of IEEE’s 802.11i&lt;/li&gt;
+&lt;li&gt;Uses the same authentication process, 4-way handshake, and key hierarchy as WPA&lt;/li&gt;
+&lt;li&gt;Replaces TKIP with the Advance Encryption Standard (AES) CCMP protocol
+&lt;ul&gt;
+&lt;li&gt;AES in Counter-Mode for encryption&lt;/li&gt;
+&lt;li&gt;AES in Cipher Block Chaining-Message Authentication Code (CBC-MAC) for integrity checking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;wpawpa2-attack&#34;&gt;WPA/WPA2 Attack
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Offline Dictionary Attack Overview:
+&lt;ul&gt;
+&lt;li&gt;Master - key is generated using:
+&lt;ul&gt;
+&lt;li&gt;Passphrase and SSID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Session keys are generated using:
+&lt;ul&gt;
+&lt;li&gt;Master key, MAC address of client, MAC address of access point, nonce from client, and nonce from access point&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Attacker’s goal is to reproduce the key hierarchy to access the network&lt;/li&gt;
+&lt;li&gt;Attacker needs to capture SSID, MAC addresses, and nonces and perform a dictionary attack to find the passphrase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;wpawpa2-attack-contd&#34;&gt;WPA/WPA2 Attack (Cont&amp;rsquo;d)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Tool: &lt;strong&gt;Kali Linux&lt;/strong&gt; (previously BackTrack)&lt;/li&gt;
+&lt;li&gt;How to capture the 4-way handshake?
+&lt;ol&gt;
+&lt;li&gt;Enter the monitoring mode&lt;/li&gt;
+&lt;li&gt;Discover nearby networks and associated clients
+&lt;ul&gt;
+&lt;li&gt;MAC addresses, WPA or WPA2, SSID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Disassociate clients to force them to run again 4-way handshake
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;fake disassociation control packets&lt;/strong&gt; (not protected by IEEE 802.11i)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Record the new 4-way handshake
+&lt;ul&gt;
+&lt;li&gt;e.g., using Aireplay&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go home and launch a dictionary attack
+&lt;ul&gt;
+&lt;li&gt;Aircrack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-warning&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#b30000&#34;&gt;&lt;path d=&#34;M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Securing against the dictionary attacks&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To secure your network against these pre-computed dictionaries make sure that
+&lt;ul&gt;
+&lt;li&gt;Your SSID is unique (does not appear in the existing tables)&lt;/li&gt;
+&lt;li&gt;Your password is strong enough (sufficiently long and random :-) )
+&lt;ul&gt;
+&lt;li&gt;Password length between 8 and 63 printable ASCII characters&lt;/li&gt;
+&lt;li&gt;Make it at least 13 characters!&lt;/li&gt;
+&lt;li&gt;No dictionary words!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;the longer the better!&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;wpa3&#34;&gt;WPA3
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Announced in January 2018 by Wi-Fi alliance&lt;/li&gt;
+&lt;li&gt;Several new security features
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Individualized data encryption in open networks&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Using Opportunistic Wireless Encryption (OWE)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Resilient password-based authentication&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;A new type of handshake that adds extra protection against password-crackers and similar brute force types of hacking&lt;/li&gt;
+&lt;li&gt;Use of Simultaneous Authentication of Equals (SAE)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Stronger cryptographic algorithm (192 bits encryption)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;meets requirements for high-level government work, defense agencies, and super secret industrial projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mobile-data-networks&#34;&gt;Mobile Data Networks
+&lt;/h2&gt;&lt;h3 id=&#34;cellular-network-basics&#34;&gt;Cellular Network Basics
+&lt;/h3&gt;&lt;p&gt;蜂窝网络&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are many types of cellular services; before delving into details, focus on basics (helps navigate the “acronym soup”)&lt;/li&gt;
+&lt;li&gt;Cellular  network/telephony is a &lt;font color=&#34;#c00000&#34;&gt;radio-based technology&lt;/font&gt;; radio waves are electromagnetic waves that &lt;span style=&#34;background:#CDF469&#34;&gt;antennas propagate&lt;/span&gt; 天线发射&lt;/li&gt;
+&lt;li&gt;Most signals are in the 850 MHz, 900 MHz, 1800 MHz, and 1900 MHz frequency bands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;structure&#34;&gt;Structure
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;A network of radio &lt;font color=&#34;#c00000&#34;&gt;base stations&lt;/font&gt; forming the base station subsystem&lt;/li&gt;
+&lt;li&gt;The &lt;font color=&#34;#c00000&#34;&gt;core circuit switched network&lt;/font&gt; for handling voice calls and text&lt;/li&gt;
+&lt;li&gt;A &lt;font color=&#34;#c00000&#34;&gt;packet switched network&lt;/font&gt; for handling mobile data&lt;/li&gt;
+&lt;li&gt;The &lt;font color=&#34;#c00000&#34;&gt;public switched telephone network (PSTN)&lt;/font&gt; to connect subscribers to the wider telephony network&lt;/li&gt;
+&lt;li&gt;Base stations transmit to and receive from mobiles at the assigned spectrum
+&lt;ul&gt;
+&lt;li&gt;Multiple base stations use the same spectrum (spectral reuse)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The service area of each base station is called a cell&lt;/li&gt;
+&lt;li&gt;Each mobile terminal is typically served by the ‘closest’ base stations
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Handoff&lt;/font&gt; when terminals move&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-multiple-access-problem&#34;&gt;The Multiple Access Problem
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The base stations need to serve many mobile terminals at the same time (both downlink and uplink)&lt;/li&gt;
+&lt;li&gt;All mobiles in the cell need to transmit to the base station&lt;/li&gt;
+&lt;li&gt;Interference among different senders and receivers&lt;/li&gt;
+&lt;li&gt;So we need &lt;font color=&#34;#c00000&#34;&gt;multiple access scheme&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;3 orthogonal Sceemes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Frequency Division Multiple Access (FDMA)&lt;/li&gt;
+&lt;li&gt;Time Division Multiple Access (TDMA)&lt;/li&gt;
+&lt;li&gt;Code Division Multiple Access (CDMA)&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-54.png&#34;
+	width=&#34;932&#34;
+	height=&#34;505&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-54_hu_f09ad01e13e8b93f.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-54_hu_7f72d1656c4c6809.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;frequency-division-multiple-access&#34;&gt;Frequency Division Multiple Access
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Each mobile is assigned a separate frequency channel for a call&lt;/li&gt;
+&lt;li&gt;Guard band is required to prevent adjacent channel interference&lt;/li&gt;
+&lt;li&gt;Usually, one downlink band and one uplink band&lt;/li&gt;
+&lt;li&gt;Different cellular network protocols use different frequencies&lt;/li&gt;
+&lt;li&gt;Frequency is precious and scare – we are running out of it
+&lt;ul&gt;
+&lt;li&gt;Cognitive radio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Time Division Multiple Access&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Time is divided into slots and only one mobile terminal transmits during each slot
+&lt;ul&gt;
+&lt;li&gt;Like during the lecture, only one can talk, but others may take the floor in turn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each user is given a specific slot. No competition in cellular network
+&lt;ul&gt;
+&lt;li&gt;Unlike Carrier Sensing Multiple Access (CSMA) in WiFi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;Guard time – signal transmitted by mobile terminals at different locations do no arrive at the base station at the same time&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Code Division Multiple Access&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use of orthogonal codes to separate different transmissions&lt;/li&gt;
+&lt;li&gt;Each symbol of bit is transmitted as a larger number of bits using the user specific code – Spreading
+&lt;ul&gt;
+&lt;li&gt;Bandwidth occupied by the signal is much larger than the information transmission rate&lt;/li&gt;
+&lt;li&gt;But all users use the same frequency band together&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mobile-phone-evolution&#34;&gt;Mobile Phone Evolution
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#affad1&#34;&gt;1st Generation (1G)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;AMPS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#affad1&#34;&gt;2nd Generation (2G)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;GSM, IS - 95 (cdmaOne)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#affad1&#34;&gt;3rd Generation (3G)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;UMTS (WCDMA), CDMA2000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#affad1&#34;&gt;4th Generation (4G)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;LTE - A&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-55.png&#34;
+	width=&#34;554&#34;
+	height=&#34;303&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-55_hu_c197f92a4c2f1ddd.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-55_hu_a6d1adb4d8163364.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;438px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1g-amps&#34;&gt;1G-AMPS
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Advanced Mobile Phone System (AMPS)
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;1st Generation (1G)&lt;/font&gt; mobile cellular phone&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Analog&lt;/font&gt; standard using &lt;font color=&#34;#f79646&#34;&gt;FDMA&lt;/font&gt; (Frequency Division Multiple Access)&lt;/li&gt;
+&lt;li&gt;Developed by &lt;font color=&#34;#f79646&#34;&gt;Bell Labs&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Introduced in North America in Oct. &lt;font color=&#34;#f79646&#34;&gt;1983&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2g&#34;&gt;2G
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;2G-GSM&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Global System for Mobile Communications (GSM)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;2nd Generation (2G)&lt;/font&gt; mobile cellular phone: &lt;font color=&#34;#f79646&#34;&gt;Digital&lt;/font&gt; system&lt;/li&gt;
+&lt;li&gt;Introduced in Finland in &lt;font color=&#34;#f79646&#34;&gt;1991&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Dominant global standard
+&lt;ul&gt;
+&lt;li&gt;Over &lt;font color=&#34;#f79646&#34;&gt;90% market share&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Operated in over &lt;font color=&#34;#f79646&#34;&gt;219&lt;/font&gt; countries &amp;amp; territories&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GSM uses TDMA &amp;amp; FDMA combined&lt;/li&gt;
+&lt;li&gt;GSM supports voice calls and &lt;font color=&#34;#f79646&#34;&gt;data&lt;/font&gt; transfer speeds up to &lt;font color=&#34;#f79646&#34;&gt;9.6 kbps&lt;/font&gt;, and &lt;font color=&#34;#f79646&#34;&gt;SMS&lt;/font&gt; (Short Message Service)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;SIM (Subscriber Identity Module)&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;SIM is a &lt;font color=&#34;#f79646&#34;&gt;detachable smart card&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;SIM contains user subscription information and phone book&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;SIM Advantages&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;SIM enables a user to maintain user information even after switching cellular phones&lt;/li&gt;
+&lt;li&gt;Or, by changing ones SIM a user can &lt;font color=&#34;#f79646&#34;&gt;change cellular phone operators&lt;/font&gt; while using the same the mobile phone
+&lt;strong&gt;2G-IS-95: cdmaOne&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;IS-95&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;IS-95&lt;/font&gt; (Interim Standard 95) is the first &lt;font color=&#34;#f79646&#34;&gt;CDMA&lt;/font&gt; based &lt;font color=&#34;#f79646&#34;&gt;2G&lt;/font&gt; digital cellular standard
+&lt;ul&gt;
+&lt;li&gt;Why CDMA?
+&lt;ul&gt;
+&lt;li&gt;CDMA performs well against (narrow band) &lt;font color=&#34;#f79646&#34;&gt;interference&lt;/font&gt; and (multipath) signal &lt;font color=&#34;#f79646&#34;&gt;fading&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;cdmaOne&lt;/font&gt; is the brand name for IS-95 that was developed by Qualcomm&lt;/li&gt;
+&lt;li&gt;Hutchison launched the first commercial cdmaOne network in &lt;font color=&#34;#f79646&#34;&gt;Hong Kong&lt;/font&gt; in September &lt;font color=&#34;#f79646&#34;&gt;1995&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;IS-95 traffic channels support &lt;font color=&#34;#f79646&#34;&gt;voice&lt;/font&gt; or &lt;font color=&#34;#f79646&#34;&gt;data&lt;/font&gt; at bit rates of up to &lt;font color=&#34;#f79646&#34;&gt;14.4 kbps&lt;/font&gt;
+&lt;strong&gt;2.5G-GPRS/EDGE&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;GPRS&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;General Packet Radio Service (GPRS)&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;Packet Switching for data service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evolved from GSM&lt;/li&gt;
+&lt;li&gt;support &lt;font color=&#34;#f79646&#34;&gt;voice&lt;/font&gt; or &lt;font color=&#34;#f79646&#34;&gt;data&lt;/font&gt; at bit rates of up to &lt;font color=&#34;#f79646&#34;&gt;85.6 kbps&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;EDGE&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Enhanced Data Rates for GSM Evolution (EDGE)&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;8PSK encoding for improved data transmission&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evolved from GPRS&lt;/li&gt;
+&lt;li&gt;support &lt;font color=&#34;#f79646&#34;&gt;voice&lt;/font&gt; or &lt;font color=&#34;#f79646&#34;&gt;data&lt;/font&gt; at bit rates of up to &lt;font color=&#34;#f79646&#34;&gt;236.8 kbps&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3g&#34;&gt;3G
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;3G-UMTS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Universal Mobile Telecommunications System (UMTS)
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;3rd Generation&lt;/font&gt; (3G) mobile cellular system&lt;/li&gt;
+&lt;li&gt;Evolution of &lt;font color=&#34;#f79646&#34;&gt;GSM&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;UTRA&lt;/font&gt; (UMTS Terrestrial Radio Access) supports &lt;font color=&#34;#f79646&#34;&gt;several different&lt;/font&gt; terrestrial air interfaces&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Multiuser Access&lt;/font&gt; in UTRA can be supported by &lt;font color=&#34;#f79646&#34;&gt;UTRA-FDD&lt;/font&gt; or &lt;font color=&#34;#f79646&#34;&gt;UTRA-TDD&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;FDD (Frequency Division Duplex)&lt;/li&gt;
+&lt;li&gt;TDD (Time Division Duplex)
+&lt;strong&gt;3G-UMTS: WCDMA&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;WCDMA&lt;/font&gt; (Wideband Code Division Multiple Access)
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;3rd Generation&lt;/font&gt; (3G) mobile cellular system that uses the &lt;font color=&#34;#f79646&#34;&gt;UTRA-FDD&lt;/font&gt; mode&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;3GPP&lt;/font&gt; (3rd Generation Partnership Project) &lt;font color=&#34;#f79646&#34;&gt;Release 99&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;Up to &lt;font color=&#34;#f79646&#34;&gt;2 Mbps&lt;/font&gt; data rate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;First commercial network opened in &lt;font color=&#34;#f79646&#34;&gt;Japan&lt;/font&gt; in &lt;font color=&#34;#f79646&#34;&gt;2001&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Seamless&lt;/font&gt; mobility for voice and packet data applications&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;QoS&lt;/font&gt; (Quality of Service) &lt;font color=&#34;#f79646&#34;&gt;differentiation&lt;/font&gt; for high efficiency of service delivery&lt;/li&gt;
+&lt;li&gt;Simultaneous &lt;font color=&#34;#f79646&#34;&gt;voice&lt;/font&gt; and &lt;font color=&#34;#f79646&#34;&gt;data&lt;/font&gt; support&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Interworks&lt;/font&gt; with existing &lt;font color=&#34;#f79646&#34;&gt;GSM&lt;/font&gt; networks
+&lt;strong&gt;3G-CDMA2000&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CDMA2000
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;3G&lt;/font&gt; mobile cellular system&lt;/li&gt;
+&lt;li&gt;Standardized by &lt;font color=&#34;#f79646&#34;&gt;3GPP2&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Evolution of &lt;font color=&#34;#f79646&#34;&gt;IS-95 cdmaOne&lt;/font&gt; standards
+&lt;ul&gt;
+&lt;li&gt;Uses CDMA &amp;amp; TDMA
+&lt;ul&gt;
+&lt;li&gt;CDMA (Code Division Multiple Access)&lt;/li&gt;
+&lt;li&gt;TDMA (Time Division Multiple Access)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Initially used in &lt;font color=&#34;#f79646&#34;&gt;North America&lt;/font&gt; and &lt;font color=&#34;#f79646&#34;&gt;South Korea&lt;/font&gt; (Republic of Korea)&lt;/li&gt;
+&lt;li&gt;CDMA2000 1xEV-DO (&lt;font color=&#34;#f79646&#34;&gt;Evolution-Data Optimized&lt;/font&gt;) enables &lt;font color=&#34;#f79646&#34;&gt;2.4 Mbps&lt;/font&gt; data rate
+&lt;ul&gt;
+&lt;li&gt;Regarded as the &lt;font color=&#34;#f79646&#34;&gt;first 3G system&lt;/font&gt; based on &lt;font color=&#34;#f79646&#34;&gt;ITU standards&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;35g&#34;&gt;3.5G
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;3.5G-HSDPA&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High-Speed Downlink Packet Access (HSDPA)
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Enhanced 3G&lt;/font&gt; mobile communications protocol&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Evolution of UMTS&lt;/font&gt; for higher data speeds and capacity&lt;/li&gt;
+&lt;li&gt;Belongs to the &lt;font color=&#34;#f79646&#34;&gt;HSPA&lt;/font&gt; (High-Speed Packet Access) family of protocols&lt;/li&gt;
+&lt;li&gt;HSDPA commercial networks became available in &lt;font color=&#34;#f79646&#34;&gt;2005&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Peak Data Rate
+&lt;ul&gt;
+&lt;li&gt;Downlink: &lt;font color=&#34;#f79646&#34;&gt;14 Mbps&lt;/font&gt; (Release 5)
+&lt;strong&gt;3.5G-EV-DO Rev.A&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EV-DO Rev. A (Revision A)
+&lt;ul&gt;
+&lt;li&gt;Peak Data Rate
+&lt;ul&gt;
+&lt;li&gt;Downlink: &lt;font color=&#34;#f79646&#34;&gt;3.1 Mbps&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Uplink: &lt;font color=&#34;#f79646&#34;&gt;1.8 Mbps&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Launched in the &lt;font color=&#34;#f79646&#34;&gt;USA&lt;/font&gt; on October &lt;font color=&#34;#f79646&#34;&gt;2006&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;VoIP&lt;/font&gt; support based on low latency and low bit rate communications&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Multi-User Packet&lt;/font&gt; technology enables the ability for more than one user to share the same timeslot&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;QoS&lt;/font&gt; (Quality of Service) flags included for QoS control
+&lt;strong&gt;3.5G-EV-DO Rev B&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EV-DO Rev. B (Revision B)
+&lt;ul&gt;
+&lt;li&gt;EV-DO Rev. B was first deployed in &lt;font color=&#34;#f79646&#34;&gt;Indonesia&lt;/font&gt; on January &lt;font color=&#34;#f79646&#34;&gt;2010&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Multi-Carrier&lt;/font&gt; evolution of Rev. A&lt;/li&gt;
+&lt;li&gt;Higher data rates per carrier
+&lt;ul&gt;
+&lt;li&gt;Downlink Peak
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;4.9 Mbps&lt;/font&gt; per carrier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Uplink Peak
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;1.8 Mbps&lt;/font&gt; per carrier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;More Efficient &lt;font color=&#34;#f79646&#34;&gt;Asymmetric&lt;/font&gt; Data Rate Support
+&lt;ul&gt;
+&lt;li&gt;Downlink ≠ Uplink Data Rates&lt;/li&gt;
+&lt;li&gt;Asymmetric Service Examples
+&lt;ul&gt;
+&lt;li&gt;Web browsing&lt;/li&gt;
+&lt;li&gt;Multimedia content delivery
+&lt;strong&gt;3.5G-HSPA+&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evolved High-Speed Packet Access (HSPA+)
+&lt;ul&gt;
+&lt;li&gt;HSPA+ all IP network first launched in &lt;font color=&#34;#f79646&#34;&gt;Hong Kong&lt;/font&gt; in &lt;font color=&#34;#f79646&#34;&gt;2009&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;WCDMA (UMTS) based 3G&lt;/font&gt; enhancement&lt;/li&gt;
+&lt;li&gt;HSPA+ is a HSPA evolution&lt;/li&gt;
+&lt;li&gt;Peak Data Rate
+&lt;ul&gt;
+&lt;li&gt;Downlink: &lt;font color=&#34;#f79646&#34;&gt;168 Mbps&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Uplink: &lt;font color=&#34;#f79646&#34;&gt;22 Mbps&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Higher Date Rate Accomplished by
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;MIMO&lt;/font&gt; multiple-antenna technique&lt;/li&gt;
+&lt;li&gt;Higher order modulation &lt;font color=&#34;#f79646&#34;&gt;(64QAM)&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#f79646&#34;&gt;Dual-Cell HSDPA&lt;/font&gt; is used to combine &lt;font color=&#34;#f79646&#34;&gt;multiple cells&lt;/font&gt; into one
+&lt;strong&gt;3.5G/4G-LTE&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Long-Term Evolution (LTE)
+&lt;ul&gt;
+&lt;li&gt;LTE launched in &lt;font color=&#34;#f79646&#34;&gt;North American&lt;/font&gt; on September &lt;font color=&#34;#f79646&#34;&gt;2010&lt;/font&gt; with the Samsung SCH-R900&lt;/li&gt;
+&lt;li&gt;Deployed on &lt;u&gt;&lt;font color=&#34;#c00000&#34;&gt;both GSM and the CDMA mobile operators&lt;/font&gt;&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;Peak Data Rate (Release 8)
+&lt;ul&gt;
+&lt;li&gt;Downlink: &lt;font color=&#34;#f79646&#34;&gt;300 Mbps&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Uplink: &lt;font color=&#34;#f79646&#34;&gt;75 Mbps&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;4g&#34;&gt;4G
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;4G-LTE-A&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LTE-A (LTE-Advanced)
+&lt;ul&gt;
+&lt;li&gt;Considered as a &lt;font color=&#34;#e36c09&#34;&gt;4G&lt;/font&gt; technology based on the ITU-R IMT-Advanced process&lt;/li&gt;
+&lt;li&gt;Peak Data Rate (Release 10)
+&lt;ul&gt;
+&lt;li&gt;Downlink: &lt;font color=&#34;#e36c09&#34;&gt;3 Gbps&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Uplink: &lt;font color=&#34;#e36c09&#34;&gt;1.5 Gbps&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LTE-A incorporates &lt;font color=&#34;#e36c09&#34;&gt;higher order MIMO&lt;/font&gt; (4×4 and beyond) and allows &lt;font color=&#34;#e36c09&#34;&gt;multiple carriers to be bonded&lt;/font&gt; into a single stream&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-56.png&#34;
+	width=&#34;539&#34;
+	height=&#34;338&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-56_hu_edf0fa78a9e4d17e.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-56_hu_4d9458754abf316d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Evolution of Cellular Networks&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;382px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-57.png&#34;
+	width=&#34;1027&#34;
+	height=&#34;659&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-57_hu_866585390baa0caa.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-57_hu_cee53605f21e7a78.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Comparison of Speed&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;155&#34;
+		data-flex-basis=&#34;374px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;5g&#34;&gt;5G
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;5G-2018&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Millimeter wave bands (26, 28, 38, and 60 GHz)
+&lt;ul&gt;
+&lt;li&gt;20 gigabits per second (gbps)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Low-band 5G and Mid-band 5G
+&lt;ul&gt;
+&lt;li&gt;use frequencies from 600 MHz to 6 GHz, especially 3.5 - 4.2 GHz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Massive MIMO (Multiple Input Multiple Output - 64 - 256 antennas)
+&lt;ul&gt;
+&lt;li&gt;up to ten times current 4G networks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-58.png&#34;
+	width=&#34;1250&#34;
+	height=&#34;582&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-58_hu_cf06bbf3c1374fff.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-58_hu_61a130f46dbfd380.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;5G Base Stations&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;214&#34;
+		data-flex-basis=&#34;515px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5G Usage Senarios (IoT)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhance Mobile Broadband &lt;font color=&#34;#e36c09&#34;&gt;(eMBB)&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Ultra Reliable &amp;amp; Low Latency Communication &lt;font color=&#34;#e36c09&#34;&gt;(uRLLC)&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Massive Machine Type Communication &lt;font color=&#34;#e36c09&#34;&gt;(mMTC)&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-59.png&#34;
+	width=&#34;1087&#34;
+	height=&#34;640&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-59_hu_bc1a3e4ee95ca667.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-59_hu_be0d883a19c1a695.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;407px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;6g&#34;&gt;6G
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-60.png&#34;
+	width=&#34;629&#34;
+	height=&#34;777&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-60_hu_3246f0946325c6ce.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-60_hu_1251df6346b54ef2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;80&#34;
+		data-flex-basis=&#34;194px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;summary-1&#34;&gt;Summary
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-62.png&#34;
+	width=&#34;1312&#34;
+	height=&#34;795&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-62_hu_d436617ed90dc2c2.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-62_hu_77fd92686fc49c0a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;165&#34;
+		data-flex-basis=&#34;396px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;network-security&#34;&gt;Network Security
+&lt;/h2&gt;&lt;h3 id=&#34;internet-security&#34;&gt;Internet Security
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;The problem
+&lt;ul&gt;
+&lt;li&gt;The Internet was not designed to be secure&lt;/li&gt;
+&lt;li&gt;Security was an afterthought&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Three sides of Internet Security
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Confidentiality&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Information must only be available to authorized parties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Integrity&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Information must not be modified in unexpected ways&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Availability&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Information must be available to those who need it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;types-of-internet-attacks&#34;&gt;Types of Internet Attacks
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Pbobes&lt;/li&gt;
+&lt;li&gt;Scans&lt;/li&gt;
+&lt;li&gt;Account compromise&lt;/li&gt;
+&lt;li&gt;Root account compromise&lt;/li&gt;
+&lt;li&gt;Packet sniffer&lt;/li&gt;
+&lt;li&gt;Malicious code
+&lt;ul&gt;
+&lt;li&gt;Trojan horses&lt;/li&gt;
+&lt;li&gt;Viruses&lt;/li&gt;
+&lt;li&gt;Worms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Denial of service (DoS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Denial-of-Service (DoS)&lt;/p&gt;&lt;/div&gt;
+
+Make the system unavailable (crash it or make it run very slowly) by sending one message or a stream of messages. Loss of availability.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-63.png&#34;
+	width=&#34;1083&#34;
+	height=&#34;246&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-63_hu_ddedc03f1ba75826.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-63_hu_c90cf9c04ca1ca9d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;440&#34;
+		data-flex-basis=&#34;1056px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-64.png&#34;
+	width=&#34;1103&#34;
+	height=&#34;272&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-64_hu_20311a1a8770183e.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-64_hu_3d461faa6c79e07b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;405&#34;
+		data-flex-basis=&#34;973px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-65.png&#34;
+	width=&#34;1045&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-65_hu_bc56db39137a67d7.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-65_hu_d3cac5d81ed1ebf.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;446px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;types-of-security-systems&#34;&gt;Types of Security Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Preventative&lt;/strong&gt; – restrain, stop a person from acting or hinder an event from occurring.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Detective&lt;/strong&gt; – reveal or discover any kind of unwanted events.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Corrective&lt;/strong&gt; – rectify an unwanted event or a trespass.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;preventative&#34;&gt;Preventative
+&lt;/h4&gt;
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Authentication&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ensure that users attempting to gain access to networks are really who they claim to be&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password protection&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Current Authentication Technologies&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;What you know&lt;/li&gt;
+&lt;li&gt;What you have
+&lt;ul&gt;
+&lt;li&gt;Smart card&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What you are
+&lt;ul&gt;
+&lt;li&gt;Biometric authentication – fingerprints, facial geometry, voice recognition&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Encryption&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Changing data into an indecipherable form before transmission&lt;/li&gt;
+&lt;li&gt;Even if the data is somehow intercepted, they cannot be interpreted!&lt;/li&gt;
+&lt;li&gt;The changed unmeaningful data is known as &lt;strong&gt;ciphertext&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;The unencrypted data is known as &lt;strong&gt;plaintext&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-66.png&#34;
+	width=&#34;994&#34;
+	height=&#34;508&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-66_hu_5d7a76433b5d64e1.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-66_hu_df34eb58697ba3b7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Private Key Cryptography&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;195&#34;
+		data-flex-basis=&#34;469px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-67.png&#34;
+	width=&#34;973&#34;
+	height=&#34;667&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-67_hu_21befefe432703e7.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-67_hu_1167f3d9da4dc53c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;145&#34;
+		data-flex-basis=&#34;350px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-68.png&#34;
+	width=&#34;883&#34;
+	height=&#34;478&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-68_hu_8bc0333accecc260.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-68_hu_119111b81eecf33f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Example - SSL/TLS in eCommerce&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;443px&#34;
+	
+&gt;&lt;/p&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Firewall&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;firewall&lt;/strong&gt; is a specialized software that runs on a router, gateway, or special purpose computer to examine packets flowing into and out of a network and restrict access to the organization’s network.&lt;/li&gt;
+&lt;li&gt;Two Types of firewall:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Packet&lt;/strong&gt; level (packet filter) firewall&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt; level firewall (proxy server)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-69.png&#34;
+	width=&#34;1111&#34;
+	height=&#34;628&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-69_hu_f303b67bdad9e7ab.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-69_hu_70427146bf8c1ad9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Packet Filter Firewall &#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Packet Filter Firewall (Access Control Lists)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ACLs permit or deny packets passing through a firewall
+&lt;ul&gt;
+&lt;li&gt;Check whether the interface is internal or external&lt;/li&gt;
+&lt;li&gt;Check port numbers&lt;/li&gt;
+&lt;li&gt;Check source and destination IP address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ACL rules are executed in order&lt;/li&gt;
+&lt;li&gt;It’s easy to misconfigure ACLs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Enterprise Firewall Architectures&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#e36c09&#34;&gt;The Internet&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;Legitimate customers, business partners, hackers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#e36c09&#34;&gt;DMZ – demilitarized zone&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;External private network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#e36c09&#34;&gt;Intranet – secure network&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal private network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-70.png&#34;
+	width=&#34;1117&#34;
+	height=&#34;643&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-70_hu_a48ae91d74b953ac.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-70_hu_625363b65dad06ee.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;DMZ Implementations&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;416px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;detection&#34;&gt;Detection
+&lt;/h4&gt;&lt;p&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Detecting Unauthorized Access&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Looking for anything out of the ordinary&lt;/li&gt;
+&lt;li&gt;Logging all messages sent and received by the network, all software used, and all logins (or attempted logins) to the network&lt;/li&gt;
+&lt;li&gt;Regular monitoring should also be extended to network hardware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&#34;background:#d2cbff&#34;&gt;Security Probes &amp;amp; Intrusion Detection&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#e36c09&#34;&gt;Security Probes – vulnerability scanners&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;Test, report, suggest&lt;/li&gt;
+&lt;li&gt;Nessus, Nmap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#e36c09&#34;&gt;Intrusion Detection&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;Identify traffic patterns&lt;/li&gt;
+&lt;li&gt;Cisco IDS, Snort&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;social-engineering&#34;&gt;Social Engineering
+&lt;/h3&gt;&lt;h4 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Using human relationships to attain a goal&lt;/li&gt;
+&lt;li&gt;Intruders use social engineering to illegally compromise corporate assets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;“You could spend a fortune purchasing technology and services from every exhibitor, speaker and sponsor at the RSA Conference, and your network infrastructure could still remain vulnerable to old-fashioned manipulation.”&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;A Quote from Kevin Mitnick&lt;/span&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;tactics&#34;&gt;Tactics
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Social engineers try to establish trust&lt;/li&gt;
+&lt;li&gt;Pretend to provide help to victim (reverse social engineering)&lt;/li&gt;
+&lt;li&gt;Attempt to gain access
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.youtube.com/watch?v=8L76gTaReeg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Kevin Mitnick fakes way into LA Telco Central Office&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.youtube.com/watch?v=DB6ywr9fngU&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Kevin Mitnick live hack in Def-Con&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;types-of-attacks&#34;&gt;Types of Attacks
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Phishing&lt;/li&gt;
+&lt;li&gt;Impersonation on help desk calls&lt;/li&gt;
+&lt;li&gt;Physical access (such as tailgating)&lt;/li&gt;
+&lt;li&gt;Shoulder surfing&lt;/li&gt;
+&lt;li&gt;Dumpster diving&lt;/li&gt;
+&lt;li&gt;Stealing important documents&lt;/li&gt;
+&lt;li&gt;Fake software&lt;/li&gt;
+&lt;li&gt;Trojans&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Things to consider on your Social Networking sites&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Maiden Name&lt;/li&gt;
+&lt;li&gt;Photo’s that unknowingly reveal information&lt;/li&gt;
+&lt;li&gt;“Check - in”&lt;/li&gt;
+&lt;li&gt;Common way to get information about a SPECIFIC person: reunion.com&lt;/li&gt;
+&lt;li&gt;Put your name in “&lt;a class=&#34;link&#34; href=&#34;https://images.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;images.google.com&lt;/a&gt;” or &lt;a class=&#34;link&#34; href=&#34;https://spokeo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;spokeo.com&lt;/a&gt; see what comes up.&lt;/li&gt;
+&lt;li&gt;Photos that you are “tagged” in&lt;/li&gt;
+&lt;li&gt;Programs/games on social networking sites&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Defenses&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Establish password policies&lt;/li&gt;
+&lt;li&gt;Classify data based on risk and sensitivity&lt;/li&gt;
+&lt;li&gt;Define acceptable use policies&lt;/li&gt;
+&lt;li&gt;Perform background checks&lt;/li&gt;
+&lt;li&gt;Define rigorous termination policies&lt;/li&gt;
+&lt;li&gt;Define physical security policies&lt;/li&gt;
+&lt;li&gt;Perform ongoing security awareness training&lt;/li&gt;
+&lt;li&gt;Deception Detection Tools: &lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/h86CPnUHJPPRYFoCMoriPA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Avatar&lt;/a&gt; in Arizona&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;security-solutions&#34;&gt;Security Solutions
+&lt;/h3&gt;&lt;h4 id=&#34;workplace-security-solutions&#34;&gt;Workplace Security Solutions
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Passwords&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;One - time passwords&lt;/li&gt;
+&lt;li&gt;Use of strong passwords&lt;/li&gt;
+&lt;li&gt;Require regular password changes&lt;/li&gt;
+&lt;li&gt;Two - factor authentication (2FA)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E - mail&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Unencrypted e - mail can be read as it moves through the network&lt;/li&gt;
+&lt;li&gt;Source of viruses from attachments and scripts&lt;/li&gt;
+&lt;li&gt;Employ e - mail virus scanning software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Untrusted software&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Restrict download of untrusted or unknown software&lt;/li&gt;
+&lt;li&gt;Require standard computer configurations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Restrict access to computer room and trusted terminals&lt;/li&gt;
+&lt;li&gt;Restrict access to physical site&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Social Engineering&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Train personnel against social engineering attacks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;home-security-solutions&#34;&gt;Home Security Solutions
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Operating system&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Install updates and patches&lt;/li&gt;
+&lt;li&gt;Configure chat programs&lt;/li&gt;
+&lt;li&gt;Firewalls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Microsoft Office and e-mail&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Do not run untrusted Office macros&lt;/li&gt;
+&lt;li&gt;Encrypt sensitive e-mail&lt;/li&gt;
+&lt;li&gt;Use care when opening e-mail attachments&lt;/li&gt;
+&lt;li&gt;Beware of e-mail spoofing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;General security measures&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Install and use anti - virus programs&lt;/li&gt;
+&lt;li&gt;Backup important files and folders&lt;/li&gt;
+&lt;li&gt;Use strong passwords&lt;/li&gt;
+&lt;li&gt;Don’t enable file sharing&lt;/li&gt;
+&lt;li&gt;Beware of wireless networks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;security-organizations&#34;&gt;Security Organizations
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;(CERIAS) Mission is to enhance public awareness of information protection
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cerias.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.cerias.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(CERT) Analyze and report on the state of Internet security
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cert.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.cert.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(SANS) Operates an early warning system
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sans.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.sans.org&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
