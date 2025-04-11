@@ -2787,7 +2787,7 @@ switch → host&lt;/p&gt;&lt;/div&gt;
 &lt;li&gt;e.g., Ethernet on first link, frame relay on intermediate links, 802.11 on last link&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Each  link protocol provides different services&lt;/li&gt;
+&lt;li&gt;Each link protocol provides different services&lt;/li&gt;
 &lt;li&gt;&lt;font color=&#34;#c00000&#34;&gt;Data link layer&lt;/font&gt; packet is called &lt;font color=&#34;#c00000&#34;&gt;frame&lt;/font&gt;, encapsulates network layer datagram (e.g. IP packer)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;adaptors-communicating&#34;&gt;Adaptors Communicating
@@ -3638,7 +3638,9 @@ Leased Line Implementation&lt;/p&gt;
 &lt;li&gt;Limit the untwisting of wires at the connectors to &lt;strong&gt;1.25 cm (0.5 inch)&lt;/strong&gt; to control terminal crosstalk interference&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;UTP Categories&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&#34;background:#40a9ff&#34;&gt;UTP Categories&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Cat 1&lt;/strong&gt;: Previously used for POTS telephone communications, ISDN and doorbell wiring.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cat 2&lt;/strong&gt;: Previously was frequently used on 4 Mbps token ring networks.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cat 3&lt;/strong&gt;: used for data networks using frequencies up to 16 MHz. Historically popular for 10 Mbps Ethernet networks.&lt;/li&gt;
@@ -4375,7 +4377,7 @@ Leased Line Implementation&lt;/p&gt;
     &gt;https://documentation.meraki.com/MR/WiFi_Basics_and_Best_Practices/Channel_Planning_Best_Practices&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Easier with &lt;strong&gt;802.11a&lt;/strong&gt;, &lt;strong&gt;802.11n&lt;/strong&gt;, &lt;strong&gt;11ac&lt;/strong&gt;, &lt;strong&gt;11ax&lt;/strong&gt;, and &lt;strong&gt;11be&lt;/strong&gt; (5GHz radio spectrum) which has &lt;font color=&#34;#c00000&#34;&gt;up to (21) 20MHz channels (9 with 40 MHz channels, 4 80 MHz channels)&lt;/font&gt; non - overlapping channels.&lt;/li&gt;
+&lt;li&gt;Easier with &lt;strong&gt;802.11a&lt;/strong&gt;, &lt;strong&gt;802.11n&lt;/strong&gt;, &lt;strong&gt;11ac&lt;/strong&gt;, &lt;strong&gt;11ax&lt;/strong&gt;, and &lt;strong&gt;11be&lt;/strong&gt; (5GHz radio spectrum) which has &lt;font color=&#34;#c00000&#34;&gt;up to (21) 20MHz channels (9 with 40 MHz channels, 4 with 80 MHz channels)&lt;/font&gt; non - overlapping channels.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;If interference or error count is high, switch the wireless channel&lt;/li&gt;
@@ -4481,6 +4483,7 @@ Leased Line Implementation&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;Range extenders require you to sign on to a new network manually in order to maintain a strong connection once you’re far enough away from your router&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;wireless-lan---setup-and-security&#34;&gt;Wireless LAN - Setup and Security
 &lt;/h2&gt;&lt;h3 id=&#34;80211-security&#34;&gt;802.11 Security
 &lt;/h3&gt;&lt;ul&gt;
@@ -4775,6 +4778,7 @@ Leased Line Implementation&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;mobile-data-networks&#34;&gt;Mobile Data Networks
 &lt;/h2&gt;&lt;h3 id=&#34;cellular-network-basics&#34;&gt;Cellular Network Basics
 &lt;/h3&gt;&lt;p&gt;蜂窝网络&lt;/p&gt;
@@ -4829,8 +4833,11 @@ Leased Line Implementation&lt;/p&gt;
 		data-flex-basis=&#34;442px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;frequency-division-multiple-access&#34;&gt;Frequency Division Multiple Access
-&lt;/h4&gt;&lt;ul&gt;
+
+&lt;div class=&#34;simple-notice simple-notice-warning&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#b30000&#34;&gt;&lt;path d=&#34;M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Frequency Division Multiple Access&lt;/p&gt;&lt;/div&gt;
+
+&lt;ul&gt;
 &lt;li&gt;Each mobile is assigned a separate frequency channel for a call&lt;/li&gt;
 &lt;li&gt;Guard band is required to prevent adjacent channel interference&lt;/li&gt;
 &lt;li&gt;Usually, one downlink band and one uplink band&lt;/li&gt;
@@ -5265,6 +5272,7 @@ Leased Line Implementation&lt;/p&gt;
 		data-flex-basis=&#34;396px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;network-security&#34;&gt;Network Security
 &lt;/h2&gt;&lt;h3 id=&#34;internet-security&#34;&gt;Internet Security
 &lt;/h3&gt;&lt;ul&gt;
@@ -5296,7 +5304,7 @@ Leased Line Implementation&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;types-of-internet-attacks&#34;&gt;Types of Internet Attacks
 &lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Pbobes&lt;/li&gt;
+&lt;li&gt;Probes&lt;/li&gt;
 &lt;li&gt;Scans&lt;/li&gt;
 &lt;li&gt;Account compromise&lt;/li&gt;
 &lt;li&gt;Root account compromise&lt;/li&gt;
@@ -5408,16 +5416,16 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 		data-flex-basis=&#34;469px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-67.png&#34;
-	width=&#34;973&#34;
-	height=&#34;667&#34;
-	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-67_hu_21befefe432703e7.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-67_hu_1167f3d9da4dc53c.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-71.png&#34;
+	width=&#34;733&#34;
+	height=&#34;505&#34;
+	srcset=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-71_hu_d8ebce19f45509ce.png 480w, https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-71_hu_9dd7bbf2840d170.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
 		data-flex-grow=&#34;145&#34;
-		data-flex-basis=&#34;350px&#34;
+		data-flex-basis=&#34;348px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E5%95%86%E5%8A%A1%E7%94%B5%E4%BF%A1%E7%BD%91%E7%BB%9C-2/image-68.png&#34;
@@ -5534,7 +5542,7 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 &lt;li&gt;Intruders use social engineering to illegally compromise corporate assets&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-    &lt;p&gt;“You could spend a fortune purchasing technology and services from every exhibitor, speaker and sponsor at the RSA Conference, and your network infrastructure could still remain vulnerable to old-fashioned manipulation.”&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;A Quote from Kevin Mitnick&lt;/span&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;
+    &lt;p&gt;You could spend a fortune purchasing technology and services from every exhibitor, speaker and sponsor at the RSA Conference, and your network infrastructure could still remain vulnerable to old-fashioned manipulation.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;A Quote from Kevin Mitnick&lt;/span&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;tactics&#34;&gt;Tactics
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Social engineers try to establish trust&lt;/li&gt;
@@ -5567,9 +5575,10 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 &lt;li&gt;Maiden Name&lt;/li&gt;
 &lt;li&gt;Photo’s that unknowingly reveal information&lt;/li&gt;
 &lt;li&gt;“Check - in”&lt;/li&gt;
-&lt;li&gt;Common way to get information about a SPECIFIC person: reunion.com&lt;/li&gt;
-&lt;li&gt;Put your name in “&lt;a class=&#34;link&#34; href=&#34;https://images.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;images.google.com&lt;/a&gt;” or &lt;a class=&#34;link&#34; href=&#34;https://spokeo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;Common way to get information about a SPECIFIC person: &lt;a class=&#34;link&#34; href=&#34;https://www.mylife.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;reunion.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Put your name in &lt;a class=&#34;link&#34; href=&#34;https://images.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;images.google.com&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://spokeo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;spokeo.com&lt;/a&gt; see what comes up.&lt;/li&gt;
 &lt;li&gt;Photos that you are “tagged” in&lt;/li&gt;
 &lt;li&gt;Programs/games on social networking sites&lt;/li&gt;
