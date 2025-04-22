@@ -17,9 +17,29 @@
       &lt;div class=&#34;content&#34;&gt;&lt;p&gt;&lt;em&gt;参考链接&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1u94y1n73L?vd_source=7fbfcafaa5f6bc905794f813aab975a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;改变了世界的软件！程序员的基本功，Git 应该如何使用？&lt;/a&gt;&lt;/li&gt;
+    &gt;改变了世界的软件！程序员的基本功，Git 应该如何使用？&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1d6XVYqEuy?vd_source=7fbfcafaa5f6bc905794f813aab975a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;人人都能看懂的Git教程！Git如何和 GitHub、GitLab 交互？团队如何用 Git 协作开发？小白也能看懂的Git教程！&lt;/a&gt;&lt;/li&gt;
+    &gt;人人都能看懂的Git教程！Git如何和 GitHub、GitLab 交互？团队如何用 Git 协作开发？小白也能看懂的Git教程！&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
     &lt;/div&gt;
 
@@ -201,7 +221,7 @@ License&lt;/li&gt;
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;git remote add &amp;lt;远程仓库名称&amp;gt;&amp;lt;远程仓库地址&amp;gt;&lt;/code&gt;
 把一个远程仓库绑定到本地仓库&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;在新建文件夹中打开命令行 `Open Git Bash here&lt;/li&gt;
+&lt;li&gt;在新建文件夹中打开命令行 - 右键&lt;code&gt;Open Git Bash here&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
@@ -963,8 +983,28 @@ Leased Line Implementation&lt;/p&gt;
 &lt;li&gt;DWDM (Dense wavelength division multiplexing)
 &lt;ul&gt;
 &lt;li&gt;A technology that puts data from different sources together on an &lt;a class=&#34;link&#34; href=&#34;https://www.techtarget.com/searchnetworking/definition/fiber-optics-optical-fiber&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;optical fiber&lt;/a&gt;, with each signal carried on its own separate light &lt;a class=&#34;link&#34; href=&#34;http://www.thefoa.org/tech/wavelength.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;wavelength&lt;/a&gt;&lt;/li&gt;
+    &gt;optical fiber&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       , with each signal carried on its own separate light &lt;a class=&#34;link&#34; href=&#34;http://www.thefoa.org/tech/wavelength.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;wavelength&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;li&gt;Higher Speed
 &lt;ul&gt;
 &lt;li&gt;(2.5 to 40 Gbps) * (16 or 32 or 128 or 160)&lt;/li&gt;
@@ -1308,7 +1348,17 @@ Leased Line Implementation&lt;/p&gt;
 &lt;p&gt;STP Wiring&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=tBnxOWv3XyI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;STP&lt;/a&gt; wiring has a number of pairs (usually 2-4) of copper wire that are then shielded with a metal foil&lt;/li&gt;
+    &gt;STP&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+        wiring has a number of pairs (usually 2-4) of copper wire that are then shielded with a metal foil&lt;/li&gt;
 &lt;li&gt;Shielding provides &lt;strong&gt;additional&lt;/strong&gt; protection against EMI (electromagnetic interference) or RFI (radiofrequency interference)&lt;/li&gt;
 &lt;li&gt;Disadvantages
 &lt;ul&gt;
@@ -1323,7 +1373,17 @@ Leased Line Implementation&lt;/p&gt;
     &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Fiber Optic Cable&lt;/p&gt;&lt;/div&gt;
 
 &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=0MwMkBET_5I&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Fiber optic&lt;/a&gt; has become the media of choice when looking for high-bandwidth and/or long distance connectivity&lt;/p&gt;
+    &gt;Fiber optic&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+        has become the media of choice when looking for high-bandwidth and/or long distance connectivity&lt;/p&gt;
 &lt;center&gt;&lt;span style=&#34;background:#F0A7D8&#34;&gt;Multimode Fiber&lt;/span&gt;&lt;/center&gt;
 &lt;ul&gt;
 &lt;li&gt;Light only travels in one of several allowed modes&lt;/li&gt;
@@ -2011,7 +2071,17 @@ Leased Line Implementation&lt;/p&gt;
 &lt;li&gt;Difficult in 3 - dimensional buildings with &lt;strong&gt;802.11b&lt;/strong&gt; or &lt;strong&gt;802.11g&lt;/strong&gt;, which only has &lt;strong&gt;3&lt;/strong&gt; non - overlapping channels (channel 1, 6, 11).
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://documentation.meraki.com/MR/WiFi_Basics_and_Best_Practices/Channel_Planning_Best_Practices&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://documentation.meraki.com/MR/WiFi_Basics_and_Best_Practices/Channel_Planning_Best_Practices&lt;/a&gt;&lt;/li&gt;
+    &gt;https://documentation.meraki.com/MR/WiFi_Basics_and_Best_Practices/Channel_Planning_Best_Practices&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Easier with &lt;strong&gt;802.11a&lt;/strong&gt;, &lt;strong&gt;802.11n&lt;/strong&gt;, &lt;strong&gt;11ac&lt;/strong&gt;, &lt;strong&gt;11ax&lt;/strong&gt;, and &lt;strong&gt;11be&lt;/strong&gt; (5GHz radio spectrum) which has &lt;font color=&#34;#c00000&#34;&gt;up to (21) 20MHz channels (9 with 40 MHz channels, 4 with 80 MHz channels)&lt;/font&gt; non - overlapping channels.&lt;/li&gt;
@@ -3187,9 +3257,29 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 &lt;li&gt;Attempt to gain access
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.youtube.com/watch?v=8L76gTaReeg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Kevin Mitnick fakes way into LA Telco Central Office&lt;/a&gt;&lt;/li&gt;
+    &gt;Kevin Mitnick fakes way into LA Telco Central Office&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.youtube.com/watch?v=DB6ywr9fngU&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Kevin Mitnick live hack in Def-Con&lt;/a&gt;&lt;/li&gt;
+    &gt;Kevin Mitnick live hack in Def-Con&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -3213,10 +3303,40 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 &lt;li&gt;Photo’s that unknowingly reveal information&lt;/li&gt;
 &lt;li&gt;“Check - in”&lt;/li&gt;
 &lt;li&gt;Common way to get information about a SPECIFIC person: &lt;a class=&#34;link&#34; href=&#34;https://www.mylife.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;reunion.com&lt;/a&gt;&lt;/li&gt;
+    &gt;reunion.com&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;li&gt;Put your name in &lt;a class=&#34;link&#34; href=&#34;https://images.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;images.google.com&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://spokeo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;spokeo.com&lt;/a&gt; see what comes up.&lt;/li&gt;
+    &gt;images.google.com&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+        or &lt;a class=&#34;link&#34; href=&#34;https://spokeo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;spokeo.com&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+        see what comes up.&lt;/li&gt;
 &lt;li&gt;Photos that you are “tagged” in&lt;/li&gt;
 &lt;li&gt;Programs/games on social networking sites&lt;/li&gt;
 &lt;/ul&gt;
@@ -3231,7 +3351,17 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 &lt;li&gt;Define physical security policies&lt;/li&gt;
 &lt;li&gt;Perform ongoing security awareness training&lt;/li&gt;
 &lt;li&gt;Deception Detection Tools: &lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/h86CPnUHJPPRYFoCMoriPA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Avatar&lt;/a&gt; in Arizona&lt;/li&gt;
+    &gt;Avatar&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+        in Arizona&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;security-solutions&#34;&gt;Security Solutions
 &lt;/h3&gt;&lt;h4 id=&#34;workplace-security-solutions&#34;&gt;Workplace Security Solutions
@@ -3301,19 +3431,49 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 &lt;li&gt;(CERIAS) Mission is to enhance public awareness of information protection
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cerias.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;www.cerias.org&lt;/a&gt;&lt;/li&gt;
+    &gt;www.cerias.org&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;(CERT) Analyze and report on the state of Internet security
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cert.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;www.cert.org&lt;/a&gt;&lt;/li&gt;
+    &gt;www.cert.org&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;(SANS) Operates an early warning system
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sans.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;www.sans.org&lt;/a&gt;&lt;/li&gt;
+    &gt;www.sans.org&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -4021,7 +4181,17 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;li&gt;想象你给朋友打电话，电话接通了（对应 TCP 连接建立） ，朋友说 “我在听啦，你讲吧”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应接收 SMTP 进程发送 220 回复&lt;/span&gt;），这就是接收方表示自己准备好接收信息啦。&lt;br&gt;
 记忆点：“电话接通，对方说准备好”&lt;/li&gt;
 &lt;li&gt;还是打电话场景，你先跟朋友自报家门 “我是 [你的名字]”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应发送 SMTP 进程发送 HELO &lt;a class=&#34;link&#34; href=&#34;https://cnn.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;cnn.com&lt;/a&gt; ，告知自己身份&lt;/span&gt;），然后说 “我有事儿要跟你讲哦”（对应发送方请求开始发送消息）。&lt;br&gt;
+    &gt;cnn.com&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+        ，告知自己身份&lt;/span&gt;），然后说 “我有事儿要跟你讲哦”（对应发送方请求开始发送消息）。&lt;br&gt;
 记忆点：“自报家门，说要讲话”&lt;/li&gt;
 &lt;li&gt;你朋友听到你要讲话后，说 “好呀，你说吧”（&lt;span style=&#34;background:#A0CCF6&#34;&gt;对应接收方发送 250 回复&lt;/span&gt;），意思就是准备好接收你说的事儿啦（对应接收方准备好接收消息）。&lt;br&gt;
 记忆点：“对方回应，准备倾听”&lt;/li&gt;
@@ -4059,9 +4229,21 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;第一步&lt;/strong&gt;: &amp;ldquo;Sender&amp;rdquo;（发送方）发出 &amp;ldquo;MAIL FROM: &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt;&amp;rdquo; 的指令，就是告诉接收方这封邮件是谁写的（发件人邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt; ）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第一步&lt;/strong&gt;: &amp;ldquo;Sender&amp;rdquo;（发送方）发出 &amp;ldquo;MAIL FROM: &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt;
+
+
+       &amp;rdquo; 的指令，就是告诉接收方这封邮件是谁写的（发件人邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:aha@cnn.com&#34; &gt;aha@cnn.com&lt;/a&gt;
+
+
+        ）&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;第二步&lt;/strong&gt;: &amp;ldquo;Receiver&amp;rdquo;（接收方）回复 &amp;ldquo;250 OK&amp;rdquo;，意思是接收方认可了这个发件人，但可能不接受其他发件人的邮件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;第三步&lt;/strong&gt;：发送方又发出 &amp;ldquo;RCPT TO: &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;&amp;rdquo; 的指令，表明这封邮件第一个收件人的邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;第三步&lt;/strong&gt;：发送方又发出 &amp;ldquo;RCPT TO: &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;
+
+
+       &amp;rdquo; 的指令，表明这封邮件第一个收件人的邮箱是 &lt;a class=&#34;link&#34; href=&#34;mailto:jcao@udel.edu&#34; &gt;jcao@udel.edu&lt;/a&gt;
+
+
+       &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;第四步&lt;/strong&gt;：接收方再次回复 &amp;ldquo;250 OK&amp;rdquo;，表示接受这个收件人&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;interactionis-in-smtp---3&#34;&gt;Interactionis in SMTP - 3
@@ -4221,7 +4403,10 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;/ul&gt;
 &lt;h3 id=&#34;scenario-alice-sends-message-to-bob&#34;&gt;Scenario: Alice sends message to Bob
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;Alice uses her User Agent (UA) to compose a message and sets the &amp;ldquo;to&amp;rdquo; field as &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:bob@someschool.edu&#34; &gt;bob@someschool.edu&lt;/a&gt;&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Alice uses her User Agent (UA) to compose a message and sets the &amp;ldquo;to&amp;rdquo; field as &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:bob@someschool.edu&#34; &gt;bob@someschool.edu&lt;/a&gt;
+
+
+       &amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;Alice&amp;rsquo;s UA sends the message to her mail server, and the message is placed in the message queue.&lt;/li&gt;
 &lt;li&gt;The client - side of SMTP opens a TCP connection with Bob&amp;rsquo;s mail server. &lt;br&gt;
 &lt;strong&gt;User Agent - Mail Server&lt;/strong&gt;&lt;/li&gt;
@@ -4583,7 +4768,17 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
 &lt;ul&gt;
 &lt;li&gt;used for less central applications.&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.iana.org/assignments/port-numbers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://www.iana.org/assignments/port-numbers&lt;/a&gt;&lt;/li&gt;
+    &gt;http://www.iana.org/assignments/port-numbers&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Ephemeral port numbers: 49153 to 65535

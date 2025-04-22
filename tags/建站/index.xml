@@ -17,9 +17,29 @@
       &lt;div class=&#34;content&#34;&gt;&lt;p&gt;&lt;em&gt;参考链接&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://hugo.opendocs.io/content-management/shortcodes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;短代码 | Hugo官方文档&lt;/a&gt;&lt;/li&gt;
+    &gt;短代码 | Hugo官方文档&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.xalaok.top/post/hugo-shortcodes/#neodb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;一些 Hugo 短代码 | Naive Koala&lt;/a&gt;&lt;/li&gt;
+    &gt;一些 Hugo 短代码 | Naive Koala&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
     &lt;/div&gt;
 
@@ -779,9 +799,29 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待配置 | 开源豆瓣
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://neodb.social/discover/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;NeoDB - 发现&lt;/a&gt;&lt;/li&gt;
+    &gt;NeoDB - 发现&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://immmmm.com/hi-neodb-api/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hi, NeoDB :: 木木木木木&lt;/a&gt;&lt;/li&gt;
+    &gt;Hi, NeoDB :: 木木木木木&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -790,14 +830,34 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待配置 | 长毛象
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://oli.fyi/2024/a-few-hugo-shortcodes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;A few Hugo Shortcodes | Oli&amp;rsquo;s Blog&lt;/a&gt;&lt;/li&gt;
+    &gt;A few Hugo Shortcodes | Oli&amp;rsquo;s Blog&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;博客文章引用&#34;&gt;博客文章引用
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://majiao2.github.io/2025/extortion/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Post 1&lt;/a&gt;&lt;/p&gt;
+    &gt;Post 1&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1

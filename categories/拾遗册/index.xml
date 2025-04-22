@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>拾遗册 on Mia Jiao</title>
+        <link>https://majiao2.github.io/categories/%E6%8B%BE%E9%81%97%E5%86%8C/</link>
+        <description>Recent content in 拾遗册 on Mia Jiao</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Mia Jiao</copyright>
+        <lastBuildDate>Sat, 12 Apr 2025 20:50:56 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/categories/%E6%8B%BE%E9%81%97%E5%86%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>IELTS 5</title>
+        <link>https://majiao2.github.io/2025/ielts-5/</link>
+        <pubDate>Sat, 12 Apr 2025 20:50:56 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/ielts-5/</guid>
+        <description>&lt;h2 id=&#34;1&#34;&gt;1
+&lt;/h2&gt;&lt;h2 id=&#34;2&#34;&gt;2
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>IELTS | 写作句式</title>
+        <link>https://majiao2.github.io/2025/ielts-%E5%86%99%E4%BD%9C%E5%8F%A5%E5%BC%8F/</link>
+        <pubDate>Fri, 28 Mar 2025 02:31:41 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/ielts-%E5%86%99%E4%BD%9C%E5%8F%A5%E5%BC%8F/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/ielts-%E5%86%99%E4%BD%9C%E5%8F%A5%E5%BC%8F/title.png" alt="Featured image of post IELTS | 写作句式" /&gt;&lt;h2 id=&#34;1&#34;&gt;1
+&lt;/h2&gt;&lt;h2 id=&#34;2&#34;&gt;2
+&lt;/h2&gt;&lt;p&gt;specimen 样本/标本&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;specie 物种&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;She left the room hurriedly as if (she was) angry.&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>Hugo自用短代码</title>
+        <link>https://majiao2.github.io/2025/hugo%E8%87%AA%E7%94%A8%E7%9F%AD%E4%BB%A3%E7%A0%81/</link>
+        <pubDate>Tue, 25 Mar 2025 20:08:03 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/hugo%E8%87%AA%E7%94%A8%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/hugo%E8%87%AA%E7%94%A8%E7%9F%AD%E4%BB%A3%E7%A0%81/title.png" alt="Featured image of post Hugo自用短代码" /&gt;&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt;&lt;p&gt;&lt;em&gt;参考链接&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://hugo.opendocs.io/content-management/shortcodes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;短代码 | Hugo官方文档&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.xalaok.top/post/hugo-shortcodes/#neodb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;一些 Hugo 短代码 | Naive Koala&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;全文使用&lt;code&gt;{ }&lt;/code&gt;防止Hugo短代码在文内转译&lt;br&gt;
+在完成写作后，将全文&lt;code&gt;{&lt;/code&gt;替换为&lt;code&gt;{{&lt;/code&gt;，&lt;code&gt;}&lt;/code&gt;替换为&lt;code&gt;}}&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;卡片样式&#34;&gt;卡片样式
+&lt;/h2&gt;&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; 卡片内容 &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;card&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;卡片内容
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;card&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;卡片内容&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;card&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;center&lt;/span&gt;&amp;gt;卡片内容&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;center&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;card&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;标签块样式&#34;&gt;标签块样式
+&lt;/h2&gt;&lt;h3 id=&#34;warning&#34;&gt;warning
+&lt;/h3&gt;
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;warning&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;notice-warning&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;warning
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;info&#34;&gt;info
+&lt;/h3&gt;
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;info&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;notice-info&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;info
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;tip&#34;&gt;tip
+&lt;/h3&gt;
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;tip&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;notice-tip&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tip
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;note&#34;&gt;note
+&lt;/h3&gt;
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;note&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;notice-note&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;note
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;标签行样式&#34;&gt;标签行样式
+&lt;/h2&gt;&lt;h3 id=&#34;notice-warning&#34;&gt;notice-warning
+&lt;/h3&gt;
+&lt;div class=&#34;simple-notice simple-notice-warning&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#b30000&#34;&gt;&lt;path d=&#34;M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;warning&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;simple-notice-warning&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;warning
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;notice-info&#34;&gt;notice-info
+&lt;/h3&gt;
+&lt;div class=&#34;simple-notice simple-notice-info&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#cf9117&#34;&gt;&lt;path d=&#34;M20 424.23h20V279.77H20a20 20 0 01-20-20V212a20 20 0 0120-20h112a20 20 0 0120 20v212.23h20a20 20 0 0120 20V492a20 20 0 01-20 20H20a20 20 0 01-20-20v-47.77a20 20 0 0120-20zM96 0a72 72 0 100 144A72 72 0 0096 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;info&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;simple-notice-info&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;info
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;notice-tip&#34;&gt;notice-tip
+&lt;/h3&gt;
+&lt;div class=&#34;simple-notice simple-notice-tip&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;#008040&#34;&gt;&lt;path d=&#34;M173.9 439.4L7.5 273c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.69l240.1-240.1c10-10 26.2-10 36.2 0l36.2 36.21c10 10 10 26.2 0 36.2L210.1 439.4c-10 10-26.2 10-36.2 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;tip&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;simple-notice-tip&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tip
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;notice-note&#34;&gt;notice-note
+&lt;/h3&gt;
+&lt;div class=&#34;simple-notice simple-notice-note&#34; &gt;
+    &lt;div class=&#34;simple-notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon simple-notice-icon&#34; viewBox=&#34;0 0 192 512&#34; fill=&#34;#004080&#34;&gt;&lt;path d=&#34;M176 432c0 44.11-35.89 80-80 80s-80-35.89-80-80 35.89-80 80-80 80 35.89 80 80zM25.26 25.2l13.6 272A24 24 0 0062.83 320h66.34a24 24 0 0023.97-22.8l13.6-272A24 24 0 00142.77 0H49.23a24 24 0 00-23.97 25.2z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;note&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;simple-notice-note&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;note
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;simple-notice&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;引用&#34;&gt;引用
+&lt;/h2&gt;&lt;h3 id=&#34;单句引用&#34;&gt;单句引用
+&lt;/h3&gt;&lt;myblockquote class=&#34;quote&#34;&gt;
+        &lt;p&gt;引用内容&lt;/p&gt;&lt;/myblockquote&gt; 
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;myquote&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;引用内容
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;myquote&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;诗词行引用&#34;&gt;诗词行引用
+&lt;/h3&gt;&lt;myblockquote class=&#34;quote-center&#34;&gt;
+        &lt;p&gt;诗词行1&lt;br&gt;
+诗词行2&lt;br&gt;
+诗词行3&lt;/p&gt;&lt;/myblockquote&gt; 
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;quote-center&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;诗词行1&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;br&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;诗词行2&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;br&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;诗词行3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;quote-center&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;名言引用&#34;&gt;名言引用
+&lt;/h3&gt;&lt;blockquote&gt;
+    &lt;p&gt;书的内容&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;作者, &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;书名&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;quote&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;author&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;作者&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;书名&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://en.wikipedia.org/wiki/Book&amp;#34;&lt;/span&gt;&amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;书的内容
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;quote&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;聊天气泡&#34;&gt;聊天气泡
+&lt;/h2&gt;&lt;p&gt;
+&lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34;&gt;左&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            
+左边的消息内容。
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #253958;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #253958;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+
+
+&lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;右&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            
+右边的消息内容
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #253958;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #253958;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;chat&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;左&amp;#34;&lt;/span&gt;&amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;左边的消息内容。
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;chat&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;chat&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;right&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;右&amp;#34;&lt;/span&gt;&amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;右边的消息内容
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;chat&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;折叠&#34;&gt;折叠
+&lt;/h2&gt;&lt;details&gt;
+    &lt;summary&gt;展开详细信息&lt;/summary&gt;
+    隐藏文字
+&lt;/details&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;detail&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;展开详细信息&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;隐藏文字
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;detail&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;时间轴&#34;&gt;时间轴
+&lt;/h2&gt;&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2025-01-01&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;节日&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;&#34;&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;元旦&lt;/div&gt;
+        &lt;/a&gt;
+        
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            元旦快乐
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #5d5d5d;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #5d5d5d;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;timeline&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2025-01-01&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;元旦&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;元旦快乐&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tags&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;节日&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;插入&#34;&gt;插入
+&lt;/h2&gt;&lt;h3 id=&#34;网易云音乐&#34;&gt;网易云音乐
+&lt;/h3&gt;&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=2651898735&amp;auto=0&amp;height=66&#34;&gt;&lt;/iframe&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;netease&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;2651898735&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;0&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;youtube视频&#34;&gt;Youtube视频
+&lt;/h3&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/2xkNJL4gJ9E&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;youtube&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;2xkNJL4gJ9E&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;bilibili视频&#34;&gt;Bilibili视频
+&lt;/h3&gt;
+
+
+
+
+
+    
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1x32sYvEwk&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;bilibili&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BV1x32sYvEwk&lt;/span&gt;&amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;viemo视频&#34;&gt;Viemo视频
+&lt;/h3&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://player.vimeo.com/video/55073825&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;vimeo video&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;vimeo&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;55073825&lt;/span&gt; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;neodb书影音&#34;&gt;NeoDB书影音
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待配置 | 开源豆瓣
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://neodb.social/discover/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NeoDB - 发现&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://immmmm.com/hi-neodb-api/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hi, NeoDB :: 木木木木木&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mastodon嘟文&#34;&gt;Mastodon嘟文
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待配置 | 长毛象
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://oli.fyi/2024/a-few-hugo-shortcodes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A few Hugo Shortcodes | Oli&amp;rsquo;s Blog&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;博客文章引用&#34;&gt;博客文章引用
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://majiao2.github.io/2025/extortion/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Post 1&lt;/a&gt;
+
+
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+       &lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;Post 1&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;{% ref &amp;#34;/post/建站记录&amp;#34; %}&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
