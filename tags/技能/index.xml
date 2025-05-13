@@ -311,11 +311,14 @@ Github→Setting→&lt;span style=&#34;background:#F0A7D8&#34;&gt;SSH and GPG ke
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;全流程&#34;&gt;全流程
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-3.png&#34;
+&lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;  
+&lt;p&gt;&lt;img src=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-3.png&#34;
 	width=&#34;550&#34;
 	height=&#34;1033&#34;
 	srcset=&#34;https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-3_hu_1681a81dbb343c8.png 480w, https://majiao2.github.io/2025/git%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/image-3_hu_63f6cf5cca926e81.png 1024w&#34;
 	loading=&#34;lazy&#34;
+	
+		alt=&#34;Image Description&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
@@ -323,6 +326,7 @@ Github→Setting→&lt;span style=&#34;background:#F0A7D8&#34;&gt;SSH and GPG ke
 		data-flex-basis=&#34;127px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;博客git管理&#34;&gt;博客Git管理
 &lt;/h2&gt;&lt;h3 id=&#34;初始配置&#34;&gt;初始配置
