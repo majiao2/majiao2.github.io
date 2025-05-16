@@ -4333,6 +4333,8 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 
     
 
+    
+
 
 
 
@@ -4350,6 +4352,17 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
 
   var dataMap = new Map();
   
+    var key = "2025-05-16";
+    var value = dataMap.get(key);
+    var wordCount =  11192 ;
+    var link = "/2025/%E5%8F%8D%E6%98%8F%E5%88%B0%E5%BA%95%E6%98%AF%E5%9C%A8%E5%8F%8D%E5%AF%B9%E4%BB%80%E4%B9%88/";
+    var title = "反昏到底是在反对什么？";
+    
+    if (value == null) {
+      dataMap.set(key, [{wordCount, link, title}]);
+    } else {
+      value.push({wordCount, link, title});
+    }
     var key = "2025-05-15";
     var value = dataMap.get(key);
     var wordCount =  4176 ;
@@ -4707,7 +4720,7 @@ Make the system unavailable (crash it or make it run very slowly) by sending one
         &copy; 
         
         2025 <a href="https://stack-theme-mod.vercel.app/">Mia Jiao</a> | <i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
-      共书写了49k字·共 18篇文章</br><span><p>
+      共书写了60.2k字·共 19篇文章</br><span><p>
     </section>
     
     <section class="powerby">
