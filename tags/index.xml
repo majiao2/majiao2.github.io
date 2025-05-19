@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Fri, 16 May 2025 22:00:44 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 18 May 2025 22:09:49 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Journal</title>
+        <link>https://majiao2.github.io/tags/journal/</link>
+        <pubDate>Sun, 18 May 2025 22:09:49 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/tags/journal/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Douban</title>
         <link>https://majiao2.github.io/tags/douban/</link>
         <pubDate>Fri, 16 May 2025 22:00:44 +0800</pubDate>
@@ -53,14 +61,6 @@
         <pubDate>Tue, 06 May 2025 20:14:13 +0800</pubDate>
         
         <guid>https://majiao2.github.io/tags/blog/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Journal</title>
-        <link>https://majiao2.github.io/tags/journal/</link>
-        <pubDate>Fri, 11 Apr 2025 21:58:20 +0800</pubDate>
-        
-        <guid>https://majiao2.github.io/tags/journal/</guid>
         <description></description>
         </item>
         <item>
