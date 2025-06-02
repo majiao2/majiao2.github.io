@@ -89,6 +89,18 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/a&gt;
+&lt;a href=&#34;https://blog.1oner.cn/&#34; title=&#34;温水点豆腐&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://github.com/majiao2/image-repo/blob/main/avatar.jpg class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;温水点豆腐&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;「凉拌西红柿」&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
 &lt;a href=&#34;https://waitforyou/&#34; title=&#34;友链位招租&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
     &lt;div class=&#34;friend-link-div&#34;&gt;
         &lt;div class=&#34;friend-link-avatar&#34;&gt;
