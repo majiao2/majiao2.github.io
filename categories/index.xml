@@ -24,14 +24,6 @@
         <description>&lt;img src="https://majiao2.github.io/categories/%E6%B5%81%E6%B0%B4%E8%B4%A6/cover.jpg" alt="Featured image of post 流水账" /&gt;</description>
         </item>
         <item>
-        <title>人间事</title>
-        <link>https://majiao2.github.io/categories/%E4%BA%BA%E9%97%B4%E4%BA%8B/</link>
-        <pubDate>Mon, 26 May 2025 21:52:32 +0800</pubDate>
-        
-        <guid>https://majiao2.github.io/categories/%E4%BA%BA%E9%97%B4%E4%BA%8B/</guid>
-        <description>&lt;img src="https://majiao2.github.io/categories/%E4%BA%BA%E9%97%B4%E4%BA%8B/cover.jpg" alt="Featured image of post 人间事" /&gt;</description>
-        </item>
-        <item>
         <title>急就章</title>
         <link>https://majiao2.github.io/categories/%E6%80%A5%E5%B0%B1%E7%AB%A0/</link>
         <pubDate>Mon, 19 May 2025 22:23:08 +0800</pubDate>
@@ -54,6 +46,14 @@
         
         <guid>https://majiao2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8A%9B/</guid>
         <description>&lt;img src="https://majiao2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8A%9B/cover.jpg" alt="Featured image of post 技术力" /&gt;</description>
+        </item>
+        <item>
+        <title>人间事</title>
+        <link>https://majiao2.github.io/categories/%E4%BA%BA%E9%97%B4%E4%BA%8B/</link>
+        <pubDate>Fri, 21 Mar 2025 15:17:23 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/categories/%E4%BA%BA%E9%97%B4%E4%BA%8B/</guid>
+        <description>&lt;img src="https://majiao2.github.io/categories/%E4%BA%BA%E9%97%B4%E4%BA%8B/cover.jpg" alt="Featured image of post 人间事" /&gt;</description>
         </item>
         
     </channel>
