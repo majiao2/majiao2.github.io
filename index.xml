@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Sat, 14 Jun 2025 20:53:17 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 27 Jun 2025 21:20:47 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>拳击记录</title>
+        <link>https://majiao2.github.io/2025/%E6%8B%B3%E5%87%BB%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Fri, 27 Jun 2025 21:20:47 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/%E6%8B%B3%E5%87%BB%E8%AE%B0%E5%BD%95/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>六月蝉声鸣树梢</title>
         <link>https://majiao2.github.io/2025/%E5%85%AD%E6%9C%88%E8%9D%89%E5%A3%B0%E9%B8%A3%E6%A0%91%E6%A2%A2/</link>
         <pubDate>Sat, 14 Jun 2025 20:53:17 +0800</pubDate>
@@ -17191,18 +17199,6 @@ $$ \text{N-layer PDU (Protocol Data Unit)} = \text{Header} + \text{(N+1)-layer P
             &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
             &lt;i class=&#34;friend-name&#34;&gt;珊瑚阁GoldMaple&lt;/i&gt;
             &lt;p class=&#34;friend-bio&#34;&gt;「捕捉瓦坎达的风」&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://linmaomaojie.github.io/&#34; title=&#34;林毛毛语录&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
-    &lt;div class=&#34;friend-link-div&#34;&gt;
-        &lt;div class=&#34;friend-link-avatar&#34;&gt;
-            &lt;img src=https://cdn.jsdelivr.net/gh/majiao2/image-repo@main/blog_9.jpg class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;friend-link-info&#34;&gt;
-            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-            &lt;i class=&#34;friend-name&#34;&gt;林毛毛语录&lt;/i&gt;
-            &lt;p class=&#34;friend-bio&#34;&gt;「一个分享林毛毛语录的网站，薪火相传，生生不息！」&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/a&gt;
