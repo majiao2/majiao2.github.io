@@ -7,7 +7,252 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Mia Jiao</copyright>
-        <lastBuildDate>Fri, 27 Jun 2025 21:20:47 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 29 Sep 2025 05:28:58 +0800</lastBuildDate><atom:link href="https://majiao2.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>系统分析与实现图例</title>
+        <link>https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/</link>
+        <pubDate>Mon, 29 Sep 2025 05:28:58 +0800</pubDate>
+        
+        <guid>https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/</guid>
+        <description>&lt;img src="https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/title.png" alt="Featured image of post 系统分析与实现图例" /&gt;&lt;h2 id=&#34;use-case&#34;&gt;Use Case
+&lt;/h2&gt;&lt;h3 id=&#34;user-stories&#34;&gt;User Stories
+&lt;/h3&gt;&lt;div class=&#34;mycard&#34;&gt;
+      &lt;div class=&#34;content&#34;&gt; &lt;center&gt;A doctor’s office appointment system&lt;/center&gt; &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;&lt;u&gt;An appointment secretary’s activities&lt;/u&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;A patient&lt;/mark&gt; has to &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;call the doctors’ office&lt;/mark&gt; (there are multiple doctors) to make an appointment&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;An appointment secretary&lt;/mark&gt; &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;answers the call&lt;/mark&gt; and has to do the following:
+&lt;ul&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Log into&lt;/mark&gt; the appointment system&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Log into&lt;/mark&gt; the patient records database, and:
+&lt;ul&gt;
+&lt;li&gt;Access an existing patient’s record&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Or&lt;/strong&gt; create a new patient record&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Ask the caller&lt;/mark&gt; if this is an emergency
+&lt;ul&gt;
+&lt;li&gt;If it is, he/she passes the caller to the nurse practitioner on duty&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Ask the caller&lt;/mark&gt; if he/she has a preference for a doctor
+&lt;ul&gt;
+&lt;li&gt;If the caller has a preference, the appointment secretary has to log in and access the doctor’s availability schedule in a separate system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Tell the caller&lt;/mark&gt; the available times for appointments&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Schedule an appointment&lt;/mark&gt; with a doctor&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Update&lt;/mark&gt; the patient’s record&lt;/li&gt;
+&lt;li&gt;&lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;Log into the daily appointment schedule system&lt;/mark&gt; (a separate system) and add the appointment to the appropriate doctor on the appropriate day&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your challenge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create 5 User stories from the perspective of &lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;an appointment secretary&lt;/mark&gt; that would improve the way he/she does these activities&lt;/li&gt;
+&lt;li&gt;Use an appropriate User story format&lt;/li&gt;
+&lt;li&gt;Follow the rules for &lt;em&gt;effective User stories&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;1. Unified Login System&lt;/strong&gt;&lt;br&gt;
+As an appointment secretary,&lt;br&gt;
+I want to log into both the appointment system and the patient records database using a single login,&lt;br&gt;
+so that I can save time and reduce the complexity of handling multiple logins.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Automatic Emergency Handling&lt;/strong&gt;&lt;br&gt;
+As an appointment secretary,&lt;br&gt;
+I want to quickly identify emergency calls and automatically transfer them to the nurse practitioner,&lt;br&gt;
+so that I can prioritize emergencies without delay.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Integrated Doctor Availability&lt;/strong&gt;&lt;br&gt;
+As an appointment secretary,&lt;br&gt;
+I want to access the doctor’s availability schedule within the appointment system,&lt;br&gt;
+so that I can quickly provide available times to callers without switching to another system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Automated Patient Record Update&lt;/strong&gt;&lt;br&gt;
+As an appointment secretary,&lt;br&gt;
+I want to have the patient’s record automatically updated when an appointment is scheduled,&lt;br&gt;
+so that I do not need to manually update the records, reducing the chance of errors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Streamlined Appointment Scheduling Integration&lt;/strong&gt;&lt;br&gt;
+As an appointment secretary,&lt;br&gt;
+I want to be able to add the scheduled appointment directly to the doctor’s daily calendar within the appointment system,&lt;br&gt;
+so that I do not have to manually log into a separate system to update the doctor’s schedule.&lt;/p&gt;
+&lt;h3 id=&#34;simple-course-registration&#34;&gt;Simple course registration
+&lt;/h3&gt;&lt;figure&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/20250929042640.png&#34;
+    alt=&#34;Course registration system diagram&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;course-registration-system&#34;&gt;Course registration system
+&lt;/h3&gt;&lt;p&gt;&lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;Students&lt;/mark&gt; login to the &lt;u&gt;Course registration system (CRS)&lt;/u&gt; using their student ID and &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;access the course catalog&lt;/mark&gt; after the &lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;Registrar&lt;/mark&gt; posts it and opens registration.&lt;/p&gt;
+&lt;p&gt;&lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;Students&lt;/mark&gt; choose and &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;register for each course&lt;/mark&gt;. A student’s transcript (course history) is checked to verify that they have taken the appropriate prerequisites. They occasionally re-access the &lt;u&gt;CRS&lt;/u&gt; and make changes to their schedules.&lt;/p&gt;
+&lt;p&gt;&lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;Academic departmental staff&lt;/mark&gt; login to the system to examine the courses offered by their department and &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;make changes&lt;/mark&gt; like closing or canceling a section or a course.&lt;/p&gt;
+&lt;p&gt;&lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;The Registrar&lt;/mark&gt; closes registration on a pre-determined date and &lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;the Registration billing system&lt;/mark&gt; &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;accesses the &lt;u&gt;CRS&lt;/u&gt;&lt;/mark&gt; and calculates a bill for each student and mails it to a student’s current address.&lt;/p&gt;
+&lt;p&gt;&lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;Professors&lt;/mark&gt; login to the &lt;u&gt;CRS&lt;/u&gt; and &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;access the courses&lt;/mark&gt; they are assigned to teach and obtain a course roster.&lt;/p&gt;
+&lt;p&gt;During the semester, &lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;Professors&lt;/mark&gt; access the &lt;u&gt;CRS&lt;/u&gt; to advise students and &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;post mid-term grades&lt;/mark&gt; for student athletes and other special classes of students and for all students at the end of the semester.&lt;/p&gt;
+&lt;p&gt;At the end of the semester, &lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;students&lt;/mark&gt; &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;fill out course evaluations&lt;/mark&gt; and the results are posted to the &lt;u&gt;CRS&lt;/u&gt;.&lt;/p&gt;
+&lt;p&gt;At the end of a semester, &lt;mark style=&#34;background: #BBFABBA6;&#34;&gt;Professors&lt;/mark&gt; &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;post grades&lt;/mark&gt; to the CRS.
+&lt;figure&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/20250929042453.png&#34;
+    alt=&#34;Course registration flow diagram&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;meituan-take-out&#34;&gt;Meituan Take-out
+&lt;/h3&gt;&lt;p&gt;Develop a Use case diagram for &lt;em&gt;Meituan Take-out (just ordering food to be delivered to your home)&lt;/em&gt;&lt;br&gt;
+In addition to the normal stuff you do on &lt;em&gt;Meituan Take-out&lt;/em&gt;, the following assumptions apply:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Meituan’s&lt;/em&gt; system connects to &lt;u&gt;the online ordering system&lt;/u&gt; at each restaurant that you see&lt;/li&gt;
+&lt;li&gt;Assume payments to &lt;em&gt;Meituan&lt;/em&gt; are processed by &lt;em&gt;PaymentProcessor&lt;/em&gt;; which does things like verify the credit card, &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;collect the payment data&lt;/mark&gt;, and pay the restaurant and the delivery service&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Meituan’s&lt;/em&gt; system connects to &lt;em&gt;Deliverers&lt;/em&gt; to arrange for and expedite deliveries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use &lt;em&gt;includes&lt;/em&gt; and &lt;em&gt;extends&lt;/em&gt; in your diagram as needed to explicate how &lt;em&gt;Meituan&lt;/em&gt; works.&lt;br&gt;
+&lt;figure&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/20250929043111.png&#34;
+    alt=&#34;Meituan Take-out Use Case Diagram&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;activity-diagram&#34;&gt;Activity Diagram
+&lt;/h2&gt;&lt;h3 id=&#34;atm-activity-diagram&#34;&gt;ATM activity diagram
+&lt;/h3&gt;&lt;figure&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/20250929044402.png&#34;
+    alt=&#34;ATM Activity Diagram 1&#34;&gt;
+&lt;/figure&gt;
+
+&lt;!-- 前两张图片并排显示 --&gt;
+&lt;div style=&#34;display: flex; gap: 10px; margin-bottom: 10px;&#34;&gt;
+  &lt;figure style=&#34;flex: 1; margin: 0;&#34;&gt;
+    &lt;img src=&#34;20250929044452.png&#34; alt=&#34;图片1描述&#34; style=&#34;width: 100%; height: auto;&#34;&gt;
+  &lt;/figure&gt;
+  &lt;figure style=&#34;flex: 1; margin: 0;&#34;&gt;
+    &lt;img src=&#34;20250929044556.png&#34; alt=&#34;图片2描述&#34; style=&#34;width: 100%; height: auto;&#34;&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+&lt;figure style=&#34;text-align: center; margin: 10px 0;&#34;&gt;
+  &lt;img 
+    src=&#34;20250929044654.png&#34; 
+    alt=&#34;图片描述（可自定义）&#34; 
+    style=&#34;width: 80%; max-width: 270px; height: auto;&#34;
+  &gt;
+&lt;/figure&gt;
+&lt;h3 id=&#34;ordering-food-using-meituan&#34;&gt;Ordering food using Meituan
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;FIRST:&lt;/strong&gt; Develop a UML Activity diagram for Ordering food using &lt;em&gt;Meituan&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;THEN:&lt;/strong&gt; Write the Normal Flow of Events for the Use Case this Activity Diagram depicts.&lt;br&gt;
+The following description and assumptions apply:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As a hungry person, you &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;install and open&lt;/mark&gt; &lt;em&gt;Meituan&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;You are either a new user who needs to set up a profile or a returning user
+&lt;ul&gt;
+&lt;li&gt;As a returning user, you may want to &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;make changes&lt;/mark&gt; to your profile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;You &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;access menus through the app&lt;/mark&gt;
+&lt;ul&gt;
+&lt;li&gt;You may find something that looks good and place an order and checkout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you do &lt;mark style=&#34;background: #FFB86CA6;&#34;&gt;place an order&lt;/mark&gt;, you use the app to check the status of your order&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create an Activity diagram and add a short Use case description&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For the Use case description, add a Note box below your Activity diagram and list the normal flow of events to order food.&lt;br&gt;
+&lt;figure&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/20250929050240.png&#34;
+    alt=&#34;Meituan Ordering Flow Diagram&#34;&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;用户验证&lt;/strong&gt;：美团（Meituan）首先验证用户身份。
+&lt;ul&gt;
+&lt;li&gt;若为新用户（New user? 分支为 Yes），需创建用户资料（Create profile）。&lt;/li&gt;
+&lt;li&gt;若为老用户（New user? 分支为 No），可选择是否更新资料（Update profile?），若选择更新（Yes），则执行更新资料操作（Update profile）；若不更新（No），进入下一步。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;进入菜单与点餐&lt;/strong&gt;：用户进入菜单（Access menus）后，选择是否点餐（Order food?）。若不点餐（No），流程结束（以 “×” 表示）；若点餐（Yes），进行下单（Place order）操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结账与资料处理&lt;/strong&gt;：用户结账（Checkout）时，美团会调取用户资料用于结账（Access user profile）。若没有可用于结账的用户资料（User profile for checkout? 分支为 No），美团会收集新的结账信息（Collect new checkout info）；若有（Yes），进入下一步。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;订单处理&lt;/strong&gt;：美团处理订单（Process order），包括验证支付信息、向餐厅发送订单、向用户反馈等环节，最终完成整个点餐流程。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(140, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Use case discription&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;u&gt;Use case name:&lt;/u&gt; &lt;strong&gt;Order food&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Primary Actor: Hungry person (User)&lt;/strong&gt;&lt;br&gt;
+&lt;u&gt;Stakeholders:&lt;/u&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;User - wants to order food&lt;/li&gt;
+&lt;li&gt;Meituan - wants to process order &amp;amp; collect payments&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;u&gt;Brief description: &lt;/u&gt;The use case describes how a hungry person uses the app to create or change their profile and order food&lt;br&gt;
+&lt;u&gt;Trigger: &lt;/u&gt;User logs in to Meituan&lt;br&gt;
+&lt;u&gt;Association relationship:&lt;/u&gt; Hunger person&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Normal flow of events:&lt;/u&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The hungry person opens or logs in to the app&lt;/li&gt;
+&lt;li&gt;If the hungry person is a new user: Execute the Create profile subflow&lt;/li&gt;
+&lt;li&gt;If the hungry person is a returning user who wants to change his/her profile: Execute the Update profile subflow&lt;/li&gt;
+&lt;li&gt;The hungry person accesses the menus: If the user places an order, execute the checkout &amp;amp; associated process:
+&lt;ul&gt;
+&lt;li&gt;The app accesses the user profile&lt;/li&gt;
+&lt;li&gt;The app asks the user if he/she wants to use the profile info&lt;/li&gt;
+&lt;li&gt;If the user wants to change his/her checkout info: Execute the Collect new checkout info subflow&lt;/li&gt;
+&lt;li&gt;The app processes the order&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;User profile includes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Preferences&lt;/li&gt;
+&lt;li&gt;Preferred payment &amp;amp; delivery location info&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Process order includes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Valid payment info&lt;/li&gt;
+&lt;li&gt;Send order to restaurant&lt;/li&gt;
+&lt;li&gt;Send feedback to hungry person&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;class-diagram&#34;&gt;Class Diagram
+&lt;/h2&gt;&lt;h3 id=&#34;course-registration&#34;&gt;Course registration
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;关系类型&lt;/th&gt;
+          &lt;th&gt;图示特征&lt;/th&gt;
+          &lt;th&gt;含义说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Association&lt;/td&gt;
+          &lt;td&gt;——&lt;/td&gt;
+          &lt;td&gt;表示两个类之间存在某种静态关系，是类与类之间最基本的关联&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Generalization&lt;/td&gt;
+          &lt;td&gt;——▷&lt;/td&gt;
+          &lt;td&gt;即继承关系，子类（派生类）继承父类（基类）的属性和方法，体现 “is - a” 关系&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Aggregation&lt;/td&gt;
+          &lt;td&gt;——◇&lt;/td&gt;
+          &lt;td&gt;表示 “整体 - 部分” 关系，部分可独立于整体存在，是一种较弱的包含关系&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Composition&lt;/td&gt;
+          &lt;td&gt;——◆&lt;/td&gt;
+          &lt;td&gt;表示 “整体 - 部分” 关系，部分的生命周期完全依赖于整体，是一种较强的包含关系&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;figure&gt;&lt;img src=&#34;https://majiao2.github.io/2025/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E7%8E%B0%E5%9B%BE%E4%BE%8B/20250929052011.png&#34;
+    alt=&#34;Course Registration Class Diagram&#34;&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+ Access&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+ Register&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+ Post&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+ Add&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+ Delete&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>拳击记录</title>
         <link>https://majiao2.github.io/2025/%E6%8B%B3%E5%87%BB%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Fri, 27 Jun 2025 21:20:47 +0800</pubDate>
